@@ -308,7 +308,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B10-C01",
+        "THPT-TOP15-P06"
+      ],
+      "practice_orders": [
+        1,
+        6
+      ]
     }
   },
   {
@@ -321,7 +330,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B10-P03",
+        "THPT-G11-CHIV-B10-C02",
+        "THPT-TOP15-P07"
+      ],
+      "practice_orders": [
+        2,
+        3,
+        7
+      ]
     }
   },
   {
@@ -334,7 +354,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B10-P01",
+        "THPT-TOP15-P08"
+      ],
+      "practice_orders": [
+        4,
+        8
+      ]
     }
   },
   {
@@ -347,7 +376,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP15-P09",
+        "THPT-G11-CHIV-B10-P02"
+      ],
+      "practice_orders": [
+        9,
+        10
+      ]
     }
   },
   {
@@ -360,7 +398,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B10-P04",
+        "THPT-TOP15-P10"
+      ],
+      "practice_orders": [
+        5,
+        11
+      ]
     }
   },
   {
@@ -373,7 +420,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B11-C01",
+        "THPT-TOP15-P02",
+        "THPT-TOP15-P11"
+      ],
+      "practice_orders": [
+        16,
+        19,
+        20
+      ]
     }
   },
   {
@@ -386,7 +444,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B11-C02",
+        "THPT-G11-CHIV-B11-P01",
+        "THPT-TOP15-P02"
+      ],
+      "practice_orders": [
+        15,
+        17,
+        19
+      ]
     }
   },
   {
@@ -399,7 +468,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B11-P04",
+        "THPT-G11-CHIV-B11-P02",
+        "THPT-TOP15-P12"
+      ],
+      "practice_orders": [
+        18,
+        21,
+        22
+      ]
     }
   },
   {
@@ -412,7 +492,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP15-P13",
+        "THPT-TOP15-P23"
+      ],
+      "practice_orders": [
+        23,
+        24
+      ]
     }
   },
   {
@@ -425,7 +514,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B12-C01",
+        "THPT-G11-CHIV-B12-P02",
+        "THPT-TOP15-P03"
+      ],
+      "practice_orders": [
+        29,
+        30,
+        33
+      ]
     }
   },
   {
@@ -438,7 +538,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B12-C02",
+        "THPT-G11-CHIV-B12-P01",
+        "THPT-TOP15-P14"
+      ],
+      "practice_orders": [
+        31,
+        35,
+        36
+      ]
     }
   },
   {
@@ -451,7 +562,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B12-P03",
+        "THPT-TOP15-P15"
+      ],
+      "practice_orders": [
+        32,
+        34
+      ]
     }
   },
   {
@@ -464,7 +584,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP15-P16",
+        "THPT-TOP15-P24"
+      ],
+      "practice_orders": [
+        37,
+        38
+      ]
     }
   },
   {
@@ -477,7 +606,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B13-C01",
+        "THPT-TOP15-P17"
+      ],
+      "practice_orders": [
+        42,
+        46
+      ]
     }
   },
   {
@@ -490,7 +628,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B13-C02",
+        "THPT-G11-CHIV-B13-P02",
+        "THPT-TOP15-P18"
+      ],
+      "practice_orders": [
+        43,
+        45,
+        52
+      ]
     }
   },
   {
@@ -503,7 +652,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B13-P01",
+        "THPT-TOP15-P19"
+      ],
+      "practice_orders": [
+        44,
+        50
+      ]
     }
   },
   {
@@ -516,7 +674,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B13-P03",
+        "THPT-G11-CHIV-B13-P04",
+        "THPT-TOP15-P04"
+      ],
+      "practice_orders": [
+        47,
+        48,
+        49
+      ]
     }
   },
   {
@@ -529,7 +698,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B14-P01",
+        "THPT-G11-CHIV-B14-C01",
+        "THPT-TOP15-P20"
+      ],
+      "practice_orders": [
+        56,
+        57,
+        63
+      ]
     }
   },
   {
@@ -542,7 +722,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B14-P03",
+        "THPT-TOP15-P21",
+        "THPT-TOP15-P05"
+      ],
+      "practice_orders": [
+        60,
+        61,
+        66
+      ]
     }
   },
   {
@@ -555,7 +746,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B14-P02",
+        "THPT-TOP15-P22"
+      ],
+      "practice_orders": [
+        59,
+        67
+      ]
     }
   },
   {
@@ -568,7 +768,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHIV-B14-C02",
+        "THPT-G11-CHIV-B14-P04",
+        "THPT-TOP15-W02"
+      ],
+      "practice_orders": [
+        58,
+        65,
+        70
+      ]
     }
   },
   {
@@ -581,7 +792,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP15-P26",
+        "THPT-TOP15-P25"
+      ],
+      "practice_orders": [
+        62,
+        64
+      ]
     }
   },
   {
@@ -597,7 +817,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B22-P02",
+        "THPT-G11-CHVII-B22-C01",
+        "THPT-TOP16-P01"
+      ],
+      "practice_orders": [
+        2,
+        3,
+        11
+      ]
     }
   },
   {
@@ -613,7 +844,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B22-C02",
+        "THPT-G11-CHVII-B22-P03",
+        "THPT-TOP16-P02"
+      ],
+      "practice_orders": [
+        4,
+        7,
+        8
+      ]
     }
   },
   {
@@ -629,7 +871,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B22-C03",
+        "THPT-TOP16-P03"
+      ],
+      "practice_orders": [
+        1,
+        9
+      ]
     }
   },
   {
@@ -645,7 +896,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B22-C04",
+        "THPT-TOP16-P04"
+      ],
+      "practice_orders": [
+        5,
+        10
+      ]
     }
   },
   {
@@ -661,7 +921,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B23-C01",
+        "THPT-TOP16-P05"
+      ],
+      "practice_orders": [
+        16,
+        21
+      ]
     }
   },
   {
@@ -677,7 +946,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B23-C02",
+        "THPT-G11-CHVII-B23-P02",
+        "THPT-TOP16-P06"
+      ],
+      "practice_orders": [
+        15,
+        20,
+        26
+      ]
     }
   },
   {
@@ -693,7 +973,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B23-C03",
+        "THPT-G11-CHVII-B23-P01",
+        "THPT-TOP16-P07"
+      ],
+      "practice_orders": [
+        17,
+        19,
+        22
+      ]
     }
   },
   {
@@ -709,7 +1000,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B23-C04",
+        "THPT-TOP16-P08"
+      ],
+      "practice_orders": [
+        18,
+        23
+      ]
     }
   },
   {
@@ -725,7 +1025,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP16-P09",
+        "THPT-G11-CHVII-B23-C05"
+      ],
+      "practice_orders": [
+        24,
+        25
+      ]
     }
   },
   {
@@ -741,7 +1050,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B24-C01",
+        "THPT-TOP16-P10"
+      ],
+      "practice_orders": [
+        30,
+        39
+      ]
     }
   },
   {
@@ -757,7 +1075,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B24-C02",
+        "THPT-G11-CHVII-B24-P03",
+        "THPT-TOP16-P11"
+      ],
+      "practice_orders": [
+        31,
+        34,
+        40
+      ]
     }
   },
   {
@@ -773,7 +1102,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B24-C03",
+        "THPT-TOP16-P12"
+      ],
+      "practice_orders": [
+        32,
+        35
+      ]
     }
   },
   {
@@ -789,7 +1127,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B24-C04",
+        "THPT-G11-CHVII-B24-P01",
+        "THPT-TOP16-P13"
+      ],
+      "practice_orders": [
+        33,
+        37,
+        41
+      ]
     }
   },
   {
@@ -805,7 +1154,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B24-C05",
+        "THPT-TOP16-P14",
+        "THPT-G11-CHVII-B24-P02"
+      ],
+      "practice_orders": [
+        36,
+        42,
+        38
+      ]
     }
   },
   {
@@ -821,7 +1181,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C01",
+        "THPT-G11-CHVII-B25-P01",
+        "THPT-TOP16-P15"
+      ],
+      "practice_orders": [
+        46,
+        53,
+        59
+      ]
     }
   },
   {
@@ -837,7 +1208,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C02",
+        "THPT-TOP16-P16"
+      ],
+      "practice_orders": [
+        49,
+        56
+      ]
     }
   },
   {
@@ -853,7 +1233,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C03",
+        "THPT-TOP16-P17"
+      ],
+      "practice_orders": [
+        50,
+        60
+      ]
     }
   },
   {
@@ -869,7 +1258,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C04",
+        "THPT-TOP16-P18"
+      ],
+      "practice_orders": [
+        51,
+        57
+      ]
     }
   },
   {
@@ -885,7 +1283,18 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C05",
+        "THPT-G11-CHVII-B25-P03",
+        "THPT-TOP16-P19"
+      ],
+      "practice_orders": [
+        47,
+        55,
+        58
+      ]
     }
   },
   {
@@ -901,7 +1310,20 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C06",
+        "THPT-G11-CHVII-B25-P02",
+        "THPT-G11-CHVII-B25-W02-ANCHOR",
+        "THPT-TOP16-P20"
+      ],
+      "practice_orders": [
+        48,
+        54,
+        64,
+        61
+      ]
     }
   },
   {
@@ -917,7 +1339,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B25-C07",
+        "THPT-TOP16-P21"
+      ],
+      "practice_orders": [
+        52,
+        62
+      ]
     }
   },
   {
@@ -933,7 +1364,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-C01",
+        "THPT-TOP17-P01"
+      ],
+      "practice_orders": [
+        1,
+        12
+      ]
     }
   },
   {
@@ -949,7 +1389,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-C02",
+        "THPT-TOP17-P02"
+      ],
+      "practice_orders": [
+        2,
+        13
+      ]
     }
   },
   {
@@ -965,7 +1414,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-C03",
+        "THPT-TOP17-P03"
+      ],
+      "practice_orders": [
+        3,
+        14
+      ]
     }
   },
   {
@@ -981,7 +1439,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-C04",
+        "THPT-TOP17-P04"
+      ],
+      "practice_orders": [
+        4,
+        15
+      ]
     }
   },
   {
@@ -997,7 +1464,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-W02-ANCHOR",
+        "THPT-TOP17-P05"
+      ],
+      "practice_orders": [
+        11,
+        16
+      ]
     }
   },
   {
@@ -1013,7 +1489,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-C06",
+        "THPT-TOP17-P06"
+      ],
+      "practice_orders": [
+        6,
+        17
+      ]
     }
   },
   {
@@ -1029,7 +1514,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B27-C01",
+        "THPT-TOP17-P07"
+      ],
+      "practice_orders": [
+        19,
+        29
+      ]
     }
   },
   {
@@ -1045,7 +1539,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B27-C02",
+        "THPT-TOP17-P08"
+      ],
+      "practice_orders": [
+        20,
+        30
+      ]
     }
   },
   {
@@ -1061,7 +1564,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B27-C03",
+        "THPT-TOP17-P09"
+      ],
+      "practice_orders": [
+        21,
+        31
+      ]
     }
   },
   {
@@ -1077,7 +1589,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B27-C04",
+        "THPT-TOP17-P10"
+      ],
+      "practice_orders": [
+        22,
+        32
+      ]
     }
   },
   {
@@ -1093,7 +1614,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B27-C05",
+        "THPT-TOP17-P11"
+      ],
+      "practice_orders": [
+        23,
+        33
+      ]
     }
   },
   {
@@ -1109,7 +1639,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G11-CHVII-B26-P01",
+        "THPT-TOP17-P12"
+      ],
+      "practice_orders": [
+        7,
+        34
+      ]
     }
   },
   {
@@ -1125,7 +1664,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B06-P02",
+        "THPT-TOP18-P01"
+      ],
+      "practice_orders": [
+        3,
+        5
+      ]
     }
   },
   {
@@ -1141,7 +1689,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B06-P03",
+        "THPT-TOP18-P02"
+      ],
+      "practice_orders": [
+        7,
+        10
+      ]
     }
   },
   {
@@ -1157,7 +1714,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B06-P06",
+        "THPT-TOP18-P03"
+      ],
+      "practice_orders": [
+        13,
+        15
+      ]
     }
   },
   {
@@ -1173,7 +1739,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B06-C04",
+        "THPT-TOP18-P04"
+      ],
+      "practice_orders": [
+        16,
+        20
+      ]
     }
   },
   {
@@ -1189,7 +1764,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B06-P09",
+        "THPT-TOP18-P05"
+      ],
+      "practice_orders": [
+        22,
+        25
+      ]
     }
   },
   {
@@ -1205,7 +1789,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B06-P06",
+        "THPT-TOP18-P06"
+      ],
+      "practice_orders": [
+        13,
+        30
+      ]
     }
   },
   {
@@ -1221,7 +1814,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B07-C01",
+        "THPT-TOP18-P07"
+      ],
+      "practice_orders": [
+        31,
+        35
+      ]
     }
   },
   {
@@ -1237,7 +1839,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B07-P03",
+        "THPT-TOP18-P08"
+      ],
+      "practice_orders": [
+        37,
+        40
+      ]
     }
   },
   {
@@ -1253,7 +1864,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B07-P05",
+        "THPT-TOP18-P09"
+      ],
+      "practice_orders": [
+        42,
+        45
+      ]
     }
   },
   {
@@ -1269,7 +1889,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B07-C04",
+        "THPT-TOP18-P10"
+      ],
+      "practice_orders": [
+        46,
+        50
+      ]
     }
   },
   {
@@ -1285,7 +1914,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B08-C01",
+        "THPT-TOP18-P11"
+      ],
+      "practice_orders": [
+        51,
+        55
+      ]
     }
   },
   {
@@ -1301,7 +1939,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B08-P04",
+        "THPT-TOP18-P12"
+      ],
+      "practice_orders": [
+        58,
+        60
+      ]
     }
   },
   {
@@ -1317,7 +1964,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B08-C03",
+        "THPT-TOP18-P13"
+      ],
+      "practice_orders": [
+        61,
+        65
+      ]
     }
   },
   {
@@ -1333,7 +1989,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B08-P07",
+        "THPT-TOP18-P14"
+      ],
+      "practice_orders": [
+        67,
+        70
+      ]
     }
   },
   {
@@ -1349,7 +2014,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B08-W05",
+        "THPT-TOP18-P15"
+      ],
+      "practice_orders": [
+        74,
+        75
+      ]
     }
   },
   {
@@ -1365,7 +2039,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B08-P12",
+        "THPT-TOP18-P16"
+      ],
+      "practice_orders": [
+        79,
+        81
+      ]
     }
   },
   {
@@ -1381,7 +2064,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-P01",
+        "THPT-TOP18-P17"
+      ],
+      "practice_orders": [
+        83,
+        86
+      ]
     }
   },
   {
@@ -1397,7 +2089,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-C02",
+        "THPT-TOP18-P18"
+      ],
+      "practice_orders": [
+        87,
+        91
+      ]
     }
   },
   {
@@ -1413,7 +2114,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-P03",
+        "THPT-TOP18-P19"
+      ],
+      "practice_orders": [
+        93,
+        96
+      ]
     }
   },
   {
@@ -1429,7 +2139,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-P04",
+        "THPT-TOP18-P20"
+      ],
+      "practice_orders": [
+        99,
+        102
+      ]
     }
   },
   {
@@ -1445,7 +2164,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-C05",
+        "THPT-TOP18-P21"
+      ],
+      "practice_orders": [
+        103,
+        107
+      ]
     }
   },
   {
@@ -1461,7 +2189,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-C06",
+        "THPT-TOP18-P22"
+      ],
+      "practice_orders": [
+        108,
+        112
+      ]
     }
   },
   {
@@ -1477,7 +2214,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-C01",
+        "THPT-TOP18-P24"
+      ],
+      "practice_orders": [
+        114,
+        118
+      ]
     }
   },
   {
@@ -1493,7 +2239,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-C02",
+        "THPT-TOP18-P25"
+      ],
+      "practice_orders": [
+        119,
+        123
+      ]
     }
   },
   {
@@ -1509,7 +2264,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-P03",
+        "THPT-TOP18-P26"
+      ],
+      "practice_orders": [
+        125,
+        128
+      ]
     }
   },
   {
@@ -1525,7 +2289,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-C04",
+        "THPT-TOP18-P27"
+      ],
+      "practice_orders": [
+        129,
+        133
+      ]
     }
   },
   {
@@ -1541,7 +2314,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-C05",
+        "THPT-TOP18-P28"
+      ],
+      "practice_orders": [
+        134,
+        138
+      ]
     }
   },
   {
@@ -1557,7 +2339,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-P06",
+        "THPT-TOP18-P29"
+      ],
+      "practice_orders": [
+        140,
+        143
+      ]
     }
   },
   {
@@ -1573,7 +2364,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B15-P07",
+        "THPT-TOP18-P30"
+      ],
+      "practice_orders": [
+        145,
+        148
+      ]
     }
   },
   {
@@ -1589,7 +2389,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B16-P01",
+        "THPT-TOP18-P31"
+      ],
+      "practice_orders": [
+        151,
+        154
+      ]
     }
   },
   {
@@ -1605,7 +2414,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B16-P02",
+        "THPT-TOP18-P32"
+      ],
+      "practice_orders": [
+        156,
+        159
+      ]
     }
   },
   {
@@ -1621,7 +2439,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B16-P03",
+        "THPT-TOP18-P33"
+      ],
+      "practice_orders": [
+        162,
+        165
+      ]
     }
   },
   {
@@ -1637,7 +2464,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B16-W04",
+        "THPT-TOP18-P34"
+      ],
+      "practice_orders": [
+        169,
+        170
+      ]
     }
   },
   {
@@ -1653,7 +2489,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B16-W05",
+        "THPT-TOP18-P35"
+      ],
+      "practice_orders": [
+        174,
+        175
+      ]
     }
   },
   {
@@ -1669,7 +2514,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B17-P01",
+        "THPT-TOP18-P36"
+      ],
+      "practice_orders": [
+        177,
+        180
+      ]
     }
   },
   {
@@ -1685,7 +2539,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B17-P02",
+        "THPT-TOP18-P37"
+      ],
+      "practice_orders": [
+        182,
+        185
+      ]
     }
   },
   {
@@ -1701,7 +2564,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B17-C03",
+        "THPT-TOP18-P38"
+      ],
+      "practice_orders": [
+        186,
+        190
+      ]
     }
   },
   {
@@ -1717,7 +2589,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B17-W04",
+        "THPT-TOP18-P39"
+      ],
+      "practice_orders": [
+        194,
+        195
+      ]
     }
   },
   {
@@ -1733,7 +2614,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B17-C05",
+        "THPT-TOP18-P40"
+      ],
+      "practice_orders": [
+        197,
+        201
+      ]
     }
   },
   {
@@ -1749,7 +2639,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G12-B14-C07",
+        "THPT-TOP18-P23"
+      ],
+      "practice_orders": [
+        203,
+        207
+      ]
     }
   },
   {
@@ -1762,7 +2661,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B23-C01",
+        "THPT-TOP19-P01"
+      ],
+      "practice_orders": [
+        1,
+        3
+      ]
     }
   },
   {
@@ -1775,7 +2683,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B23-C02",
+        "THPT-TOP19-P02"
+      ],
+      "practice_orders": [
+        4,
+        7
+      ]
     }
   },
   {
@@ -1788,7 +2705,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B23-P01",
+        "THPT-TOP19-P03"
+      ],
+      "practice_orders": [
+        8,
+        9
+      ]
     }
   },
   {
@@ -1801,7 +2727,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B23-P05",
+        "THPT-TOP19-P04"
+      ],
+      "practice_orders": [
+        10,
+        12
+      ]
     }
   },
   {
@@ -1814,7 +2749,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B24-C01",
+        "THPT-TOP19-P05"
+      ],
+      "practice_orders": [
+        14,
+        17
+      ]
     }
   },
   {
@@ -1827,7 +2771,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B24-C02",
+        "THPT-TOP19-P06"
+      ],
+      "practice_orders": [
+        18,
+        20
+      ]
     }
   },
   {
@@ -1840,7 +2793,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B24-P01",
+        "THPT-TOP19-P07"
+      ],
+      "practice_orders": [
+        21,
+        22
+      ]
     }
   },
   {
@@ -1853,7 +2815,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B24-P04",
+        "THPT-TOP19-P08"
+      ],
+      "practice_orders": [
+        23,
+        25
+      ]
     }
   },
   {
@@ -1866,7 +2837,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP19-P06",
+        "THPT-TOP19-P14"
+      ],
+      "practice_orders": [
+        20,
+        27
+      ]
     }
   },
   {
@@ -1879,7 +2859,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B25-C01",
+        "THPT-TOP19-P09"
+      ],
+      "practice_orders": [
+        28,
+        30
+      ]
     }
   },
   {
@@ -1892,7 +2881,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B25-P01",
+        "THPT-TOP19-P10"
+      ],
+      "practice_orders": [
+        31,
+        36
+      ]
     }
   },
   {
@@ -1905,7 +2903,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B25-C02",
+        "THPT-TOP19-P13"
+      ],
+      "practice_orders": [
+        29,
+        38
+      ]
     }
   },
   {
@@ -1918,7 +2925,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B25-P07",
+        "THPT-TOP19-P11"
+      ],
+      "practice_orders": [
+        35,
+        40
+      ]
     }
   },
   {
@@ -1932,7 +2948,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-G10-B25-P06",
+        "THPT-TOP19-P12"
+      ],
+      "practice_orders": [
+        41,
+        42
+      ]
     }
   },
   {
@@ -1945,7 +2970,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P01"
+      ],
+      "practice_orders": [
+        1
+      ]
     }
   },
   {
@@ -1958,7 +2990,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P02"
+      ],
+      "practice_orders": [
+        2
+      ]
     }
   },
   {
@@ -1971,7 +3010,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P03"
+      ],
+      "practice_orders": [
+        3
+      ]
     }
   },
   {
@@ -1984,7 +3030,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P06"
+      ],
+      "practice_orders": [
+        6
+      ]
     }
   },
   {
@@ -1997,7 +3050,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P04"
+      ],
+      "practice_orders": [
+        4
+      ]
     }
   },
   {
@@ -2010,7 +3070,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P05"
+      ],
+      "practice_orders": [
+        5
+      ]
     }
   },
   {
@@ -2023,7 +3090,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P07"
+      ],
+      "practice_orders": [
+        7
+      ]
     }
   },
   {
@@ -2036,7 +3110,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P08"
+      ],
+      "practice_orders": [
+        8
+      ]
     }
   },
   {
@@ -2049,7 +3130,16 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P10",
+        "THPT-TOP20-P06"
+      ],
+      "practice_orders": [
+        10,
+        6
+      ]
     }
   },
   {
@@ -2062,7 +3152,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P09"
+      ],
+      "practice_orders": [
+        9
+      ]
     }
   },
   {
@@ -2075,7 +3172,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P11"
+      ],
+      "practice_orders": [
+        11
+      ]
     }
   },
   {
@@ -2088,7 +3192,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P12"
+      ],
+      "practice_orders": [
+        12
+      ]
     }
   },
   {
@@ -2101,7 +3212,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P13"
+      ],
+      "practice_orders": [
+        13
+      ]
     }
   },
   {
@@ -2114,7 +3232,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P14"
+      ],
+      "practice_orders": [
+        14
+      ]
     }
   },
   {
@@ -2127,7 +3252,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P15"
+      ],
+      "practice_orders": [
+        15
+      ]
     }
   },
   {
@@ -2140,7 +3272,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P16"
+      ],
+      "practice_orders": [
+        16
+      ]
     }
   },
   {
@@ -2153,7 +3292,14 @@
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "student_label": "Vận dụng",
+      "related_practice_item_ids": [
+        "THPT-TOP20-P17"
+      ],
+      "practice_orders": [
+        17
+      ]
     }
   },
   {
