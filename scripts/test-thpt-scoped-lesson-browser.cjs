@@ -400,25 +400,38 @@ async function execute(){
      if(mathExpected)assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
      assert.equal(layout.unstyled,0,rel+" "+width+" Golden concept/rule cards lack style");
      await verifyG12DisplayMath(page,source,rel,width);
-     // #1132: the changed standalone blocks belong to Discovery. Verify the
-     // actual learner-visible MathJax nodes after switching away and back.
-     if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-ii\/bai-7|chuong-v\/bai-16|chuong-vi\/bai-19)\.md$/.test(rel)){
-      const tabs=page.locator(".md-content .tabbed-set").first();
-      const panel=tabs.locator(".tabbed-content > .tabbed-block").first();
-      const display=panel.locator("div.arithmatex");
-      const wanted=rel.endsWith("/bai-16.md")?1:3;
-      assert.equal(await display.count(),wanted,rel+" #1132 Discovery display count");
-      for(const i of [0,1,0]){
-       await tabs.locator(".tabbed-labels > label").nth(i).click();
-       if(i!==0)continue;
-       for(const node of await display.all()){
-        assert(await node.isVisible(),rel+" #1132 display must be visible in Discovery");
-        await node.locator("mjx-container").waitFor({state:"visible",timeout:30000});
-        assert.equal(await node.locator("mjx-container").count(),1,rel+" #1132 duplicate/nested MathJax");
-        assert.equal(await node.locator("mjx-merror").count(),0,rel+" #1132 MathJax error");
+     // #1132: compare exact visible standalone display nodes in each
+     // affected tab, after navigation away and back, on both engines.
+     const display1132Tabs={
+      "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md":[3,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md":[1,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md":[3,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md":[1,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md":[3,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md":[1,1,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md":[5,0,0,0],
+      "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md":[7,1,0,0]
+     }[rel];
+     if(display1132Tabs){
+      const tabs=page.locator("article .tabbed-set").first();
+      const panels=tabs.locator(".tabbed-content > .tabbed-block");
+      assert.equal(await panels.count(),4,rel+" #1132 four panels");
+      for(let t=0;t<4;t++){
+       const display=panels.nth(t).locator("div.arithmatex");
+       assert.equal(await display.count(),display1132Tabs[t],rel+" #1132 display count tab "+t);
+       if(!display1132Tabs[t])continue;
+       for(const k of [t,(t+1)%4,t]){
+        await tabs.locator(".tabbed-labels > label").nth(k).click();
+        if(k!==t)continue;
+        for(const node of await display.all()){
+         await node.waitFor({state:"visible",timeout:30000});
+         await node.locator("mjx-container").waitFor({state:"visible",timeout:30000});
+         assert.equal(await node.locator("mjx-container").count(),1,rel+" #1132 duplicate/nested MathJax");
+         assert.equal(await node.locator("mjx-merror").count(),0,rel+" #1132 MathJax error");
+        }
        }
       }
-      console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+wanted+" formulas");
+      console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+display1132Tabs.reduce((a,b)=>a+b,0)+" formulas");
      }
      await goldenW1Parity(page,browser,width,rel);
      checks++;

@@ -1103,24 +1103,29 @@ function main(){
   verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
   return;
  }
- const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs"];
+ const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs"];
  if(changed.length===b19Display1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>b19Display1132Files.includes(x))){
-  const lesson="docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md",receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md"),"utf8");
-  assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean),[lesson]);
-  const old=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
-  const now=fs.readFileSync(path.join(root,lesson));
-  assert.equal(blob(old),"ddc2ae13711cd29fbe096b303db042a37b547686");assert.equal(blob(now),"406d662118b15c5057f1394432ff3618d52736ad");
-  assert(receipt.includes(blob(old))&&receipt.includes(blob(now))&&receipt.includes("7234992998")&&receipt.includes("DELTA_B_SOURCE_EQUIVALENT"),"B19 exact Q18 source-equivalent receipt");
-  const before=old.toString("utf8"),after=now.toString("utf8"),fix=normalizeG12DisplayBlocks(before);
-  assert.deepEqual([fix.total,fix.affected,fix.inserted],[3,3,6]);
-  assert.equal(after,fix.text,"B19 only six blank separators may change");
-  assert.deepEqual(before.split("\n").filter(l=>l.trim()),after.split("\n").filter(l=>l.trim()));
-  assert.deepEqual(latex(before),latex(after));
-  assert.deepEqual(firstAnswers(before),firstAnswers(after));
-  assert.equal(firstAnswers(after).length,3,"three unchanged voluntary comparison answers");
-  for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"])assert.deepEqual(tokenSet(before,id),tokenSet(after,id));
-  assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(after));
-  console.log("PASS #1132 G11 B19 exact source/Q15/Q16: three unchanged TeX blocks, six blank separators, three unchanged answers");
+  const rows=[[19,"vi","ddc2ae13711cd29fbe096b303db042a37b547686","406d662118b15c5057f1394432ff3618d52736ad",3,3],[22,"vii","fdcee166ee96617e3889cd9c05d2b5549be0705c","fde91def1d86063fae77d520852ff683cda71186",1,2],[24,"vii","8eab4af3ecff4958feffaf2bf092a1ec01a506c4","3e25e8777dcdff21bee39cffe5b3814bfa441737",3,2],[25,"vii","81d59089a9169c20a920735eb87dc8008b958afe","6604897838dc1daabe85297fe246cf540c5b3108",2,6],[26,"vii","3babd4c575e2dc5b9974b3abfe686ac4d5a3a5bc","280ae1d136d543ab4d2d5a7ddb4e8999f4e8e096",5,3],[27,"vii","d1f4a6cd17321278cb8c6bc65ab397f8b15feb0b","4cfa1cc9c07f4e37edd6338c4b2466ed92479a05",8,3]];
+  const receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md"),"utf8");
+  assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort(),["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md","docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md"]);
+  assert(receipt.includes("7234992998")&&receipt.includes("DELTA_B_SOURCE_EQUIVALENT"),"exact Q18 source-equivalent receipt");
+  for(const [n,ch,oldSha,newSha,blocks,answers] of rows){
+   const lesson="docs/thpt-preview/sgk/lop-11/chuong-"+ch+"/bai-"+n+".md";
+   const old=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root});
+   const now=fs.readFileSync(path.join(root,lesson));
+   assert.equal(blob(old),oldSha);assert.equal(blob(now),newSha);
+   assert(receipt.includes(oldSha)&&receipt.includes(newSha),"exact B"+n+" receipt");
+   const before=old.toString("utf8"),after=now.toString("utf8"),fix=normalizeG12DisplayBlocks(before);
+   assert.deepEqual([fix.total,fix.affected,fix.inserted],[blocks,blocks,blocks*2]);
+   assert.equal(after,fix.text,"B"+n+" only blank separators may change");
+   assert.deepEqual(before.split("\n").filter(l=>l.trim()),after.split("\n").filter(l=>l.trim()));
+   assert.deepEqual(latex(before),latex(after));
+   assert.deepEqual(firstAnswers(before),firstAnswers(after));
+   assert.equal(firstAnswers(after).length,answers,"unchanged voluntary comparison answers");
+   for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-fig-id"])assert.deepEqual(tokenSet(before,id),tokenSet(after,id));
+   assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(after));
+   console.log("PASS #1132 G11 B"+n+" exact source/Q15/Q16: "+blocks+" unchanged TeX blocks, "+(blocks*2)+" blank separators, "+answers+" unchanged answers");
+  }
   return;
  }
  const b16Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md","prototypes/thpt/ux795/G11_B16_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
