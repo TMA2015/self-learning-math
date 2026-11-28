@@ -440,7 +440,7 @@
   },
   {
     "item_id": "THPT-G11-CHIX-B31-C05",
-    "content_version": "CD09-BANK-PARTIAL-20261127-THPT-G11-CHIX-B31-C05",
+    "content_version": "CD09-BANK-PARTIAL-20261127-THPT-G11-CHIX-B31-C05-XG6-20261128",
     "stem": "Phát biểu đúng quan hệ giữa có đạo hàm và liên tục tại một điểm trong khoảng xác định.",
     "answer_key": "Có đạo hàm thì liên tục; chiều ngược lại không luôn đúng.",
     "worked_solution": "Nếu \\(f'(a)\\) tồn tại hữu hạn, thương \\(\\frac{f(a+h)-f(a)}h\\) tiến đến số hữu hạn ấy. Nhân với h đang tiến đến 0, được \\(f(a+h)-f(a)\\to0\\). Vậy f liên tục tại a. Ngược lại, hàm \\(f(x)=|x|\\) liên tục tại 0 nhưng hai thương một phía khác nhau, nên không có đạo hàm tại 0.",
@@ -448,7 +448,7 @@
       "G11-B31-CONTINUITY_NECESSARY"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Từ thương sai phân, nhân lại với h để xét liên tục."
     ],
