@@ -216,7 +216,7 @@ Khi một tích phân không có nguyên hàm sơ cấp hoặc dữ liệu chỉ
 
 **Rubric /5:** 1đ tính \(f''\) và M; 1đ lập cận; 1đ giải bất đẳng thức; 1đ chọn 13 và kiểm 12; 1đ phân biệt cận với sai số thực, có thể dùng phép tính trực tiếp tương đương. Phần kiểm thêm làm rõ trường hợp riêng, không yêu cầu học thuộc công thức tổng bình phương để được điểm.
 
-**D6 HELP `HELP-G12-EXP01-O04` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Cần chứng minh |f′′(x)|≤M trên toàn [a,b] trước khi dùng bound. (2) Ghi đúng bất đẳng thức M(b−a)³/(12n²)<ε. (3) Với f=x²,[0,1],M=2,ε=0,001: n²>1000/6. (4) Kiểm n=12 chưa đủ, n=13 thỏa; đây là cận trên, không phải sai số thật. (5) Chọn n đúng cho đề, rồi mới áp dụng tổng hình thang. Không ghi Mastery.
+**D6 HELP `HELP-G12-EXP01-O04` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Cần chứng minh \(\lvert f''(x)\rvert\le M\) trên toàn \([a;b]\) trước khi dùng cận sai số. (2) Lập bất đẳng thức \(\frac{M(b-a)^3}{12n^2}<\varepsilon\). (3) Với \(f(x)=x^2\) trên \([0;1]\), \(M=2\), \(\varepsilon=0{,}001\): cần \(n^2>\frac{1000}{6}\). (4) Kiểm \(n=12\) không đủ bảo đảm, \(n=13\) thỏa; riêng hàm này, phép tính trực tiếp trong lời giải cho thấy cận bằng sai số thật. Với hàm khác, cận lớn hơn ngưỡng chưa chứng minh sai số thật vượt ngưỡng. (5) Chọn n đúng cho đề rồi áp dụng tổng hình thang. Không ghi Mastery.
 
 ### G12-SGK-EXP01-O05 — Ứng dụng bảng dữ liệu và đơn vị tích lũy
 **Vì sao:** Khi chỉ có số liệu tại các mốc, quy tắc hình thang đưa dữ liệu rời rạc thành lượng tích lũy xấp xỉ.
@@ -251,7 +251,7 @@ Khi một tích phân không có nguyên hàm sơ cấp hoặc dữ liệu chỉ
 
 **Rubric /5:** 1đ xác định \(h=2\,\mathrm s\); 1đ lập đúng tổng hình thang; 1đ tính 22; 1đ ghi đơn vị mét và hiểu giả thiết không âm; 1đ nêu hạn chế của xấp xỉ. Chấp nhận cách cộng từng hình thang.
 
-**D6 HELP `HELP-G12-EXP01-O05` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Đọc trục thời gian/chiều dài và đơn vị của mỗi cột. (2) Nếu các mốc không cách đều, chia theo từng khoảng và dùng hᵢ riêng. (3) Với mốc 0,1,3 và diện tích 2,4,5: 1×(2+4)/2+2×(4+5)/2=12. (4) Đơn vị thể tích cm³, quãng đường m; từ bảng dữ liệu không tự suy được cận f′′. (5) Quay lại bảng gốc, tính từng hình thang và nêu một giới hạn đo lường. Không ghi Mastery.
+**D6 HELP `HELP-G12-EXP01-O05` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Đọc trục thời gian/chiều dài và đơn vị của mỗi cột. (2) Nếu các mốc không cách đều, chia theo từng khoảng và dùng \(h_i\) riêng. (3) Với mốc 0, 1, 3 và diện tích tương ứng 2, 4, 5, tổng hình thang là \(1\cdot\frac{2+4}{2}+2\cdot\frac{4+5}{2}=12\). (4) Đơn vị thể tích là \(\mathrm{cm}^3\) nếu diện tích tính bằng \(\mathrm{cm}^2\) và chiều dài bằng cm; quãng đường tính bằng m nếu thời gian tính bằng s và vận tốc bằng m/s. Từ bảng dữ liệu không tự suy được cận \(f''\). (5) Quay lại bảng gốc, tính từng hình thang và nêu một giới hạn đo lường. Không ghi Mastery.
 
 ## Kết thúc trải nghiệm — tự kiểm tra thao tác và giải thích
 Trả lời lần lượt các câu Application theo thứ tự đã học. Đây là **secondary placement** của 5 ID `-A01` đến `-A05` đã tồn tại, không tạo `ITEM_ID` mới. Tự đánh giá chất lượng mô hình và lời giải; công khai chỉ `CLIENT_SELF_CHECK_NO_MASTERY`. Không gọi đây là đề RD1 kín hay `SGK_CHAPTER_READINESS`; không hiện lời giải/rubric trước thao tác tự mở/Final Submit theo hợp đồng RELEASE.
@@ -386,7 +386,7 @@ Một hình 3D được nhìn qua màn hình 2D nên góc nhìn có thể tạo 
 
 **Rubric /5:** 1đ dựng đúng sáu đỉnh; 1đ nối đúng chín cạnh; 1đ kiểm mặt đáy và cạnh bên; 1đ tính diện tích đáy và chiều cao; 1đ thể tích bằng 6. Chấp nhận mô tả dựng và kiểm chứng tương đương.
 
-**D6 HELP `HELP-G12-EXP02-O02` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Xác định ba đỉnh đáy không thẳng hàng trước khi tạo khối. (2) Khai báo ba đỉnh phía trên bằng cùng véc-tơ tịnh tiến. (3) Đáy A(0,0,0),B(2,0,0),C(0,2,0): diện tích=2. (4) Chiều cao 3 cho V=6; hình có 6 đỉnh, 9 cạnh, 5 mặt. (5) Quay về mô hình của bạn, kiểm 6 tọa độ và không trộn diện tích với thể tích. Không ghi Mastery.
+**D6 HELP `HELP-G12-EXP02-O02` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Xác định ba đỉnh đáy không thẳng hàng trước khi tạo khối. (2) Khai báo ba đỉnh phía trên bằng cùng vectơ tịnh tiến. (3) Với đáy \(A(0;0;0), B(2;0;0), C(0;2;0)\), diện tích bằng 2. (4) Chiều cao 3 cho \(V=6\); hình có 6 đỉnh, 9 cạnh, 5 mặt. (5) Quay về mô hình của bạn, kiểm 6 tọa độ và không trộn diện tích với thể tích. Không ghi Mastery.
 
 ### G12-SGK-EXP02-O03 — Chọn góc nhìn và kiểm chứng tính thật của hình dựng
 **Vì sao:** Nhìn mô hình từ nhiều góc giúp phân biệt kết luận thật với hiệu ứng phối cảnh phụ thuộc người quan sát.
@@ -456,7 +456,7 @@ Một hình 3D được nhìn qua màn hình 2D nên góc nhìn có thể tạo 
 
 **Rubric /5:** 1đ tính đúng \(M(0,v)\); 1đ tính đúng \(M(2\pi,-v)\); 1đ kiểm cả hai cặp điểm; 1đ giải thích đảo chiều; 1đ nêu giới hạn của suy luận từ ảnh.
 
-**D6 HELP `HELP-G12-EXP02-O04` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Nhớ miền u∈[0,2π],v∈[−1,1] và nửa vòng xoắn. (2) Viết M(0,v) và M(2π,−v), chứng minh chúng bằng nhau. (3) Kiểm v=1: cả hai cùng (3/2,0,0). (4) Kiểm v=−1: cả hai cùng (1/2,0,0); đừng suy từ một ảnh chụp. (5) Với bài của bạn, chú giải ghép mép đảo dấu v và xác định điều gì là quan sát/giả thuyết. Không ghi Mastery.
+**D6 HELP `HELP-G12-EXP02-O04` — năm bước khắc phục đúng năng lực (chỉ hiện khi học sinh chủ động mở):** (1) Nhớ miền \(u\in[0;2\pi],\ v\in[-1;1]\) và nửa vòng xoắn. (2) Viết \(M(0,v)\) và \(M(2\pi,-v)\), chứng minh chúng bằng nhau. (3) Kiểm \(v=1\): hai điểm ghép cùng tọa độ \(\left(\frac32;0;0\right)\). (4) Kiểm \(v=-1\): hai điểm ghép cùng tọa độ \(\left(\frac12;0;0\right)\); đừng suy từ một ảnh chụp. (5) Với bài của bạn, chú giải ghép mép đảo dấu v và xác định điều gì là quan sát/giả thuyết. Không ghi Mastery.
 
 ### G12-SGK-EXP02-O05 — Thiết kế báo cáo mô hình 3D tái lập và nhận diện giới hạn
 **Vì sao:** Trải nghiệm hình học phải tạo khả năng trình bày kiểm chứng, không chỉ một hình đẹp.
