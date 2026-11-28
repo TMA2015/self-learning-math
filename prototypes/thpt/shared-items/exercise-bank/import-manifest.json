@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "169c00f990f456050e46ea3a5099a086987db0b0",
+    "as_of_commit": "ad5cdea83b28ef9f5213e1a763694ca3c1d69866",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "09: reconcile exact affected-source evidence (22 previous new IDs + 1 D6 variant + 9 CD22 integrated variants, and D6/order placements) with 01–08 scoped receipts, Q01–Q18/A1–A7, source lock and X-E V2/ready/REGISTER. Recompute inventory; no blanket PASS or CONTENT_READY until actual proof. Then 10 handoff.",
-    "status": "CHECKLIST_08_TARGETED_GAPS_CLOSED_CHECKLIST_09_PENDING",
+    "next": "09: finish exact-scope academic/PED source-lock for 23 new SGK items (19 Level1 + 3 first-try + 1 D6 variant), seven materially revised CD22 first-tries plus two mapping-only records, and changed D6/order placements; reconcile existing 01–08 evidence (not full re-audit), validate cross-shard ID/placement integrity and all applicable A1–A7/Q01–Q18. If PASS, sign one Q18 receipt and V2/ready/REGISTER under X-E, then 10 handoff. No runtime QA or automatic PASS.",
+    "status": "CHECKLIST_09_Q18_CONTENT_CHECK_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,116 +112,65 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "checklist08_targeted_gaps_closed_20261128",
-    "checklist08_targeted_gaps_closed_20261128": {
-      "scope": "Item08 remaining named Q02/Q05/Q08/Q14/Q15/Q17/X-G.6 candidate gaps, using prior item06–08 scoped evidence; no runtime or whole-bank Q18 claim.",
-      "base_commit": "95b371c6f7f3388476ecacf58563fde5a108ea73",
-      "after_commit": "169c00f990f456050e46ea3a5099a086987db0b0",
-      "sgk_d6": {
-        "verified_references": {
-          "g10": 139,
-          "g11": 52,
-          "g12": 40,
-          "total": 231,
-          "invalid": 0
+    "current_checkpoint_key": "checklist09_inventory_and_q16_candidate_modes_20261128",
+    "checklist09_inventory_and_q16_candidate_modes_20261128": {
+      "scope": "Start item09 at exact item08 checkpoint; full structural inventory read, candidate use corrections for CD21/CD22; academic acceptance not inferred.",
+      "base_commit": "3d7ac03305906014c1acb92aa7570a83ab5c46dd",
+      "after_commit": "ad5cdea83b28ef9f5213e1a763694ca3c1d69866",
+      "inventory": {
+        "interactive_rows": 2237,
+        "written_reference_rows": 325,
+        "total_rows": 2562,
+        "placement_rows": 4310,
+        "interactive_by_shard_group": {
+          "topic_cd01_11": 243,
+          "topic_cd12_16": 98,
+          "topic_cd17_22_and_topic_first_try": 491,
+          "g10_formative": 365,
+          "g10_public_selfcheck": 143,
+          "g11_all": 482,
+          "g12_all": 415
         },
-        "selection": "Same-path lesson skill/outcome match; specific unmatched cases inspected and addressed with same/earlier SGK practice or additional shared placements. Structural resolution is not independent item-level semantic/PED evidence.",
-        "new_item": "THPT-G10-B15-D6-01",
-        "reused_sgk_placements": [
-          "THPT-TOP14-P17",
-          "THPT-TOP14-P23"
-        ],
-        "blobs": {
-          "g10": "cbb1b011d1f217134f12ad9496f4113a12cf402c",
-          "g11": "f5a4e4a3e26c4c8d82e3c774b3ecd5ccce206cec",
-          "g12": "d8eca9315a8b099c19b66d6f78b4dc209f47b324",
-          "new_item": "388ec360acc529cc0ff818355b24a5a5f466440b"
-        }
+        "placements_by_shard_group": {
+          "cd01_11": 962,
+          "cd12_22": 991,
+          "g10": 547,
+          "g11": 737,
+          "g12": 659,
+          "topic_first_try": 414
+        },
+        "duplicates_within_read_groups": 0,
+        "note": "Counts independently recomputed from exact snapshot, agree with item08 delta. Cross-group identity/placement join still requires final exact reconciliation; source field variants basis_blob and scope_receipt.blob legitimate, not missing source claims. Structural checks do not prove Q18."
       },
-      "topic_order": {
-        "groups_checked": 10,
-        "groups_unchanged": [
-          "CD10 G5",
-          "CD12 G1",
-          "CD15 G3"
-        ],
-        "groups_reordered": [
-          "CD09 G1",
-          "CD11 G1",
-          "CD16 G4",
-          "CD17 G1",
-          "CD18 G2",
-          "CD18 G4",
-          "CD18 G6"
-        ],
-        "changed_practice_orders": 76,
-        "affected_first_try_bindings": 28,
-        "changed_numbered_feedback": 27,
-        "readback_first_try_bindings": 127,
-        "readback_errors": 0,
-        "method": "Stable sort canonical difficulty within existing interactive slots, preserve Written slots, groups, selfcheck placements and IDs; update actual ID-linked D6 numbers.",
-        "blobs": {
-          "cd09": "9c899e038a58b5ceab27d8a932a933af5b04aff4",
-          "cd11": "25d1d9ee07d14ae99d901a934439a60192eda343",
-          "cd16": "af784eda68bf33e92f9dc5b783a31f89d7296675",
-          "cd17": "d266621c835eb81d7ab227c22ad5cb4dbf8f7e60",
-          "cd18": "f686c0e64287a6a2efbb62bbe4b39651de6596e6"
-        }
+      "candidate_q16_delta": {
+        "missing_selfcheck_modes_fixed": 47,
+        "missing_practice_modes_fixed": 109,
+        "cd21": {
+          "selfcheck": 8,
+          "practice": 14,
+          "blob": "7bdfa23e15c80169e1f75564762d19b3928554e8"
+        },
+        "cd22": {
+          "selfcheck": 39,
+          "practice": 95,
+          "blob": "33651602c384ee0eb50590135283dddba3d2430c"
+        },
+        "selfcheck_invalid_after": 0,
+        "practice_invalid_after": 0,
+        "reveal": "AFTER_WHOLE_SUBMISSION",
+        "hints_before_submission": false,
+        "mastery": false,
+        "scope": "Metadata only; no runtime, grading activation, Firebase, private RD1, or score changes."
       },
-      "cd22": {
-        "knowledge_source_blob": "bde0820d157a5169d3cf365c846cf11169d40035",
-        "retained_first_try": 13,
-        "changed_integrated_ids": [
-          "THPT-TOP22-T01",
-          "THPT-TOP22-T02",
-          "THPT-TOP22-T05",
-          "THPT-TOP22-T06",
-          "THPT-TOP22-T07",
-          "THPT-TOP22-T09",
-          "THPT-TOP22-T10",
-          "THPT-TOP22-T12",
-          "THPT-TOP22-T13"
-        ],
-        "stem_key_solution_delta_ids": [
-          "THPT-TOP22-T01",
-          "THPT-TOP22-T02",
-          "THPT-TOP22-T05",
-          "THPT-TOP22-T06",
-          "THPT-TOP22-T09",
-          "THPT-TOP22-T10",
-          "THPT-TOP22-T12"
-        ],
-        "mapping_only_ids": [
-          "THPT-TOP22-T07",
-          "THPT-TOP22-T13"
-        ],
-        "distinct_skills_outcomes_in_first_try": 39,
-        "unmapped_practice_outcomes_after": 0,
-        "invalid_target_bindings": 0,
-        "method": "Read actual 13 knowledge sections and practice tasks; expand tasks for rounding/accuracy, outlier interpretation, stddev, group width/sample/interpretation, mode conditions, range sensitivity, two variance methods; preserve existing canonical IDs and first-try section positions. O01 and O06 already directly demonstrated in existing T07/T13. Material changes require scoped Q18.",
-        "first_try_item_blob": "23ccc318cead941eded99e56147bca3d7333c5c7",
-        "first_try_placement_blob": "6c2e7984a3e1def769a575397c487b216de9f6da"
-      },
-      "inventory_delta": {
-        "previous_expected_unique": 2561,
-        "previous_expected_interactive": 2236,
-        "previous_expected_written": 325,
-        "previous_expected_placements": 4307,
-        "added_unique": 1,
-        "added_interactive": 1,
-        "added_placements": 3,
-        "expected_unique": 2562,
-        "expected_interactive": 2237,
-        "expected_written": 325,
-        "expected_placements": 4310,
-        "status": "DERIVED_DELTA_RECOMPUTE_AT_09"
-      },
-      "remaining": "09 exact source locks, Q18 for new and materially revised records, Q01–Q18/A1–A7 evidence and V2/ready/REGISTER; no CONTENT_READY or release authorization."
+      "remaining": {
+        "status": "Q18_CONTENT_CHECK_PENDING",
+        "scope": "23 new SGK IDs from item08 checkpoints, 7 material CD22 IDs and 2 mapping-only IDs, D6/order affected scope and exact Q18/A1–A7 consolidation, global cross-shard integrity and X-E source lock/V2/ready/REGISTER. No claim of P0/P1=0 or CONTENT_READY; no need for independent review unless unresolved academic question."
+      }
     },
     "previous_manifest": {
-      "commit": "95b371c6f7f3388476ecacf58563fde5a108ea73",
-      "blob": "065b0948fb00807c39dff147c51a1c4c57b53c6d",
-      "key": "checklist08_sgk_level_and_first_try_delta_20261128"
+      "commit": "3d7ac03305906014c1acb92aa7570a83ab5c46dd",
+      "blob": "81da6b4cf35e5f150c368499e848beb312618fdc",
+      "key": "checklist08_targeted_gaps_closed_20261128"
     }
   },
   "pending_review": {
