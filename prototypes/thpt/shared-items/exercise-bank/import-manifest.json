@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "ff82346c8e1b5c50468f46948b69ee37e4640aed",
+    "as_of_commit": "935a7248a1120f25b40b415387b0a9f9c60f7c93",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 482/910 (441 interactive +41 Written), CD01–11 complete; next CD12 onward 428 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 507/910 (462 interactive +45 Written), CD01–12 complete; next CD13 onward 403 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -8346,12 +8346,161 @@
                     ]
                   ],
                   "findings": "Read six canonical Written blocks; W01–04/W06 legacy raw math normalized in all learner fields including seven 1-point criteria; W05 already typeset. Source 4f2b330ec2c745df2ee4156569cad28d10dd57a0, six bindings refreshed at ff82346c8e1b5c50468f46948b69ee37e4640aed. Preserve intended math/assessment."
+                },
+                {
+                  "shard": "items/cd12.json",
+                  "blob": "11e18ae0a695138b910edba39835a270c90b0ffc",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "d3be4a9148a2077c6551cb2be0e0f0e2edb1ae6d",
+                  "evidence_cp": "CP90",
+                  "records": [
+                    [
+                      "THPT-TOP12-P01",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP12-P02",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP12-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP12-P04",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP12-P05",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP12-P06",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP12-P07",
+                      89,
+                      6
+                    ],
+                    [
+                      "THPT-TOP12-P08",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP12-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP12-P10",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP12-P11",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP12-P12",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read all changed/new fields and inherit identical five CP90 fields only. P10/P11 normalize option comparison notation, no answer change. Data 7718b799848a4deabb017287f49004315b5a9a86."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "d40344c651a1eae8d63c20f0eddc6e6c60680c47",
+                  "evidence_cp": "08.2-CD12-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP12-KFT01",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT03",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT05",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT06",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT07",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT08",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT09",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT10",
+                      0,
+                      31
+                    ],
+                    [
+                      "THPT-TOP12-KFT11",
+                      0,
+                      31
+                    ]
+                  ],
+                  "findings": "Read all nine Topic-only FirstTry records; four IDs inline notation corrections. Readback 3a30a6535a7161c25425a156bc2776cdd3806285."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "60db8ea50a27a9daae5075cefb12102dc0ce18ad",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC12_TRIANGLE_NEW16_PUBLIC_CANONICAL_R03_20261116.md",
+                  "source_blob": "f594146a77070ccd3758742f22bb481f3d72a95f",
+                  "evidence_cp": "08.2-CD12-Written",
+                  "records": [
+                    [
+                      "THPT-TOP12-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP12-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP12-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP12-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read four canonical Written blocks; W01/W03/W04 fractions and interval punctuation normalized, rubric points unchanged. Exact source 096f75ebe65a5d79fe9e322ffbed2509fe7897f3; all four bindings refreshed at 935a7248a1120f25b40b415387b0a9f9c60f7c93."
                 }
               ],
-              "completed_interactive": 441,
-              "completed_written": 41,
-              "remaining_interactive": 388,
-              "remaining_written": 40,
+              "completed_interactive": 462,
+              "completed_written": 45,
+              "remaining_interactive": 367,
+              "remaining_written": 36,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -8407,12 +8556,17 @@
                   "interactive": 44,
                   "written": 6,
                   "state": "COMPLETE"
+                },
+                "CD12": {
+                  "interactive": 21,
+                  "written": 4,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD12 onward; exclude 975 shared and 482 completed Topic-only IDs",
+              "next": "CD13 onward; exclude 975 shared and 507 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_11": 482,
-                "completed_cd01_11": 482,
+                "expected_cd01_12": 507,
+                "completed_cd01_12": 507,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
