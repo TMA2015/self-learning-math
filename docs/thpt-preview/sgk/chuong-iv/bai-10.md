@@ -51,7 +51,7 @@
 
         **Kết quả:** \((5;-5)\).
 
-        **Vì sao:** 2u=(4;−2); trừ v=(-1;3) nghĩa là (4−(−1);−2−3)=(5;−5).
+        **Vì sao:** \(2\vec u=(4;-2)\); trừ \(\vec v=(-1;3)\) theo từng thành phần: \(2\vec u-\vec v=(4-(-1);-2-3)=(5;-5)\).
 
 
     **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B10-01).
@@ -65,7 +65,7 @@
 
         **Kết quả:** 5 đơn vị.
 
-        **Vì sao:** AB=(3;4), nên AB=√(3²+4²)=5. 7 là tổng chặng theo hai trục, không phải khoảng cách thẳng.
+        **Vì sao:** \(\overrightarrow{AB}=(3;4)\), nên \(AB=|\overrightarrow{AB}|=\sqrt{3^2+4^2}=5\). 7 là tổng chặng theo hai trục, không phải khoảng cách thẳng.
 
 
     **Kiểm lỗi dùng chung:** [Xem hướng dẫn tự sửa](#HELP-G10-B10-01).
@@ -221,7 +221,7 @@
 
     **Giải:** (a) \(\vec v_{\mathrm{riêng}}=(0;5)\), \(\vec v_{\mathrm{dòng}}=(3;0)\), nên \(\vec v_{\mathrm{bờ}}=(3;5)\,\mathrm{m/s}\). Thời gian qua sông \(t=96/5=19{,}2\,\mathrm s\); độ trôi Đông \(3\cdot19{,}2=57{,}6\,\mathrm m\).
 
-    (b) Muốn không trôi phải có \(\vec v_{\mathrm{bờ},x}=0\), tức thành phần vận tốc riêng hướng Tây bằng \(-3\). Vì tốc độ riêng bằng \(5\), thành phần Bắc cần dương:
+    (b) Muốn không trôi phải có \(\vec v_{\mathrm{bờ},x}=0\), tức thành phần vận tốc riêng theo trục Ox (chiều dương về Đông) bằng \(-3\) m/s, tức 3 m/s về Tây. Vì tốc độ riêng bằng \(5\), thành phần Bắc cần dương:
     <div class="arithmatex">\(\displaystyle v_{\mathrm{riêng},y}=\sqrt{5^2-3^2}=4\,\mathrm{m/s}.\)</div>
     Do đó \(\vec v_{\mathrm{riêng}}=(-3;4)\), \(\vec v_{\mathrm{bờ}}=(0;4)\,\mathrm{m/s}\); thời gian qua sông \(96/4=24\,\mathrm s\), không trôi sang Đông.
 

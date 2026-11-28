@@ -51,7 +51,7 @@
 
         **Cách làm sai:** Lực \(10\,\mathrm N\) tạo góc \(120^\circ\) với độ dời \(3\,\mathrm m\) nhưng thay \(\cos60^\circ\), thu được công \(+15\,\mathrm J\).
 
-        **Vì sao sai:** Góc giữa hai vectơ **đúng theo hướng mũi tên** là \(120^\circ\), nên cos âm. Tích vô hướng có dấu; lấy góc nhọn phụ hoặc lấy giá trị tuyệt đối sẽ làm mất ý nghĩa tác dụng cản chuyển động.
+        **Vì sao sai:** Góc giữa hai vectơ **đúng theo hướng mũi tên** là \(120^\circ\), nên cos âm. Tích vô hướng có dấu; lấy góc nhọn bù với góc tù đã cho hoặc lấy giá trị tuyệt đối sẽ làm mất ý nghĩa tác dụng cản chuyển động.
 
         **Tự sửa:** \(W=10\cdot3\cos120^\circ=-15\,\mathrm J\). Kiểm lại: góc tù ⇒ công âm; góc vuông ⇒ công bằng 0.
 
@@ -93,7 +93,7 @@
     Nếu hai vectơ khác không có tích vô hướng 0 thì cos góc giữa chúng là 0, vì tích độ dài dương; góc bằng 90°. Chiều ngược lại cũng đúng.
 
 
-    Kiểm tra hai vectơ khác không trước, sau đó tính tích vô hướng; \(\vec0\cdot\vec v=0\) nhưng không suy góc vuông với vectơ-không.
+    Kiểm tra hai vectơ khác không trước, sau đó tính tích vô hướng; \(\vec0\cdot\vec v=0\) nhưng không suy ra một góc duy nhất bằng 90°; vectơ-không vuông góc với mọi vectơ theo quy ước SGK.
 
     **Em vận dụng.** \(\vec u=(2;3)\), \(\vec v=(3;-2)\). Chúng có vuông góc không? Vì sao điều kiện khác 0 quan trọng?
 
@@ -101,7 +101,7 @@
 
         **Kết quả:** Có, vì \(\vec u\cdot\vec v=2\cdot3+3\cdot(-2)=0\), và cả hai khác \(\vec0\).
 
-        **Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.
+        **Vì sao:** Nếu một vectơ bằng 0 thì tích vẫn bằng 0 nhưng góc giữa chúng có thể nhận giá trị tùy ý từ 0° đến 180°; vectơ-không vuông góc với mọi vectơ theo quy ước SGK.
 
 
 
@@ -127,7 +127,7 @@
 
     Biết lực \(\vec F\) đo N, độ dời \(\vec s\) đo m, góc giữa hai vectơ khác không và tích vô hướng. 
 
-    Chỉ thành phần lực cùng chiều độ dời tạo công có dấu: \(W=\vec F\cdot\vec s=|\vec F||\vec s|\cos\theta\); cùng chiều cho dương, ngược chiều cho âm, vuông góc cho 0.
+    Với lực không đổi, công được xác định bởi thành phần lực theo hướng độ dời: \(W=\vec F\cdot\vec s=|\vec F||\vec s|\cos\theta\); cùng chiều cho dương, ngược chiều cho âm, vuông góc cho 0.
 
 
     Xác định hướng tương đối của lực và độ dời trước, kiểm đơn vị N·m=J; không lấy giá trị tuyệt đối khi bài hỏi công có dấu.

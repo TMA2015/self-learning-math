@@ -204,7 +204,7 @@
 
     #### Hệ quả: trung điểm và trọng tâm
 
-    **Trung điểm:** Nếu \(I\) là trung điểm \(AB\), hai vectơ \(\overrightarrow{IA}\) và \(\overrightarrow{IB}\) đối nhau. Với điểm \(O\) tùy ý, tổng \(\overrightarrow{OA}+\overrightarrow{OB}\) đi qua trung điểm theo công thức dưới đây.
+    **Trung điểm:** Nếu \(I\) là trung điểm \(AB\), hai vectơ \(\overrightarrow{IA}\) và \(\overrightarrow{IB}\) đối nhau. Với điểm \(O\) tùy ý, tổng \(\overrightarrow{OA}+\overrightarrow{OB}\) bằng hai lần vectơ \(\overrightarrow{OI}\) theo công thức dưới đây.
 
     **Trọng tâm:** Trong tam giác \(ABC\), nếu \(M\) là trung điểm \(BC\), \(G\) là trọng tâm thì \(G\) thuộc trung tuyến \(AM\) và \(AG:GM=2:1\). Đặt các đẳng thức vectơ theo đúng điểm đầu/điểm cuối; không đổi thành đẳng thức độ dài.
 

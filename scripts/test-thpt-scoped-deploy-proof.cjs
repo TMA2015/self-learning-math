@@ -1205,6 +1205,36 @@ function main(){
   }
   return;
  }
+
+ const ch34Lessons=["docs/thpt-preview/sgk/chuong-iii/bai-5.md","docs/thpt-preview/sgk/chuong-iv/bai-7.md","docs/thpt-preview/sgk/chuong-iv/bai-8.md","docs/thpt-preview/sgk/chuong-iv/bai-9.md","docs/thpt-preview/sgk/chuong-iv/bai-10.md","docs/thpt-preview/sgk/chuong-iv/bai-11.md"];
+ const ch34Files=["docs/thpt-preview/sgk/chuong-iii/bai-5.md","docs/thpt-preview/sgk/chuong-iv/bai-7.md","docs/thpt-preview/sgk/chuong-iv/bai-8.md","docs/thpt-preview/sgk/chuong-iv/bai-9.md","docs/thpt-preview/sgk/chuong-iv/bai-10.md","docs/thpt-preview/sgk/chuong-iv/bai-11.md","prototypes/thpt/ux795/G10_B05_B11_MATH_WORDING_Q18_DELTA_1132_20261128.md","scripts/thpt-q18-g10-source-receipt.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-scoped-release-qa.yml","prototypes/thpt/content-drafts/THPT_G10_CHIV_B09_CANONICAL.md","prototypes/thpt/content-drafts/THPT_G10_CHIV_B10_CANONICAL.md","prototypes/thpt/content-drafts/THPT_G10_CHIV_B11_CANONICAL.md"];
+ if(changed.length===ch34Files.length&&new Set(changed).size===changed.length&&changed.every(x=>ch34Files.includes(x))){
+  const receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G10_B05_B11_MATH_WORDING_Q18_DELTA_1132_20261128.md"),"utf8");
+  assert(receipt.includes("DELTA_B_SOURCE_EQUIVALENT")&&receipt.includes("7234992998"));
+  assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).sort(),ch34Lessons.slice().sort());
+  const {candidateG10KnowledgeBlob}=require("./thpt-q18-g10-source-receipt.cjs");
+  const counts={"5":6,"7":5,"8":5,"9":5,"10":6,"11":5};
+  for(const lesson of ch34Lessons){
+   const n=Number(lesson.match(/bai-(\d+)\.md$/)[1]);
+   const before=cp.execFileSync("git",["show",previous+":"+lesson],{cwd:root}).toString("utf8");
+   const now=fs.readFileSync(path.join(root,lesson),"utf8");
+   const prev=blob(before),next=blob(now),tick=String.fromCharCode(96);
+   assert(receipt.includes("**PREVIOUS_B"+n+"_SOURCE_BLOB:** "+tick+prev+tick));
+   assert(receipt.includes("**CANDIDATE_B"+n+"_SOURCE_BLOB:** "+tick+next+tick));
+   assert.equal(candidateG10KnowledgeBlob(n),next,"exact reversible source delta");
+   for(const id of ["data-thpt-first-try-id","data-thpt-help-id","data-thpt-help-ref","data-thpt-fig-id","data-outcome-id"])assert.deepEqual(tokenSet(before,id),tokenSet(now,id));
+   const labels=s=>[...s.matchAll(/^    \?\?\? question "[^"]+"$/gm)].map(m=>m[0]);
+   assert.equal(labels(before).length,counts[n]);assert.deepEqual(labels(before),labels(now));
+   // Only two incorrect B08 payloads MB/MC become vectors, locked by exact source proof.
+   let mathBase=before;
+   if(n===8){const a="tính chất trung điểm \\(MB\\) và \\(MC\\) đối nhau.",b="tính chất trung điểm: hai vectơ \\(\\overrightarrow{MB}\\) và \\(\\overrightarrow{MC}\\) đối nhau.";assert.equal(before.split(a).length,2);mathBase=before.replace(a,b);}
+   assert(originalMathPreserved(mathBase,now),"all correct original math retained");
+   assert.deepEqual([...now.matchAll(/^=== "([^"]+)"$/gm)].map(m=>m[1]),["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"]);
+   assert(!/data-(?:thpt-readiness|mastery-credit|mastery-write|thpt-final)/i.test(now));
+   console.log("PASS #1132 G10 ChIII-IV A/B source/Q15/Q16 B"+n+" "+prev+" -> "+next);
+  }
+  return;
+ }
  const wording1132Lessons=["docs/thpt-preview/sgk/chuong-i/bai-1.md","docs/thpt-preview/sgk/chuong-i/bai-2.md","docs/thpt-preview/sgk/chuong-ii/bai-3.md","docs/thpt-preview/sgk/chuong-ii/bai-4.md"];
  const wording1132Files=["docs/thpt-preview/sgk/chuong-i/bai-1.md","docs/thpt-preview/sgk/chuong-i/bai-2.md","docs/thpt-preview/sgk/chuong-ii/bai-3.md","docs/thpt-preview/sgk/chuong-ii/bai-4.md","prototypes/thpt/ux795/G10_B01_B04_MATH_WORDING_Q18_DELTA_1132_20261128.md","scripts/thpt-q18-g10-source-receipt.cjs","scripts/test-thpt-scoped-deploy-proof.cjs","scripts/test-thpt-release-impact.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
  if(changed.length===wording1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>wording1132Files.includes(x))){

@@ -71,6 +71,120 @@ function release1132HistoricalText(n,content,previousSha){
 }
 // #1132 A/B: exact reversible wording-only successors, old receipts immutable.
 const release1132WordingDelta=new Map([
+[
+  5,
+  {
+   "old": "79f8101d34430bc0d672558115191a95875014a6",
+   "updated": "d780fee8215028d3d2295f4223ce33df6430f169",
+   "swaps": [
+    [
+     "so sánh độ cao với độ lệch ngang",
+     "là tỉ số giữa tung độ và hoành độ có dấu trên nửa đường tròn đơn vị"
+    ],
+    [
+     "để đưa góc vào khoảng cần xét.",
+     "để đưa góc vào khoảng cần xét. Các phím hàm ngược dùng để tìm góc, không phải lấy nghịch đảo của giá trị sin, cos hay tan. Riêng khi tan bằng 0, cả góc 0° và 180° đều là nghiệm trong đoạn đang xét."
+    ],
+    [
+     "thành phần tọa độ đứng tính từ **vị trí thấp nhất**",
+     "độ lệch theo phương đứng so với tâm là \\(-R\\cos\\theta\\), còn góc quay được đo từ **vị trí thấp nhất**"
+    ]
+   ]
+  }
+ ],
+ [
+  7,
+  {
+   "old": "e76a0ae4f9628ffd1d183b44eaae1c35e454bf13",
+   "updated": "c0337d68bea1383254316c2d852e41ba053f8523",
+   "swaps": [
+    [
+     "Nếu cùng đường thẳng thì chúng ngược hướng.",
+     "Hai vectơ ngược hướng dù giá của chúng trùng nhau hay là hai đường thẳng song song khác nhau."
+    ]
+   ]
+  }
+ ],
+ [
+  8,
+  {
+   "old": "9e5c9227417484e3bbea4f0ba085ff844100f321",
+   "updated": "b3a8e44fb06e42b7c9e084fb2c3f1d9d9974c3cf",
+   "swaps": [
+    [
+     "CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.",
+     "\\(\\overrightarrow{CA}+\\overrightarrow{AB}=\\overrightarrow{CB}\\) theo quy tắc ba điểm; \\(\\overrightarrow{CB}\\) và \\(\\overrightarrow{BC}\\) là hai vectơ đối."
+    ],
+    [
+     "Rút gọn khi các mũi tên chưa được xếp nối tiếp",
+     "Rút gọn chuỗi vectơ bằng quy tắc ba điểm"
+    ],
+    [
+     "tính chất trung điểm \\(MB\\) và \\(MC\\) đối nhau.",
+     "tính chất trung điểm: hai vectơ \\(\\overrightarrow{MB}\\) và \\(\\overrightarrow{MC}\\) đối nhau."
+    ]
+   ]
+  }
+ ],
+ [
+  9,
+  {
+   "old": "f589e9a61841b12dfbf427c1a92dd5105612d584",
+   "updated": "e357830a83f5d0a3fe113b796b4bb759cd75e746",
+   "swaps": [
+    [
+     "tổng \\(\\overrightarrow{OA}+\\overrightarrow{OB}\\) đi qua trung điểm theo công thức dưới đây.",
+     "tổng \\(\\overrightarrow{OA}+\\overrightarrow{OB}\\) bằng hai lần vectơ \\(\\overrightarrow{OI}\\) theo công thức dưới đây."
+    ]
+   ]
+  }
+ ],
+ [
+  10,
+  {
+   "old": "7b0428899b64a9986689dc5723d119b4356eb06b",
+   "updated": "bfb94e213e9e56f498baec8aac9d3c9897eec5b7",
+   "swaps": [
+    [
+     "2u=(4;−2); trừ v=(-1;3) nghĩa là (4−(−1);−2−3)=(5;−5).",
+     "\\(2\\vec u=(4;-2)\\); trừ \\(\\vec v=(-1;3)\\) theo từng thành phần: \\(2\\vec u-\\vec v=(4-(-1);-2-3)=(5;-5)\\)."
+    ],
+    [
+     "AB=(3;4), nên AB=√(3²+4²)=5.",
+     "\\(\\overrightarrow{AB}=(3;4)\\), nên \\(AB=|\\overrightarrow{AB}|=\\sqrt{3^2+4^2}=5\\)."
+    ],
+    [
+     "thành phần vận tốc riêng hướng Tây bằng \\(-3\\).",
+     "thành phần vận tốc riêng theo trục Ox (chiều dương về Đông) bằng \\(-3\\) m/s, tức 3 m/s về Tây."
+    ]
+   ]
+  }
+ ],
+ [
+  11,
+  {
+   "old": "313a27573cd679234c62f5041587ea86de684733",
+   "updated": "d48815c7346d6b4dff091e0792097ec459f5e642",
+   "swaps": [
+    [
+     "lấy góc nhọn phụ",
+     "lấy góc nhọn bù với góc tù đã cho"
+    ],
+    [
+     "nhưng không suy góc vuông với vectơ-không.",
+     "nhưng không suy ra một góc duy nhất bằng 90°; vectơ-không vuông góc với mọi vectơ theo quy ước SGK."
+    ],
+    [
+     "góc giữa hai vectơ không xác định theo định nghĩa dùng ở đây.",
+     "góc giữa chúng có thể nhận giá trị tùy ý từ 0° đến 180°; vectơ-không vuông góc với mọi vectơ theo quy ước SGK."
+    ],
+    [
+     "Chỉ thành phần lực cùng chiều độ dời tạo công có dấu:",
+     "Với lực không đổi, công được xác định bởi thành phần lực theo hướng độ dời:"
+    ]
+   ]
+  }
+ ],
  [
   1,
   {
@@ -331,6 +445,8 @@ function chviKiemLoiCandidate(name,immutablePublished){
   "ChVI Kiểm lỗi pending reviewer evidence missing");
  return matches[1];
 }
+// Exact successor pairs for #1132 ChIV; Section A alone may change.
+const release1132CanonicalDelta=new Map([[9,{"old":"daa2b7c89b08e46f86093f9b2205785e1caeb4ea","updated":"c7137287b1b3fcf872258149d7297d3103c94e4e"}],[10,{"old":"be44fd35b3a39e814a11d0b422cfe64f67d5e7e4","updated":"357499096e25a4a5bf5de1166472df868f142a67"}],[11,{"old":"22228598320ee81549c4ee9783559e2d4ff9476c","updated":"599fedbcaab1bd42b2257180bdec1513cac4f573"}]]);
 function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscriptSha){
  const receiptPath=path.join(root,
   "prototypes/thpt/ux795/G10_CHIV_CHV_B07_B14_KIEM_LOI_PLACEMENT_Q18_R01_20261120.md");
@@ -375,7 +491,25 @@ function currentOneCanonicalAfterKiểmLỗi(name,priorPublicSha,priorManuscript
  const bytes=fs.readFileSync(lessonPath),full=fs.readFileSync(manuscriptPath);
  const gitblob=b=>require("node:crypto").createHash("sha1")
   .update(Buffer.from("blob "+b.length+String.fromCharCode(0))).update(b).digest("hex");
- assert.equal(gitblob(bytes),currentSource,name+" current public Knowledge must exactly match R01 receipt");
+ const successor=release1132CanonicalDelta.get(number);
+ if(successor){
+  assert.equal(currentMaster,successor.old,name+" exact prior manuscript");
+  const newSource=release1132WordingCandidate(number,currentSource);
+  const delta=release1132WordingDelta.get(number);
+  const live=bytes.toString("utf8"),master=full.toString("utf8");
+  const start="<!-- BEGIN_"+name+"_KNOWLEDGE_MARKDOWN -->\n",end="\n<!-- END_"+name+"_KNOWLEDGE_MARKDOWN -->";
+  assert.equal(master.split(start).length,2);assert.equal(master.split(end).length,2);
+  assert.equal(master.split(start)[1].split(end)[0],live,name+" exact current one-source parity");
+  let previous=live;
+  for(const [before,after] of [...delta.swaps].reverse()){
+   assert.equal(previous.split(after).length,2);previous=previous.replace(after,before);
+  }
+  assert.equal(gitblob(Buffer.from(previous)),currentSource);
+  assert.equal(gitblob(Buffer.from(master.replace(start+live+end,start+previous+end))),currentMaster,name+" all non-Knowledge manuscript bytes unchanged");
+  assert.equal(gitblob(full),successor.updated,name+" exact current manuscript successor");
+  currentSource=newSource;currentMaster=successor.updated;
+ }
+ assert.equal(gitblob(bytes),currentSource,name+" current public Knowledge must exactly match receipt chain");
  assert.equal(gitblob(full),currentMaster,name+" ONE current canonical manuscript must exactly match R01 receipt");
  const src=bytes.toString("utf8"),master=full.toString("utf8");
  const b="<!-- BEGIN_"+name+"_KNOWLEDGE_MARKDOWN -->\n";
@@ -1744,7 +1878,7 @@ function expectedG10KnowledgeBlob(lesson,legacy){
     "B09 R02 current source SHA malformed");
   }
  }
- return newest;
+ return release1132Candidate(n,newest);
 }
 function candidateG10KnowledgeBlob(lesson){
  const sentinel="0".repeat(40),result=expectedG10KnowledgeBlob(lesson,sentinel);
