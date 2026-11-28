@@ -69,7 +69,7 @@
 
     Cũng cần phân biệt **xung khắc** với **độc lập**. Với *một* lần gieo xúc xắc, “ra \(2\)” và “ra \(5\)” không thể cùng xảy ra (xung khắc), nhưng biết đã ra \(2\) khiến cơ hội “ra \(5\)” trở thành \(0\); như vậy chúng **không độc lập**. Ngược lại, hai con xúc xắc độc lập vẫn có thể đồng thời cho kết quả chẵn. Độc lập không có nghĩa “không bao giờ cùng xảy ra”.
 
-    **Vận dụng.** Một hộp có \(2\) bi đỏ và \(1\) bi xanh; lấy hai lượt. Gọi \(C\): “lượt một lấy đỏ”, \(D\): “lượt hai lấy đỏ”. Hãy so sánh xác suất của \(D\) khi **có trả lại** và **không trả lại**, xét riêng trường hợp \(C\) xảy ra và \(C\) không xảy ra. Kết luận về độc lập.
+    **Vận dụng.** Một hộp có \(2\) bi đỏ và \(1\) bi xanh giống nhau về kích thước. Lấy hai lượt, mỗi lượt chọn ngẫu nhiên đều trong số bi hiện có; nếu hoàn lại thì trả bi, trộn đều và chọn lại độc lập. Gọi \(C\): “lượt một lấy đỏ”, \(D\): “lượt hai lấy đỏ”. Hãy so sánh xác suất của \(D\) khi **có trả lại** và **không trả lại**, xét riêng trường hợp \(C\) xảy ra và \(C\) không xảy ra. Kết luận về độc lập.
 
     ??? question "Đối chiếu"
 
@@ -153,7 +153,7 @@
 
     ### 3.5. Hai lượt lấy bi: có hoàn lại và không hoàn lại
 
-    **Đề bài.** Hộp có \(4\) bi đỏ và \(5\) bi xanh giống nhau. Hai bạn lần lượt rút mỗi người một bi. Gọi \(A\): “bạn đầu rút đỏ”, \(B\): “bạn sau rút xanh”. Trong trường hợp (a) trả bi lại trước lượt sau; (b) không trả bi lại, hãy xét \(A,B\) có độc lập không.
+    **Đề bài.** Hộp có \(4\) bi đỏ và \(5\) bi xanh giống nhau. Hai bạn lần lượt rút mỗi người một bi, mỗi lượt chọn ngẫu nhiên đều trong số bi hiện có. Gọi \(A\): “bạn đầu rút đỏ”, \(B\): “bạn sau rút xanh”. Trong trường hợp (a) trả bi, trộn đều rồi chọn lại độc lập ở lượt sau; (b) không trả bi lại, hãy xét \(A,B\) có độc lập không.
 
     **Phân tích:** Không xét số lượt bằng cảm giác. Hãy đếm lại **thành phần hộp trước lượt thứ hai** trong hai khả năng: lần đầu rút đỏ và lần đầu rút xanh.
 

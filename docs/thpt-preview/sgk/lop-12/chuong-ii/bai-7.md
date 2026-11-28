@@ -156,14 +156,14 @@
 
     Để tìm một điểm cuối khi biết điểm đầu và vectơ độ dời, lập ba phương trình từ quy tắc trên. Trong hình lăng trụ, hình hộp, dùng các vectơ cạnh tương ứng bằng nhau hoặc quy tắc hình bình hành để tìm đỉnh còn thiếu.
 
-    **Liên hệ:** tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách \(r=OM\), góc phương vị \(\theta\) của hình chiếu trên \((Oxy)\) và góc cực \(\phi\) giữa \(OM\) với \(Oz\). Khi \(M\) không nằm trên \(Oz\), ba đại lượng liên hệ bởi
+    **Liên hệ:** tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách \(r=OM\), góc phương vị \(\theta\in[0;2\pi)\) đo từ tia Ox dương đến vectơ từ O tới hình chiếu trên (Oxy) theo chiều dương, và góc cực \(\phi\in[0;\pi]\) giữa tia OM với tia Oz dương. Khi \(M\) không nằm trên \(Oz\), ba đại lượng liên hệ bởi
 
     \[
     x=r\sin\phi\cos\theta,\quad
     y=r\sin\phi\sin\theta,\quad z=r\cos\phi.
     \]
 
-    Trong đó \(r=\sqrt{x^2+y^2+z^2}\), \(\cos\phi=z/r\); nếu \(x\ne0\), \(\tan\theta=y/x\), nhưng phải xét góc phần tư để xác định đúng góc phương vị. Trên trục \(Oz\) không có một góc phương vị duy nhất; tại \(O\) cả hướng đều không xác định. Đây là kiến thức đọc thêm, không phải yêu cầu tính toán chính của Bài 7.
+    Trong đó \(r=\sqrt{x^2+y^2+z^2}\), \(\cos\phi=z/r\); nếu \(x\ne0\), \(\tan\theta=y/x\), nhưng phải xét góc phần tư để xác định đúng góc phương vị. Nếu \(x=0\) và \(y\ne0\), thì \(\theta=\pi/2\) khi \(y>0\), còn \(\theta=3\pi/2\) khi \(y<0\). Trên trục \(Oz\) không có một góc phương vị duy nhất; tại \(O\) cả hướng đều không xác định. Đây là kiến thức đọc thêm, không phải yêu cầu tính toán chính của Bài 7.
 
 === "Ví dụ"
 
@@ -205,7 +205,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(AB=4,\ AD=5,\ AA'=2\). Tọa độ các đỉnh là:</p><p>\(A(0;0;0),\ B(4;0;0),\ D(0;5;0),\ C(4;5;0)\);</p><p>\(A'(0;0;2),\ B'(4;0;2),\ D'(0;5;2)\).</p></div>
 
-    **Kiểm lại:** Bốn đỉnh đáy có cao độ \(0\); bốn đỉnh trên có cao độ \(2\). Các vectơ \(AA',BB',CC',DD'\) đều có tọa độ \((0;0;2)\). Hình này có thể hình dung bằng cách thay ba độ dài của hình hộp ở tab Khám phá.
+    **Kiểm lại:** Bốn đỉnh đáy có cao độ \(0\); bốn đỉnh trên có cao độ \(2\). Các vectơ \(\overrightarrow{AA'},\overrightarrow{BB'},\overrightarrow{CC'},\overrightarrow{DD'}\) đều có tọa độ \((0;0;2)\). Hình này có thể hình dung bằng cách thay ba độ dài của hình hộp ở tab Khám phá.
 
     ### 3.5. Tọa độ vectơ và điều kiện bằng nhau
 

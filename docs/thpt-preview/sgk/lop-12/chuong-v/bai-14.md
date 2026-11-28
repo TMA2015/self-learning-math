@@ -346,7 +346,7 @@
 
     **Phân tích:** \(L=2+2+2+3=9\), bình phương độ dài pháp tuyến bằng 9.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(d=9/3=3\). Tọa độ hình chiếu \(H=M-(9/9)(1;2;-2)=(1;-1;1)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> \(d=9/3=3\). Tính từng thành phần tọa độ hình chiếu theo \(\overrightarrow{OH}=\overrightarrow{OM}-(9/9)(1;2;-2)\), thu được \(H(1;-1;1)\).</p></div>
 
     **Kiểm lại:** \(1-2-2+3=0\), \(\overrightarrow{MH}=(-1;-2;2)\), độ dài 3 và cùng phương pháp tuyến.
 

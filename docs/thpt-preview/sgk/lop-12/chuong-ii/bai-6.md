@@ -218,7 +218,7 @@
 
     **Đề bài.** Cho tứ diện \(ABCD\). Chứng minh \(\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AD}+\overrightarrow{CB}\).
 
-    **Phân tích:** Bốn điểm không đồng phẳng nên không dựng hình bình hành tùy tiện. Chèn một điểm để xuất hiện hai vectơ đối.
+    **Phân tích:** Bốn điểm không đồng phẳng nên không dựng hình bình hành tùy tiện. Chèn điểm D vào vectơ AB, đổi thứ tự các số hạng để ghép hai vectơ CD và DB nối tiếp theo quy tắc ba điểm.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(\overrightarrow{AB}=\overrightarrow{AD}+\overrightarrow{DB}\). Do đó \(\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AD}+\overrightarrow{CD}+\overrightarrow{DB}=\overrightarrow{AD}+\overrightarrow{CB}\).</p></div>
 

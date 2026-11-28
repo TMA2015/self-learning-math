@@ -69,7 +69,7 @@
     Hãy kiểm hai trường hợp đặc biệt. Đường song song hoặc nằm trong mặt phẳng có hướng vuông góc pháp tuyến, tích vô hướng bằng 0 và góc đường–mặt bằng \(0^\circ\). Đường vuông góc với mặt phẳng có chỉ phương cùng phương pháp tuyến, tỉ số bằng 1 và góc bằng \(90^\circ\). Công thức vẫn dùng được khi hình chiếu của đường thẳng suy biến thành một điểm. Nếu cần phân biệt đường nằm trong hay song song phân biệt, ngoài tích vô hướng còn phải thay một điểm của đường vào phương trình mặt phẳng.
 
     <!-- OUTCOME_ID: G12-CHV-B16-O05 -->
-    Trong bài toán độ dốc, nếu hai điểm có hiệu cao độ \(\Delta z\), khoảng cách theo đường thẳng là \(L>0\), thì góc với mặt ngang thỏa \(\sin\theta=|\Delta z|/L\). Nếu biết khoảng cách ngang \(h>0\) thay cho \(L\), dùng \(\tan\theta=|\Delta z|/h\). Độ dốc phần trăm là \(100|\Delta z|/h\%\), không phải số đo góc. Ví dụ đường dốc cao 1 m và chiếu ngang 10 m có độ dốc 10%, nhưng góc chỉ khoảng \(5{,}7^\circ\).
+    Trong bài toán độ dốc, nếu hai điểm có hiệu cao độ \(\Delta z\), khoảng cách theo đường thẳng là \(L>0\), thì góc với mặt ngang thỏa \(\sin\theta=|\Delta z|/L\). Nếu biết khoảng cách ngang \(h>0\) thay cho \(L\), dùng \(\tan\theta=|\Delta z|/h\). Độ lớn độ dốc phần trăm là \(100|\Delta z|/h\%\), không phải số đo góc. Nếu xét độ dốc có dấu theo chiều từ A đến B, dùng \(100(z_B-z_A)/h\%\): âm khi đi xuống dốc. Ví dụ đường dốc cao 1 m và chiếu ngang 10 m có độ dốc 10%, nhưng góc chỉ khoảng \(5{,}7^\circ\).
 
     <!-- FIRST_TRY_ID: B16-T02 -->
     **Vận dụng.** Một thanh nối hai vị trí \(A(1;2;1)\) và \(B(5;5;3)\), đơn vị mét. Tính góc giữa thanh và mặt ngang \(z=0\). Tính thêm độ dốc phần trăm theo chiều đi từ \(A\) tới \(B\).

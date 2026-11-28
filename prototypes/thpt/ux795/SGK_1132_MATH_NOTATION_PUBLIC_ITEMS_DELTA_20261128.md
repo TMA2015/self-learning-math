@@ -440,6 +440,216 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
         "after": "hai điểm đặc biệt \\((0;1)\\) và \\((1;2)\\) của đồ thị này"
       }
     ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md",
+    "old": "c13fea0e82a408692ba43fe0e8fa6fdbdeaa83f9",
+    "edits": [
+      {
+        "before": "Nghiệm \\(2^x>4\\) là **\\(x>2\\)**, chỉ gồm phần đường cong ở phía trên đường ngưỡng",
+        "after": "Tập nghiệm của \\(2^x>4\\) gồm các hoành độ của những điểm trên đường cong \\(y=2^x\\) nằm phía trên đường ngưỡng \\(y=4\\), tức **\\(x>2\\)**"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md",
+    "old": "3e25e8777dcdff21bee39cffe5b3814bfa441737",
+    "edits": [
+      {
+        "before": "Một đoạn dốc dài 10 m, cao hơn nền 6 m.",
+        "after": "Một đoạn dốc dài 10 m, có đầu dưới nằm trên mặt nền ngang và đầu trên cao hơn nền 6 m."
+      },
+      {
+        "before": "Máy bay bay thẳng với tốc độ không đổi",
+        "after": "Máy bay xuất phát từ mặt đất phẳng và bay thẳng với tốc độ không đổi"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md",
+    "old": "ede75c644c6da8305090bf1210e17873144d9367",
+    "edits": [
+      {
+        "before": "Một hộp có \\(2\\) bi đỏ và \\(1\\) bi xanh; lấy hai lượt.",
+        "after": "Một hộp có \\(2\\) bi đỏ và \\(1\\) bi xanh giống nhau về kích thước. Lấy hai lượt, mỗi lượt chọn ngẫu nhiên đều trong số bi hiện có; nếu hoàn lại thì trả bi, trộn đều và chọn lại độc lập."
+      },
+      {
+        "before": "Hai bạn lần lượt rút mỗi người một bi.",
+        "after": "Hai bạn lần lượt rút mỗi người một bi, mỗi lượt chọn ngẫu nhiên đều trong số bi hiện có."
+      },
+      {
+        "before": "(a) trả bi lại trước lượt sau; (b) không trả bi lại",
+        "after": "(a) trả bi, trộn đều rồi chọn lại độc lập ở lượt sau; (b) không trả bi lại"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md",
+    "old": "134423d47faeed1a00ab5f9b0ed704119de67c64",
+    "edits": [
+      {
+        "before": "Long lấy đều một bóng từ hộp thứ nhất, Hải lấy đều một bóng từ hộp thứ hai.",
+        "after": "Long lấy đều một bóng từ hộp thứ nhất, Hải lấy đều một bóng từ hộp thứ hai; hai phép chọn độc lập."
+      },
+      {
+        "before": "Mỗi bạn lấy đều một bóng từ một hộp khác nhau.",
+        "after": "Long chọn ngẫu nhiên đều một bóng từ hộp I và Hải chọn ngẫu nhiên đều một bóng từ hộp II, hai phép chọn độc lập."
+      },
+      {
+        "before": "Hai hộp tách biệt nên kết quả rút ở hộp I không đổi thành phần hộp II. Hai biến cố độc lập.",
+        "after": "Theo giả thiết hai phép chọn độc lập, hai biến cố lấy bóng trắng và lấy bóng đen cũng độc lập."
+      },
+      {
+        "before": "Không thể nhân khi lấy vật không hoàn lại",
+        "after": "Không áp dụng công thức nhân xác suất của hai biến cố độc lập trong lần rút không hoàn lại này"
+      },
+      {
+        "before": "rút liên tiếp hai bi **không trả lại**.",
+        "after": "rút liên tiếp hai bi **không trả lại**, mỗi lượt chọn ngẫu nhiên đều trong số bi còn lại."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md",
+    "old": "82cfd851c3629e67793d91355d970011d8d1134e",
+    "edits": [
+      {
+        "before": "\\(t\\ge0\\) (s). Tính vận tốc khi vật đạt độ cao cực đại và khi chạm lại mặt đất.",
+        "after": "\\(0\\le t\\le20/4{,}9\\) (s), từ khi phóng đến lần chạm đất kế tiếp. Tính vận tốc khi vật đạt độ cao cực đại và ngay trước khi chạm lại mặt đất."
+      },
+      {
+        "before": "Thời điểm đạt đỉnh được xác định khi \\(v(t)=0\\).",
+        "after": "Vì \\(h(t)\\) là hàm bậc hai có hệ số \\(t^2\\) âm, độ cao cực đại đạt tại đỉnh parabol, \\(t=20/9{,}8\\) nằm trong miền vật lí; ở đó \\(v(t)=0\\)."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-3.md",
+    "old": "be100bd245a9caaa511c98f88b5d76280d9f503f",
+    "edits": [
+      {
+        "before": "xét dấu mẫu để xác định chiều vô cực.",
+        "after": "xét dấu cả tử và mẫu để xác định chiều vô cực: nếu giới hạn tử dương thì phân thức cùng dấu mẫu, nếu giới hạn tử âm thì phân thức trái dấu mẫu."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-i/bai-5.md",
+    "old": "6f9a867a541530c2c44ca03f016eb59348977306",
+    "edits": [
+      {
+        "before": "Chi phí biên ước tính gần đúng mức tăng, thấp hơn mức tăng chính xác \\(0{,}05\\) nghìn đồng.",
+        "after": "Đạo hàm được tính trên hàm chi phí mở rộng cho \\(q\\) thực. Với bước tăng một sản phẩm, \\(C'(60)\\cdot1=14\\) nghìn đồng là mức tăng ước tính, thấp hơn mức tăng chính xác \\(0{,}05\\) nghìn đồng."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-6.md",
+    "old": "e3091a022ce73d2a355aaf8dd1acc292e7bafce3",
+    "edits": [
+      {
+        "before": "Chèn một điểm để xuất hiện hai vectơ đối.",
+        "after": "Chèn điểm D vào vectơ AB, đổi thứ tự các số hạng để ghép hai vectơ CD và DB nối tiếp theo quy tắc ba điểm."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-7.md",
+    "old": "eb93bf6a1ac1fd07347bf01d872aae26957ebc78",
+    "edits": [
+      {
+        "before": "góc phương vị \\(\\theta\\) của hình chiếu trên \\((Oxy)\\) và góc cực \\(\\phi\\) giữa \\(OM\\) với \\(Oz\\).",
+        "after": "góc phương vị \\(\\theta\\in[0;2\\pi)\\) đo từ tia Ox dương đến vectơ từ O tới hình chiếu trên (Oxy) theo chiều dương, và góc cực \\(\\phi\\in[0;\\pi]\\) giữa tia OM với tia Oz dương."
+      },
+      {
+        "before": "nhưng phải xét góc phần tư để xác định đúng góc phương vị.",
+        "after": "nhưng phải xét góc phần tư để xác định đúng góc phương vị. Nếu \\(x=0\\) và \\(y\\ne0\\), thì \\(\\theta=\\pi/2\\) khi \\(y>0\\), còn \\(\\theta=3\\pi/2\\) khi \\(y<0\\)."
+      },
+      {
+        "before": "Các vectơ \\(AA',BB',CC',DD'\\)",
+        "after": "Các vectơ \\(\\overrightarrow{AA'},\\overrightarrow{BB'},\\overrightarrow{CC'},\\overrightarrow{DD'}\\)"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-ii/bai-8.md",
+    "old": "40b60e3419e71738bbfa61dcb4ff45c58c5342f2",
+    "edits": [
+      {
+        "before": "Nếu chỉ lấy \\(G-A-B\\), em đã quên",
+        "after": "Nếu chỉ lấy từng tọa độ của G trừ các tọa độ tương ứng của A và B, em đã quên"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-14.md",
+    "old": "20d336fa969d51bfe047b287e8efa05398ecd97a",
+    "edits": [
+      {
+        "before": "Tọa độ hình chiếu \\(H=M-(9/9)(1;2;-2)=(1;-1;1)\\).",
+        "after": "Tính từng thành phần tọa độ hình chiếu theo \\(\\overrightarrow{OH}=\\overrightarrow{OM}-(9/9)(1;2;-2)\\), thu được \\(H(1;-1;1)\\)."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-15.md",
+    "old": "0c3550887f8101a8a83db9e6a26a0784028001e2",
+    "edits": [
+      {
+        "before": "\\(d:M=A+t\\vec u\\)",
+        "after": "\\(d:\\overrightarrow{AM}=t\\vec u\\)"
+      },
+      {
+        "before": "Viết \\(A+t\\vec u=B+s\\vec v\\)",
+        "after": "Viết \\(\\overrightarrow{OA}+t\\vec u=\\overrightarrow{OB}+s\\vec v\\)"
+      },
+      {
+        "before": "Với \\(d_1:A+t\\vec u,\\ d_2:B+s\\vec v\\)",
+        "after": "Với \\(d_1:\\overrightarrow{AM}=t\\vec u\\) và \\(d_2:\\overrightarrow{BM}=s\\vec v\\) để tìm điểm chung M"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-16.md",
+    "old": "92e0bfa08d30927e170abde61519c17ffa042aa2",
+    "edits": [
+      {
+        "before": "Độ dốc phần trăm là \\(100|\\Delta z|/h\\%\\), không phải số đo góc.",
+        "after": "Độ lớn độ dốc phần trăm là \\(100|\\Delta z|/h\\%\\), không phải số đo góc. Nếu xét độ dốc có dấu theo chiều từ A đến B, dùng \\(100(z_B-z_A)/h\\%\\): âm khi đi xuống dốc."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-v/bai-17.md",
+    "old": "a1dc9094e7bd2701adf99c0716b2680df87a53a5",
+    "edits": [
+      {
+        "before": "bán kính thực \\(6371\\) km",
+        "after": "bán kính xấp xỉ \\(6371\\) km trong mô hình cầu"
+      },
+      {
+        "before": "Hình chiếu \\(H=I-\\frac13(2;-1;2)=(1/3;7/3;7/3)\\) là tiếp điểm.",
+        "after": "Từ \\(\\overrightarrow{OH}=\\overrightarrow{OI}-\\frac13(2;-1;2)\\), suy ra hình chiếu \\(H(1/3;7/3;7/3)\\) là tiếp điểm."
+      },
+      {
+        "before": "mặt cầu bán kính thực 6371 km",
+        "after": "mặt cầu bán kính xấp xỉ 6371 km"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-12/chuong-vi/bai-19.md",
+    "old": "e1dc4c032e6f6dfc509b9c51949f0d845fdbafd9",
+    "edits": [
+      {
+        "before": "Ba nhóm A, B, C chiếm lần lượt 50%, 30%, 20% lượt gửi hàng.",
+        "after": "Chọn ngẫu nhiên đều một lượt gửi hàng trong tập đang xét. Ba nhóm A, B, C đôi một không giao nhau và phủ hết tập, chiếm lần lượt 50%, 30%, 20% lượt gửi hàng."
+      },
+      {
+        "before": "Mỗi cá thể truyền ngẫu nhiên một trong hai gene, hai lần truyền độc lập. Tính xác suất con nhận hai gene b.",
+        "after": "Tại gen đang xét có hai alen B và b; mỗi bố hoặc mẹ truyền một trong hai alen của mình với xác suất bằng nhau, hai lần truyền độc lập. Tính xác suất con nhận hai alen b."
+      }
+    ]
   }
 ]
 ```

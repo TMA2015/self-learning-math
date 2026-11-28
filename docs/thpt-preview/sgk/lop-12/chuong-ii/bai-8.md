@@ -60,7 +60,7 @@
 
     ??? tip "Kiểm lỗi"
 
-        Để tìm \(C\), trước tiên phải nhân tọa độ \(G\) với \(3\), rồi mới trừ tọa độ \(A,B\). Nếu chỉ lấy \(G-A-B\), em đã quên rằng công thức trọng tâm có mẫu \(3\).
+        Để tìm \(C\), trước tiên phải nhân tọa độ \(G\) với \(3\), rồi mới trừ tọa độ \(A,B\). Nếu chỉ lấy từng tọa độ của G trừ các tọa độ tương ứng của A và B, em đã quên rằng công thức trọng tâm có mẫu \(3\).
 
     ### 1.2. Biểu thức tọa độ của tích vô hướng
 

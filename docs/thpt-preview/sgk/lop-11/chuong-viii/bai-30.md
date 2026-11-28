@@ -20,7 +20,7 @@
 
     ### 1.1. Công thức nhân xác suất cho hai biến cố độc lập
 
-    Hãy xét hai hộp bóng riêng biệt. Hộp thứ nhất có \(6\) bóng trắng và \(4\) bóng đen; hộp thứ hai có \(1\) bóng trắng và \(7\) bóng đen. Long lấy đều một bóng từ hộp thứ nhất, Hải lấy đều một bóng từ hộp thứ hai. Ta gọi \(A\) là “Long lấy bóng trắng”, \(B\) là “Hải lấy bóng đen”.
+    Hãy xét hai hộp bóng riêng biệt. Hộp thứ nhất có \(6\) bóng trắng và \(4\) bóng đen; hộp thứ hai có \(1\) bóng trắng và \(7\) bóng đen. Long lấy đều một bóng từ hộp thứ nhất, Hải lấy đều một bóng từ hộp thứ hai; hai phép chọn độc lập. Ta gọi \(A\) là “Long lấy bóng trắng”, \(B\) là “Hải lấy bóng đen”.
 
     Xác suất của \(A\) là \(6/10\), của \(B\) là \(7/8\). Giả sử Long và Hải chọn ngẫu nhiên độc lập, mỗi bóng trong hộp của mình có cơ hội như nhau. Khi đó kết quả lấy bóng của Long không thay đổi xác suất lấy bóng của Hải; hai biến cố này **độc lập**.
 
@@ -103,9 +103,9 @@
 
     ### 3.1. Hai hộp bóng và biến cố giao
 
-    **Đề bài.** Hộp I có \(6\) bóng trắng và \(4\) bóng đen; hộp II có \(1\) bóng trắng và \(7\) bóng đen. Mỗi bạn lấy đều một bóng từ một hộp khác nhau. Tính xác suất Long lấy trắng **và** Hải lấy đen.
+    **Đề bài.** Hộp I có \(6\) bóng trắng và \(4\) bóng đen; hộp II có \(1\) bóng trắng và \(7\) bóng đen. Long chọn ngẫu nhiên đều một bóng từ hộp I và Hải chọn ngẫu nhiên đều một bóng từ hộp II, hai phép chọn độc lập. Tính xác suất Long lấy trắng **và** Hải lấy đen.
 
-    **Phân tích:** Hai hộp tách biệt nên kết quả rút ở hộp I không đổi thành phần hộp II. Hai biến cố độc lập. Đếm hai cặp kết quả hoặc nhân hai xác suất đều được.
+    **Phân tích:** Theo giả thiết hai phép chọn độc lập, hai biến cố lấy bóng trắng và lấy bóng đen cũng độc lập. Đếm hai cặp kết quả hoặc nhân hai xác suất đều được.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Gọi \(A\): “Long lấy trắng”; \(B\): “Hải lấy đen”. Có \(P(A)=6/10=3/5\), \(P(B)=7/8\). Do độc lập, \(P(AB)=(3/5)(7/8)=21/40\). Có thể kiểm bằng đếm cặp bóng: \(6\cdot7=42\) kết quả thuận lợi trên \(10\cdot8=80\) kết quả đồng khả năng, nên \(42/80=21/40\).</p></div>
 
@@ -158,9 +158,9 @@
 
     **Kiểm lại:** \(752+1236+575+2437=5000\). Phần giao có xác suất \(0{,}1504\), nhỏ hơn từng xác suất biên \(0{,}3976\) và \(0{,}2654\), đúng tính chất tập con.
 
-    ### 3.6. Không thể nhân khi lấy vật không hoàn lại
+    ### 3.6. Không áp dụng công thức nhân xác suất của hai biến cố độc lập trong lần rút không hoàn lại này
 
-    **Đề bài.** Hộp có \(3\) bi đỏ và \(2\) bi xanh giống nhau; rút liên tiếp hai bi **không trả lại**. Gọi \(A\): “lần đầu lấy đỏ” và \(B\): “lần hai lấy đỏ”. Xét tính độc lập của \(A,B\), rồi tính xác suất hai lần đều đỏ bằng cách đếm các cặp có thứ tự.
+    **Đề bài.** Hộp có \(3\) bi đỏ và \(2\) bi xanh giống nhau; rút liên tiếp hai bi **không trả lại**, mỗi lượt chọn ngẫu nhiên đều trong số bi còn lại. Gọi \(A\): “lần đầu lấy đỏ” và \(B\): “lần hai lấy đỏ”. Xét tính độc lập của \(A,B\), rồi tính xác suất hai lần đều đỏ bằng cách đếm các cặp có thứ tự.
 
     **Phân tích:** Nếu lần đầu lấy đỏ, thành phần hộp đổi. Không được lấy \(P(A)P(B)\) chỉ vì có hai lượt. Có \(5\cdot4\) cặp bi có thứ tự đồng khả năng, trong đó \(3\cdot2\) cặp đều đỏ.
 

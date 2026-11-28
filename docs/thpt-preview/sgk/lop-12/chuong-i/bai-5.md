@@ -57,7 +57,7 @@
 
     ??? question "Đối chiếu"
 
-        \(C'(q)=0{,}1q+8\), nên \(C'(60)=14\) nghìn đồng/sản phẩm. \(C(61)-C(60)=0{,}05(61^2-60^2)+8=14{,}05\) nghìn đồng. Chi phí biên ước tính gần đúng mức tăng, thấp hơn mức tăng chính xác \(0{,}05\) nghìn đồng.
+        \(C'(q)=0{,}1q+8\), nên \(C'(60)=14\) nghìn đồng/sản phẩm. \(C(61)-C(60)=0{,}05(61^2-60^2)+8=14{,}05\) nghìn đồng. Đạo hàm được tính trên hàm chi phí mở rộng cho \(q\) thực. Với bước tăng một sản phẩm, \(C'(60)\cdot1=14\) nghìn đồng là mức tăng ước tính, thấp hơn mức tăng chính xác \(0{,}05\) nghìn đồng.
 
     ??? tip "Kiểm lỗi"
 

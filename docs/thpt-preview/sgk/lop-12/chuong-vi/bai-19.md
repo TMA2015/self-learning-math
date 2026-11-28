@@ -163,7 +163,7 @@
     ### 3.3. Toàn phần và Bayes với ba nhóm
 
     <!-- EX-G12-B19-O06 -->
-    **Đề bài.** Ba nhóm A, B, C chiếm lần lượt 50%, 30%, 20% lượt gửi hàng. Tỉ lệ giao muộn tương ứng là 2%, 3%, 6%. Tính tỉ lệ giao muộn chung và xác suất một lượt giao muộn thuộc C.
+    **Đề bài.** Chọn ngẫu nhiên đều một lượt gửi hàng trong tập đang xét. Ba nhóm A, B, C đôi một không giao nhau và phủ hết tập, chiếm lần lượt 50%, 30%, 20% lượt gửi hàng. Tỉ lệ giao muộn tương ứng là 2%, 3%, 6%. Tính tỉ lệ giao muộn chung và xác suất một lượt giao muộn thuộc C.
 
     **Phân tích:** Có ba nguồn, nên phải cộng đủ ba giao ở mẫu số.
 
@@ -195,7 +195,7 @@
 
     ### 3.6. Vận dụng xác suất toàn phần kết hợp độc lập
 
-    **Đề bài.** Trong mô hình di truyền đơn giản, bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu gene bb và 70% kiểu Bb. Mỗi cá thể truyền ngẫu nhiên một trong hai gene, hai lần truyền độc lập. Tính xác suất con nhận hai gene b.
+    **Đề bài.** Trong mô hình di truyền đơn giản, bố và mẹ được chọn độc lập từ một quần thể có 30% cá thể kiểu gene bb và 70% kiểu Bb. Tại gen đang xét có hai alen B và b; mỗi bố hoặc mẹ truyền một trong hai alen của mình với xác suất bằng nhau, hai lần truyền độc lập. Tính xác suất con nhận hai alen b.
 
     **Phân tích:** Với một cá thể, gene b được truyền chắc chắn nếu kiểu bb, và với xác suất \(1/2\) nếu kiểu Bb. Tính toàn phần trước, sau đó dùng độc lập theo giả thiết.
 
