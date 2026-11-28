@@ -200,7 +200,7 @@
 
     **Vì sao sai:** Liên tục tại a cần \(f(a)\) xác định và bằng giới hạn hữu hạn.
 
-    **Cách sửa:** Viết ba dòng kiểm: \(f(a)\); giới hạn hai phía; so sánh dấu bằng. Nếu thiếu một điều kiện thì giữ trạng thái gián đoạn.
+    **Cách sửa:** Viết ba dòng kiểm: \(f(a)\); giới hạn hai phía; so sánh dấu bằng. Nếu \(f(a)\) không xác định thì \(a\) không thuộc tập xác định, nên không xét tính liên tục tại đó. Nếu \(f(a)\) xác định nhưng giới hạn không tồn tại hoặc khác \(f(a)\), hàm không liên tục tại \(a\).
 
     ### 4.2. Không so hai phía ở điểm rẽ nhánh
 

@@ -150,7 +150,7 @@
 
     ### 2.4. Giới hạn vô cực của dãy số
 
-    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn \(+\infty\) và \(-\infty\)</strong><p>Dãy \((u_n)\) có <strong>giới hạn \(+\infty\)</strong> khi từ một số hạng nào đó trở đi, \(u_n\) lớn hơn <strong>mọi mốc dương</strong> cho trước; kí hiệu \(u_n\to+\infty\). Dãy có <strong>giới hạn \(-\infty\)</strong> nếu từ một lúc đủ muộn \(u_n\) nhỏ hơn <strong>mọi mốc âm có độ lớn tùy ý</strong>, tức với mọi \(M>0\) có \(u_n<-M\) kể từ một chỉ số đủ lớn.</p></div>
+    <div class="thpt-r4-knowledge-conclusion thpt-r4-concept-card" role="note"><strong>Định nghĩa — Giới hạn \(+\infty\) và \(-\infty\)</strong><p>Dãy \((u_n)\) có <strong>giới hạn \(+\infty\)</strong> khi với mỗi mốc \(M>0\) cho trước, tồn tại chỉ số \(N\) (có thể phụ thuộc \(M\)) sao cho mọi \(n\ge N\) đều có \(u_n>M\); kí hiệu \(u_n\to+\infty\). Dãy có <strong>giới hạn \(-\infty\)</strong> nếu với mỗi \(M>0\) cho trước, tồn tại chỉ số \(N\) (có thể phụ thuộc \(M\)) sao cho mọi \(n\ge N\) đều có \(u_n<-M\).</p></div>
 
     **Giới hạn cơ bản SGK:** \(n^k\to+\infty\) với số nguyên dương \(k\), \(q^n\to+\infty\) khi \(q>1\); \(-n^k\to-\infty\). Vô cực không phải một số thực.
 

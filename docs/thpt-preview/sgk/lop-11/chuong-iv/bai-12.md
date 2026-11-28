@@ -162,7 +162,7 @@
 
     **Phân tích:** Mặt \((Q)\) chứa \(MN\parallel(ABCD)\), lại có điểm chung \(C\); tính chất giao tuyến cho hướng qua \(C\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(MN\parallel AB\subset(ABCD)\) và \(MN\not\subset(ABCD)\), nên \(MN\parallel(ABCD)\). Mặt \((Q)\) chứa \(MN\) và \(C\); vì \(C\) thuộc đáy nhưng không thuộc \(MN\), \((Q)\) phân biệt với đáy và giao tuyến qua \(C\) song song \(MN\). Trong đáy, \(CD\parallel AB\parallel MN\). Vậy \((Q)\cap(ABCD)=CD\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(MN\parallel AB\subset(ABCD)\) và \(MN\not\subset(ABCD)\), nên \(MN\parallel(ABCD)\). Mặt \((Q)\) chứa \(MN\) và \(C\); vì \((Q)\) chứa \(MN\) không nằm trong đáy nên \((Q)\) phân biệt với đáy. Hai mặt có điểm chung \(C\), và giao tuyến qua \(C\) song song \(MN\). Trong đáy, \(CD\parallel AB\parallel MN\). Vậy \((Q)\cap(ABCD)=CD\).</p></div>
 
     **Kiểm lại:** \(D\in(Q)\) là kết quả suy từ việc giao tuyến qua \(C\) có hướng \(CD\); không phải tự mặc định mọi cạnh đáy thuộc \((Q)\).
 

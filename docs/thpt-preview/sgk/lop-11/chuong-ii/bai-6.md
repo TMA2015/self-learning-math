@@ -207,7 +207,7 @@
 
     ### 4.2. Nhầm \(n\) bước với \(n-1\) bước
 
-    **Dấu hiệu:** Viết \(u_n=u_1+nd\), dẫn đến \(u_1\ne u_1\) khi thay \(n=1\).
+    **Dấu hiệu:** Viết \(u_n=u_1+nd\), Thay \(n=1\) vào công thức này cho \(u_1+d\) thay vì \(u_1\); nếu \(d\ne0\), hai giá trị khác nhau.
 
     **Vì sao sai:** Từ vị trí đầu tới vị trí \(n\) chỉ có \(n-1\) khoảng.
 

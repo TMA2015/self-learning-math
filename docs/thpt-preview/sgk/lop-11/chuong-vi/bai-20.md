@@ -121,7 +121,7 @@
 
     ### 3.2. Lập bảng và đọc đồ thị hàm mũ tăng
 
-    **Đề bài.** Lập bảng giá trị của \(f(x)=2^x\) tại \(x=-2,-1,0,1,2\). Cho biết hai điểm cố định của dạng hàm mũ và chiều biến thiên.
+    **Đề bài.** Lập bảng giá trị của \(f(x)=2^x\) tại \(x=-2,-1,0,1,2\). Cho biết hai điểm đặc biệt \((0;1)\) và \((1;2)\) của đồ thị này và chiều biến thiên.
 
     **Phân tích:** Sử dụng quy tắc số mũ âm và 0 ở Bài 18; cơ số \(2>1\) đảm bảo đồng biến.
 

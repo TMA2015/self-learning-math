@@ -325,7 +325,7 @@
 
     ??? tip "Số hạng tự do và bài mở rộng chứa x⁻¹"
 
-        <p><strong>Dấu hiệu:</strong> Khai triển toàn bộ để tìm hạng không chứa x trong (a+bx)^n, hoặc tự động coi bài chứa x⁻¹ là Core bắt buộc.</p>
+        <p><strong>Cách làm chưa tối ưu:</strong> Khai triển toàn bộ để tìm hạng không chứa x vẫn đúng nhưng dài hơn chọn ngay hạng cần tìm. <strong>Nhầm phạm vi:</strong> Tự động coi bài chứa x⁻¹ là bài bắt buộc.</p>
         <p><strong>Bản chất toán:</strong> Trong (a+bx)^n (a,b là hằng số), hạng không chứa x là a^n. Nếu chứa x⁻¹ phải giải số mũ tổng quát bằng 0 và giữ điều kiện x≠0; đây là dạng mở rộng của bank hiện tại.</p>
         <p><strong>Tự sửa:</strong> Ôn B25 mục 1–2 và P07 để củng cố Core. P02/P05 là hỗ trợ mở rộng, P06 chuyên sâu tự chọn, không dùng làm yêu cầu đánh giá Core bắt buộc.</p>
         <p><strong>Kiến thức cần ôn:</strong> Số hạng tổng quát; điều kiện x≠0; B25 mục 1–2.</p>

@@ -141,7 +141,7 @@
 
     <span id="thpt-g10-chviii-try03" data-thpt-first-try-id="THPT-G10-CHVIII-TRY03" data-outcome-id="G10-B23-DIGIT_COUNT"></span>
 
-    Khi lập một số tự nhiên có **hai chữ số**, hàng chục phải khác 0; ký hiệu “01” thực chất là số 1, không phải số có hai chữ số. Từ 0,1,2,3, ta chọn hàng chục trước: có 3 cách (1,2,3). Sau mỗi cách, hàng đơn vị có 3 chữ số còn lại, kể cả 0 nếu chưa dùng. Vì mọi nhánh đầu đều có cùng 3 lựa chọn tiếp theo, số cách là \(3\cdot3=9\).
+    Khi lập một số tự nhiên có **hai chữ số khác nhau**, hàng chục phải khác 0; ký hiệu “01” thực chất là số 1, không phải số có hai chữ số. Từ 0,1,2,3, ta chọn hàng chục trước: có 3 cách (1,2,3). Sau mỗi cách, hàng đơn vị có 3 chữ số còn lại, kể cả 0 nếu chưa dùng. Vì mọi nhánh đầu đều có cùng 3 lựa chọn tiếp theo, số cách là \(3\cdot3=9\).
 
     Điều kiện “khác nhau” bắt buộc loại chữ số đã chọn ở hàng chục. Đừng áp kết quả cho mã ký tự có thể bắt đầu bằng 0: đó là **đối tượng đếm khác** và số cách cũng khác.
 
@@ -307,7 +307,7 @@
 
     <span data-thpt-help-id="D6-G10-B23-01" hidden></span>
 
-    ??? tip "4.1. Chọn cộng hay nhân chỉ bằng từ khóa và hoặc"
+    ??? tip "4.1. Nhầm quy tắc cộng và nhân khi chỉ dựa vào từ “và”, “hoặc”"
 
         <p><strong>Dấu hiệu:</strong> Dựa máy móc vào từ «hoặc» hay «và» mà không kiểm tra có các trường hợp rời nhau hoặc các bước liên tiếp.</p>
         <p><strong>Bản chất toán:</strong> Quy tắc cộng áp dụng cho các trường hợp loại trừ nhau; quy tắc nhân cho các bước lựa chọn. Khi nhóm giao nhau hoặc số cách mỗi bước tùy nhánh, cần chia trường hợp chính xác.</p>

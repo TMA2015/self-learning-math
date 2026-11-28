@@ -158,7 +158,7 @@
 
     ### 2.2. Phương trình \(\sin x=m\)
 
-    <div class="thpt-r4-key-formula" role="note"><strong>Công thức nghiệm — Phương trình sin</strong><p><strong>Điều kiện có nghiệm:</strong> \(|m|\le1\). Nếu \(|m|>1\), phương trình vô nghiệm.</p><p>Khi \(|m|\le1\), lấy duy nhất \(\alpha\in[-\pi/2;\pi/2]\) sao cho \(\sin\alpha=m\). Khi đó</p><p>\(\sin x=m\iff\begin{cases}x=\alpha+2k\pi,\\x=\pi-\alpha+2k\pi,\end{cases}\quad k\in\mathbb Z.\)</p><p><strong>Dạng so hai sin:</strong> \(\sin u=\sin v\iff u=v+2k\pi\) hoặc \(u=\pi-v+2k\pi\), \(k\in\mathbb Z\).</p></div>
+    <div class="thpt-r4-key-formula" role="note"><strong>Công thức nghiệm — Phương trình sin</strong><p><strong>Điều kiện có nghiệm:</strong> \(|m|\le1\). Nếu \(|m|>1\), phương trình vô nghiệm.</p><p>Khi \(|m|\le1\), lấy duy nhất \(\alpha\in[-\pi/2;\pi/2]\) sao cho \(\sin\alpha=m\). Khi đó</p><p>\(\sin x=m\) khi và chỉ khi \(x=\alpha+2k\pi\) hoặc \(x=\pi-\alpha+2k\pi\), với \(k\in\mathbb Z\).</p><p><strong>Dạng so hai sin:</strong> \(\sin u=\sin v\iff u=v+2k\pi\) hoặc \(u=\pi-v+2k\pi\), \(k\in\mathbb Z\).</p></div>
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B04_SIN_HALF_AUTHORING_RESET_20261123.svg" alt="Hai giao điểm của y bằng sin x và đường ngang y bằng một phần hai"><figcaption><strong>Tra hình khi đọc công thức:</strong> hai giao điểm trong một vòng minh họa hai họ \(\alpha+2k\pi\) và \(\pi-\alpha+2k\pi\). Hình dùng chung với tab Khám phá; điều kiện \(|m|\le1\) vẫn phải tự kiểm cho giá trị \(m\) khác.</figcaption></figure>
 

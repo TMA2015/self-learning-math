@@ -288,6 +288,158 @@ Owner authorization 7234992998; latest owner direct instruction after CP09. DELT
         "key": "stem"
       }
     ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-ii/bai-3.md",
+    "old": "03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+    "edits": [
+      {
+        "before": "Không đảo dấu khi chuyển vế hoặc nhầm nét liền với nét đứt",
+        "after": "Không đổi chiều bất đẳng thức khi nhân hoặc chia hai vế cho số âm; nhầm nét liền với nét đứt"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-ii/bai-4.md",
+    "old": "4c8bfa2bd9af3ac5a31da945abdc990ceaee4618",
+    "edits": [
+      {
+        "before": "**hai trục không âm**",
+        "after": "**hai nửa mặt phẳng \\(x\\ge0\\), \\(y\\ge0\\)**"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-v/bai-14.md",
+    "old": "66689cd750d75a0bd37cb6d3841314d18a566ec7",
+    "edits": [
+      {
+        "before": "Chọn R khi cần độ rộng toàn bộ, IQR khi quan tâm nửa giữa",
+        "after": "IQR (Interquartile Range) là khoảng tứ phân vị, còn kí hiệu là ΔQ = Q3 − Q1. Chọn R khi cần độ rộng toàn bộ, IQR khi quan tâm nửa giữa"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-viii/bai-23.md",
+    "old": "a5512d5a206d89808863257d5094e242e28d91c9",
+    "edits": [
+      {
+        "before": "Khi lập một số tự nhiên có **hai chữ số**, hàng chục phải khác 0;",
+        "after": "Khi lập một số tự nhiên có **hai chữ số khác nhau**, hàng chục phải khác 0;"
+      },
+      {
+        "before": "Chọn cộng hay nhân chỉ bằng từ khóa và hoặc",
+        "after": "Nhầm quy tắc cộng và nhân khi chỉ dựa vào từ “và”, “hoặc”"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/chuong-viii/bai-25.md",
+    "old": "d8491aa03be4d1356fbbbb902d7f97a6e8553e0d",
+    "edits": [
+      {
+        "before": "<p><strong>Dấu hiệu:</strong> Khai triển toàn bộ để tìm hạng không chứa x trong (a+bx)^n, hoặc tự động coi bài chứa x⁻¹ là Core bắt buộc.</p>",
+        "after": "<p><strong>Cách làm chưa tối ưu:</strong> Khai triển toàn bộ để tìm hạng không chứa x vẫn đúng nhưng dài hơn chọn ngay hạng cần tìm. <strong>Nhầm phạm vi:</strong> Tự động coi bài chứa x⁻¹ là bài bắt buộc.</p>"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+    "old": "515ad705f86b2448b262026f2f2fb8d3ec2e5bdc",
+    "edits": [
+      {
+        "before": "\\(\\sin x=m\\iff\\begin{cases}x=\\alpha+2k\\pi,\\\\x=\\pi-\\alpha+2k\\pi,\\end{cases}\\quad k\\in\\mathbb Z.\\)",
+        "after": "\\(\\sin x=m\\) khi và chỉ khi \\(x=\\alpha+2k\\pi\\) hoặc \\(x=\\pi-\\alpha+2k\\pi\\), với \\(k\\in\\mathbb Z\\)."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md",
+    "old": "15832bd010a1a965be901c1ed13bc9702366644e",
+    "edits": [
+      {
+        "before": "dẫn đến \\(u_1\\ne u_1\\) khi thay \\(n=1\\).",
+        "after": "Thay \\(n=1\\) vào công thức này cho \\(u_1+d\\) thay vì \\(u_1\\); nếu \\(d\\ne0\\), hai giá trị khác nhau."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md",
+    "old": "09abeb68746d84da84b8b29bfc34e933a518d988",
+    "edits": [
+      {
+        "before": "với \\(n\\in\\mathbb N^*\\).</p><p><strong>Nếu",
+        "after": "với \\(n\\in\\mathbb N^*\\); nếu dãy hữu hạn thì \\(n\\) không vượt quá số số hạng của dãy.</p><p><strong>Nếu"
+      },
+      {
+        "before": "Chỉ có điều kiện “mọi số hạng dương” mới giúp loại công bội âm trong tình huống này.",
+        "after": "Trong bài này, giả thiết “mọi số hạng dương” giúp loại công bội âm."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-11.md",
+    "old": "cc68e2f3089a5c79ee181aadc3d73e1f95ad2708",
+    "edits": [
+      {
+        "before": "\\(M\\in a\\subset(P),(R)\\) và \\(M\\in b\\subset(Q),(R)\\), nên",
+        "after": "\\(M\\in a\\), \\(a\\subset(P)\\), \\(a\\subset(R)\\); đồng thời \\(M\\in b\\), \\(b\\subset(Q)\\), \\(b\\subset(R)\\), nên"
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-12.md",
+    "old": "cd22cea2d2b016f7c62c5734179eceef24b25f6b",
+    "edits": [
+      {
+        "before": "vì \\(C\\) thuộc đáy nhưng không thuộc \\(MN\\), \\((Q)\\) phân biệt với đáy và giao tuyến qua \\(C\\) song song \\(MN\\).",
+        "after": "vì \\((Q)\\) chứa \\(MN\\) không nằm trong đáy nên \\((Q)\\) phân biệt với đáy. Hai mặt có điểm chung \\(C\\), và giao tuyến qua \\(C\\) song song \\(MN\\)."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-14.md",
+    "old": "2c44172b68321d0b9e9b515840ca548c90c00df0",
+    "edits": [
+      {
+        "before": "mặt phẳng không song song với phương chiếu.",
+        "after": "mặt phẳng không chứa bất kì đường thẳng nào cùng phương chiếu."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md",
+    "old": "5c1a81633b877074aa64a21e2cfd128de2f7db2a",
+    "edits": [
+      {
+        "before": "khi từ một số hạng nào đó trở đi, \\(u_n\\) lớn hơn <strong>mọi mốc dương</strong> cho trước; kí hiệu",
+        "after": "khi với mỗi mốc \\(M>0\\) cho trước, tồn tại chỉ số \\(N\\) (có thể phụ thuộc \\(M\\)) sao cho mọi \\(n\\ge N\\) đều có \\(u_n>M\\); kí hiệu"
+      },
+      {
+        "before": "nếu từ một lúc đủ muộn \\(u_n\\) nhỏ hơn <strong>mọi mốc âm có độ lớn tùy ý</strong>, tức với mọi \\(M>0\\) có \\(u_n<-M\\) kể từ một chỉ số đủ lớn.",
+        "after": "nếu với mỗi \\(M>0\\) cho trước, tồn tại chỉ số \\(N\\) (có thể phụ thuộc \\(M\\)) sao cho mọi \\(n\\ge N\\) đều có \\(u_n<-M\\)."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md",
+    "old": "989f397ebb88ed7a49ba9895c949bd85a3059585",
+    "edits": [
+      {
+        "before": "Nếu thiếu một điều kiện thì giữ trạng thái gián đoạn.",
+        "after": "Nếu \\(f(a)\\) không xác định thì \\(a\\) không thuộc tập xác định, nên không xét tính liên tục tại đó. Nếu \\(f(a)\\) xác định nhưng giới hạn không tồn tại hoặc khác \\(f(a)\\), hàm không liên tục tại \\(a\\)."
+      }
+    ]
+  },
+  {
+    "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md",
+    "old": "486af83a35ac295bf22bcd8e9b1ce3a428848550",
+    "edits": [
+      {
+        "before": "hai điểm cố định của dạng hàm mũ",
+        "after": "hai điểm đặc biệt \\((0;1)\\) và \\((1;2)\\) của đồ thị này"
+      }
+    ]
   }
 ]
 ```

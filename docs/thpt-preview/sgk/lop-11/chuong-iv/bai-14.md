@@ -190,7 +190,7 @@
 
     ### 3.8. Hình tròn có hình biểu diễn là elip
 
-    **Đề bài.** Một cửa sổ hình tròn nằm trong mặt phẳng không song song với phương chiếu. Hãy dự đoán dạng hình biểu diễn và cho biết có thể đọc bán kính thật từ trục lớn của ảnh hay không.
+    **Đề bài.** Một cửa sổ hình tròn nằm trong mặt phẳng không chứa bất kì đường thẳng nào cùng phương chiếu. Hãy dự đoán dạng hình biểu diễn và cho biết có thể đọc bán kính thật từ trục lớn của ảnh hay không.
 
     **Phân tích:** Hình tròn trong phép chiếu không suy biến cho ảnh là **hình elip**; trường hợp ảnh tròn là trường hợp đặc biệt. Phép chiếu không bảo toàn độ dài nói chung.
 

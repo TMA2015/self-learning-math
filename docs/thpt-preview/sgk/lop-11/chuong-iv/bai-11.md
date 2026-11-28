@@ -148,7 +148,7 @@
 
     **Phân tích:** Điểm \(M\) thuộc \(a\) và \(b\), nên thuộc cả ba mặt phẳng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(M\in a\subset(P),(R)\) và \(M\in b\subset(Q),(R)\), nên \(M\in(P)\cap(Q)=c\). Vậy cả ba giao tuyến cùng đi qua \(M\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(M\in a\), \(a\subset(P)\), \(a\subset(R)\); đồng thời \(M\in b\), \(b\subset(Q)\), \(b\subset(R)\), nên \(M\in(P)\cap(Q)=c\). Vậy cả ba giao tuyến cùng đi qua \(M\).</p></div>
 
     **Kiểm lại:** Nếu không có điểm gặp nhau thì theo định lí ba giao tuyến phân biệt phải **đôi một song song**, không thể chỉ một cặp cắt.
 
