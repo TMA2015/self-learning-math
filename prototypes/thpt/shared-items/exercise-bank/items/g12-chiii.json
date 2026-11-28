@@ -619,7 +619,7 @@
     "item_id": "THPT-G12-B09-P08",
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B09-P08",
     "stem": "Tần số (2,6,10,6), n=24, các nhóm liền nhau. Nêu vị trí n/4, 3n/4 và lớp dùng để nội suy từng tứ phân vị; giải thích trường hợp đúng biên.",
-    "answer_key": "6 và 18; lớp 2 và lớp 3 để nội suy; Q3 bằng biên chung lớp 3 và lớp 4.",
+    "answer_key": "6 và 18; lớp 2 và lớp 3 để nội suy; \\(Q_3\\) bằng biên chung lớp 3 và lớp 4.",
     "worked_solution": "Tần số tích lũy là 2, 8, 18, 24. Mốc \\(n/4=6\\) nằm trong lớp 2. Mốc \\(3n/4=18\\) trùng tần số tích lũy cuối lớp 3: nội suy lớp 3 cho đúng cận trên, cũng là cận dưới lớp 4 vì các lớp liền nhau. Đó là giá trị nội suy ở biên chung, không phải khẳng định cận phải thuộc lớp nửa kín thứ ba.",
     "skill_ids": [
       "G12-CHIII-B09-O04"
@@ -1627,7 +1627,7 @@
     "item_id": "THPT-G12-B10-P08",
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P08",
     "stem": "Câu “\\(s=16\\) giờ²” khi \\(s^2=16\\) giờ² sai ở đâu?",
-    "answer_key": "s=4 giờ; nhầm giá trị và đơn vị",
+    "answer_key": "\\(s=4\\) giờ; nhầm giá trị và đơn vị",
     "worked_solution": "16 giờ² là phương sai \\(s^2\\), không phải độ lệch chuẩn s. Lấy căn không âm: \\(s=\\sqrt{16}=4\\) giờ; câu ban đầu sai cả giá trị lẫn đơn vị.",
     "skill_ids": [
       "G12-CHIII-B10-O04"
@@ -1739,7 +1739,7 @@
     "item_id": "THPT-G12-B10-P09",
     "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-G12-B10-P09",
     "stem": "Trên các đại diện (10,20,30), mẫu A có tần số (1,8,1), mẫu B có (3,4,3). Tính trung bình, phương sai và so sánh.",
-    "answer_key": "Trung bình đều 20; phương sai A=20, B=60; A ít phân tán hơn.",
+    "answer_key": "Trung bình đều 20; phương sai \\(A=20\\), \\(B=60\\); A ít phân tán hơn.",
     "worked_solution": "Hai mẫu đều có 10 quan sát và tần số đối xứng quanh 20 nên trung bình đều bằng 20. Với A, \\(s_A^2=\\frac{1\\cdot100+8\\cdot0+1\\cdot100}{10}=20\\). Với B, \\(s_B^2=\\frac{3\\cdot100+4\\cdot0+3\\cdot100}{10}=60\\). A ít phân tán hơn quanh trung bình theo phương sai (và độ lệch chuẩn).",
     "skill_ids": [
       "G12-CHIII-B10-O05"
@@ -1779,7 +1779,7 @@
       },
       {
         "id": "B",
-        "text": "Trung bình đều 20; phương sai A=\\(B=20\\)"
+        "text": "Trung bình đều 20; phương sai \\(A=B=20\\)"
       },
       {
         "id": "C",
