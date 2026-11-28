@@ -1673,13 +1673,15 @@
   {
     "item_id": "THPT-G12-CHI-B01-W01",
     "source": {
-      "blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+      "blob": "a6eb5fdb458624d396a6c2bc78cf2552c18953b4",
       "heading_id": "THPT-G12-CHI-B01-W01",
       "active_solution_delta_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
       "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "historical_base_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "revision_scope": "EXISTING_REVIEWED_ACTIVE_FULL_SOURCE_BINDING_NO_CONTENT_CHANGE"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_CUSTODY_HISTORICAL_REVIEW_PRESERVED",
+      "previous_source_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+      "path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G12-CHI-B01-W01.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1700,13 +1702,15 @@
   {
     "item_id": "THPT-G12-CHI-B01-W02",
     "source": {
-      "blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+      "blob": "45dd83ca3737ff63467cf7d922de2d95c931c453",
       "heading_id": "THPT-G12-CHI-B01-W02",
       "active_solution_delta_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "delta_review_blob": "9f0466b7ded7d2a7441fdc55768949536f7a680e",
       "effective_solution_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
       "historical_base_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "revision_scope": "EXISTING_REVIEWED_ACTIVE_FULL_SOURCE_BINDING_NO_CONTENT_CHANGE"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_CUSTODY_HISTORICAL_REVIEW_PRESERVED",
+      "previous_source_blob": "86063e922bbb883f6ae9a3d86049f60ff3fe5562",
+      "path": "prototypes/thpt/shared-items/exercise-bank/written/THPT-G12-CHI-B01-W02.md"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1727,8 +1731,11 @@
   {
     "item_id": "THPT-G12-CHI-B02-W01",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B02-W01"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B02-W01",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1748,8 +1755,11 @@
   {
     "item_id": "THPT-G12-CHI-B02-W02",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B02-W02"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B02-W02",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1769,8 +1779,11 @@
   {
     "item_id": "THPT-G12-CHI-B03-W01",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B03-W01"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B03-W01",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1790,8 +1803,11 @@
   {
     "item_id": "THPT-G12-CHI-B03-W02",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B03-W02"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B03-W02",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1811,8 +1827,11 @@
   {
     "item_id": "THPT-G12-CHI-B04-W01",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B04-W01"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B04-W01",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1832,8 +1851,11 @@
   {
     "item_id": "THPT-G12-CHI-B04-W02",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B04-W02"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B04-W02",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1853,8 +1875,11 @@
   {
     "item_id": "THPT-G12-CHI-B05-W01",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B05-W01"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B05-W01",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1874,8 +1899,11 @@
   {
     "item_id": "THPT-G12-CHI-B05-W02",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-B05-W02"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-B05-W02",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1895,8 +1923,11 @@
   {
     "item_id": "THPT-G12-CHI-END-W01",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-END-W01"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-END-W01",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -1916,8 +1947,11 @@
   {
     "item_id": "THPT-G12-CHI-END-W02",
     "source": {
-      "blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
-      "heading_id": "THPT-G12-CHI-END-W02"
+      "blob": "a10e32849db439e9884ac8ac0cb1f8b365ebf034",
+      "heading_id": "THPT-G12-CHI-END-W02",
+      "previous_source_blob": "f0862dcdab21dec136e43969f45c42638e7c7574",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHI_B01_B05_FULL_CHAPTER_PUBLIC_CANONICAL_R00_SOURCE_CANDIDATE.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chi-b01-b05-public-r00.json",
@@ -2060,8 +2094,11 @@
   {
     "item_id": "THPT-G12-B11-W01",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W01"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W01",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2081,8 +2118,11 @@
   {
     "item_id": "THPT-G12-B11-W02",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W02"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W02",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2102,8 +2142,11 @@
   {
     "item_id": "THPT-G12-B11-W03",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W03"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W03",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2123,8 +2166,11 @@
   {
     "item_id": "THPT-G12-B11-W04",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W04"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W04",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2144,8 +2190,11 @@
   {
     "item_id": "THPT-G12-B11-W05",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W05"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W05",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2165,8 +2214,11 @@
   {
     "item_id": "THPT-G12-B11-W06",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W06"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W06",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2186,8 +2238,11 @@
   {
     "item_id": "THPT-G12-B11-W07",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B11-W07"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B11-W07",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2207,8 +2262,11 @@
   {
     "item_id": "THPT-G12-B12-W01",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W01"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W01",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2228,8 +2286,11 @@
   {
     "item_id": "THPT-G12-B12-W02",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W02"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W02",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2249,8 +2310,11 @@
   {
     "item_id": "THPT-G12-B12-W03",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W03"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W03",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2270,8 +2334,11 @@
   {
     "item_id": "THPT-G12-B12-W04",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W04"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W04",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2291,8 +2358,11 @@
   {
     "item_id": "THPT-G12-B12-W05",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W05"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W05",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2312,8 +2382,11 @@
   {
     "item_id": "THPT-G12-B12-W06",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W06"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W06",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2333,8 +2406,11 @@
   {
     "item_id": "THPT-G12-B12-W07",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B12-W07"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B12-W07",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2354,8 +2430,11 @@
   {
     "item_id": "THPT-G12-B13-W01",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W01"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W01",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2375,8 +2454,11 @@
   {
     "item_id": "THPT-G12-B13-W02",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W02"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W02",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2396,8 +2478,11 @@
   {
     "item_id": "THPT-G12-B13-W03",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W03"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W03",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2417,8 +2502,11 @@
   {
     "item_id": "THPT-G12-B13-W04",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W04"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W04",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2438,8 +2526,11 @@
   {
     "item_id": "THPT-G12-B13-W05",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W05"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W05",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2459,8 +2550,11 @@
   {
     "item_id": "THPT-G12-B13-W06",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W06"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W06",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2480,8 +2574,11 @@
   {
     "item_id": "THPT-G12-B13-W07",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W07"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W07",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2501,8 +2598,11 @@
   {
     "item_id": "THPT-G12-B13-W08",
     "source": {
-      "blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
-      "heading_id": "THPT-G12-B13-W08"
+      "blob": "ca56d320b0067ffc6817db0e93ecd2e476934204",
+      "heading_id": "THPT-G12-B13-W08",
+      "previous_source_blob": "45722cd386a498f3e0e96a09928c85565af56d1b",
+      "path": "prototypes/thpt/content-drafts/G12_SGK_CHIV_B11_B13_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiv-b11-b13-public-r00.json",
@@ -2964,10 +3064,10 @@
   {
     "item_id": "THPT-G12-B06-W01",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B06-W01",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -2988,10 +3088,10 @@
   {
     "item_id": "THPT-G12-B06-W02",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B06-W02",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3012,10 +3112,10 @@
   {
     "item_id": "THPT-G12-B06-W03",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B06-W03",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3036,10 +3136,10 @@
   {
     "item_id": "THPT-G12-B06-W04",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B06-W04",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3060,10 +3160,10 @@
   {
     "item_id": "THPT-G12-B06-W05",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B06-W05",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3084,10 +3184,10 @@
   {
     "item_id": "THPT-G12-B06-W06",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B06-W06",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3108,10 +3208,10 @@
   {
     "item_id": "THPT-G12-B07-W01",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B07-W01",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3132,10 +3232,10 @@
   {
     "item_id": "THPT-G12-B07-W02",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B07-W02",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3156,10 +3256,10 @@
   {
     "item_id": "THPT-G12-B07-W03",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B07-W03",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3180,10 +3280,10 @@
   {
     "item_id": "THPT-G12-B07-W04",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B07-W04",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3204,10 +3304,10 @@
   {
     "item_id": "THPT-G12-B08-W01",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B08-W01",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3228,10 +3328,10 @@
   {
     "item_id": "THPT-G12-B08-W02",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B08-W02",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3252,10 +3352,10 @@
   {
     "item_id": "THPT-G12-B08-W03",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B08-W03",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3276,10 +3376,10 @@
   {
     "item_id": "THPT-G12-B08-W04",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B08-W04",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3300,10 +3400,10 @@
   {
     "item_id": "THPT-G12-B08-W05",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B08-W05",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -3324,10 +3424,10 @@
   {
     "item_id": "THPT-G12-B08-W06",
     "source": {
-      "blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "blob": "548c71fa2b09d48181092ecfc2681df6dc907f21",
       "heading_id": "THPT-G12-B08-W06",
-      "previous_source_blob": "43d93a7d0d070a288251c34ff411c7de3206dc85",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "previous_source_blob": "e95abbaad99b290d29a6a61b438830cfebdab95d",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHII_B06_B08_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4426,12 +4526,12 @@
   {
     "item_id": "THPT-G12-B14-W01",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4452,12 +4552,12 @@
   {
     "item_id": "THPT-G12-B14-W02",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4478,12 +4578,12 @@
   {
     "item_id": "THPT-G12-B14-W03",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4504,12 +4604,12 @@
   {
     "item_id": "THPT-G12-B14-W04",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4530,12 +4630,12 @@
   {
     "item_id": "THPT-G12-B14-W05",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4556,12 +4656,12 @@
   {
     "item_id": "THPT-G12-B14-W06",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W06",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4582,12 +4682,12 @@
   {
     "item_id": "THPT-G12-B14-W07",
     "source": {
-      "blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B14-W07",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "24e463e61c6cc4f78dca45c1f19661ffed6786eb",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
       "previous_reviewed_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_candidate_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c"
@@ -4612,12 +4712,12 @@
   {
     "item_id": "THPT-G12-B15-W01",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4638,12 +4738,12 @@
   {
     "item_id": "THPT-G12-B15-W02",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4664,12 +4764,12 @@
   {
     "item_id": "THPT-G12-B15-W03",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4690,12 +4790,12 @@
   {
     "item_id": "THPT-G12-B15-W04",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4716,12 +4816,12 @@
   {
     "item_id": "THPT-G12-B15-W05",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4742,12 +4842,12 @@
   {
     "item_id": "THPT-G12-B15-W06",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W06",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4768,12 +4868,12 @@
   {
     "item_id": "THPT-G12-B15-W07",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B15-W07",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4794,12 +4894,12 @@
   {
     "item_id": "THPT-G12-B16-W01",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B16-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4820,12 +4920,12 @@
   {
     "item_id": "THPT-G12-B16-W02",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B16-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4846,12 +4946,12 @@
   {
     "item_id": "THPT-G12-B16-W03",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B16-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4872,12 +4972,12 @@
   {
     "item_id": "THPT-G12-B16-W04",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B16-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4898,12 +4998,12 @@
   {
     "item_id": "THPT-G12-B16-W05",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B16-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4924,12 +5024,12 @@
   {
     "item_id": "THPT-G12-B17-W01",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B17-W01",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4950,12 +5050,12 @@
   {
     "item_id": "THPT-G12-B17-W02",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B17-W02",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -4976,12 +5076,12 @@
   {
     "item_id": "THPT-G12-B17-W03",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B17-W03",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -5002,12 +5102,12 @@
   {
     "item_id": "THPT-G12-B17-W04",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B17-W04",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -5028,12 +5128,12 @@
   {
     "item_id": "THPT-G12-B17-W05",
     "source": {
-      "blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
+      "blob": "b382a9d4efb15a07b038cea80e85b16e48dcc3e5",
       "heading_id": "THPT-G12-B17-W05",
       "topic_reference_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
-      "previous_source_blob": "b748a7c5af4074b39ef8a6a756a7be7839b9cd83",
+      "previous_source_blob": "4891b4b2eb4b5b27a7409ba064397ae2c50b5d4c",
       "previous_topic_reference_blob": "ad4165de0a2c3442b50d7f3d0019a99b5bbdef39",
-      "revision_scope": "CD18_WRITTEN_CANDIDATE_SCOPED_DELTA_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHV_B14_B17_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md"
     },
     "existing_library_projection": {
@@ -6219,11 +6319,11 @@
   {
     "item_id": "THPT-G12-B09-W01",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B09-W01",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6243,11 +6343,11 @@
   {
     "item_id": "THPT-G12-B09-W02",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B09-W02",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6267,11 +6367,11 @@
   {
     "item_id": "THPT-G12-B09-W03",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B09-W03",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "prior_candidate_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
     },
     "existing_library_projection": {
@@ -6293,11 +6393,11 @@
   {
     "item_id": "THPT-G12-B09-W04",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B09-W04",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "prior_candidate_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
     },
     "existing_library_projection": {
@@ -6319,11 +6419,11 @@
   {
     "item_id": "THPT-G12-B09-W05",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B09-W05",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6343,11 +6443,11 @@
   {
     "item_id": "THPT-G12-B09-W06",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B09-W06",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6367,11 +6467,11 @@
   {
     "item_id": "THPT-G12-B10-W01",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B10-W01",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6391,11 +6491,11 @@
   {
     "item_id": "THPT-G12-B10-W02",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B10-W02",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6415,11 +6515,11 @@
   {
     "item_id": "THPT-G12-B10-W03",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B10-W03",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "DELTA04_SCOPED_WRITTEN_SOURCE_REVISION_HISTORICAL_RECEIPT_PRESERVED",
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED",
       "prior_candidate_blob": "ef83141c2f4d864f6334e266d01173a00791ef68"
     },
     "existing_library_projection": {
@@ -6441,11 +6541,11 @@
   {
     "item_id": "THPT-G12-B10-W04",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B10-W04",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6465,11 +6565,11 @@
   {
     "item_id": "THPT-G12-B10-W05",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B10-W05",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
@@ -6489,11 +6589,11 @@
   {
     "item_id": "THPT-G12-B10-W06",
     "source": {
-      "blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
+      "blob": "42f69cde60345e2a7626f34f1c44fb2edf2d071a",
       "heading_id": "THPT-G12-B10-W06",
-      "previous_source_blob": "4e8e462a5c2243583be8c71625a9be3095e48c7b",
+      "previous_source_blob": "872ac9b541c6fdd6af5b27c4222331b5c96977fc",
       "path": "prototypes/thpt/content-drafts/G12_SGK_CHIII_B09_B10_PUBLIC_CANONICAL_R00_SOURCE_LOCK.md",
-      "revision_scope": "CD22_SCOPED_WRITTEN_DELTA_C_OR_UNCHANGED_BLOCK_HISTORICAL_SNAPSHOT_PRESERVED"
+      "revision_scope": "XG5_08_1_G12_WRITTEN_CANONICAL_NOTATION_HISTORICAL_RECEIPT_PRESERVED"
     },
     "existing_library_projection": {
       "path": "docs/assets/data/thpt-g12-chiii-b09-b10-public-r00.json",
