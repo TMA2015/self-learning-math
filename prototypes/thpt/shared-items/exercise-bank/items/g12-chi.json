@@ -3148,10 +3148,10 @@
   },
   {
     "item_id": "THPT-G12-B01-KFT03",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-B01-KFT03",
-    "stem": "Xét f(x)=1/(x−1) với x≠1. Từ f′(x)<0, có thể kết luận f nghịch biến trên cả miền xác định không? Hãy tính và so sánh f(0), f(2).",
-    "answer_key": "Không. f(0)=−1<f(2)=1 dù 0<2; f chỉ nghịch biến trên từng khoảng (−∞;1) và (1;+∞).",
-    "worked_solution": "f′(x)=−1/(x−1)²<0 với x≠1, nên f nghịch biến trên mỗi khoảng (−∞;1) và (1;+∞). Nhưng f(0)=−1, f(2)=1 và 0<2. Điều này trái với yêu cầu f(0)>f(2) nếu f nghịch biến trên cả miền xác định. Vì vậy không được ghép hai khoảng qua điểm x=1 bị loại; dấu đạo hàm chỉ bảo đảm tính đơn điệu trên từng khoảng.",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-G12-B01-KFT03-D6-XG5-20261128",
+    "stem": "Xét \\(f(x)=\\frac1{x-1}\\) với \\(x\\ne1\\). Từ \\(f'(x)<0\\), có thể kết luận \\(f\\) nghịch biến trên cả miền xác định không? Hãy tính và so sánh \\(f(0),f(2)\\).",
+    "answer_key": "Không. \\(f(0)=-1<f(2)=1\\) dù \\(0<2\\); \\(f\\) chỉ nghịch biến trên từng khoảng \\((-\\infty;1)\\) và \\((1;+\\infty)\\).",
+    "worked_solution": "\\(f'(x)=-\\frac1{(x-1)^2}<0\\) với \\(x\\ne1\\), nên \\(f\\) nghịch biến trên mỗi khoảng \\((-\\infty;1)\\) và \\((1;+\\infty)\\). Nhưng \\(f(0)=-1\\), \\(f(2)=1\\) và \\(0<2\\). Điều này trái với yêu cầu \\(f(0)>f(2)\\) nếu \\(f\\) nghịch biến trên cả miền xác định. Vì vậy không được ghép hai khoảng qua điểm \\(x=1\\) bị loại; dấu đạo hàm chỉ bảo đảm tính đơn điệu trên từng khoảng.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
       "G12-B01-DOMAIN_INTERVALS"
@@ -3199,17 +3199,18 @@
       },
       {
         "id": "B",
-        "text": "Không, vì f(0)=1>f(2)=−1."
+        "text": "Không, vì \\(f(0)=1>f(2)=-1\\)."
       },
       {
         "id": "C",
-        "text": "Không. f(0)=−1<f(2)=1 dù 0<2; f chỉ nghịch biến trên từng khoảng (−∞;1) và (1;+∞)."
+        "text": "Không. \\(f(0)=-1<f(2)=1\\) dù \\(0<2\\); \\(f\\) chỉ nghịch biến trên từng khoảng \\((-\\infty;1)\\) và \\((1;+\\infty)\\)."
       },
       {
         "id": "D",
-        "text": "Có, vì f(0)=−1<f(2)=1."
+        "text": "Có, vì \\(f(0)=-1<f(2)=1\\)."
       }
-    ]
+    ],
+    "remediation": "Nếu kết luận nghịch biến trên toàn miền chỉ vì đạo hàm âm, hãy chọn hai điểm ở hai phía của điểm bị loại và so sánh giá trị hàm. Ôn Toán 12 Chương I Bài 1, phần tính đơn điệu trên từng khoảng xác định; sau đó luyện bài phân thức \\(f(x)=\\frac1{x-2}\\) trong Luyện tập Bài 1."
   },
   {
     "item_id": "THPT-G12-B02-KFT01",
