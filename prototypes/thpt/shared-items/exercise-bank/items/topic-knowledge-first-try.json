@@ -19172,10 +19172,10 @@
   },
   {
     "item_id": "THPT-TOP10-KFT05",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT05",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT05-D07",
     "stem": "\\(f=x^4\\) có cực tiểu tại0 không?",
     "answer_key": "Có, cực tiểu tại \\(x=0\\), giá trị 0.",
-    "worked_solution": "\\(f'(x)=4x^3\\) đổi dấu từ âm sang dương qua 0. Vì vậy hàm có cực tiểu tại \\(x=0\\), giá trị \\(f(0)=0\\).\n\nNếu bỏ điểm gấp khúc |x|, bổ sung điểm f không khả vi nhưng có giá trị.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ có \\(f'=0\\) chắc chắn có cực trị hoặc bỏ điểm không khả vi, đọc **Kiến thức 1.5**, làm **Bài 5** và **Bài 7**. Đối chiếu \\(|x|\\) với \\(x^5\\) quanh 0.",
+    "worked_solution": "\\(f'(x)=4x^3\\) đổi dấu từ âm sang dương qua 0. Vì vậy hàm có cực tiểu tại \\(x=0\\), giá trị \\(f(0)=0\\).\n\nNếu cho rằng đạo hàm bằng 0 thì không thể có cực tiểu, kiểm dấu đạo hàm ở hai phía của 0.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ có \\(f'=0\\) chắc chắn có cực trị hoặc bỏ điểm không khả vi, đọc **Kiến thức 1.5**, làm **Bài 5** và **Bài 7**. Đối chiếu \\(|x|\\) với \\(x^5\\) quanh 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
@@ -20613,10 +20613,10 @@
   },
   {
     "item_id": "THPT-TOP10-KFT34",
-    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT34",
+    "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT34-D07",
     "stem": "\\(f=\\frac{x+2}{x-1}\\), TCD và TCN?",
     "answer_key": "Tiệm cận đứng \\(x=1\\); ngang \\(y=1\\).",
-    "worked_solution": "\\(f(x)=1+\\frac3{x-1}\\) với \\(x\\ne1\\). Khi \\(x\\to1^\\pm\\), các giới hạn là vô cực tương ứng; khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to1\\). Tiệm cận đứng \\(x=1\\), ngang \\(y=1\\).\n\nNếu nói \\(y=x\\), kiểm bậc tử/mẫu trước.\n\n\n**Kiểm lỗi**\n\nNếu tử và mẫu cùng bậc, thương đa thức là hằng số (tỉ số hệ số đầu), cho tiệm cận ngang; nếu bậc tử lớn hơn bậc mẫu đúng 1, thương là đa thức bậc nhất, cho tiệm cận xiên. Ví dụ trên thuộc trường hợp thứ hai. Để xác định tiệm cận đứng, còn phải kiểm phần dư và giới hạn gần điểm cấm. Đọc **Kiến thức 6.2**, làm **Bài 116** và **Bài 105**; lập dấu đạo hàm riêng qua từng khoảng của miền.",
+    "worked_solution": "\\(f(x)=1+\\frac3{x-1}\\) với \\(x\\ne1\\). Khi \\(x\\to1^\\pm\\), các giới hạn là vô cực tương ứng; khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to1\\). Tiệm cận đứng \\(x=1\\), ngang \\(y=1\\).\n\nNếu nói \\(y=x\\), kiểm bậc tử/mẫu trước.\n\n\n**Kiểm lỗi**\n\nNếu tử và mẫu cùng bậc, thương đa thức là hằng số (tỉ số hệ số đầu), cho tiệm cận ngang; nếu bậc tử lớn hơn bậc mẫu đúng 1, thương là đa thức bậc nhất, cho tiệm cận xiên. Bài này thuộc trường hợp thứ nhất: tử và mẫu cùng bậc, nên tiệm cận ngang là y=1. Để xác định tiệm cận đứng, còn phải kiểm phần dư và giới hạn gần điểm cấm. Đọc **Kiến thức 6.2**, làm **Bài 116** và **Bài 105**; lập dấu đạo hàm riêng qua từng khoảng của miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED",
