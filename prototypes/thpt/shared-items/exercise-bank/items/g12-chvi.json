@@ -578,7 +578,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Có, vì P(A)=P(B)"
+        "text": "Có, vì \\(P(A)=P(B)\\)"
       },
       {
         "id": "B",
