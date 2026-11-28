@@ -444,7 +444,17 @@ async function execute(){
        for(const k of [t,(t+1)%4,t]){
         await tabs.locator(".tabbed-labels > label").nth(k).click();
         if(k!==t)continue;
-        for(const node of await display.all()){
+        // B02 has 15 source-verified display blocks, including unchanged
+        // math in closed answers. The only changed expression is its fourth
+        // source/static display (aligned sine derivation). Do not open other
+        // answers just to assert visibility of intentionally hidden math.
+        const affected=rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"?[display.nth(3)]:await display.all();
+        for(const node of affected){
+         assert.equal(await node.evaluate(el=>Boolean(el.closest("details:not([open])"))),false,rel+" affected formula unexpectedly in closed disclosure");
+         if(rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"){
+          assert.equal(await node.locator("mjx-container mjx-mtable").count(),1,rel+" aligned derivation must render as multi-row math");
+          assert.equal(await node.locator("mjx-container mjx-mtable mjx-mtr").count(),3,rel+" expected three aligned rows");
+         }
          await node.waitFor({state:"visible",timeout:30000});
          await node.locator("mjx-container").waitFor({state:"visible",timeout:30000});
          assert.equal(await node.locator("mjx-container").count(),1,rel+" #1132 duplicate/nested MathJax");
@@ -454,7 +464,7 @@ async function execute(){
         }
        }
       }
-      console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+display1132Tabs.reduce((a,b)=>a+b,0)+" formulas");
+      console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+(rel==="docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md"?1:display1132Tabs.reduce((a,b)=>a+b,0))+" affected formulas");
      }
      if(!displayOnly||width===820)await goldenW1Parity(page,browser,width,rel);
      checks++;
