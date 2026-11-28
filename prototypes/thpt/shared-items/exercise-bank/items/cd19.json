@@ -653,8 +653,8 @@
   {
     "item_id": "THPT-TOP19-P11",
     "content_version": "CD19-BANK-20261127-THPT-TOP19-P11",
-    "stem": "(a) Tìm số hạng không chứa x trong \\((3x-2)^4\\). (b) Tự chọn mở rộng SBT sau phần đa thức: tìm số hạng không chứa x trong \\((2x+\\frac1x)^4\\), với \\(x\\ne0\\).",
-    "answer_key": "(a) 16; (b) 24 (tự chọn).",
+    "stem": "Bài mở rộng tự chọn (sau phần đa thức). Nếu chọn làm bài này, giải cả hai ý: (a) tìm số hạng không chứa x trong \\((3x-2)^4\\); (b) tìm số hạng không chứa x trong \\(\\left(2x+\\frac{1}{x}\\right)^4\\), với \\(x\\ne0\\).",
+    "answer_key": "(a) 16; (b) 24. Cả bài là mở rộng tự chọn.",
     "worked_solution": "(a) Trong đa thức, chọn \\(3x\\) ở k vị trí thì bậc của x trong tích tương ứng là k. Số hạng tự do ứng với \\(k=0\\), bằng \\((-2)^4=16\\). Có thể kiểm bằng cách thay \\(x=0\\) vào đa thức. (b) Với \\(x\\ne0\\), chọn \\(\\frac1x\\) ở k vị trí, còn \\(4-k\\) vị trí chọn \\(2x\\). Số mũ của x là \\(4-2k\\), bằng 0 khi \\(k=2\\). Hệ số của số hạng đó là \\(C_4^2\\cdot2^2=24\\), nên số hạng không chứa x bằng 24. Phần (b) là mở rộng tự chọn, không phải yêu cầu bắt buộc của SGK B25.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -695,7 +695,7 @@
       },
       {
         "id": "C",
-        "text": "(a) 16; (b) 24 nếu làm phần tự chọn."
+        "text": "(a) 16; (b) 24."
       },
       {
         "id": "D",
