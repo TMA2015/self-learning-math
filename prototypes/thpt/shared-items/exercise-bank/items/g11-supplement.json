@@ -56,9 +56,9 @@
   {
     "item_id": "THPT-G11-SUPP-E01-P01",
     "content_version": "G11-SUPP-XG6-20261127-E01-P01",
-    "stem": "Với \\(A_0>0,\\ r>-1\\) và t là số năm không âm, so sánh \\(A_0(1+r)^t\\) với \\(A_0e^{rt}\\). Chọn kết luận đúng về hệ số k để \\(A_0e^{kt}\\) khớp mô hình thứ nhất.",
+    "stem": "Với \\(A_0>0,\\ r>-1\\) và \\(t\\ge0\\) là thời gian tính bằng năm, mô hình \\(A_0(1+r)^t\\) có luôn bằng \\(A_0e^{rt}\\) không? Chọn kết luận đúng và hệ số k để \\(A_0e^{kt}\\) khớp mô hình thứ nhất.",
     "answer_key": "Không luôn bằng nhau; \\(k=\\ln(1+r)\\).",
-    "worked_solution": "Vì \\((1+r)^t=e^{t\\ln(1+r)}\\), chọn \\(k=\\ln(1+r)\\). Hai công thức khi đó khớp ở mọi thời điểm t mà mô hình được xét, đặc biệt ở các năm nguyên. Nếu đặt k=r, nói chung không bằng nhau.",
+    "worked_solution": "Vì \\(1+r>0\\), ta có \\((1+r)^t=e^{t\\ln(1+r)}\\). Chọn \\(k=\\ln(1+r)\\) thì hai biểu thức bằng nhau tại mọi thời điểm được xét, đặc biệt ở các năm nguyên. Khi mô hình thứ nhất chỉ cập nhật theo năm, không tự suy rằng số lượng thực tế biến đổi liên tục giữa hai lần cập nhật. Đặt \\(k=r\\) nói chung không cho cùng kết quả.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E01-EXPONENTIAL_MODEL"
@@ -652,7 +652,7 @@
     "content_version": "G11-SUPP-XG6-20261127-E02-P01",
     "stem": "Trước khi cắt và dán bìa làm một chiếc thùng không nắp, cách kiểm tra nào đầy đủ nhất?",
     "answer_key": "Bỏ mặt nắp, đối chiếu chiều dài và vị trí các cạnh ghép, kiểm tra các mặt gấp không chồng lên nhau.",
-    "worked_solution": "Thùng không nắp phải có đủ mặt cần thiết nhưng không có nắp; các cạnh ghép tương ứng cần khớp chiều dài và vị trí. Khi gấp, các mặt không được chồng lên nhau sai cấu trúc.",
+    "worked_solution": "Bản khai triển phải có đủ các mặt của thùng, trừ mặt nắp. Kiểm tra từng cặp cạnh sẽ ghép: chiều dài phải bằng nhau và vị trí phải phù hợp. Thử hình dung hoặc gấp thử để các mặt tạo đúng hình dạng thùng, không chồng lên nhau ngoài phần mép dán dự kiến. Tổng diện tích đúng chưa bảo đảm gấp được.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-E02-NET_CONSTRUCTION"
@@ -905,7 +905,7 @@
       },
       {
         "id": "B",
-        "text": "Không; phải chọn hai tia đúng điều kiện xác định góc phẳng nhị diện."
+        "text": "Không; cần hai tia cùng gốc trên cạnh nhị diện, mỗi tia thuộc một nửa mặt phẳng và vuông góc cạnh đó."
       },
       {
         "id": "C",
@@ -1192,7 +1192,7 @@
     "content_version": "G11-YR-XG6-20261127-TRIG-P01",
     "stem": "Chu kì cơ bản của hàm số \\(y=\\sin(3x)\\) bằng bao nhiêu?",
     "answer_key": "\\(\\frac{2\\pi}{3}\\)",
-    "worked_solution": "Chu kì dương nhỏ nhất T thỏa \\(3T=2\\pi\\), nên \\(T=\\frac{2\\pi}{3}\\).",
+    "worked_solution": "Để \\(T>0\\) là chu kì của hàm, phải có \\(\\sin(3x+3T)=\\sin(3x)\\) với mọi x thực. Hàm sin có chu kì dương nhỏ nhất \\(2\\pi\\), nên độ dịch \\(3T\\) nhỏ nhất là \\(2\\pi\\). Suy ra \\(T=\\frac{2\\pi}{3}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-TRIG_IDENTITY"
@@ -1838,7 +1838,7 @@
   {
     "item_id": "THPT-G11-YR-DERIV-P01",
     "content_version": "G11-YR-XG6-20261127-DERIV-P01",
-    "stem": "Tính đạo hàm của \\((x^2+1)\\sin x\\).",
+    "stem": "Tính đạo hàm của \\((x^2+1)\\sin x\\), với x đo bằng radian.",
     "answer_key": "\\(2x\\sin x+(x^2+1)\\cos x\\)",
     "worked_solution": "\\((uv)'=u'v+uv'\\). Với \\(u=x^2+1,\\ v=\\sin x\\), ta có \\(u'=2x,\\ v'=\\cos x\\); kết quả là \\(2x\\sin x+(x^2+1)\\cos x\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1892,9 +1892,9 @@
   {
     "item_id": "THPT-G11-YR-DERIV-P02",
     "content_version": "G11-YR-XG6-20261127-DERIV-P02",
-    "stem": "Vật chuyển động trên một trục với tọa độ \\(s(t)=t^2-4t\\) (m), t tính bằng giây, t≥0. Tại t=1, vật đi theo chiều nào?",
+    "stem": "Vật chuyển động trên một trục có tọa độ \\(s(t)=t^2-4t\\) (m), với t tính bằng giây và \\(t\\ge0\\). Tại \\(t=1\\), tính vận tốc, tốc độ và xác định chiều chuyển động.",
     "answer_key": "Chiều âm; vận tốc −2 m/s, tốc độ 2 m/s.",
-    "worked_solution": "\\(v(t)=s'(t)=2t-4\\) (m/s). Tại t=1, v(1)=−2 m/s. Dấu âm cho biết chuyển động theo chiều âm, còn tốc độ là \\(|v(1)|=2\\) m/s.",
+    "worked_solution": "Vận tốc là \\(v(t)=s'(t)=2t-4\\) (m/s). Tại \\(t=1\\), \\(v(1)=-2\\,\\mathrm{m/s}\\). Dấu âm cho biết vật chuyển động theo chiều âm của trục. Tốc độ là độ lớn vận tốc, bằng \\(|v(1)|=2\\,\\mathrm{m/s}\\). Không suy chiều chuyển động chỉ từ dấu tọa độ.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-DERIVATIVE_RATE"
@@ -2089,19 +2089,19 @@
     "options": [
       {
         "id": "A",
-        "text": "AC; khoảng cách a√2."
+        "text": "AC; khoảng cách \\(a\\sqrt2\\)."
       },
       {
         "id": "B",
-        "text": "BB′; khoảng cách a."
+        "text": "BB′; khoảng cách \\(a\\)."
       },
       {
         "id": "C",
-        "text": "AB; khoảng cách a."
+        "text": "AB; khoảng cách \\(a\\)."
       },
       {
         "id": "D",
-        "text": "BC; khoảng cách a."
+        "text": "BC; khoảng cách \\(a\\)."
       }
     ]
   },
@@ -2272,7 +2272,7 @@
     "content_version": "G11-YR-XG6-20261127-STAT-C01",
     "stem": "Mẫu số liệu ghép nhóm có tần số: \\([0;10):2,\\ [10;20):5,\\ [20;30):3\\). Nhóm nào chứa trung vị?",
     "answer_key": "\\([10;20)\\)",
-    "worked_solution": "Cỡ mẫu n=10, tần số tích lũy là 2, 7, 10. Hai vị trí 5 và 6 đều thuộc nhóm \\([10;20)\\), nên nhóm này chứa trung vị.",
+    "worked_solution": "Cỡ mẫu \\(n=2+5+3=10\\). Tần số tích lũy lần lượt là 2, 7, 10. Sau khi sắp xếp, cả quan sát thứ 5 và thứ 6 đều thuộc nhóm \\([10;20)\\), nên trung vị của mẫu gốc cũng nằm trong nhóm này. Khi tính trung vị của mẫu ghép nhóm, dùng chính nhóm đó để nội suy; không thể biết chính xác trung vị mẫu gốc chỉ từ bảng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
@@ -2326,7 +2326,7 @@
     "content_version": "G11-YR-XG6-20261127-STAT-P01",
     "stem": "Mẫu số liệu ghép nhóm có tần số: \\([0;10):2,\\ [10;20):5,\\ [20;30):3\\). Nhóm nào có tần số lớn nhất?",
     "answer_key": "\\([10;20)\\) với tần số 5.",
-    "worked_solution": "Tần số lớn nhất là 5, thuộc nhóm [10;20). Đây là nhóm chứa mốt theo bảng ghép nhóm; không khẳng định mốt của dữ liệu gốc bằng trung điểm 15.",
+    "worked_solution": "Tần số lớn nhất là 5, thuộc nhóm \\([10;20)\\). Vì các nhóm có độ dài bằng nhau, đây là nhóm chứa mốt theo bảng ghép nhóm. Không khẳng định mốt của dữ liệu gốc bằng trung điểm 15.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
@@ -2380,7 +2380,7 @@
     "content_version": "G11-YR-XG6-20261127-STAT-P02",
     "stem": "Bảng ghép nhóm có tần số \\([0;10):4,\\ [10;20):8,\\ [20;30):8\\) (n=20). Ước lượng \\(Q_1,Q_3\\) bằng nội suy. Chọn cả kết quả và cách diễn giải đúng.",
     "answer_key": "\\(Q_1\\approx11{,}25,\\ Q_3\\approx23{,}75\\); giả định số liệu phân bố đều trong mỗi nhóm.",
-    "worked_solution": "Tần số tích lũy là 4, 12, 20. Vị trí n/4=5 thuộc nhóm [10;20), nên \\(Q_1\\approx10+\\frac{5-4}{8}\\cdot10=11{,}25\\). Vị trí 3n/4=15 thuộc nhóm [20;30), nên \\(Q_3\\approx20+\\frac{15-12}{8}\\cdot10=23{,}75\\). Đây là ước lượng theo giả định nội suy, không phải giá trị chính xác của mẫu gốc.",
+    "worked_solution": "Tần số tích lũy là 4, 12, 20. Vị trí \\(\\frac n4=5\\) thuộc nhóm \\([10;20)\\), nên \\(Q_1=10+\\frac{5-4}{8}\\cdot10=11{,}25\\) theo công thức tứ phân vị mẫu ghép nhóm. Vị trí \\(\\frac{3n}{4}=15\\) thuộc nhóm \\([20;30)\\), nên \\(Q_3=20+\\frac{15-12}{8}\\cdot10=23{,}75\\). Nội suy tương ứng với giả thiết phân bố đều trong nhóm. Các kết quả là ước lượng tứ phân vị của dữ liệu gốc, không khẳng định bằng giá trị tính từ từng quan sát ban đầu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-YR-GROUPED_STATS"
