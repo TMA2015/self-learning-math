@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "6b1e6235425c99ef53689a0bb95c7e73d131e29c",
+    "as_of_commit": "c07023a74e587017008ca20934973182b19a9730",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Remaining KFT topic prefixes CD09–22 (276 records) plus G12-CHI,II,III,IV,VI,experience,yearend (322 records); use exact field diff and existing source evidence; named material prior proofs still need acceptance. 08 separate.",
-    "status": "CHECKLIST07_PRACTICE_CHOICES_DELTA_PARTIAL",
+    "next": "Review remaining 276 KFT affected fields and reconcile named material evidence; no blanket Q18.",
+    "status": "CHECKLIST_07_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,110 +112,71 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "checklist07_practice_choices_delta_20261128",
-    "checklist07_practice_choices_delta_20261128": {
-      "scope": "Item 07 affected-field review, 184 topic-owned practice CĐ09–16 excluding already-reviewed P23–26, plus 109 G10 VII–IX interactive excluding 9 exact CD20 reuse. Use pre-conversion author source checks and current stems/all choices, review changed keys and conditions. No whole-bank or renderer verdict.",
-      "index": {
-        "blob": "90db6a27017987ee4fa2ccd1cc8b8a3ae94b3013",
-        "key": "checklist06_source_evidence_scope_20261128"
-      },
-      "prior": {
-        "blob": "636adedad0fb314d7fae890bd931f214f44c56ec",
-        "key": "checklist07_reuse_cp121_128_20261128",
-        "accepted": "G12-CHV 78; CP121–128 270 local/KFT exact preserved"
-      },
+    "current_checkpoint_key": "checklist07_g12_conversion_delta_20261128",
+    "checklist07_g12_conversion_delta_20261128": {
+      "scope": "322 remaining G12 SGK/supplement interactive; checked stems, all choices, keyed mathematics and changed solution/hint fields against item06 baseline; no full Q18 claim",
       "rows": [
         [
-          "cd09",
-          32,
-          25,
-          "5589ecbc51e6ea3e5821e336ac9bfee7cdb3b95a"
+          "g12-chi",
+          69,
+          "fbcf73cc7b981b391795fbaf3e24ff121dd917f9"
         ],
         [
-          "cd10",
-          36,
-          28,
-          "b5b2e5fde81d7abdca47cf9c7410ddb6be41d380",
-          "f98c51b777e5283d2c9be4950803b992aaac7890"
+          "g12-chii",
+          51,
+          "a165c58e950c0195077de9f07e07cefb6e4c118a"
         ],
         [
-          "cd11",
-          22,
-          21,
-          "bca96fca75014c0343af1ffce911eade3ace8976"
+          "g12-chiii",
+          39,
+          "fac49e7dd5eeac3ad0859196b7635007b92cf98d"
         ],
         [
-          "cd12",
-          12,
-          10,
-          "fcc5cc0e29ee1ebbc912d685385496dcab79e7f8",
-          "233554a311f40041b0b22aa48c3e7ddb0a1406ba"
+          "g12-chiv",
+          72,
+          "3ab7b95a9942689a93293980d002e20759a9f3a8"
         ],
         [
-          "cd13",
-          16,
-          14,
-          "491261a785cc8ae4d5363ca5ce528559614d0671"
+          "g12-chvi",
+          46,
+          "f69a39ef1cdf02dfbe8331eb626b36a146caff85"
         ],
         [
-          "cd14",
-          23,
-          21,
-          "661ae7c2b71aea2c36075ab304722bf6c960321e"
-        ],
-        [
-          "cd15",
-          22,
-          17,
-          "43bb6a7d54d7ac1cfd85d89d6174d0765023e059",
-          "311b46f371a3a7519479207d7bf690be13e9620f"
-        ],
-        [
-          "cd16",
-          21,
-          14,
-          "c99d21b72737c67304c2224950ce12cc6ad95fd3",
-          "82ec879efe3fbd70d007d28d53cfa3be476a8968"
-        ],
-        [
-          "g10-chvii",
-          57,
+          "g12-experience",
           30,
-          "3b9b74aa3a241f749db8ed5e9e25203a3c899fa0",
-          "96a32fda57f5b54062158e3fba2e7c71f0a31347"
+          "705325f6c6e46d81186f075d48a51e0534d96f5d"
         ],
         [
-          "g10-chviii",
-          37,
-          25,
-          "a36d9522b47111e0d7d02746cb23fe7c7474a207",
-          "8d85f81b417f913900ba274f89ce83c95edf835c"
-        ],
-        [
-          "g10-chix",
+          "g12-yearend",
           15,
-          0,
-          "d70083e80e8f321252e233a2525cb50ebb3c0109"
+          "41bf1330913281fb29c1f4040a77a05a95e3a496"
         ]
       ],
-      "proof": "Derivative P03 difference quotient 3-3h+h²; P22 chain and log domain; P25 velocity -0.25,-1; P31 f''(0)=3. Applied derivative all stationary/end cases, P17 two asymptotes, P32 tied integer 2/3. Integrals P16=8/3, P18=11/6, P19=9/2, P21=26π/3. Triangle P05 Heron10sqrt3, R=7sqrt3/3, SSA P06 two, P07 impossible; P10 sine rule DEG. Vector P06 AG=(3;2)=2AM/3, P16 displacement sqrt34 path 5+sqrt17. Coordinate P06 line 3x−y−8=0, P16 I(3;1), R=sqrt10, P22 ellipse ±2sqrt3. Spatial parallel: P10 parallelogram, P18 counterexample, P22 ratio 1:4; perpendicular P09 intersecting directions, P13 3/5 and4/5, P20 heights13 and sqrt194. G10 VII B20-P06 m=−1/3 or3, B21-P03 ±25 signed distance, B21-P06 center9/2 radius²65/4; conics p, a, b, c conditions, real two branches; combinatorics B23-P05 12+18=30, B24-P05 12+4=16, B25-P03 108−(−108)=216, P05 −160; probability union6/10, one-head×even1/4, ordered/unordered distinction. 20 correct-option texts refined to preserve requested reasoning; all edited IDs/source/skill/other fields unchanged. Six final changed shards exact readback, unique option texts and valid keys, auto_grade=false. Prior source math proofs CP65–119 retained.",
+      "repaired_ids": [
+        "B03-KFT01",
+        "B05-KFT03",
+        "B06-T01",
+        "B11-T02",
+        "B18-A03",
+        "B19-P01"
+      ],
+      "proof": "Derivative/domain and extrema, cost 9 versus 9.02, vectors dot -8 and displacement/path distinction, grouped quartile 16.43/24.17/IQR7.74 and variance19/3, integral area23/3 and volume32pi/3, logarithm negative-domain false affirmative corrected, conditional/Bayes, trapezoid/error/Mobius, yearend dice and Bayes verified. Preserve prior scoped math evidence.",
       "remaining": {
-        "scoped_evidence": 1616,
-        "affected_field_acceptance": 598,
-        "options_interaction_only": 202,
-        "other_field_delta": 396
+        "scoped_evidence": 1938,
+        "affected_field_acceptance": 276,
+        "options_interaction_only": 0,
+        "other_field_delta": 276
       },
-      "next": "Remaining KFT topic prefixes CD09–22 (276 records) plus G12-CHI,II,III,IV,VI,experience,yearend (322 records); use exact field diff and existing source evidence; named material prior proofs still need acceptance. 08 separate.",
-      "protected": "No runtime/private RD1/Final Submit/Mastery/Firebase/Golden UI, no merge/deploy."
+      "next": "CĐ09–22 Vận dụng 276 IDs and named material-delta acceptance reconciliation; no re-audit of closed IDs."
     },
     "previous_manifest": {
-      "commit": "2d0ee87d9257b18be89817eba19bdf741d32c091",
-      "blob": "636adedad0fb314d7fae890bd931f214f44c56ec",
-      "key": "checklist07_reuse_cp121_128_20261128"
+      "commit": "d12d27eb5272355783ee272e4e2ef49f9aaf92c1",
+      "blob": "8b904907591ce54c600144ff9e20ed97a233bdea",
+      "key": "checklist07_practice_choices_delta_20261128"
     }
   },
   "pending_review": {
-    "scope_warning": "Use latest checkpoint + immutable 06 index, exclude reviewed IDs. 598 remaining affected IDs. No whole-grade re-audit.",
+    "scope_warning": "276 KFT affected fields remain; item 08 and 09 independent; no release authorization.",
     "cd17": "12 Topic-owned practice/replay material variants math, options, conditions, hints, D6 and inherited S1 skill scope reviewed with exact #974 receipt; retained all. Prior Written flags closed separately. Do not repeat this scoped review; final bank-wide applicable acceptance and remaining specific gaps only.",
     "skill_mapping": {
       "status": "38_OF_38_MAPPED_16_GROUPS_EXISTING_TAXONOMY_NO_RUNTIME_ACTIVATION",
