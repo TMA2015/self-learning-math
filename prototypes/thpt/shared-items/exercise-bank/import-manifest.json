@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "e1788748ab4640f91b1ebc8785a0b9b5b1cc2d99",
+    "as_of_commit": "9db59fb0a573a7b894f807e18716f3c21325facd",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 179/910 (167 interactive +12 Written), CD01–05 complete; next CD06 onward 731 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 214/910 (198 interactive +16 Written), CD01–06 complete; next CD07 onward 696 remaining. 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -6692,12 +6692,211 @@
                     ]
                   ],
                   "findings": "All four canonical blocks read. W04 rubric q=5 typeset only, unchanged scoring and meaning. Exact source delta 445c1507a96c90cca4bdacde08c35381215c7a2c and refreshed four source blobs at e1788748ab4640f91b1ebc8785a0b9b5b1cc2d99."
+                },
+                {
+                  "shard": "items/cd06.json",
+                  "blob": "2fdd0dc63e14bf65a95df7cf041475c397dab816",
+                  "baseline_commit": "23e0b6e5cd214301b34bf538c42390afb8650fd6",
+                  "baseline_blob": "841ab628a55991473cbc82d9005f0b30f0be2323",
+                  "evidence_cp": "CP88",
+                  "records": [
+                    [
+                      "THPT-TOP06-P01",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P02",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P03",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P04",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P05",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P06",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P07",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P08",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P09",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P10",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P11",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P12",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P13",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P14",
+                      92,
+                      3
+                    ],
+                    [
+                      "THPT-TOP06-P15",
+                      93,
+                      2
+                    ],
+                    [
+                      "THPT-TOP06-P16",
+                      93,
+                      2
+                    ]
+                  ],
+                  "findings": "Read all changed/new fields and inherit only identical five CP88 fields. Normalize slash fractions and trig arguments in 9 option sets; exact delta only options, correct IDs preserved. Data be9c19fa8c1692421d08564ce2c4158f0019c671."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "91d6cb52ba4c2ac12d7f9cb6c2ab46b55180d80f",
+                  "evidence_cp": "08.2-CD06-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP06-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT07",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT09",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT11",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT12",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT13",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT14",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT15",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP06-KFT16",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read 15 Topic-only FirstTry records; normalize fractions, absolute values and inline equality across 11 IDs; exact readback, no answer or interaction change. Data eda096482e3d2d5e418ee986da8b29a0781381f1."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "e4380e7a6457304d0de71dfe03b3c0249c56864b",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC06_TRIGONOMETRY_NEW20_PUBLIC_CANONICAL_R01_20261112.md",
+                  "source_blob": "58e209e0171c5f85aec0b8d1d77be56832145b72",
+                  "evidence_cp": "08.2-CD06-Written",
+                  "records": [
+                    [
+                      "THPT-TOP06-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP06-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP06-W03",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP06-W04",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "All four canonical Written blocks read; six learner lines in W01–04 normalized nested fractions and trig arguments, exact source delta 67166a4130c6f88ecc425e726a019480d711cda3; bindings refreshed at 9db59fb0a573a7b894f807e18716f3c21325facd. No rubric or math change."
                 }
               ],
-              "completed_interactive": 167,
-              "completed_written": 12,
-              "remaining_interactive": 662,
-              "remaining_written": 69,
+              "completed_interactive": 198,
+              "completed_written": 16,
+              "remaining_interactive": 631,
+              "remaining_written": 65,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -6723,25 +6922,21 @@
                   "interactive": 50,
                   "written": 4,
                   "state": "COMPLETE"
+                },
+                "CD06": {
+                  "interactive": 31,
+                  "written": 4,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD06 onward; exclude 975 shared and 179 completed Topic-only IDs",
+              "next": "CD07 onward; exclude 975 shared and 214 completed Topic-only IDs",
               "reconciliation": {
-                "expected_cd01_05": 179,
-                "completed_cd01_05": 179,
+                "expected_cd01_06": 214,
+                "completed_cd01_06": 214,
                 "duplicate_ids": 0,
                 "overlap_08_1": 0,
                 "overlap_08_3": 0,
-                "latest_delta_changed_ids": [
-                  "THPT-TOP05-P23",
-                  "THPT-TOP05-P24",
-                  "THPT-TOP05-P27",
-                  "THPT-TOP05-KFT04",
-                  "THPT-TOP05-KFT10",
-                  "THPT-TOP05-KFT14",
-                  "THPT-TOP05-W04"
-                ],
-                "scope": "Notation only; earlier evidence remains snapshot-scoped in completed_shards and previous manifest."
+                "scope": "Notation only; previous exact evidence retained in completed_shards."
               }
             }
           },
