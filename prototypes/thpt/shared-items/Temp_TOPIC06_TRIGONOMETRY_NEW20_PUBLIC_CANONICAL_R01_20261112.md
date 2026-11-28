@@ -233,7 +233,7 @@ difficulty_band: TRANSFER
 
 **Đáp án:** \(\sin\alpha=\frac{12}{13},\tan\alpha=-\frac{12}5,\sin\beta=\frac{12}{13},\cos\beta=\frac5{13}\). Tang loại \(\frac\pi2+k\pi\), côtang loại \(k\pi\), \(k\in\mathbb Z\).
 
-**Lời giải:** Vì \(\alpha\) thuộc góc phần tư II, sin dương và cos âm. \(\sin^2\alpha=1-\frac{25}{169}=\frac{144}{169}\), suy ra \(\sin\alpha=\frac{12}{13}\). Cos khác 0, nên \(\tan\alpha=\frac{12/13}{-5/13}=-\frac{12}5\). Hai tia cuối của \(\alpha,\pi-\alpha\) đối xứng qua Oy: tung độ giữ nguyên, hoành độ đổi dấu. Do đó \(\sin\beta=\frac{12}{13}\) và \(\cos\beta=\frac5{13}\). Tang không xác định khi \(\cos x=0\iff x=\frac\pi2+k\pi\); côtang không xác định khi \(\sin x=0\iff x=k\pi\), \(k\in\mathbb Z\).
+**Lời giải:** Vì \(\alpha\) thuộc góc phần tư II, sin dương và cos âm. \(\sin^2\alpha=1-\frac{25}{169}=\frac{144}{169}\), suy ra \(\sin\alpha=\frac{12}{13}\). Cos khác 0, nên \(\tan\alpha=\frac{\frac{12}{13}}{-\frac{5}{13}}=-\frac{12}5\). Hai tia cuối của \(\alpha,\pi-\alpha\) đối xứng qua Oy: tung độ giữ nguyên, hoành độ đổi dấu. Do đó \(\sin\beta=\frac{12}{13}\) và \(\cos\beta=\frac5{13}\). Tang không xác định khi \(\cos x=0\iff x=\frac\pi2+k\pi\); côtang không xác định khi \(\sin x=0\iff x=k\pi\), \(k\in\mathbb Z\).
 
 **Rubric tự đối chiếu:** 7 điểm: dấu (1); sin (1); tang và điều kiện (1); đối xứng (1); sin của beta (1); cos của beta (1); cả hai họ điểm loại (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
 
@@ -249,13 +249,13 @@ written_role: DEEP_ANCHOR (label only)
 content_version: 1
 problem_family_id: TOP06-PRODUCT_EQUATION
 difficulty_band: TRANSFER
-**Đề bài:** Giải \(\cos3x+\cos x=0\) trên \([0;2\pi)\). Giải thích lựa chọn tổng thành tích, liệt kê nghiệm hai nhánh, kiểm biên và kiểm nghiệm.
+**Đề bài:** Giải \(\cos(3x)+\cos x=0\) trên \([0;2\pi)\). Giải thích lựa chọn tổng thành tích, liệt kê nghiệm hai nhánh, kiểm biên và kiểm nghiệm.
 
 **Gợi ý:** Viết tổng hai cos thành tích, rồi dùng quy tắc tích bằng 0.
 
 **Đáp án:** \(S=\{\frac\pi4;\frac\pi2;\frac{3\pi}4;\frac{5\pi}4;\frac{3\pi}2;\frac{7\pi}4\}\).
 
-**Lời giải:** Tổng hai cos có thể đổi thành tích để tách nghiệm: \(\cos3x+\cos x=2\cos2x\cos x\). Nhánh \(\cos2x=0\) cho \(x=\frac\pi4+\frac{k\pi}2\), \(k\in\mathbb Z\); lọc miền được bốn nghiệm \(\frac\pi4,\frac{3\pi}4,\frac{5\pi}4,\frac{7\pi}4\). Nhánh \(\cos x=0\) cho \(x=\frac\pi2+k\pi\), nhận hai nghiệm \(\frac\pi2,\frac{3\pi}2\). Sáu nghiệm phân biệt, mỗi nghiệm làm ít nhất một thừa số bằng 0 nên thỏa phương trình gốc; \(x=0\) không thỏa, \(2\pi\) ngoài miền.
+**Lời giải:** Tổng hai cos có thể đổi thành tích để tách nghiệm: \(\cos(3x)+\cos x=2\cos(2x)\cos x\). Nhánh \(\cos(2x)=0\) cho \(x=\frac\pi4+\frac{k\pi}2\), \(k\in\mathbb Z\); lọc miền được bốn nghiệm \(\frac\pi4,\frac{3\pi}4,\frac{5\pi}4,\frac{7\pi}4\). Nhánh \(\cos x=0\) cho \(x=\frac\pi2+k\pi\), nhận hai nghiệm \(\frac\pi2,\frac{3\pi}2\). Sáu nghiệm phân biệt, mỗi nghiệm làm ít nhất một thừa số bằng 0 nên thỏa phương trình gốc; \(x=0\) không thỏa, \(2\pi\) ngoài miền.
 
 **Rubric tự đối chiếu:** 7 điểm: lý do chọn tổng thành tích (1); biến đổi (1); họ thứ nhất (1); lọc bốn nghiệm (1); họ thứ hai (1); lọc hai nghiệm (1); kiểm biên, trùng lặp và nghiệm (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
 
@@ -273,7 +273,7 @@ problem_family_id: TOP06-COS2X_SINX
 difficulty_band: TRANSFER
 **Đề bài:** Giải \(\cos(2x)=1-\sin x\) trên \([0;2\pi)\). Đặt \(t=\sin x\), tìm miền của t, giải phương trình đại số và lọc đủ nghiệm, đặc biệt tại hai đầu mút.
 
-**Gợi ý:** Dùng \(\cos2x=1-2\sin^2x\). Không chia cho t trước khi xét \(t=0\).
+**Gợi ý:** Dùng \(\cos(2x)=1-2\sin^2x\). Không chia cho t trước khi xét \(t=0\).
 
 **Đáp án:** \(S=\{0;\frac\pi6;\frac{5\pi}6;\pi\}\).
 
@@ -293,13 +293,13 @@ written_role: DEEP_ANCHOR (label only)
 content_version: 1
 problem_family_id: TOP06-PERIODIC_MODEL
 difficulty_band: TRANSFER
-**Đề bài:** Nhiệt độ giả định \(h(t)=10+2\sin\frac{\pi(t-6)}{12}\) (°C), với \(0\le t\le24\) giờ. Tìm đường trung bình, biên độ, chu kỳ của công thức, GTLN/GTNN và mọi thời điểm \(h(t)=10\). Nêu giới hạn của mô hình.
+**Đề bài:** Nhiệt độ giả định \(h(t)=10+2\sin\left(\frac{\pi(t-6)}{12}\right)\) (°C), với \(0\le t\le24\) giờ. Tìm đường trung bình, biên độ, chu kỳ của công thức, GTLN/GTNN và mọi thời điểm \(h(t)=10\). Nêu giới hạn của mô hình.
 
 **Gợi ý:** Đổi thời gian sang pha, tìm các góc có sin bằng 1, -1 hoặc 0 rồi lọc miền.
 
 **Đáp án:** Đường trung bình 10°C, biên độ 2°C, chu kỳ 24 giờ; GTLN 12°C tại 12 giờ, GTNN 8°C tại 0 và 24 giờ; bằng 10°C tại 6 và 18 giờ.
 
-**Lời giải:** Hệ số của t là \(\frac\pi{12}\), nên chu kỳ công thức là \(\frac{2\pi}{\pi/12}=24\) giờ. Khi t chạy từ 0 đến 24, pha chạy từ \(-\frac\pi2\) đến \(\frac{3\pi}2\). Sin đạt 1 tại \(\frac\pi2\), tức \(t=12\), cho GTLN 12°C; sin đạt -1 ở cả hai đầu pha, tức \(t=0,24\), cho GTNN 8°C. \(h(t)=10\iff\frac{\pi(t-6)}{12}=k\pi\iff t=6+12k\), \(k\in\mathbb Z\). Giữ \(t=6,18\) trong miền. Mô hình giả định trên khoảng thời gian đã cho, không phải số đo hay dự báo thực tế.
+**Lời giải:** Hệ số của t là \(\frac\pi{12}\), nên chu kỳ công thức là \(\frac{2\pi}{\frac{\pi}{12}}=24\) giờ. Khi t chạy từ 0 đến 24, pha chạy từ \(-\frac\pi2\) đến \(\frac{3\pi}2\). Sin đạt 1 tại \(\frac\pi2\), tức \(t=12\), cho GTLN 12°C; sin đạt -1 ở cả hai đầu pha, tức \(t=0,24\), cho GTNN 8°C. \(h(t)=10\iff\frac{\pi(t-6)}{12}=k\pi\iff t=6+12k\), \(k\in\mathbb Z\). Giữ \(t=6,18\) trong miền. Mô hình giả định trên khoảng thời gian đã cho, không phải số đo hay dự báo thực tế.
 
 **Rubric tự đối chiếu:** 7 điểm: đường trung bình và biên độ (1); chu kỳ và đơn vị (1); GTLN và thời điểm (1); GTNN tại đủ hai biên (1); phương trình mức 10 (1); lọc đúng thời gian (1); giới hạn mô hình (1). Chấp nhận cách giải đúng khác; không trừ lặp lỗi kéo theo.
 
