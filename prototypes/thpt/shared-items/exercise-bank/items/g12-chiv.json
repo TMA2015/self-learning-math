@@ -111,7 +111,7 @@
     "item_id": "THPT-G12-B11-A01",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A01",
     "stem": "Vị trí của vật là \\(s(t)=t^3+2t\\) (m), t tính bằng giây, \\(t\\ge0\\). Tìm vận tốc.",
-    "answer_key": "\\(v(t)=3t^2+2\\) m/s.",
+    "answer_key": "\\(v(t)=3t^2+2\\,\\mathrm{m/s}\\).",
     "worked_solution": "Vận tốc là đạo hàm của vị trí theo thời gian, nên \\(v(t)=s'(t)=3t^2+2\\) m/s. Đây là vận tốc, không phải vị trí; tại t=0 lấy đạo hàm một phía theo miền thời gian.",
     "skill_ids": [
       "G12-CHIV-B11-O01"
@@ -273,7 +273,7 @@
     "item_id": "THPT-G12-B11-A02",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B11-A02",
     "stem": "Một vật có vận tốc \\(v(t)=4t\\) (m/s), vị trí ban đầu 6 m. Tìm vị trí \\(s(t)\\) với \\(t\\ge0\\) (giây).",
-    "answer_key": "\\(s(t)=2t^2+6\\) m.",
+    "answer_key": "\\(s(t)=2t^2+6\\,\\mathrm{m}\\).",
     "worked_solution": "Từ \\(s'(t)=v(t)=4t\\), lấy nguyên hàm \\(s(t)=2t^2+C\\). Vì s(0)=6 nên C=6. Kiểm đạo hàm và vị trí ban đầu.",
     "skill_ids": [
       "G12-CHIV-B11-O02"
@@ -2163,7 +2163,7 @@
     "item_id": "THPT-G12-B12-P07",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B12-P07",
     "stem": "Một vật có vận tốc \\(v(t)=t^2\\) m/s trong 1 đến 2 giây. Tính quãng đường.",
-    "answer_key": "\\(\\frac73\\) m.",
+    "answer_key": "\\(\\frac73\\,\\mathrm{m}\\).",
     "worked_solution": "Vận tốc không âm trên [1;2]. Quãng đường \\(\\int_1^2|v(t)|\\,\\mathrm dt=\\int_1^2t^2\\,\\mathrm dt=\\frac{8-1}{3}=\\frac73\\) m.",
     "skill_ids": [
       "G12-CHIV-B12-O07"
@@ -2379,7 +2379,7 @@
     "item_id": "THPT-G12-B13-A01",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A01",
     "stem": "Mép đất có độ cao \\(y=2+x\\) (m), x từ 0 đến 3 m. Tính diện tích mặt cắt giữa đồ thị và Ox.",
-    "answer_key": "\\(\\frac{21}{2}\\) m².",
+    "answer_key": "\\(\\frac{21}{2}\\,\\mathrm{m}^2\\).",
     "worked_solution": "Độ cao dương. \\(S=\\int_0^3(2+x)\\,\\mathrm dx=\\left.(2x+\\frac{x^2}2)\\right|_0^3=6+\\frac92=\\frac{21}2\\) m².",
     "skill_ids": [
       "G12-CHIV-B13-O01"
@@ -2413,19 +2413,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{21}{2}\\,\\mathrm{m^2}\\)."
+        "text": "\\(\\frac{21}{2}\\,\\mathrm{m}^2\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\frac92\\,\\mathrm{m^2}\\)"
+        "text": "\\(\\frac92\\,\\mathrm{m}^2\\)"
       },
       {
         "id": "C",
-        "text": "\\(15\\,\\mathrm{m^2}\\)"
+        "text": "\\(15\\,\\mathrm{m}^2\\)"
       },
       {
         "id": "D",
-        "text": "\\(9\\,\\mathrm{m^2}\\)"
+        "text": "\\(9\\,\\mathrm{m}^2\\)"
       }
     ]
   },
@@ -3189,7 +3189,7 @@
     "item_id": "THPT-G12-B13-A06",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A06",
     "stem": "Vật thể có diện tích mặt cắt vuông góc Ox là \\(S(x)=4-x^2\\) cm², x từ 0 đến 2 cm. Tính thể tích.",
-    "answer_key": "\\(\\frac{16}3\\) cm³.",
+    "answer_key": "\\(\\frac{16}3\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Trên đoạn, S không âm. \\(V=\\int_0^2(4-x^2)\\,\\mathrm dx=8-\\frac83=\\frac{16}3\\) cm³. Không bình phương S lần nữa vì đề đã cho diện tích mặt cắt.",
     "skill_ids": [
       "G12-CHIV-B13-O06"
@@ -3223,19 +3223,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{16}3\\,\\mathrm{cm^3}\\)."
+        "text": "\\(\\frac{16}3\\,\\mathrm{cm}^3\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\frac83\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\frac83\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "C",
-        "text": "\\(8\\,\\mathrm{cm^3}\\)"
+        "text": "\\(8\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac{16}3\\,\\mathrm{cm^2}\\)"
+        "text": "\\(\\frac{16}3\\,\\mathrm{cm}^2\\)"
       }
     ]
   },
@@ -3243,7 +3243,7 @@
     "item_id": "THPT-G12-B13-C07",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-C07",
     "stem": "Vật thể có mặt cắt tròn vuông góc Ox bán kính \\(r(x)=x\\) cm, x từ 0 đến 1 cm. Tính thể tích.",
-    "answer_key": "\\(\\frac\\pi3\\) cm³.",
+    "answer_key": "\\(\\frac\\pi3\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Diện tích mặt cắt là \\(S(x)=\\pi x^2\\). \\(V=\\pi\\int_0^1x^2\\,\\mathrm dx=\\frac\\pi3\\) cm³. Phải bình phương bán kính trước khi tích phân.",
     "skill_ids": [
       "G12-CHIV-B13-O07"
@@ -3277,19 +3277,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac\\pi3\\,\\mathrm{cm^3}\\)."
+        "text": "\\(\\frac\\pi3\\,\\mathrm{cm}^3\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\frac\\pi2\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\frac\\pi2\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\pi\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\pi\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac13\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\frac13\\,\\mathrm{cm}^3\\)"
       }
     ]
   },
@@ -3297,7 +3297,7 @@
     "item_id": "THPT-G12-B13-P07",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-P07",
     "stem": "Vật thể có mặt cắt tròn vuông góc Ox bán kính \\(r(x)=2x\\) cm, x từ 0 đến 2 cm. Tính thể tích.",
-    "answer_key": "\\(\\frac{32\\pi}3\\) cm³.",
+    "answer_key": "\\(\\frac{32\\pi}3\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Diện tích mặt cắt \\(S(x)=\\pi(2x)^2=4\\pi x^2\\). \\(V=4\\pi\\int_0^2x^2\\,\\mathrm dx=\\frac{32\\pi}3\\) cm³. Hệ số 2 của bán kính trở thành 4 trong diện tích.",
     "skill_ids": [
       "G12-CHIV-B13-O07"
@@ -3331,19 +3331,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{16\\pi}3\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\frac{16\\pi}3\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "B",
-        "text": "\\(4\\pi\\,\\mathrm{cm^3}\\)"
+        "text": "\\(4\\pi\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\frac{32}3\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\frac{32}3\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\frac{32\\pi}3\\,\\mathrm{cm^3}\\)."
+        "text": "\\(\\frac{32\\pi}3\\,\\mathrm{cm}^3\\)."
       }
     ]
   },
@@ -3351,7 +3351,7 @@
     "item_id": "THPT-G12-B13-A07",
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-G12-B13-A07",
     "stem": "Vật thể có mặt cắt tròn vuông góc Ox bán kính \\(r(x)=\\sqrt{x}\\) cm, x từ 0 đến 4 cm. Tính thể tích.",
-    "answer_key": "\\(8\\pi\\) cm³.",
+    "answer_key": "\\(8\\pi\\,\\mathrm{cm}^3\\).",
     "worked_solution": "Diện tích mặt cắt \\(S(x)=\\pi(\\sqrt{x})^2=\\pi x\\). \\(V=\\pi\\int_0^4x\\,\\mathrm dx=8\\pi\\) cm³. Không tích phân trực tiếp bán kính.",
     "skill_ids": [
       "G12-CHIV-B13-O07"
@@ -3385,19 +3385,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(4\\pi\\,\\mathrm{cm^3}\\)"
+        "text": "\\(4\\pi\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\frac{16\\pi}3\\,\\mathrm{cm^3}\\)"
+        "text": "\\(\\frac{16\\pi}3\\,\\mathrm{cm}^3\\)"
       },
       {
         "id": "C",
-        "text": "\\(8\\pi\\,\\mathrm{cm^3}\\)."
+        "text": "\\(8\\pi\\,\\mathrm{cm}^3\\)."
       },
       {
         "id": "D",
-        "text": "\\(8\\,\\mathrm{cm^3}\\)"
+        "text": "\\(8\\,\\mathrm{cm}^3\\)"
       }
     ]
   },
