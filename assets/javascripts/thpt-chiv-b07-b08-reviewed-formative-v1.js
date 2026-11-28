@@ -24,7 +24,7 @@
     "lesson": "7",
     "role": "CORE",
     "skill": "G10-B07-EQUALITY",
-    "stem": "Hai vectơ khác không bằng nhau khi nào?",
+    "stem": "Cho hai vectơ đều khác vectơ-không. Khi nào hai vectơ này bằng nhau?",
     "options": [
       "A. Chỉ cần cùng giá",
       "B. Chỉ cần cùng độ dài",
@@ -129,12 +129,12 @@
     "lesson": "8",
     "role": "CORE",
     "skill": "G10-B08-TRIANGLE",
-    "stem": "Với ba điểm A, B, C bất kì, $\\overrightarrow{AB}+\\overrightarrow{BC}$ bằng vectơ nào?",
+    "stem": "Với mọi bộ ba điểm A, B, C, tổng $\\overrightarrow{AB}+\\overrightarrow{BC}$ luôn bằng vectơ nào?",
     "options": [
       "A. $\\overrightarrow{AC}$",
       "B. $\\overrightarrow{CA}$",
       "C. $\\overrightarrow{CB}$",
-      "D. $\\vec0$ (luôn đúng)"
+      "D. $\\vec0$"
     ],
     "answerKey": "A",
     "solution": "Đáp án: A\nLời giải: Theo quy tắc ba điểm: $\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}$.",
@@ -177,7 +177,7 @@
     "role": "PRACTICE",
     "skill": "G10-B08-OPPOSITE-SUBTRACTION",
     "stem": "Rút gọn $\\overrightarrow{AB}-\\overrightarrow{AC}$.",
-    "solution": "Đáp án: $\\overrightarrow{CB}$\nLời giải: $\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{CA}=\\overrightarrow{CB}$ theo quy tắc ba điểm (CA + AB = CB).",
+    "solution": "Đáp án: $\\overrightarrow{CB}$\nLời giải: $\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{CA}=\\overrightarrow{CB}$ theo quy tắc ba điểm ($\\overrightarrow{CA}+\\overrightarrow{AB}=\\overrightarrow{CB}$).",
     "hint": "Trừ một vectơ tức cộng với vectơ đối; thử đảo thứ tự phép cộng.",
     "exposure": "FORMATIVE_ONLY",
     "difficulty": "CORE_APPLY"
