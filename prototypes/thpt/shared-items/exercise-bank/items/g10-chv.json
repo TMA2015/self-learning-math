@@ -64,19 +64,19 @@
     "options": [
       {
         "id": "A",
-        "text": "[12,3;12,5] cm"
+        "text": "\\([12{,}3;12{,}5]\\) cm"
       },
       {
         "id": "B",
-        "text": "[12,2;12,4] cm"
+        "text": "\\([12{,}2;12{,}4]\\) cm"
       },
       {
         "id": "C",
-        "text": "[12,1;12,5] cm"
+        "text": "\\([12{,}1;12{,}5]\\) cm"
       },
       {
         "id": "D",
-        "text": "Chính xác 12,3 cm"
+        "text": "Chính xác \\(12{,}3\\) cm"
       }
     ],
     "key_choice": "C",
@@ -867,19 +867,19 @@
     "options": [
       {
         "id": "A",
-        "text": "3; 4; 6, lấy nửa chứa trung vị"
+        "text": "3; 4; 6, lấy nửa chứa trung vị."
       },
       {
         "id": "B",
-        "text": "2; 4; 8, bỏ trung vị rồi lấy trung vị mỗi nửa"
+        "text": "2; 4; 8, bỏ quan sát chính giữa rồi lấy trung vị mỗi nửa."
       },
       {
         "id": "C",
-        "text": "1; 4; 9, lấy hai đầu"
+        "text": "1; 4; 9, lấy hai đầu."
       },
       {
         "id": "D",
-        "text": "2,5; 4; 7, lấy trung bình hai số sát trung vị"
+        "text": "2,5; 4; 7, lấy trung bình hai số sát trung vị."
       }
     ]
   },
@@ -1609,7 +1609,7 @@
   {
     "item_id": "THPT-G10-CHV-TRY-CALC-R01",
     "content_version": "SGK-G10-CHV-BANK-CANDIDATE-20261127-THPT-G10-CHV-TRY-CALC-R01",
-    "stem": "Tính \\(\\sqrt[3]{11}\\) và ghi số gần đúng đến hàng phần nghìn sao cho sai số không vượt quá \\(0{,}0005\\). Hãy mô tả cách nhập và vì sao không dùng \\(11/3\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Tự thao tác trên máy tính cầm tay để tính \\(\\sqrt[3]{11}\\), ghi số gần đúng đến hàng phần nghìn sao cho sai số không vượt quá \\(0{,}0005\\). Mô tả cách nhập và vì sao không dùng \\(11/3\\). Chọn phương án đúng sau khi đã thực hành và tự kiểm.",
     "answer_key": "∛11≈2,224; sai số khoảng 0,00001991<0,0005. Nhập căn bậc ba hoặc 11^(1/3), không chia 11 cho 3.",
     "worked_solution": "**Kết quả:** \\(\\sqrt[3]{11}\\approx2{,}223980090\\ldots\\), làm tròn được \\(2{,}224\\). Sai số khoảng \\(0{,}00001991<0{,}0005\\); có thể chứng minh bằng \\(2{,}2235^3<11<2{,}2245^3\\).\n\n**Vì sao:** Căn bậc ba là lũy thừa mũ \\(1/3\\), không phải phép chia cho 3. Chỉ có thể ghi đã thực hành máy khi đã thật sự nhập, đọc và quy tròn.\n\n**Nếu nhầm:** Tự mở khung Kiểm lỗi ngay bên dưới, rồi chọn bộ số mới trong Luyện tập; không dùng kết quả vừa xem làm chứng cứ độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1668,7 +1668,7 @@
   {
     "item_id": "THPT-G10-CHV-TRY05",
     "content_version": "SGK-G10-CHV-BANK-CANDIDATE-20261127-THPT-G10-CHV-TRY05",
-    "stem": "Mẫu số liệu \\(2,4,4,10\\) gồm bốn quan sát. Tính số trung bình cộng, không bỏ giá trị lớn nhất. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Mẫu số liệu \\(2,4,4,10\\) gồm bốn quan sát. Tính số trung bình cộng của mẫu và giải thích vì sao phải dùng cả bốn giá trị. Chọn phương án đúng sau khi tự giải.",
     "answer_key": "Trung bình cộng 5.",
     "worked_solution": "<div class=\"thpt-r4-first-try-answer\">\n<p><strong>Đối chiếu kết quả:</strong> \\(\\bar x=(2+4+4+10)/4=5\\).</p>\n<p><strong>Giải thích vì sao:</strong> Có bốn quan sát, tổng 20. Chia đều tổng cho bốn lần ghi cho 5; không bỏ giá trị 10 chỉ vì cao.</p>\n<p><strong>Nếu chưa làm được:</strong> Đọc §1.2.1 và §2.1 về phép chia đều, đếm đủ bốn quan sát, rồi <a href=\"../luyen-tap/?item=THPT-G10-B13-C01\">thử câu cùng kiến thức trong Core/Luyện tập</a>.</p>\n</div>",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
