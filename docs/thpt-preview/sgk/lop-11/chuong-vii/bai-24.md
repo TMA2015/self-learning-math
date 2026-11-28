@@ -175,7 +175,7 @@
 
     ### 3.5. Đọc góc đường–mặt từ tam giác 6–8–10
 
-    **Đề bài.** Một đoạn dốc dài 10 m, cao hơn nền 6 m. Tính độ dài hình chiếu trên nền và \(\sin\alpha,\tan\alpha\), với \(\alpha\) là góc giữa đoạn dốc và mặt nền.
+    **Đề bài.** Một đoạn dốc dài 10 m, đầu dưới nằm trên mặt nền phẳng, đầu trên cao hơn nền 6 m. Tính độ dài hình chiếu trên nền và \(\sin\alpha,\tan\alpha\), với \(\alpha\) là góc giữa đoạn dốc và mặt nền.
 
     **Phân tích:** Độ dài 10 là **cạnh huyền**, 6 là **độ cao vuông góc**; hình chiếu là cạnh ngang chưa biết. Dùng Pythagore trước, tỉ số lượng giác sau.
 
@@ -197,7 +197,7 @@
 
     ### 3.7. Máy bay: quãng đường bay và độ cao
 
-    **Đề bài.** Máy bay bay thẳng với tốc độ không đổi \(240\) km/h, góc cất cánh \(30^\circ\) so với nền ngang. Tính quãng đường và độ cao sau đúng một phút.
+    **Đề bài.** Máy bay xuất phát từ mặt đất phẳng và bay thẳng với tốc độ không đổi \(240\) km/h, góc cất cánh \(30^\circ\) so với nền ngang. Tính quãng đường và độ cao sau đúng một phút.
 
     **Phân tích:** Đổi \(1\) phút \(=1/60\) giờ. Quãng bay là cạnh xiên; độ cao là cạnh đối của góc cất cánh, nên phải nhân với \(\sin30^\circ\).
 

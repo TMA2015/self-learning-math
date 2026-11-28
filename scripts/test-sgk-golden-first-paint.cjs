@@ -28,7 +28,10 @@ const mode=process.env.SGK_FIRST_PAINT_MODE||"FULL";
 assert(["FULL","G11_W1","G11_W2","G11_W3","G11_W4","G11_W5","G11_W6","G11_W7","G12_W8","G12_W9","G12_W10","G12_W11","G12_W12","G12_W13","G12_MATH_HOTFIX","SGK_SOURCE_ONLY"].includes(mode),"Unknown First Paint QA mode");
 const scoped=mode!=="FULL",w2=mode==="G11_W2",w3=mode==="G11_W3",w4=mode==="G11_W4",w5=mode==="G11_W5",w6=mode==="G11_W6",w7=mode==="G11_W7",w8=mode==="G12_W8",w9=mode==="G12_W9",w10=mode==="G12_W10",w11=mode==="G12_W11",w12=mode==="G12_W12",w13=mode==="G12_W13",hot=mode==="G12_MATH_HOTFIX";
 const sourceOnly=mode==="SGK_SOURCE_ONLY";
-const requested=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean).map(x=>x.slice(5,-3));
+const requestedPaths=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean);
+// CP14: chapter/practice routes receive their own browser checks, not lesson-only First Paint markup.
+const exactMixed=sourceOnly&&require("./thpt-1132-g11-knowledge-delta.cjs").matchesRoutes(requestedPaths);
+const requested=(exactMixed?requestedPaths.filter(x=>/\/bai-\d+\.md$/.test(x)):requestedPaths).map(x=>x.slice(5,-3));
 if(sourceOnly)assert(requested.length&&new Set(requested).size===requested.length&&requested.every(x=>rows.some(r=>r.rel===x)),"Exact canonical lesson list required");
 const selected=sourceOnly?rows.filter(x=>requested.includes(x.rel)):w13?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=17&&x.n<=19):hot?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=7&&x.n<=13):w12?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=13&&x.n<=17):w11?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=10&&x.n<=13):w10?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=8&&x.n<=10):w9?rows.filter(x=>x.grade===10&&x.n===10||x.grade===12&&x.n>=5&&x.n<=8):scoped?rows.filter(x=>x.grade===10&&x.n===10||w8&&x.grade===12&&x.n<=5||x.grade===11&&(w8?x.n===33:w7?x.n>=27:w6?x.n>=21&&x.n<=27:w5?x.n>=17&&x.n<=21:w4?x.n>=14&&x.n<=17:w3?x.n>=9&&x.n<=14:w2?x.n>=4&&x.n<=9:x.n<=4)):rows;
 const smoke=row=>row.grade===10||w13&&row.grade===12&&row.n===17||w12&&row.grade===12&&row.n===13||w11&&row.grade===12&&row.n===10||w10&&row.grade===12&&row.n===8||w9&&row.grade===12&&row.n===5||row.grade===11&&row.n===(w8?33:w7?27:w6?21:w5?17:w4?14:w3?9:w2?4:1);

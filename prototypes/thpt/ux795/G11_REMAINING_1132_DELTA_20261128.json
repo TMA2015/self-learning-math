@@ -1,0 +1,794 @@
+{
+  "base": "dd450b912d657c67b5a79783f3e91800c7f98e3b",
+  "items": [
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-3.md",
+      "old": "6a88cfa1fc03f8ed6f642fc448bea286dfd9f55c",
+      "edits": [
+        {
+          "before": "hai đồ thị ở mục 5, 6.",
+          "after": "hai đồ thị ở mục 1.5 (Hàm số tang) và 1.6 (Hàm số côtang).",
+          "count": 1
+        },
+        {
+          "before": "trái với việc sin có chu kì nhỏ nhất",
+          "after": "trái với kết quả về chu kì nhỏ nhất của sin (xem đồ thị và giải thích ở mục 1.3):",
+          "count": 1
+        },
+        {
+          "before": "chu kì nhỏ nhất của sin (xem đồ thị và giải thích ở mục 1.3): \\(2\\pi\\)",
+          "after": "sin có chu kì nhỏ nhất \\(2\\pi\\) (xem đồ thị và giải thích ở mục 1.3)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-4.md",
+      "old": "515ad705f86b2448b262026f2f2fb8d3ec2e5bdc",
+      "edits": [
+        {
+          "before": "Trong \\([0;2\\pi)\\), nghiệm là \\(x=2\\pi/3\\) và \\(x=4\\pi/3\\).",
+          "after": "Trong \\([0;2\\pi)\\), họ \\(x=2\\pi/3+2k\\pi\\) nhận \\(k=0\\); họ \\(x=-2\\pi/3+2k\\pi\\) nhận \\(k=1\\). Vậy nghiệm là \\(x=2\\pi/3\\) và \\(x=4\\pi/3\\).",
+          "count": 1
+        },
+        {
+          "before": "\\(\\sin x=m\\iff\\begin{cases}x=\\alpha+2k\\pi,\\\\x=\\pi-\\alpha+2k\\pi,\\end{cases}\\quad k\\in\\mathbb Z.\\)",
+          "after": "\\(\\sin x=m\\) khi và chỉ khi \\(x=\\alpha+2k\\pi\\) hoặc \\(x=\\pi-\\alpha+2k\\pi\\), với \\(k\\in\\mathbb Z\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-5.md",
+      "old": "6adf77092611788f301eb3e3dd0b52a4ddbd8a66",
+      "edits": [
+        {
+          "before": "bất đẳng thức nghiêm ở mục 3.",
+          "after": "bất đẳng thức nghiêm ở mục 1.3 (Dãy số tăng, giảm và bị chặn).",
+          "count": 1
+        },
+        {
+          "before": "và \\(u_n\\equiv1\\pmod5\\);",
+          "after": "và \\(u_n=5(n-1)+1\\) nên chia cho 5 dư 1;",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-6.md",
+      "old": "15832bd010a1a965be901c1ed13bc9702366644e",
+      "edits": [
+        {
+          "before": "dẫn đến \\(u_1\\ne u_1\\) khi thay \\(n=1\\).",
+          "after": "khi thay \\(n=1\\), vế phải cho \\(u_1+d\\) thay vì \\(u_1\\); nếu \\(d\\ne0\\), hai giá trị khác nhau.",
+          "count": 1
+        },
+        {
+          "before": "Điều kiện ở một bộ ba chưa bảo đảm hiệu không đổi cho **toàn dãy**; nó chỉ là hệ quả của cấp số cộng.",
+          "after": "Điều kiện ở một bộ ba chưa bảo đảm hiệu không đổi cho **toàn dãy**. Nếu \\(2u_n=u_{n-1}+u_{n+1}\\) đúng với mọi bộ ba liên tiếp, thì \\(u_{n+1}-u_n=u_n-u_{n-1}\\), nên các hiệu liên tiếp bằng nhau và dãy là cấp số cộng.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ii/bai-7.md",
+      "old": "09abeb68746d84da84b8b29bfc34e933a518d988",
+      "edits": [
+        {
+          "before": "với \\(n\\in\\mathbb N^*\\).</p><p><strong>Nếu",
+          "after": "với \\(n\\in\\mathbb N^*\\) không vượt quá số số hạng nếu dãy hữu hạn.</p><p><strong>Nếu",
+          "count": 1
+        },
+        {
+          "before": "Chỉ có điều kiện “mọi số hạng dương” mới giúp loại công bội âm trong tình huống này.",
+          "after": "Trong bài này, giả thiết mọi số hạng dương giúp loại công bội âm.",
+          "count": 1
+        },
+        {
+          "before": "\\(u_1=5;\\ u_2=5(-2)=-10;\\ u_3=(-10)(-2)=20;\\ u_4=20(-2)=-40;\\ u_5=(-40)(-2)=80.\\)",
+          "after": "\\(u_1=5\\); \\(u_2=5(-2)=-10\\); \\(u_3=(-10)(-2)=20\\); \\(u_4=20(-2)=-40\\); \\(u_5=(-40)(-2)=80\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/bai-8.md",
+      "old": "b3c9f4973bec363ddfd1cc8ea9a156c030dd5bc2",
+      "edits": [
+        {
+          "before": "Có thể chọn từ \\(127{,}5\\) đến dưới \\(145{,}5\\) phút.",
+          "after": "Nếu mốc đầu là \\(a\\), cần \\(a\\le129\\) và \\(a+18>145\\) để cả giá trị lớn nhất nằm trong khoảng nửa kín. Chẳng hạn chọn \\(a=127{,}5\\), các nhóm đầu và cuối là \\([127{,}5;130{,}5)\\), \\([130{,}5;133{,}5)\\), \\(\\ldots\\), \\([142{,}5;145{,}5)\\). Đây chỉ là một cách chọn mốc.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/bai-9.md",
+      "old": "c8869d0413370af29b0e069036d8aab7e4b7b5f6",
+      "edits": [
+        {
+          "before": "để trung điểm vẫn bằng \\(2\\) và hai nhóm liên tiếp không bị hở hay chồng tại các giá trị nguyên.",
+          "after": "vì các biên được đặt giữa hai số nguyên liên tiếp: nhóm này nhận đúng 1, 2, 3; nhóm tiếp theo 4–6 bắt đầu tại 3,5. Trung điểm hai nhóm vẫn bằng 2 và 5; hiệu chỉnh biên và độ rộng có ý nghĩa khi nội suy.",
+          "count": 1
+        },
+        {
+          "before": "ứng với các vị trí \\(n/4,\\ n/2,\\ 3n/4\\) trong mẫu đã sắp xếp.",
+          "after": "ứng với các mức tần số tích lũy mục tiêu \\(n/4,\\ n/2,\\ 3n/4\\). Các mức này có thể không nguyên (chẳng hạn \\(n=21\\) thì \\(n/4=5{,}25\\)); không làm tròn trước khi nội suy.",
+          "count": 1
+        },
+        {
+          "before": "SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm.",
+          "after": "SGK dùng hai chênh lệch tần số với nhóm lân cận để ước lượng một vị trí bên trong nhóm. Nếu hai nhóm kề có tần số bằng nhau, ước lượng nằm ở giữa nhóm chứa mốt; nếu nhóm bên phải có tần số cao hơn bên trái, ước lượng lệch về bên phải.",
+          "count": 1
+        },
+        {
+          "before": "tần số trước nhóm \\(C\\)",
+          "after": "tổng tần số của tất cả các nhóm đứng trước \\(C\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-10.md",
+      "old": "0ac17c3c50a00f886a07dcbde58e6644d698b999",
+      "edits": [
+        {
+          "before": "\\(G\\) nằm trong cả \\((SBN)\\) và \\((SCM)\\), vậy hai mặt có giao tuyến \\(SG\\).",
+          "after": "\\(G\\) nằm trong cả \\((SBN)\\) và \\((SCM)\\). Hai mặt phân biệt: nếu trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \\(BN,CM\\), tức là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Do đó giao tuyến là \\(SG\\).",
+          "count": 1
+        },
+        {
+          "before": "Gọi \\(N=BF\\cap AM\\), suy ra",
+          "after": "Vì \\(E\\) nằm giữa \\(B,M\\) và \\(F\\) nằm giữa \\(A,E\\), \\(F\\) ở trong tam giác \\(ABM\\), nên tia \\(BF\\) cắt cạnh \\(AM\\) tại \\(N\\). Do đó",
+          "count": 1
+        },
+        {
+          "before": "Điểm \\(N\\) có thể cần dựng trên **đường thẳng kéo dài**, không giới hạn ở đoạn nhìn thấy; mỗi bước phải có chứng cứ điểm thuộc mặt.",
+          "after": "Trong bài này \\(N\\) nằm trên cạnh \\(AM\\) nhờ giả thiết điểm trong tam giác. Ở bài khác có thể cần kéo dài đường thẳng; mỗi bước phải có chứng cứ điểm thuộc mặt.",
+          "count": 1
+        },
+        {
+          "before": "Hai mặt phẳng cũng phân biệt, nên giao tuyến là",
+          "after": "Nếu hai mặt trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \\(BN,CM\\), nên là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Vậy hai mặt phân biệt, giao tuyến là",
+          "count": 1
+        },
+        {
+          "before": "ta có \\(G\\ne S\\); giao tuyến là \\(SG\\).",
+          "after": "ta có \\(G\\ne S\\). Nếu hai mặt trùng nhau thì mặt chung chứa hai đường cắt nhau \\(BN,CM\\) trong đáy, nên là \\((ABC)\\), trái với \\(S\\notin(ABC)\\). Vậy giao tuyến là \\(SG\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-11.md",
+      "old": "cc68e2f3089a5c79ee181aadc3d73e1f95ad2708",
+      "edits": [
+        {
+          "before": "\\(M\\in a\\subset(P),(R)\\) và \\(M\\in b\\subset(Q),(R)\\),",
+          "after": "\\(M\\in a\\subset(P)\\), \\(a\\subset(R)\\) và \\(M\\in b\\subset(Q)\\), \\(b\\subset(R)\\),",
+          "count": 1
+        },
+        {
+          "before": "trong lăng trụ \\(ABC.A'B'C'\\), đường",
+          "after": "trong lăng trụ \\(ABC.A'B'C'\\) (hai đáy tam giác tương ứng, các mặt bên là hình bình hành; sẽ học ở Bài 13), đường",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-12.md",
+      "old": "cd22cea2d2b016f7c62c5734179eceef24b25f6b",
+      "edits": [
+        {
+          "before": "vì \\(C\\) thuộc đáy nhưng không thuộc \\(MN\\), \\((Q)\\) phân biệt với đáy và giao tuyến qua \\(C\\) song song \\(MN\\).",
+          "after": "vì \\(MN\\not\\subset(ABCD)\\), \\((Q)\\) phân biệt với đáy. Hai mặt có điểm chung \\(C\\), nên giao tuyến qua \\(C\\) song song \\(MN\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-14.md",
+      "old": "2c44172b68321d0b9e9b515840ca548c90c00df0",
+      "edits": [
+        {
+          "before": "Một cửa sổ hình tròn nằm trong mặt phẳng không song song với phương chiếu.",
+          "after": "Một cửa sổ hình tròn nằm trong mặt phẳng không chứa đường thẳng nào cùng phương chiếu.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-15.md",
+      "old": "5c1a81633b877074aa64a21e2cfd128de2f7db2a",
+      "edits": [
+        {
+          "before": "khi từ một số hạng nào đó trở đi, \\(u_n\\) lớn hơn <strong>mọi mốc dương</strong> cho trước; kí hiệu \\(u_n\\to+\\infty\\). Dãy có <strong>giới hạn \\(-\\infty\\)</strong> nếu từ một lúc đủ muộn \\(u_n\\) nhỏ hơn <strong>mọi mốc âm có độ lớn tùy ý</strong>, tức với mọi \\(M>0\\) có \\(u_n<-M\\) kể từ một chỉ số đủ lớn.",
+          "after": "nếu với mỗi \\(M>0\\) cho trước, tồn tại \\(N\\in\\mathbb N^*\\) (phụ thuộc \\(M\\)) sao cho mọi \\(n\\ge N\\) đều có \\(u_n>M\\); kí hiệu \\(u_n\\to+\\infty\\). Dãy có <strong>giới hạn \\(-\\infty\\)</strong> nếu với mỗi \\(M>0\\), tồn tại \\(N\\in\\mathbb N^*\\) sao cho mọi \\(n\\ge N\\) đều có \\(u_n<-M\\).",
+          "count": 1
+        },
+        {
+          "before": "với mỗi \\(\\varepsilon>0\\), có \\(N\\) sao cho",
+          "after": "với mỗi sai số mong muốn \\(\\varepsilon>0\\), chọn một chỉ số nguyên dương \\(N\\) sao cho",
+          "count": 1
+        },
+        {
+          "before": "khi \\(n\\ge N\\), \\(1/n^2<\\varepsilon\\).",
+          "after": "khi \\(n\\ge N>1/\\sqrt\\varepsilon\\), ta có \\(n^2>1/\\varepsilon\\), nên \\(1/n^2<\\varepsilon\\).",
+          "count": 1
+        },
+        {
+          "before": "mọi \\(n\\ge N\\) đều có \\(|u_n|<\\varepsilon\\).</p>",
+          "after": "mọi \\(n\\ge N\\) đều có \\(|u_n|<\\varepsilon\\). Ví dụ với \\(u_n=1/n\\), chọn \\(\\varepsilon=0{,}01\\) thì \\(N=101\\) là một chỉ số thỏa mãn.</p>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-17.md",
+      "old": "989f397ebb88ed7a49ba9895c949bd85a3059585",
+      "edits": [
+        {
+          "before": "Nếu thiếu một điều kiện thì giữ trạng thái gián đoạn.",
+          "after": "Nếu \\(f(a)\\) không xác định, không thể xét tính liên tục tại \\(a\\). Nếu \\(f(a)\\) xác định nhưng giới hạn không tồn tại hoặc khác \\(f(a)\\), hàm không liên tục tại \\(a\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-20.md",
+      "old": "486af83a35ac295bf22bcd8e9b1ce3a428848550",
+      "edits": [
+        {
+          "before": "hai điểm cố định của dạng hàm mũ",
+          "after": "hai điểm đặc biệt của đồ thị \\(y=2^x\\)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-21.md",
+      "old": "c13fea0e82a408692ba43fe0e8fa6fdbdeaa83f9",
+      "edits": [
+        {
+          "before": "Nghiệm \\(2^x>4\\) là **\\(x>2\\)**, chỉ gồm phần đường cong ở phía trên đường ngưỡng;",
+          "after": "Tập nghiệm gồm các hoành độ của những điểm trên đồ thị \\(y=2^x\\) nằm phía trên \\(y=4\\), tức **\\(x>2\\)**;",
+          "count": 1
+        },
+        {
+          "before": "trước khi dùng tính đơn ánh.",
+          "after": "trước khi dùng tính đơn ánh (hai đối số dương khác nhau không thể có cùng lôgarit).",
+          "count": 1
+        },
+        {
+          "before": "\\(x+1=x^2-1\\), tức \\((x-2)(x+1)=0\\).",
+          "after": "\\(x+1=x^2-1\\), tức \\(x^2-x-2=0\\), hay \\((x-2)(x+1)=0\\).",
+          "count": 1
+        },
+        {
+          "before": "chỉ \\(x=2\\) thỏa \\(x>1\\).",
+          "after": "chỉ \\(x=2\\) thỏa \\(x>1\\); tại \\(x=-1\\), cả hai đối số bằng 0 nên lôgarit không xác định.",
+          "count": 1
+        },
+        {
+          "before": "mốc nhỏ nhất là \\(t=10\\).",
+          "after": "mốc nhỏ nhất là \\(t=10\\). Kiểm bằng mô hình: \\(780(0{,}905)^9>300\\) nhưng \\(780(0{,}905)^{10}<300\\). Số \\(9{,}57\\) chỉ là gần đúng của ngưỡng log chính xác.",
+          "count": 1
+        },
+        {
+          "before": "Từ \\(t\\ge9{,}57\\) kết luận 9 năm trọn vẹn đủ",
+          "after": "Từ ngưỡng chính xác \\(t\\ge\\log_{0{,}905}(5/13)\\) (xấp xỉ 9,57 năm) kết luận 9 năm trọn vẹn đủ",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+      "old": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "edits": [
+        {
+          "before": "Nêu góc quay theo radian và độ dài cung đã đi.",
+          "after": "Một vòng ứng với 360° hay 2π rad; radian được giải thích ở mục 1.3. Nêu góc quay theo radian và độ dài cung đã đi.",
+          "count": 1
+        },
+        {
+          "before": "em dùng **góc tham chiếu** cho độ lớn, sau đó gắn đúng dấu theo góc phần tư.",
+          "after": "em dùng **góc tham chiếu** (góc nhọn tạo bởi tia cuối với trục hoành trong hai ví dụ này) cho độ lớn, sau đó gắn đúng dấu theo góc phần tư. Với \\(5\\pi/6\\), góc này là \\(\\pi-5\\pi/6=\\pi/6\\); với \\(7\\pi/6\\), là \\(7\\pi/6-\\pi=\\pi/6\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+      "old": "7ae9b767e969d13763d81e73b50dbcb33bccdb15",
+      "edits": [
+        {
+          "before": "Chúng cùng dao động theo một biến thời gian nhưng lệch pha; làm thế nào biết biên độ và pha của âm tổng hợp?",
+          "after": "Chúng cùng dao động theo một biến thời gian nhưng lệch pha. Biên độ là độ lệch lớn nhất so với mức 0; pha ban đầu là góc trong đối số lúc \\(t=0\\). Vì \\(\\cos t=\\sin(t+\\pi/2)\\), hai tín hiệu lệch pha \\(\\pi/2\\). Làm thế nào biết biên độ và pha của âm tổng hợp?",
+          "count": 1
+        },
+        {
+          "before": "có cùng tần số góc và chỉ khác pha.",
+          "after": "có cùng tần số góc (hệ số của \\(t\\) trong đối số, cho biết góc thay đổi nhanh thế nào theo thời gian) và chỉ khác pha.",
+          "count": 1
+        },
+        {
+          "before": "Thay công thức cộng/hiệu của sin và cos, rồi chia cả tử và mẫu cho \\(\\cos a\\cos b\\ne0\\),",
+          "after": "Thay công thức cộng/hiệu của sin và cos để được \\(\\dfrac{\\sin a\\cos b\\pm\\cos a\\sin b}{\\cos a\\cos b\\mp\\sin a\\sin b}\\), rồi chia cả tử và mẫu cho \\(\\cos a\\cos b\\ne0\\),",
+          "count": 1
+        },
+        {
+          "before": "Để hai hệ số bằng \\(5\\), ta có",
+          "after": "Thay \\(t=0\\) cho \\(k\\sin\\varphi=5\\); thay \\(t=\\pi/2\\) cho \\(k\\cos\\varphi=5\\). Hai điều kiện cũng đủ để biểu thức khai triển trùng với tín hiệu gốc ở mọi \\(t\\). Bình phương và cộng, ta có",
+          "count": 1
+        },
+        {
+          "before": "    &=\\sin a\\cos b+\\cos a\\sin b.\n    \\end{aligned}\n    \\]",
+          "after": "    &=\\sin a\\cos b+\\cos a\\sin b.\n    \\end{aligned}\n    \\]\n\n    Ở dòng cuối dùng \\(\\cos(\\pi/2-a)=\\sin a\\) và \\(\\sin(\\pi/2-a)=\\cos a\\) (quan hệ góc phụ ở Bài 1).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-13.md",
+      "old": "8d662b7d8d8677eb3c8d210f8acacce2cc00824d",
+      "edits": [
+        {
+          "before": "Các hình bình hành \\(ABC'D'\\) và \\(ADC'B'\\) cũng có đường chéo \\(AC'\\);",
+          "after": "Từ cấu tạo hình hộp, \\(AB\\parallel D'C'\\), \\(AB=D'C'\\) và \\(AD\\parallel B'C'\\), \\(AD=B'C'\\). Vì thế \\(ABC'D'\\) và \\(ADC'B'\\) cũng là hình bình hành, có chung đường chéo \\(AC'\\);",
+          "count": 1
+        },
+        {
+          "before": "Hai đường \\(MN,NP\\) cắt nhau tại \\(N\\), đều song song \\((ABCD)\\),",
+          "after": "Vì \\(M,N,P\\) nằm giữa các cạnh bên nên không thuộc đáy; kết hợp hai quan hệ song song với các cạnh đáy, theo dấu hiệu Bài 12 suy ra \\(MN,NP\\) song song \\((ABCD)\\). Hai đường này cắt nhau tại \\(N\\),",
+          "count": 1
+        },
+        {
+          "before": "đều ở ngoài đáy và song song mặt đáy;",
+          "after": "đều không nằm trong đáy vì \\(M,N,P\\) là trung điểm các cạnh bên. Theo dấu hiệu ở Bài 12, từ các quan hệ song song với cạnh đáy suy ra chúng song song mặt đáy;",
+          "count": 1
+        },
+        {
+          "before": "Tương tự \\(NP\\parallel BC\\), \\(PQ\\parallel CD\\) và \\(NP,PQ\\) cắt ở \\(P\\),",
+          "after": "Tương tự \\(PQ\\parallel CD\\), \\(P,Q\\) không thuộc đáy nên \\(PQ\\parallel(ABCD)\\). Vì \\(NP,PQ\\) cắt ở \\(P\\),",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md",
+      "old": "17cf25b5629fff519d577635a6803647b3453312",
+      "edits": [
+        {
+          "before": "Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.",
+          "after": "Chẳng hạn với \\(f(x)=(x^2-4)/(x-2)\\), mọi dãy \\(x_n\\ne2\\) tiến tới 2 đều cho \\(f(x_n)=x_n+2\\to4\\), theo kiến thức Bài 15. Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.",
+          "count": 1
+        },
+        {
+          "before": "=\\dfrac1{\\sqrt{4+x}+2}\\). Vì mẫu mới",
+          "after": "=\\dfrac{x}{x(\\sqrt{4+x}+2)}=\\dfrac1{\\sqrt{4+x}+2}\\). Tử đã rút gọn thành \\((4+x)-4=x\\); mẫu liên hợp dương và \\(x\\ne0\\) nên phép khử hợp lệ. Vì mẫu mới",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md",
+      "old": "91397166b56f95c8118d0134f7f8cb14916a963c",
+      "edits": [
+        {
+          "before": "với \\(0<a<1\\), thứ tự đảo chiều.",
+          "after": "với \\(0<a<1\\), thứ tự đảo chiều. Ví dụ \\((1/2)^0=1\\), \\((1/2)^1=1/2\\), \\((1/2)^2=1/4\\): mỗi khi số mũ tăng 1, giá trị nhân với một số nhỏ hơn 1 nên giảm. Đây là minh họa cho số mũ nguyên; tính chất với số mũ thực được nêu ở phần sau.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md",
+      "old": "406d662118b15c5057f1394432ff3618d52736ad",
+      "edits": [
+        {
+          "before": "Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \\(A=Pe^{rt}\\).",
+          "after": "Số kì \\(mt\\) phải phù hợp với số kì ghép thực tế. Với \\(r>0\\), đặt \\(s=m/r\\). Khi \\(m\\to+\\infty\\), \\(s\\to+\\infty\\) và \\((1+r/m)^{mt}=[(1+1/s)^s]^{rt}\\to e^{rt}\\). Vì vậy mô hình liên tục lý tưởng cho \\(A=Pe^{rt}\\).",
+          "count": 1
+        },
+        {
+          "before": "không làm tròn số năm về gần nhất.",
+          "after": "không làm tròn số năm về gần nhất. Ví dụ nếu ngưỡng là 6,2 năm thì làm tròn gần nhất được 6, nhưng 6 không đủ điều kiện: phải chọn 7.",
+          "count": 1
+        },
+        {
+          "before": "giá trị nhỏ nhất là \\(n=7\\) năm.",
+          "after": "giá trị nhỏ nhất là \\(n=7\\) năm. Kiểm hai mốc bằng công thức gốc: \\(100(1{,}06)^6<150\\), còn \\(100(1{,}06)^7\\ge150\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md",
+      "old": "fde91def1d86063fae77d520852ff683cda71186",
+      "edits": [
+        {
+          "before": "\\(DC'\\parallel AB'\\) vì các đoạn này cùng có hướng theo một cạnh đáy và một cạnh đứng.",
+          "after": "Tứ giác \\(AB'C'D\\) là hình bình hành vì \\(AD\\parallel B'C'\\) và \\(AD=B'C'\\). Do đó \\(DC'\\parallel AB'\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md",
+      "old": "3e25e8777dcdff21bee39cffe5b3814bfa441737",
+      "edits": [
+        {
+          "before": "Một đoạn dốc dài 10 m, cao hơn nền 6 m.",
+          "after": "Một đoạn dốc dài 10 m, đầu dưới nằm trên mặt nền phẳng, đầu trên cao hơn nền 6 m.",
+          "count": 1
+        },
+        {
+          "before": "Máy bay bay thẳng với tốc độ không đổi",
+          "after": "Máy bay xuất phát từ mặt đất phẳng và bay thẳng với tốc độ không đổi",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md",
+      "old": "6604897838dc1daabe85297fe246cf540c5b3108",
+      "edits": [
+        {
+          "before": "tương tự \\(AD'\\perp SC\\),",
+          "after": "mặt khác \\(CD\\perp AD\\) và \\(CD\\perp SA\\) nên \\(CD\\perp(SAD)\\), suy ra \\((SCD)\\perp(SAD)\\). Vì \\(AD'\\subset(SAD)\\) và \\(AD'\\perp SD\\) (giao tuyến hai mặt), ta có \\(AD'\\perp(SCD)\\), suy ra \\(AD'\\perp SC\\),",
+          "count": 1
+        },
+        {
+          "before": "Khoảng cách từ tâm đáy đến đỉnh tương ứng của hai tam giác lần lượt là \\(a/\\sqrt3\\), \\(a'/\\sqrt3\\).",
+          "after": "Tam giác đều cạnh \\(a\\) có đường cao \\(a\\sqrt3/2\\), tâm ngoại tiếp trùng trọng tâm, nên bán kính bằng \\(2/3\\) đường cao, tức \\(a/\\sqrt3\\). Tương tự đáy nhỏ có bán kính \\(a'/\\sqrt3\\). Khi chiếu vuông góc đỉnh trên xuống đáy lớn, hai bán kính tương ứng cùng hướng vì hai đáy là các mặt cắt song song của cùng hình chóp đều.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md",
+      "old": "280ae1d136d543ab4d2d5a7ddb4e8999f4e8e096",
+      "edits": [
+        {
+          "before": "\\(AO\\perp(BDD'B')\\), suy \\(d(AA',(BDD'B'))=AO\\).",
+          "after": "\\(AO\\perp(BDD'B')\\). Vì \\(AA'\\parallel BB'\\subset(BDD'B')\\) và \\(A\\notin(BDD'B')\\) (giao với đáy là \\(BD\\)), suy \\(AA'\\parallel(BDD'B')\\), nên \\(d(AA',(BDD'B'))=AO\\).",
+          "count": 1
+        },
+        {
+          "before": "là hợp lí vì \\(A\\) là một điểm khác \\(O\\) trên mặt \\((SAC)\\), không phải điểm thuộc \\(BD\\).",
+          "after": "vì \\(O\\) là trung điểm \\(AC\\). Nếu \\(K\\) là hình chiếu của \\(A\\) lên \\(SC\\), thì \\(OH\\parallel AK\\), nên \\(OH=AK/2\\) theo định lí đường trung bình.",
+          "count": 1
+        },
+        {
+          "before": "\\(AO\\perp(BDD'B')\\); do đó \\(d(AA',(BDD'B'))=AO=a/2=4\\) cm.",
+          "after": "\\(AO\\perp(BDD'B')\\). Vì \\(AA'\\parallel BB'\\subset(BDD'B')\\) và \\(A\\notin(BDD'B')\\) (giao với đáy là \\(BD\\)), nên \\(AA'\\parallel(BDD'B')\\); do đó \\(d(AA',(BDD'B'))=AO=a/2=4\\) cm.",
+          "count": 1
+        },
+        {
+          "before": "chân cao \\(O\\) là tâm đáy và \\(AO=a/\\sqrt3\\).",
+          "after": "chân cao \\(O\\) là tâm đáy và \\(AO=a/\\sqrt3\\) (bán kính ngoại tiếp tam giác đều, đã giải thích ở Bài 25).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md",
+      "old": "ede75c644c6da8305090bf1210e17873144d9367",
+      "edits": [
+        {
+          "before": "“không có cả ti vi lẫn máy vi tính” (không có loại nào)",
+          "after": "“không có ti vi và cũng không có máy vi tính”",
+          "count": 1
+        },
+        {
+          "before": "Một hộp có \\(2\\) bi đỏ và \\(1\\) bi xanh; lấy hai lượt.",
+          "after": "Một hộp có \\(2\\) bi đỏ và \\(1\\) bi xanh; mỗi lượt chọn ngẫu nhiên đều một bi trong số còn lại. Nếu trả lại, trộn đều và chọn lại độc lập.",
+          "count": 1
+        },
+        {
+          "before": "Hai bạn lần lượt rút mỗi người một bi.",
+          "after": "Hai bạn lần lượt chọn ngẫu nhiên đều mỗi người một bi trong số bi còn lại; nếu trả lại, trộn đều và chọn lại độc lập.",
+          "count": 1
+        },
+        {
+          "before": "Với hai biến cố đều có khả năng xảy ra,",
+          "after": "Với hai biến cố có xác suất dương,",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md",
+      "old": "134423d47faeed1a00ab5f9b0ed704119de67c64",
+      "edits": [
+        {
+          "before": "Mỗi bạn lấy đều một bóng từ một hộp khác nhau.",
+          "after": "Mỗi bạn chọn ngẫu nhiên đều một bóng từ một hộp khác nhau, hai lựa chọn độc lập.",
+          "count": 1
+        },
+        {
+          "before": "Hai hộp tách biệt nên kết quả rút ở hộp I không đổi thành phần hộp II. Hai biến cố độc lập.",
+          "after": "Theo giả thiết hai lựa chọn độc lập, hai biến cố lấy bóng cũng độc lập.",
+          "count": 1
+        },
+        {
+          "before": "### 3.6. Không thể nhân khi lấy vật không hoàn lại",
+          "after": "### 3.6. Không dùng công thức nhân xác suất độc lập trong bài rút không hoàn lại",
+          "count": 1
+        },
+        {
+          "before": "rút liên tiếp hai bi **không trả lại**.",
+          "after": "rút liên tiếp hai bi **không trả lại**, mỗi lượt chọn ngẫu nhiên đều trong số bi còn lại.",
+          "count": 1
+        },
+        {
+          "before": "\\(3/5\\) (do mỗi bi có cơ hội như nhau ở vị trí thứ hai).",
+          "after": "\\(3/5\\): có \\(5\\cdot4=20\\) cặp bi có thứ tự đồng khả năng, trong đó \\(3\\cdot4=12\\) cặp có bi thứ hai đỏ, nên \\(P(B)=12/20=3/5\\).",
+          "count": 1
+        },
+        {
+          "before": "Không được lấy \\(P(A)P(B)\\) chỉ vì có hai lượt.",
+          "after": "Không được lấy \\(P(A)P(B)\\) nếu chưa có độc lập; quy tắc nhân để đếm số cặp vẫn dùng được.",
+          "count": 1
+        },
+        {
+          "before": "Cả \\(0{,}3\\) và \\(0{,}2\\) đều không vượt \\(\\min\\{0{,}6;0{,}5\\}=0{,}5\\),",
+          "after": "Theo Bài 29, cần \\(0{,}6+0{,}5-1\\le P(MN)\\le\\min\\{0{,}6;0{,}5\\}\\), tức \\(0{,}1\\le P(MN)\\le0{,}5\\). Cả \\(0{,}3\\) và \\(0{,}2\\) đều thỏa,",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md",
+      "old": "8f3d2b6e144a5d5bee5635b7f5058291cc89c9ac",
+      "edits": [
+        {
+          "before": "vận tốc lúc chạm đất là",
+          "after": "vận tốc ngay trước khi chạm đất (giới hạn từ phía trước) là",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md",
+      "old": "82cfd851c3629e67793d91355d970011d8d1134e",
+      "edits": [
+        {
+          "before": "vì hàm có đạo hàm thì liên tục.",
+          "after": "vì hàm có đạo hàm thì liên tục: với \\(\\Delta x\\ne0\\), \\(v(x+\\Delta x)-v(x)=\\Delta x\\cdot[\\Delta v/\\Delta x]\\to0\\) do thương có giới hạn hữu hạn.",
+          "count": 1
+        },
+        {
+          "before": "\\(t\\ge0\\) (s). Tính vận tốc khi vật đạt độ cao cực đại và khi chạm lại mặt đất.",
+          "after": "\\(0\\le t\\le20/4{,}9\\) (s), từ lúc phóng đến lúc chạm lại đất. Tính vận tốc khi vật đạt độ cao cực đại và ngay trước khi chạm lại mặt đất.",
+          "count": 1
+        },
+        {
+          "before": "Thời điểm đạt đỉnh được xác định khi \\(v(t)=0\\).",
+          "after": "Đồ thị độ cao là parabol có hệ số \\(t^2\\) âm, đỉnh tại \\(t=20/9{,}8\\) trong miền vật lí (kiến thức hàm bậc hai Toán 10). Tại đó \\(v(t)=0\\).",
+          "count": 1
+        },
+        {
+          "before": "Ví dụ \\(y=(2x+1)^3\\) là hàm hợp của \\(y=u^3\\) với \\(u=2x+1\\).",
+          "after": "Ví dụ \\(y=(2x+1)^3\\) là hàm hợp của \\(y=u^3\\) với \\(u=2x+1\\). Tại \\(x=1\\), \\(u=3\\). Khi \\(x\\) tăng \\(h\\), \\(u\\) tăng \\(2h\\). Với \\(h\\ne0\\), thương sai phân theo \\(x\\) là \\(2\\cdot[( (3+2h)^3-27)/(2h)]\\), tiến tới \\(2\\cdot27=54\\) khi \\(h\\to0\\). Đây là minh họa hai tốc độ nối tiếp, không phải quy tắc rút gọn phân số đạo hàm.",
+          "count": 1
+        },
+        {
+          "before": "(với \\(t\\) đo bằng rađian), thừa số",
+          "after": "(với \\(t\\) đo bằng rađian; có thể suy từ \\(\\sin t\\le t\\le\\tan t\\) khi \\(0<t<\\pi/2\\), rồi kẹp giữa \\(\\cos t\\) và 1; phía âm dùng tính chẵn của \\(\\sin t/t\\)), thừa số",
+          "count": 1
+        },
+        {
+          "before": "một giới hạn cơ bản là \\(\\lim_{h\\to0}(e^h-1)/h=1\\).",
+          "after": "một giới hạn cơ bản là \\(\\lim_{h\\to0}(e^h-1)/h=1\\). Có thể nối với giới hạn định nghĩa \\(e\\) ở Bài 19: lấy ln của \\((1+k)^{1/k}\\to e\\) được \\(\\ln(1+k)/k\\to1\\); đặt \\(k=e^h-1\\) thì \\((e^h-1)/h=k/\\ln(1+k)\\to1\\).",
+          "count": 1
+        },
+        {
+          "before": "lấy ln của \\((1+k)^{1/k}\\to e\\) được \\(\\ln(1+k)/k\\to1\\); đặt \\(k=e^h-1\\) thì",
+          "after": "đặt \\(k=1/t\\) trong định nghĩa \\(e\\) rồi lấy ln, được \\(\\ln(1+k)/k\\to1\\) khi \\(k\\to0^+\\). Với \\(-1<k<0\\), đặt \\(u=-k/(1+k)>0\\); khi \\(k\\to0^-\\) thì \\(u\\to0^+\\) và \\(\\ln(1+k)/k=(1+u)\\ln(1+u)/u\\to1\\). Vậy giới hạn đúng từ cả hai phía. Đặt tiếp \\(k=e^h-1\\) thì",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md",
+      "old": "1102e28f47fb8946fdafca2f86194abd60637b47",
+      "edits": [
+        {
+          "before": "Vì thế, tại thời điểm \\(v\\ne0\\),",
+          "after": "Vì \\(v\\) liên tục, khi \\(v>0\\) thì gần thời điểm xét \\(|v|=v\\) có đạo hàm \\(a\\); khi \\(v<0\\) thì \\(|v|=-v\\) có đạo hàm \\(-a\\). Vì thế, tại thời điểm \\(v\\ne0\\),",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix.md",
+      "old": "862b99e722cfe268f8a5ebb34768f9f7b644ab3a",
+      "edits": [
+        {
+          "before": "lập thương sai phân s(2+h)-s(2),",
+          "after": "lập thương sai phân $\\dfrac{s(2+h)-s(2)}{h}$ với $h\\ne0$,",
+          "count": 1
+        },
+        {
+          "before": "Ba bài B31–B33 nguồn Academic/PED đã duyệt: 31 outcomes, 32 ví dụ có suy luận, 62 câu Core/Practice, 9 Written/Anchor, 5 SVG, 11 D6. Tự kiểm tra chương chỉ tự đối chiếu 31 câu Practice công khai, không phải Readiness độc lập hoặc Mastery.",
+          "after": "Ba bài về ý nghĩa đạo hàm, quy tắc tính và đạo hàm cấp hai. Học theo thứ tự, tự thử rồi luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        },
+        {
+          "before": "1. Từ đo **biến thiên trung bình** đến vận tốc tức thời là đưa độ dài khoảng đo về 0 bằng **giới hạn**, chứ không thay h=0 trong phân thức. 2. Tốc độ thay đổi tức thời của f chính là đạo hàm; trong hình học nó là độ dốc tiếp tuyến, trong vật lý là vận tốc có dấu. 3. Quy tắc **tích, thương và hàm hợp** giúp tính nhanh nhưng phải giữ điều kiện xác định; mũ/lôgarit/lượng giác **đều** nằm trong SGK Chương IX. 4. Khi đạo hàm là một hàm mới, đạo hàm tiếp cho **đạo hàm cấp hai**; theo thời gian đó là gia tốc, khác vận tốc. 5. Học sinh chỉ học nhánh SGK vẫn có đủ kiến thức B31–B33, Core/Practice/Written và cơ chế định hướng D6; không cần truy cập Topic.",
+          "after": "1. Từ đo **biến thiên trung bình** đến vận tốc tức thời là đưa độ dài khoảng đo về 0 bằng **giới hạn**, chứ không thay h=0 trong phân thức.\n2. Tốc độ thay đổi tức thời của f chính là đạo hàm; trong hình học nó là độ dốc tiếp tuyến, trong vật lý là vận tốc có dấu.\n3. Quy tắc **tích, thương và hàm hợp** giúp tính nhanh nhưng phải giữ điều kiện xác định; mũ/lôgarit/lượng giác **đều** nằm trong SGK Chương IX.\n4. Khi đạo hàm là một hàm mới, đạo hàm tiếp cho **đạo hàm cấp hai**; theo thời gian đó là gia tốc, khác vận tốc.\n5. Học sinh chỉ học nhánh SGK vẫn có đủ kiến thức B31–B33, bài luyện tập, tự luận và hướng dẫn ôn lại; không cần học thêm nhánh chuyên đề.",
+          "count": 1
+        },
+        {
+          "before": "Đây là bài học công khai, tuyệt đối không thay cho PRIVATE RD1.",
+          "after": "Đây là bài tự thử công khai, không thay cho bài đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-23.md",
+      "old": "03cccc3ae3b48856589611ee4d3ffea05cdc89b4",
+      "edits": [
+        {
+          "before": "nếu biết hai **phương cắt nhau**,",
+          "after": "nếu biết hai **đường cắt nhau, có hai phương khác nhau**,",
+          "count": 1
+        },
+        {
+          "before": "hai đường song song chỉ cho **một hướng**.",
+          "after": "hai đường song song chỉ cho **một hướng**. Chẳng hạn hai đường kẻ ngang song song trên sàn đều vuông góc với một đường kẻ dọc trên sàn, nhưng đường dọc ấy vẫn nằm trong sàn, không vuông góc với mặt sàn.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-27.md",
+      "old": "4cfa1cc9c07f4e37edd6338c4b2466ed92479a05",
+      "edits": [
+        {
+          "before": "Hệ số \\(\\sqrt{SS'}\\) là do",
+          "after": "Các bước biến đổi dùng \\(1-k^3=(1-k)(1+k+k^2)\\), \\(H=h/(1-k)\\), \\(Sk^2=S'\\) và \\(Sk=\\sqrt{SS'}\\) (vì \\(k>0\\)). Hệ số \\(\\sqrt{SS'}\\) là do",
+          "count": 1
+        },
+        {
+          "before": "Gọi \\(T\\) là đỉnh chóp lớn, \\(A'=(T+A)/2\\), \\(B'=(T+B)/2\\), \\(C'=(T+C)/2\\) theo quan hệ chia đôi trên các cạnh bên (hiểu các điểm như vectơ vị trí). Vì \\(B_1=(A+B)/2\\), \\(C_1=(A+C)/2\\), nên \\(\\overrightarrow{AA'}=\\overrightarrow{B_1B'}=\\overrightarrow{C_1C'}=(\\overrightarrow{AT})/2\\).",
+          "after": "Gọi \\(T\\) là đỉnh chóp lớn. Vì tỉ số cạnh đáy là \\(1/2\\), \\(A',B',C'\\) là trung điểm \\(TA,TB,TC\\). Theo định lí đường trung bình trong tam giác \\(TAB\\), \\(B_1B'\\parallel AT\\) và \\(B_1B'=AT/2\\); tương tự trong tam giác \\(TAC\\), \\(C_1C'\\parallel AT\\) và \\(C_1C'=AT/2\\). Đoạn \\(AA'\\) cũng bằng \\(AT/2\\), nên ba cạnh bên song song và bằng nhau.",
+          "count": 1
+        },
+        {
+          "before": "cách mỗi đỉnh đáy \\(a/\\sqrt3\\);",
+          "after": "cách mỗi đỉnh đáy \\(a/\\sqrt3\\) (bán kính ngoại tiếp, xem Bài 25);",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii.md",
+      "old": "da62c057a632405e2f90d65dedf6e1db9695cfb3",
+      "edits": [
+        {
+          "before": "Bài 8–9 có kiến thức theo bản chất, 10 ví dụ, 28 câu Core/Practice, 4 Written/Anchor, 3 SVG và 6 thẻ khắc phục. Tự kiểm tra dùng câu công khai đã review để tự đối chiếu; không có Readiness độc lập hay Mastery.",
+          "after": "Hai bài về mẫu số liệu ghép nhóm. Học cách lập bảng, đọc tần số và tính các số đặc trưng; sau đó tự luyện và làm bài tự luận. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/luyen-tap.md",
+      "old": "1382e31517c3cbc82a5209c1e653f183a79244a1",
+      "edits": [
+        {
+          "before": "28 câu canonical đã review: 10 Core và 18 Practice. Tự giải rồi mở gợi ý/lời giải. Không phải kiểm tra độc lập và không ghi Mastery.",
+          "after": "28 câu luyện tập: 10 câu kiến thức nền và 18 câu thực hành. Tự giải rồi mở gợi ý hoặc lời giải. Không phải kiểm tra độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v.md",
+      "old": "aa09c96b3d9ac5df955dd4b3c99edf4fd23007ef",
+      "edits": [
+        {
+          "before": "Ba bài học đầy đủ: giới hạn dãy số, giới hạn hàm số và hàm số liên tục; 13 ví dụ suy luận, 30 câu canonical công khai, 6 Written/Anchor, 3 SVG và 6 D6. Tự kiểm tra tự đối chiếu không phải Readiness độc lập hoặc Mastery.",
+          "after": "Ba bài về giới hạn dãy số, giới hạn hàm số và tính liên tục. Học theo thứ tự, tự thử, đọc ví dụ và luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/luyen-tap.md",
+      "old": "d30b31f9641f5d23a33ade06eb429e7b65fc07d0",
+      "edits": [
+        {
+          "before": "30 câu public canonical: 9 Core, 17 Practice, 4 Application. Làm trước, mới mở đối chiếu; không dùng làm đánh giá độc lập hoặc Skill Mastery.",
+          "after": "30 câu luyện tập: 9 câu kiến thức nền, 17 câu thực hành và 4 câu vận dụng. Làm trước rồi tự đối chiếu; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi.md",
+      "old": "ab1f6278b75bab9622840368cff5699f1050a703",
+      "edits": [
+        {
+          "before": "Bốn bài B18–B21: kiến thức D1 đầy đủ, 19 ví dụ có suy luận, 41 câu public Core/Practice/Application, 8 Written/Anchor, 4 SVG và 8 D6. Tự kiểm tra 20 câu công khai chỉ để tự đối chiếu sau Final Submit, không phải Readiness độc lập hoặc Mastery.",
+          "after": "Bốn bài từ lũy thừa, lôgarit đến hàm số và phương trình, bất phương trình. Học theo thứ tự và tự giải bài tập. Tự kiểm tra dùng câu công khai, tự đối chiếu sau khi nộp bài; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        },
+        {
+          "before": "**Không dùng câu này làm RD1 kín**; đây chỉ là hoạt động hướng dẫn công khai, không tạo Skill Mastery.",
+          "after": "Đây là bài tự thử công khai, không thay cho bài đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/luyen-tap.md",
+      "old": "eecfeac22d75a37e5da5d6932cfe3e2686bf058c",
+      "edits": [
+        {
+          "before": "41 câu hỏi PUBLIC canonical đã review: 16 Core, 21 Practice và 4 Application. Chỉ đối chiếu sau khi tự giải và nộp formative; không chấm tự luận tự động, không ghi Mastery/Readiness.",
+          "after": "41 câu luyện tập: 16 câu kiến thức nền, 21 câu thực hành và 4 câu vận dụng. Tự giải và nộp bài trước khi đối chiếu; không chấm tự luận tự động, không ghi Mastery hay kết quả đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii.md",
+      "old": "d44a16b641e2686cfe6158aeecbfd5b75d10fc5d",
+      "edits": [
+        {
+          "before": "Sáu bài B22–B27: đầy đủ kiến thức D1, 27 ví dụ có suy luận D2, 51 câu PUBLIC Core/Practice, 12 Written/Anchor, 6 SVG và 10 D6. Tự kiểm tra gồm 18 câu công khai sau Final Submit, không phải Readiness độc lập hay Skill Mastery.",
+          "after": "Sáu bài từ quan hệ vuông góc đến hình chiếu, khoảng cách và thể tích. Đọc hình, tự thử, rồi luyện tập. Tự kiểm tra dùng câu công khai, tự đối chiếu sau khi nộp bài; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/luyen-tap.md",
+      "old": "90c35aca6df0b5a437d6bacb33b9e0474154deae",
+      "edits": [
+        {
+          "before": "51 câu PUBLIC canonical có source đã review: 33 Core (gồm 1 câu tích hợp Chương VII đặt trong Core B27) và 18 Practice. Giải trước, đối chiếu theo lựa chọn; không dùng làm Readiness độc lập hoặc Skill Mastery.",
+          "after": "51 câu luyện tập: 33 câu kiến thức nền (gồm một câu tổng hợp ở Bài 27) và 18 câu thực hành. Giải trước rồi tự đối chiếu; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii.md",
+      "old": "852866c070f932c2062dfbc0567ef0e8170443a2",
+      "edits": [
+        {
+          "before": "Ba bài B28–B30 từ nguồn đã review: 20 outcomes, 16 ví dụ có suy luận, 39 câu Core/Practice công khai, 8 câu Written/Anchor, 3 SVG giải thích trực quan và 8 D6. Tự kiểm tra cuối chương chỉ dùng 20 câu Practice công khai để tự đối chiếu; không phải Readiness độc lập hoặc Mastery.",
+          "after": "Ba bài về biến cố, công thức cộng và công thức nhân xác suất. Học cách phân biệt các điều kiện, đọc hình rồi luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/luyen-tap.md",
+      "old": "1264301a50c5860bfa3bb2087cfdeb6eba5ad886",
+      "edits": [
+        {
+          "before": "39 câu PUBLIC canonical (19 Core, 20 Practice). Core B30 gồm các tình huống xác suất độc lập; Practice B30 có một câu tích hợp toàn chương với ID nguồn gốc riêng, không sao chép câu hỏi. Giải trước khi tự mở lời giải; không ghi Mastery hay kết quả Readiness.",
+          "after": "39 câu luyện tập: 19 câu kiến thức nền và 20 câu thực hành, gồm bài tổng hợp ở Bài 30. Giải trước khi tự mở lời giải; không ghi Mastery hay kết quả đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/luyen-tap.md",
+      "old": "84a5ac862840155c9cf68bf4c3378540b6c3d7a1",
+      "edits": [
+        {
+          "before": "62 câu PUBLIC canonical: 31 Core + 31 Practice theo các B31–B33 (trong B33 có một cặp Core/Practice tích hợp chương, vẫn giữ item_id nguồn). Giải trước khi tự mở lời giải; không ghi Mastery/Readiness.",
+          "after": "62 câu luyện tập: 31 câu kiến thức nền và 31 câu thực hành, gồm bài tổng hợp ở Bài 33. Giải trước khi tự mở lời giải; không ghi Mastery hay kết quả đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -66,7 +66,7 @@
 
     Kim phút đi từ số 2 đến số 12: ngược chiều kim đồng hồ chỉ đi qua hai khoảng số, cùng chiều kim đồng hồ phải đi qua mười khoảng số. Hai phép quay có cùng tia cuối nhưng khác **chiều** và **độ lớn**. Quy ước ngược chiều kim đồng hồ là chiều dương; chiều ngược lại là âm.
 
-    **Vận dụng.** Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Nêu góc quay theo radian và độ dài cung đã đi.
+    **Vận dụng.** Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Một vòng ứng với 360° hay 2π rad; radian được giải thích ở mục 1.3. Nêu góc quay theo radian và độ dài cung đã đi.
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-SIGNED_ROTATION" data-thpt-first-try-id="THPT-G11-CHI-TRY01" hidden></span>
 
@@ -139,7 +139,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img src="../../../../../assets/images/thpt/THPT_G11_B01_UNIT_CIRCLE_5PI6_D5_R01.svg" loading="lazy" alt="Đường tròn lượng giác với góc 5π/6 ở góc phần tư II, hoành độ âm và tung độ dương"/><figcaption><strong>Hướng dẫn đọc hình:</strong> tìm trục Ox dương là tia đầu, điểm cuối M tại góc phần tư II. Hoành độ M cho cos, tung độ M cho sin; góc tham chiếu π/6 giúp tìm độ lớn, góc phần tư xác định dấu.</figcaption></figure>
 
-    Trên hình, góc \(5\pi/6\) nằm ở góc phần tư II nên cos âm và sin dương. Để tính góc khác, em dùng **góc tham chiếu** cho độ lớn, sau đó gắn đúng dấu theo góc phần tư.
+    Trên hình, góc \(5\pi/6\) nằm ở góc phần tư II nên cos âm và sin dương. Để tính góc khác, em dùng **góc tham chiếu** (góc nhọn tạo bởi tia cuối với trục hoành trong hai ví dụ này) cho độ lớn, sau đó gắn đúng dấu theo góc phần tư. Với \(5\pi/6\), góc này là \(\pi-5\pi/6=\pi/6\); với \(7\pi/6\), là \(7\pi/6-\pi=\pi/6\).
 
     **Vận dụng.** Tính \(\sin(7\pi/6)\), \(\cos(7\pi/6)\) và \(\tan(7\pi/6)\).
 

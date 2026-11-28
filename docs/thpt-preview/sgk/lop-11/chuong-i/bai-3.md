@@ -43,7 +43,7 @@
 
     Hãy hình dung \(M\) quay từ góc \(0\) đến \(\pi/2\), rồi tới \(\pi\). Tung độ của \(M\) lần lượt là \(0,1,0\), trong khi hoành độ lần lượt là \(1,0,-1\). Với **mỗi** góc thực \(x\), ta có đúng một vị trí cuối trên đường tròn, nên có đúng một giá trị \(\sin x\) và một giá trị \(\cos x\). Đây là hai hàm số xác định cho mọi \(x\in\mathbb R\), chứ không phải hai con số cố định.
 
-    Tang và côtang xuất hiện từ hai tỉ số \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\). Vì là phép chia, chúng không xác định tại các góc làm mẫu số bằng \(0\). Chẳng hạn ở \(x=\pi/2\), điểm \(M=(0,1)\); \(\sin x\) vẫn bằng \(1\) nhưng \(\tan x\) **không có giá trị**. Ở \(x=0\), \(\cot x\) lại không xác định. Sự khác biệt này sẽ quyết định hình dạng hai đồ thị ở mục 5, 6.
+    Tang và côtang xuất hiện từ hai tỉ số \(\tan x=\sin x/\cos x\) và \(\cot x=\cos x/\sin x\). Vì là phép chia, chúng không xác định tại các góc làm mẫu số bằng \(0\). Chẳng hạn ở \(x=\pi/2\), điểm \(M=(0,1)\); \(\sin x\) vẫn bằng \(1\) nhưng \(\tan x\) **không có giá trị**. Ở \(x=0\), \(\cot x\) lại không xác định. Sự khác biệt này sẽ quyết định hình dạng hai đồ thị ở mục 1.5 (Hàm số tang) và 1.6 (Hàm số côtang).
 
     **Vận dụng.** Tại \(x=-\pi/2\) và \(x=\pi/4\), hãy xác định những hàm nào trong sin, cos, tan, cot có giá trị; nếu có thì giá trị bằng bao nhiêu?
 
@@ -61,7 +61,7 @@
 
     Trở lại đường tròn: quay thêm \(2\pi\) thì điểm \(M\) về đúng vị trí cũ. Vì thế \(\sin(x+2\pi)=\sin x\), \(\cos(x+2\pi)=\cos x\). Tang và côtang lặp giá trị chỉ sau \(\pi\), do tử và mẫu đồng thời đổi dấu. Một hàm như thế được gọi là **tuần hoàn**. Điều quan trọng không phải chỉ tìm được một số làm hàm lặp lại, mà còn xem số dương nhỏ nhất ấy có tồn tại không: với hàm hằng trên \(\mathbb R\), mọi \(T>0\) đều làm hàm lặp lại, nhưng không có **số dương nhỏ nhất**, nên hàm **không có chu kì** theo định nghĩa SGK.
 
-    Để biểu diễn nhịp lặp lại, ta dùng tính tuần hoàn của đối số: nếu \(y=\sin(3x)\), muốn đối số tăng thêm \(2\pi\), chỉ cần \(x\) tăng \(2\pi/3\). Đây là một số dương làm hàm lặp lại. Nếu có chu kì dương \(T\) nhỏ hơn \(2\pi/3\), thì \(\sin(u+3T)=\sin u\) với mọi \(u=3x\in\mathbb R\); khi đó \(0<3T<2\pi\) trái với việc sin có chu kì nhỏ nhất \(2\pi\). Vậy chu kì nhỏ nhất là \(2\pi/3\). Đó là lý do hệ số trong đối số làm thay đổi chu kì theo **chiều ngược lại**. Ví dụ, nếu luồng khí hô hấp được mô hình hóa bởi \(q(t)=A\sin(\pi t/2)\), \(A>0\), với \(t\) tính bằng giây, thì mô hình có chu kì \(4\) giây; mỗi nhịp lặp đầy đủ kéo dài \(4\) giây.
+    Để biểu diễn nhịp lặp lại, ta dùng tính tuần hoàn của đối số: nếu \(y=\sin(3x)\), muốn đối số tăng thêm \(2\pi\), chỉ cần \(x\) tăng \(2\pi/3\). Đây là một số dương làm hàm lặp lại. Nếu có chu kì dương \(T\) nhỏ hơn \(2\pi/3\), thì \(\sin(u+3T)=\sin u\) với mọi \(u=3x\in\mathbb R\); khi đó \(0<3T<2\pi\) trái với kết quả về sin có chu kì nhỏ nhất \(2\pi\) (xem đồ thị và giải thích ở mục 1.3). Vậy chu kì nhỏ nhất là \(2\pi/3\). Đó là lý do hệ số trong đối số làm thay đổi chu kì theo **chiều ngược lại**. Ví dụ, nếu luồng khí hô hấp được mô hình hóa bởi \(q(t)=A\sin(\pi t/2)\), \(A>0\), với \(t\) tính bằng giây, thì mô hình có chu kì \(4\) giây; mỗi nhịp lặp đầy đủ kéo dài \(4\) giây.
 
     **Vận dụng.** Xét \(f(x)=x\sin x\) trên \(\mathbb R\): hàm chẵn hay lẻ? Hàm hằng \(g(x)=2\) trên \(\mathbb R\) có chu kì dương nhỏ nhất không?
 

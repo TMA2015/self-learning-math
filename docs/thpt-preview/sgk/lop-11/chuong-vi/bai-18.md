@@ -30,7 +30,7 @@
 
     Khi \(a\ne0\), ta định nghĩa \(a^0=1\) và \(a^{-n}=\frac1{a^n}\) với \(n\) nguyên dương. Điều kiện \(a\ne0\) là thật sự cần: \(0^{-1}=\frac10\) không có nghĩa. Trong phạm vi bài này \(0^0\) cũng không định nghĩa, trong khi \(0^n=0\) với \(n\) nguyên dương.
 
-    Các quy tắc quen thuộc \(a^ma^n=a^{m+n}\), \(a^m/a^n=a^{m-n}\) tiếp tục đúng cho số mũ nguyên khi các cơ số khác 0 và phép chia có nghĩa. **Đừng áp quy tắc nhân cho phép cộng**: \(2^2+2^3=12\ne2^5\). Với cơ số \(a>1\), số mũ tăng thì \(a^n\) tăng; với \(0<a<1\), thứ tự đảo chiều.
+    Các quy tắc quen thuộc \(a^ma^n=a^{m+n}\), \(a^m/a^n=a^{m-n}\) tiếp tục đúng cho số mũ nguyên khi các cơ số khác 0 và phép chia có nghĩa. **Đừng áp quy tắc nhân cho phép cộng**: \(2^2+2^3=12\ne2^5\). Với cơ số \(a>1\), số mũ tăng thì \(a^n\) tăng; với \(0<a<1\), thứ tự đảo chiều. Ví dụ \((1/2)^0=1\), \((1/2)^1=1/2\), \((1/2)^2=1/4\): mỗi khi số mũ tăng 1, giá trị nhân với một số nhỏ hơn 1 nên giảm. Đây là minh họa cho số mũ nguyên; tính chất với số mũ thực được nêu ở phần sau.
 
     Lũy thừa mũ nguyên còn giúp viết số liệu rất lớn hoặc rất nhỏ: \(0{,}0000042=4{,}2\cdot10^{-6}\) m. Trong kí hiệu khoa học, hệ số dương nằm trong khoảng từ 1 đến dưới 10; số mũ là số nguyên cho biết dịch dấu phẩy bao nhiêu bậc. Đây là cách viết giá trị, không phải phép làm tròn tùy tiện.
 

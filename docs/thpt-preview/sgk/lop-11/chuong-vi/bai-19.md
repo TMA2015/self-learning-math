@@ -84,7 +84,7 @@
 
     Số \(e\) là số dương lớn hơn 1, nên hoàn toàn có thể làm **cơ số lôgarit**. Ta gọi \(\log_e M\) là **lôgarit tự nhiên**, viết \(\ln M\). Từ đó \(\ln e=1\), \(\ln1=0\), \(\ln(e^2)=2\). Những kết quả này đều theo định nghĩa lôgarit, không phải do phím bấm máy tính đặt ra.
 
-    **Vì sao dùng ln cho lãi liên tục?** Gửi vốn \(P\), lãi suất năm \(r\) viết dưới dạng số thập phân (chẳng hạn \(5\%=0{,}05\)), lãi ghép \(m\) kì/năm, \(m\) nguyên dương, trong \(t\ge0\) năm cho mô hình \(P(1+r/m)^{mt}\). Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \(A=Pe^{rt}\). Muốn biết thời gian \(t\) để số tiền **gấp đôi**, giải \(2P=Pe^{rt}\) thành \(e^{rt}=2\), rồi lấy \(\ln\) hai vế: \(rt=\ln2\), nên \(t=\frac{\ln2}{r}\) (với \(r>0\)). Lôgarit lúc này chính là phép đảo **tìm thời gian trong số mũ**.
+    **Vì sao dùng ln cho lãi liên tục?** Gửi vốn \(P\), lãi suất năm \(r\) viết dưới dạng số thập phân (chẳng hạn \(5\%=0{,}05\)), lãi ghép \(m\) kì/năm, \(m\) nguyên dương, trong \(t\ge0\) năm cho mô hình \(P(1+r/m)^{mt}\). Số kì \(mt\) phải phù hợp với số kì ghép thực tế. Với \(r>0\), đặt \(s=m/r\). Khi \(m\to+\infty\), \(s\to+\infty\) và \((1+r/m)^{mt}=[(1+1/s)^s]^{rt}\to e^{rt}\). Vì vậy mô hình liên tục lý tưởng cho \(A=Pe^{rt}\). Muốn biết thời gian \(t\) để số tiền **gấp đôi**, giải \(2P=Pe^{rt}\) thành \(e^{rt}=2\), rồi lấy \(\ln\) hai vế: \(rt=\ln2\), nên \(t=\frac{\ln2}{r}\) (với \(r>0\)). Lôgarit lúc này chính là phép đảo **tìm thời gian trong số mũ**.
 
     **Về máy tính:** Phím \(\log\) và \(\ln\) cho kết quả **gần đúng** khi giá trị không biểu diễn bằng số thập phân hữu hạn; lôgarit cơ số khác tính qua \(\log_aM=\ln M/\ln a\). Ví dụ \(\log_4 8=\frac32\) là chính xác, còn \(\ln2\approx0{,}6931\) là làm tròn. Dù bấm máy, vẫn phải kiểm đối số dương và cơ số hợp lệ.
 
@@ -218,9 +218,9 @@
 
     **Đề bài.** Gửi 100 triệu đồng với lãi ghép cuối mỗi năm, lãi suất cố định \(6\%\) một năm. Hỏi **ít nhất bao nhiêu năm trọn vẹn** để tổng số tiền không dưới 150 triệu đồng?
 
-    **Phân tích:** Sau \(n\) năm trọn vẹn, \(A=100(1{,}06)^n\). Giải bất đẳng thức theo \(n\) bằng lôgarit, rồi chọn **số nguyên nhỏ nhất đủ điều kiện**, không làm tròn số năm về gần nhất.
+    **Phân tích:** Sau \(n\) năm trọn vẹn, \(A=100(1{,}06)^n\). Giải bất đẳng thức theo \(n\) bằng lôgarit, rồi chọn **số nguyên nhỏ nhất đủ điều kiện**, không làm tròn số năm về gần nhất. Ví dụ nếu ngưỡng là 6,2 năm thì làm tròn gần nhất được 6, nhưng 6 không đủ điều kiện: phải chọn 7.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(100(1{,}06)^n\ge150\Leftrightarrow(1{,}06)^n\ge1{,}5\). Vì \(1{,}06>1\), \(n\ge\log_{1{,}06}1{,}5=\frac{\ln1{,}5}{\ln1{,}06}\approx6{,}96\). Với \(n\in\mathbb N\), giá trị nhỏ nhất là \(n=7\) năm.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> \(100(1{,}06)^n\ge150\Leftrightarrow(1{,}06)^n\ge1{,}5\). Vì \(1{,}06>1\), \(n\ge\log_{1{,}06}1{,}5=\frac{\ln1{,}5}{\ln1{,}06}\approx6{,}96\). Với \(n\in\mathbb N\), giá trị nhỏ nhất là \(n=7\) năm. Kiểm hai mốc bằng công thức gốc: \(100(1{,}06)^6<150\), còn \(100(1{,}06)^7\ge150\).</p></div>
 
     **Kiểm lại:** \(100(1{,}06)^6\approx141{,}85<150\), trong khi \(100(1{,}06)^7\approx150{,}36\ge150\). Đây là kì hạn theo năm, không phải mô hình ghép lãi liên tục.
 

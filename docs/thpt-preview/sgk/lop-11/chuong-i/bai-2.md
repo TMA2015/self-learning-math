@@ -22,7 +22,7 @@
 
     Ở Bài 1, em đã biết cách đọc sin, cos của một góc trên đường tròn lượng giác, biết giá trị của các góc đặc biệt và hệ thức \(\sin^2x+\cos^2x=1\). Nhưng nếu cần tính \(\sin75^\circ\), ta không thể tra trực tiếp từ bảng \(30^\circ,45^\circ,60^\circ\). Điều đáng chú ý là \(75^\circ=45^\circ+30^\circ\): liệu có thể dùng những giá trị **đã biết** để tìm giá trị của một **góc mới**?
 
-    SGK còn đặt một câu hỏi từ âm thanh: hai tín hiệu \(5\sin t\) và \(5\cos t\) kết hợp thành \(f(t)=5\sin t+5\cos t\). Chúng cùng dao động theo một biến thời gian nhưng lệch pha; làm thế nào biết biên độ và pha của âm tổng hợp? Nếu chỉ cộng riêng hai biên độ, ta sẽ không thấy được sự lệch pha ấy. Để giải bài toán, trước hết ta phải hiểu cách lượng giác của **hai góc** liên hệ với lượng giác của **tổng hoặc hiệu hai góc**.
+    SGK còn đặt một câu hỏi từ âm thanh: hai tín hiệu \(5\sin t\) và \(5\cos t\) kết hợp thành \(f(t)=5\sin t+5\cos t\). Chúng cùng dao động theo một biến thời gian nhưng lệch pha. Biên độ là độ lệch lớn nhất so với mức 0; pha ban đầu là góc trong đối số lúc \(t=0\). Vì \(\cos t=\sin(t+\pi/2)\), hai tín hiệu lệch pha \(\pi/2\). Làm thế nào biết biên độ và pha của âm tổng hợp? Nếu chỉ cộng riêng hai biên độ, ta sẽ không thấy được sự lệch pha ấy. Để giải bài toán, trước hết ta phải hiểu cách lượng giác của **hai góc** liên hệ với lượng giác của **tổng hoặc hiệu hai góc**.
 
     ### 1.1. Từ góc hiệu đến công thức cộng
 
@@ -58,6 +58,8 @@
     &=\sin a\cos b+\cos a\sin b.
     \end{aligned}
     \]
+
+    Ở dòng cuối dùng \(\cos(\pi/2-a)=\sin a\) và \(\sin(\pi/2-a)=\cos a\) (quan hệ góc phụ ở Bài 1).
 
     Thay \(b\) bằng \(-b\) cho công thức hiệu. Ta có
 
@@ -180,7 +182,7 @@
 
         Nếu thiếu hệ số \(2\) hoặc quên chia đôi các góc, hãy đặt \(a=(u+v)/2,\ b=(u-v)/2\), rồi tự cộng/trừ để kiểm \(a+b=u,\ a-b=v\) trước khi áp dụng công thức.
 
-    Bây giờ quay lại âm tổng hợp ở đầu bài. Hai tín hiệu \(5\sin t\) và \(5\cos t\) có cùng tần số góc và chỉ khác pha. Vì \(\cos t=\sin(t+\pi/2)\), ta có thể biến đổi tổng của chúng, hoặc trực tiếp dùng công thức \(\sin(t+\pi/4)\), để được
+    Bây giờ quay lại âm tổng hợp ở đầu bài. Hai tín hiệu \(5\sin t\) và \(5\cos t\) có cùng tần số góc (hệ số của \(t\) trong đối số, cho biết góc thay đổi nhanh thế nào theo thời gian) và chỉ khác pha. Vì \(\cos t=\sin(t+\pi/2)\), ta có thể biến đổi tổng của chúng, hoặc trực tiếp dùng công thức \(\sin(t+\pi/4)\), để được
 
     \[
     5\sin t+5\cos t=5\sqrt2\sin\left(t+\frac{\pi}{4}\right).
@@ -214,7 +216,7 @@
 
     <div class="thpt-r4-key-formula" role="note"><strong>Công thức cộng</strong><p>\(\cos(a-b)=\cos a\cos b+\sin a\sin b\)</p><p>\(\cos(a+b)=\cos a\cos b-\sin a\sin b\)</p><p>\(\sin(a-b)=\sin a\cos b-\cos a\sin b\)</p><p>\(\sin(a+b)=\sin a\cos b+\cos a\sin b\)</p><p>\(\tan(a-b)=\dfrac{\tan a-\tan b}{1+\tan a\tan b}\)</p><p>\(\tan(a+b)=\dfrac{\tan a+\tan b}{1-\tan a\tan b}\)</p><p><strong>Điều kiện:</strong> hai công thức tan dạng phân số chỉ áp dụng khi \(\cos a\ne0\), \(\cos b\ne0\) và mẫu \(1\pm\tan a\tan b\) của từng công thức khác \(0\). Các công thức sin/cos đúng với mọi góc thực.</p></div>
 
-    Hai công thức tan được suy từ \(\tan(a\pm b)=\dfrac{\sin(a\pm b)}{\cos(a\pm b)}\). Thay công thức cộng/hiệu của sin và cos, rồi chia cả tử và mẫu cho \(\cos a\cos b\ne0\), ta được hai phân thức tan ở trên; mẫu của từng phân thức phải khác \(0\). Chính vì có phép chia, **phải kiểm điều kiện xác định trước khi thay số**; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.
+    Hai công thức tan được suy từ \(\tan(a\pm b)=\dfrac{\sin(a\pm b)}{\cos(a\pm b)}\). Thay công thức cộng/hiệu của sin và cos để được \(\dfrac{\sin a\cos b\pm\cos a\sin b}{\cos a\cos b\mp\sin a\sin b}\), rồi chia cả tử và mẫu cho \(\cos a\cos b\ne0\), ta được hai phân thức tan ở trên; mẫu của từng phân thức phải khác \(0\). Chính vì có phép chia, **phải kiểm điều kiện xác định trước khi thay số**; không thể suy rằng công thức tan đúng tại mọi góc như các công thức sin/cos.
 
     **Ghi nhớ cách nhận diện:** Góc được viết như \(75^\circ=45^\circ+30^\circ\) hoặc \(15^\circ=45^\circ-30^\circ\) thường gợi ý công thức cộng/trừ.
 
@@ -300,7 +302,7 @@
 
     **Phân tích:** Hai tín hiệu có **cùng tần số góc**, nên có thể chọn \(k,\varphi\) không đổi sao cho \(k\cos\varphi=5\) và \(k\sin\varphi=5\). Các hệ số bằng nhau gợi góc \(\varphi=\pi/4\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Khai triển \(k\sin(t+\varphi)=k\cos\varphi\sin t+k\sin\varphi\cos t\). Để hai hệ số bằng \(5\), ta có \(k^2=(k\cos\varphi)^2+(k\sin\varphi)^2=5^2+5^2=50\).</p><p>Vì \(k>0\), suy ra \(k=5\sqrt2\). Lấy \(\cos\varphi=\sin\varphi=\sqrt2/2\) được \(\varphi=\pi/4\), đúng miền đã cho. Vậy \(f(t)=5\sqrt2\sin(t+\pi/4)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Khai triển \(k\sin(t+\varphi)=k\cos\varphi\sin t+k\sin\varphi\cos t\). Thay \(t=0\) cho \(k\sin\varphi=5\); thay \(t=\pi/2\) cho \(k\cos\varphi=5\). Hai điều kiện cũng đủ để biểu thức khai triển trùng với tín hiệu gốc ở mọi \(t\). Bình phương và cộng, ta có \(k^2=(k\cos\varphi)^2+(k\sin\varphi)^2=5^2+5^2=50\).</p><p>Vì \(k>0\), suy ra \(k=5\sqrt2\). Lấy \(\cos\varphi=\sin\varphi=\sqrt2/2\) được \(\varphi=\pi/4\), đúng miền đã cho. Vậy \(f(t)=5\sqrt2\sin(t+\pi/4)\).</p></div>
 
     **Kiểm lại:** Thay \(\varphi=\pi/4\) vào công thức cộng, hệ số của cả \(\sin t\) và \(\cos t\) đều bằng \(5\). Ở \(t=0\), hai vế đều bằng \(5\). Biên độ \(5\sqrt2\) **không phải** tổng \(5+5\).
 

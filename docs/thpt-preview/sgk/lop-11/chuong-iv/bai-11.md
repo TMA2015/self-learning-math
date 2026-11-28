@@ -24,7 +24,7 @@
 
     Hai đường thẳng \(a,b\) gọi là **đồng phẳng** nếu có một mặt phẳng chứa cả hai. Hai đường **phân biệt và đồng phẳng, không có điểm chung** thì song song, viết \(a\parallel b\). Hai đường **không đồng phẳng** thì chéo nhau. Vì vậy, để khẳng định \(a\parallel b\) từ việc chúng không cắt nhau, ta còn phải có căn cứ chúng **cùng nằm trong một mặt phẳng**. Nếu chúng **trùng nhau**, không được gọi là song song theo định nghĩa hai đường phân biệt.
 
-    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B11-01_R01.svg" alt="Lăng trụ tam giác với cặp cạnh song song và cặp cạnh chéo nhau"><figcaption><strong>Đọc hình:</strong> trong lăng trụ \(ABC.A'B'C'\), đường \(AB\parallel A'B'\) cùng nằm trên mặt bên \(ABB'A'\). Ngược lại \(AA'\) và \(BC\) **chéo nhau** dù hai nét trên hình chiếu có thể gây nhầm: không có mặt phẳng nào chứa cả hai đường.</figcaption></figure>
+    <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B11-01_R01.svg" alt="Lăng trụ tam giác với cặp cạnh song song và cặp cạnh chéo nhau"><figcaption><strong>Đọc hình:</strong> trong lăng trụ \(ABC.A'B'C'\) (hai đáy tam giác tương ứng, các mặt bên là hình bình hành; sẽ học ở Bài 13), đường \(AB\parallel A'B'\) cùng nằm trên mặt bên \(ABB'A'\). Ngược lại \(AA'\) và \(BC\) **chéo nhau** dù hai nét trên hình chiếu có thể gây nhầm: không có mặt phẳng nào chứa cả hai đường.</figcaption></figure>
 
     Một cách chứng minh chéo nhau rất chắc chắn là dùng **tứ diện**. Với bốn điểm \(A,B,C,D\) không đồng phẳng, giả sử \(AB\) và \(CD\) cùng thuộc một mặt phẳng; mặt đó sẽ chứa cả \(A,B,C,D\), mâu thuẫn. Vậy \(AB\) và \(CD\) chéo nhau. Tương tự các cặp cạnh đối diện \(AC\) với \(BD\), \(AD\) với \(BC\) cũng chéo nhau.
 
@@ -148,7 +148,7 @@
 
     **Phân tích:** Điểm \(M\) thuộc \(a\) và \(b\), nên thuộc cả ba mặt phẳng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(M\in a\subset(P),(R)\) và \(M\in b\subset(Q),(R)\), nên \(M\in(P)\cap(Q)=c\). Vậy cả ba giao tuyến cùng đi qua \(M\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(M\in a\subset(P)\), \(a\subset(R)\) và \(M\in b\subset(Q)\), \(b\subset(R)\), nên \(M\in(P)\cap(Q)=c\). Vậy cả ba giao tuyến cùng đi qua \(M\).</p></div>
 
     **Kiểm lại:** Nếu không có điểm gặp nhau thì theo định lí ba giao tuyến phân biệt phải **đôi một song song**, không thể chỉ một cặp cắt.
 

@@ -1,6 +1,6 @@
 # Toán 11 · Chương V. Giới hạn và hàm số liên tục
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V · SGK KNTT</p><p class="thpt-r4-lead">Ba bài học đầy đủ: giới hạn dãy số, giới hạn hàm số và hàm số liên tục; 13 ví dụ suy luận, 30 câu canonical công khai, 6 Written/Anchor, 3 SVG và 6 D6. Tự kiểm tra tự đối chiếu không phải Readiness độc lập hoặc Mastery.</p><div class="thpt-r4-grid">
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG V · SGK KNTT</p><p class="thpt-r4-lead">Ba bài về giới hạn dãy số, giới hạn hàm số và tính liên tục. Học theo thứ tự, tự thử, đọc ví dụ và luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.</p><div class="thpt-r4-grid">
 <a class="thpt-r4-tile" href="bai-15/"><span aria-hidden="true">15</span><strong>Bài 15 · Giới hạn của dãy số</strong><small>Hiểu bản chất → Tự thử → Thực hành</small><em>Học bài →</em></a>
 <a class="thpt-r4-tile" href="bai-16/"><span aria-hidden="true">16</span><strong>Bài 16 · Giới hạn của hàm số</strong><small>Hiểu bản chất → Tự thử → Thực hành</small><em>Học bài →</em></a>
 <a class="thpt-r4-tile" href="bai-17/"><span aria-hidden="true">17</span><strong>Bài 17 · Hàm số liên tục</strong><small>Hiểu bản chất → Tự thử → Thực hành</small><em>Học bài →</em></a></div><nav class="thpt-r4-lesson-tabs"><a href="luyen-tap/">Core/Luyện tập</a><a href="../../../thu-vien/tu-luan-g11-chuong-v/">Tự luận</a><a href="tu-kiem-tra-chuong/">Tự kiểm tra</a></nav></div>

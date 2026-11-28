@@ -67,7 +67,7 @@
     =\frac h3\left(S+S'+\sqrt{SS'}\right).
     \]
 
-    Hệ số \(\sqrt{SS'}\) là do **đồng dạng bình phương diện tích**; không phải “lấy trung bình diện tích” như hình thang phẳng. Hai biên kiểm lý thuyết: nếu \(S'\to0\) công thức về chóp \(Sh/3\); nếu \(S'\to S\) (giới hạn) công thức về lăng trụ \(Sh\). Các phép giới hạn này giải thích công thức nhưng **không thay định nghĩa chóp cụt đều** cần hai đáy phân biệt.
+    Các bước biến đổi dùng \(1-k^3=(1-k)(1+k+k^2)\), \(H=h/(1-k)\), \(Sk^2=S'\) và \(Sk=\sqrt{SS'}\) (vì \(k>0\)). Hệ số \(\sqrt{SS'}\) là do **đồng dạng bình phương diện tích**; không phải “lấy trung bình diện tích” như hình thang phẳng. Hai biên kiểm lý thuyết: nếu \(S'\to0\) công thức về chóp \(Sh/3\); nếu \(S'\to S\) (giới hạn) công thức về lăng trụ \(Sh\). Các phép giới hạn này giải thích công thức nhưng **không thay định nghĩa chóp cụt đều** cần hai đáy phân biệt.
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B27_FRUSTUM_SIMILARITY_AUTHORING_20261123.svg" alt="Chóp cụt đều từ chóp lớn cao H trừ chóp nhỏ cao kH, hai đáy diện tích S và S phẩy, phần còn lại cao h"><figcaption><strong>Hướng dẫn đọc:</strong> đỉnh \(T\) phía trên phần chóp nhỏ; cắt theo mặt **song song đáy** được đáy nhỏ \(S'\) và đáy lớn \(S\). Đường cao tổng \(H\) gồm \(kH\) của chóp trên và \(h\) của chóp cụt. Từ \(S'/S=k^2\), trừ hai thể tích để xuất hiện \(\sqrt{SS'}\).</figcaption></figure>
 
@@ -267,7 +267,7 @@
 
     **Phân tích:** a) Dùng diện tích tam giác đều của hai đáy. b) Vì chóp cụt xuất phát từ chóp lớn bằng phép vị tự tâm đỉnh, các đoạn nối **đỉnh tương ứng** từ tam giác \(AB_1C_1\) đến \(A'B'C'\) song song, bằng nhau. Không chỉ nhìn ảnh mà kết luận là lăng trụ.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> a) Hai diện tích \(S=\sqrt3a^2\), \(S'=\sqrt3a^2/4\), \(\sqrt{SS'}=\sqrt3a^2/2\). Do đó \(V_{\text{cụt}}=\frac h3\bigl(\sqrt3a^2+\sqrt3a^2/4+\sqrt3a^2/2\bigr)=7\sqrt3a^2h/12\). b) Gọi \(T\) là đỉnh chóp lớn, \(A'=(T+A)/2\), \(B'=(T+B)/2\), \(C'=(T+C)/2\) theo quan hệ chia đôi trên các cạnh bên (hiểu các điểm như vectơ vị trí). Vì \(B_1=(A+B)/2\), \(C_1=(A+C)/2\), nên \(\overrightarrow{AA'}=\overrightarrow{B_1B'}=\overrightarrow{C_1C'}=(\overrightarrow{AT})/2\). Hai tam giác \(AB_1C_1\) và \(A'B'C'\) bằng nhau và song song; do đó đó là lăng trụ cao \(h\) với đáy đều cạnh \(a\), thể tích \(V_{\text{lăng trụ}}=a^2\sqrt3h/4\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> a) Hai diện tích \(S=\sqrt3a^2\), \(S'=\sqrt3a^2/4\), \(\sqrt{SS'}=\sqrt3a^2/2\). Do đó \(V_{\text{cụt}}=\frac h3\bigl(\sqrt3a^2+\sqrt3a^2/4+\sqrt3a^2/2\bigr)=7\sqrt3a^2h/12\). b) Gọi \(T\) là đỉnh chóp lớn. Vì tỉ số cạnh đáy là \(1/2\), \(A',B',C'\) là trung điểm \(TA,TB,TC\). Theo định lí đường trung bình trong tam giác \(TAB\), \(B_1B'\parallel AT\) và \(B_1B'=AT/2\); tương tự trong tam giác \(TAC\), \(C_1C'\parallel AT\) và \(C_1C'=AT/2\). Đoạn \(AA'\) cũng bằng \(AT/2\), nên ba cạnh bên song song và bằng nhau. Hai tam giác \(AB_1C_1\) và \(A'B'C'\) bằng nhau và song song; do đó đó là lăng trụ cao \(h\) với đáy đều cạnh \(a\), thể tích \(V_{\text{lăng trụ}}=a^2\sqrt3h/4\).</p></div>
 
     **Kiểm lại:** \(V_{\text{cụt}}/V_{\text{lăng trụ}}=(7/12)/(1/4)=7/3\). Đáy \(AB_1C_1\) có cạnh **\(a\)**, không phải \(2a\). Các đoạn nối đỉnh tương ứng song song **và bằng nhau** mới đủ nhận dạng lăng trụ.
 
@@ -321,7 +321,7 @@
 
     **Đề bài.** Khối tứ diện đều có tất cả cạnh bằng \(a>0\). Tính thể tích theo \(a\) bằng việc tìm chiều cao của chóp tam giác đều.
 
-    **Phân tích:** Đáy là tam giác đều cạnh \(a\), chân từ đỉnh còn lại tại **tâm đáy**, cách mỗi đỉnh đáy \(a/\sqrt3\); cạnh bên cũng bằng \(a\).
+    **Phân tích:** Đáy là tam giác đều cạnh \(a\), chân từ đỉnh còn lại tại **tâm đáy**, cách mỗi đỉnh đáy \(a/\sqrt3\) (bán kính ngoại tiếp, xem Bài 25); cạnh bên cũng bằng \(a\).
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.11"><p><strong>Lời giải.</strong> Diện tích tam giác đều đáy \(S=a^2\sqrt3/4\). Tâm đáy \(O\) cách đỉnh đáy \(A\) một đoạn \(AO=a/\sqrt3\). Với đỉnh \(S\) của tứ diện, tam giác \(SAO\) vuông tại \(O\) có \(SA=a\), nên \(SO=\sqrt{a^2-a^2/3}=a\sqrt{2/3}\). Suy \(V=\frac13\cdot(a^2\sqrt3/4)\cdot a\sqrt{2/3}=a^3\sqrt2/12\).</p></div>
 

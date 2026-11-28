@@ -44,13 +44,13 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B10-01_R01.svg" alt="Hai mặt phẳng SAB và SAC trong tứ diện có giao tuyến là đường thẳng SA"><figcaption><strong>Hướng dẫn đọc:</strong> \((SAB)\) và \((SAC)\) có hai điểm chung phân biệt \(S,A\), nên giao tuyến là **đường thẳng \(SA\)**. Nét đứt trong hình chỉ cạnh khuất.</figcaption></figure>
 
-    Đặc biệt, chỉ biết hai mặt phẳng **phân biệt** cùng qua điểm \(S\) mới biết chúng có một đường giao đi qua \(S\), chứ **chưa biết chính xác đường nào**. Để xác định giao tuyến, ta tìm **hai điểm chung phân biệt**. Ví dụ trong tứ diện \(S.ABC\), trung điểm \(M\in AB\), \(N\in AC\), hai trung tuyến \(BN,CM\) của tam giác \(ABC\) cắt tại trọng tâm \(G\). Vì các kết quả hình học phẳng đúng trong mặt \((ABC)\), \(G\) nằm trong cả \((SBN)\) và \((SCM)\), vậy hai mặt có giao tuyến \(SG\).
+    Đặc biệt, chỉ biết hai mặt phẳng **phân biệt** cùng qua điểm \(S\) mới biết chúng có một đường giao đi qua \(S\), chứ **chưa biết chính xác đường nào**. Để xác định giao tuyến, ta tìm **hai điểm chung phân biệt**. Ví dụ trong tứ diện \(S.ABC\), trung điểm \(M\in AB\), \(N\in AC\), hai trung tuyến \(BN,CM\) của tam giác \(ABC\) cắt tại trọng tâm \(G\). Vì các kết quả hình học phẳng đúng trong mặt \((ABC)\), \(G\) nằm trong cả \((SBN)\) và \((SCM)\). Hai mặt phân biệt: nếu trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \(BN,CM\), tức là \((ABC)\), trái với \(S\notin(ABC)\). Do đó giao tuyến là \(SG\).
 
     **Vận dụng.** Cho \(S\notin(ABC)\), \(M,N\) lần lượt là trung điểm \(AB,AC\), \(G=BN\cap CM\). Hãy chứng minh \((SBN)\cap(SCM)=SG\).
 
     ??? question "Đối chiếu"
 
-        **Lời giải:** \(G\in BN\subset(SBN)\), \(G\in CM\subset(SCM)\), trong khi \(S\) thuộc cả hai. Vì \(S\notin(ABC)\), \(G\in(ABC)\), hai điểm phân biệt. Hai mặt phẳng cũng phân biệt, nên giao tuyến là \(SG\).
+        **Lời giải:** \(G\in BN\subset(SBN)\), \(G\in CM\subset(SCM)\), trong khi \(S\) thuộc cả hai. Vì \(S\notin(ABC)\), \(G\in(ABC)\), hai điểm phân biệt. Nếu hai mặt trùng nhau thì mặt chung chứa hai trung tuyến cắt nhau \(BN,CM\), nên là \((ABC)\), trái với \(S\notin(ABC)\). Vậy hai mặt phân biệt, giao tuyến là \(SG\).
 
     ??? tip "Kiểm lỗi"
 
@@ -178,7 +178,7 @@
 
     **Phân tích:** Trong mặt phẳng \(ABC\), hai trung tuyến \(BN,CM\) cắt ở \(G\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(G\in BN\subset(SBN)\) và \(G\in CM\subset(SCM)\), nên \(G\) là điểm chung thứ hai ngoài \(S\). Vì \(S\notin(ABC)\), \(G\in(ABC)\), ta có \(G\ne S\); giao tuyến là \(SG\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(G\in BN\subset(SBN)\) và \(G\in CM\subset(SCM)\), nên \(G\) là điểm chung thứ hai ngoài \(S\). Vì \(S\notin(ABC)\), \(G\in(ABC)\), ta có \(G\ne S\). Nếu hai mặt trùng nhau thì mặt chung chứa hai đường cắt nhau \(BN,CM\) trong đáy, nên là \((ABC)\), trái với \(S\notin(ABC)\). Vậy giao tuyến là \(SG\).</p></div>
 
     **Kiểm lại:** Nếu chưa chứng minh \(G\) thuộc **cả hai mặt**, bài giải chưa đủ.
 
@@ -218,9 +218,9 @@
 
     **Phân tích:** Cần mặt phẳng phụ **chứa \(BF\)**. Dùng đường \(BE\) cắt \(CD\) để dựng giao tuyến với \((ACD)\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Lấy \(M=BE\cap CD\). Do \(E\in BM\) và \(F\in AE\), bốn điểm \(A,B,E,F\) thuộc \((ABM)\); suy ra \(BF\subset(ABM)\). Hai mặt \((ABM),(ACD)\) giao nhau theo \(AM\). Gọi \(N=BF\cap AM\), suy ra \(N\in BF\) và \(N\in(ACD)\); vậy \(N=BF\cap(ACD)\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.8"><p><strong>Lời giải.</strong> Lấy \(M=BE\cap CD\). Do \(E\in BM\) và \(F\in AE\), bốn điểm \(A,B,E,F\) thuộc \((ABM)\); suy ra \(BF\subset(ABM)\). Hai mặt \((ABM),(ACD)\) giao nhau theo \(AM\). Vì \(E\) nằm giữa \(B,M\) và \(F\) nằm giữa \(A,E\), \(F\) ở trong tam giác \(ABM\), nên tia \(BF\) cắt cạnh \(AM\) tại \(N\). Do đó \(N\in BF\) và \(N\in(ACD)\); vậy \(N=BF\cap(ACD)\).</p></div>
 
-    **Kiểm lại:** Điểm \(N\) có thể cần dựng trên **đường thẳng kéo dài**, không giới hạn ở đoạn nhìn thấy; mỗi bước phải có chứng cứ điểm thuộc mặt.
+    **Kiểm lại:** Trong bài này \(N\) nằm trên cạnh \(AM\) nhờ giả thiết điểm trong tam giác. Ở bài khác có thể cần kéo dài đường thẳng; mỗi bước phải có chứng cứ điểm thuộc mặt.
 
 === "Lỗi thường gặp"
 

@@ -26,7 +26,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B16-01_R01.svg" alt="Đồ thị y bằng x cộng 2 có lỗ tại điểm hai bốn"><figcaption><strong>Hướng dẫn đọc:</strong> chấm tròn rỗng ở \((2,4)\) nói rằng **hàm gốc không xác định tại \(x=2\)**; hai nhánh xanh tiến gần cao độ 4 khi \(x\to2\). Giới hạn bằng 4 không có nghĩa \(f(2)=4\).</figcaption></figure>
 
-    Đây là điểm cốt lõi: **giới hạn xét ở gần \(x_0\)** chứ không bắt buộc biết hàm số **ngay tại \(x_0\)**. SGK định nghĩa qua dãy: nếu mọi dãy \((x_n)\) trong miền xác định, \(x_n\ne x_0\), \(x_n\to x_0\) đều cho \(f(x_n)\to L\) thì \(f(x)\to L\) khi \(x\to x_0\). Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.
+    Đây là điểm cốt lõi: **giới hạn xét ở gần \(x_0\)** chứ không bắt buộc biết hàm số **ngay tại \(x_0\)**. SGK định nghĩa qua dãy: nếu mọi dãy \((x_n)\) trong miền xác định, \(x_n\ne x_0\), \(x_n\to x_0\) đều cho \(f(x_n)\to L\) thì \(f(x)\to L\) khi \(x\to x_0\). Chẳng hạn với \(f(x)=(x^2-4)/(x-2)\), mọi dãy \(x_n\ne2\) tiến tới 2 đều cho \(f(x_n)=x_n+2\to4\), theo kiến thức Bài 15. Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.
 
     Khi biết các giới hạn hữu hạn của hai biểu thức, ta có thể cộng, trừ, nhân chúng; phép chia chỉ áp dụng khi giới hạn mẫu khác 0. Chẳng hạn, với phân thức trên, ta phải khử nhân tử chung \(x-2\) khi \(x\ne2\) rồi mới thay \(x=2\), vì mẫu ban đầu tiến về 0.
 
@@ -155,7 +155,7 @@
 
     **Phân tích:** Tại \(x=0\) tử và mẫu đều 0. Nhân với biểu thức liên hợp \(\sqrt{4+x}+2\) giúp dùng hiệu hai bình phương, hợp lệ khi \(x\ne0\) và \(4+x\ge0\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với \(x\ne0\), \(x\) đủ gần 0 và \(4+x\ge0\): \(\dfrac{\sqrt{4+x}-2}{x}=\dfrac{(\sqrt{4+x}-2)(\sqrt{4+x}+2)}{x(\sqrt{4+x}+2)}=\dfrac1{\sqrt{4+x}+2}\). Vì mẫu mới tiến đến \(2+2=4\ne0\), giới hạn bằng \(1/4\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.2"><p><strong>Lời giải.</strong> Với \(x\ne0\), \(x\) đủ gần 0 và \(4+x\ge0\): \(\dfrac{\sqrt{4+x}-2}{x}=\dfrac{(\sqrt{4+x}-2)(\sqrt{4+x}+2)}{x(\sqrt{4+x}+2)}=\dfrac{x}{x(\sqrt{4+x}+2)}=\dfrac1{\sqrt{4+x}+2}\). Tử đã rút gọn thành \((4+x)-4=x\); mẫu liên hợp dương và \(x\ne0\) nên phép khử hợp lệ. Vì mẫu mới tiến đến \(2+2=4\ne0\), giới hạn bằng \(1/4\).</p></div>
 
     **Kiểm lại:** Mẫu liên hợp dương ở gần \(x=0\); rút gọn chỉ dùng cho \(x\ne0\). Giới hạn không có nghĩa phân thức gốc xác định tại 0.
 
