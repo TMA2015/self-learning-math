@@ -3708,7 +3708,7 @@
     "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T16-D6-20261128",
     "stem": "Nhị diện \\(120^\\circ\\) cho góc nhỏ giữa hai mặt phẳng chứa nó bằng bao nhiêu?",
     "answer_key": "60°",
-    "worked_solution": "\\(60^\\circ = 180^\\circ-120^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 49** và **Bài luyện 56**.",
+    "worked_solution": "\\(60^\\circ = 180^\\circ-120^\\circ\\).\n\n**Kiểm lỗi**\n\nNếu kết luận góc hai mặt bằng trực tiếp góc nhị diện tù, đọc **Kiến thức 4.2**: nhị diện gắn hai nửa mặt có hướng, còn góc giữa hai mặt lấy góc không tù. Thử **Bài luyện 50** và **Bài luyện 56**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-DIHEDRAL"
@@ -3770,7 +3770,7 @@
     "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T17-D6-20261128",
     "stem": "\\(d\\subset (P), d\\perp (Q)\\). Quan hệ hai mặt (P),(Q)?",
     "answer_key": "(P) vuông góc (Q).",
-    "worked_solution": "\\((P)\\perp (Q)\\), theo dấu hiệu một đường trong mặt vuông góc mặt kia.\n\n**Kiểm lỗi**\n\nNếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 50** và **Bài luyện 60**.",
+    "worked_solution": "\\((P)\\perp (Q)\\), theo dấu hiệu một đường trong mặt vuông góc mặt kia.\n\n**Kiểm lỗi**\n\nNếu chỉ tìm được một cặp đường vuông góc mà kết luận hai mặt vuông góc, đọc **Kiến thức 4.3**: cần một **đường nằm trong mặt này** vuông góc **toàn bộ mặt kia**. Thử **Bài luyện 51** và **Bài luyện 60**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-PERP_PLANES"
@@ -3832,7 +3832,7 @@
     "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T18-D6-20261128",
     "stem": "\\((P)\\perp (Q)\\) theo d. \\(a\\subset (P), a\\perp d\\). Có \\(a\\perp (Q)\\) không?",
     "answer_key": "Có, a vuông góc (Q).",
-    "worked_solution": "Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) và vuông góc giao tuyến d.\n\n**Kiểm lỗi**\n\nNếu quên điều kiện đường a vuông góc với giao tuyến, đọc **Kiến thức 4.4**: với hai mặt vuông góc, a phải thuộc một mặt và vuông góc giao tuyến mới suy ra a vuông góc mặt kia. Thử **Bài luyện 51** và **Bài luyện 57**.",
+    "worked_solution": "Có, theo định lí hai mặt phẳng vuông góc. a phải nằm trong (P) và vuông góc giao tuyến d.\n\n**Kiểm lỗi**\n\nNếu quên điều kiện đường a vuông góc với giao tuyến, đọc **Kiến thức 4.4**: với hai mặt vuông góc, a phải thuộc một mặt và vuông góc giao tuyến mới suy ra a vuông góc mặt kia. Thử **Bài luyện 52** và **Bài luyện 57**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-PERP_PLANE_RULE"
@@ -4018,7 +4018,7 @@
     "content_version": "CD16-BANK-PARTIAL-20261127-THPT-TOP16-T21-D6-20261128",
     "stem": "Hai đáy hình vuông cạnh 6 và 3 có tỉ số diện tích đáy lớn : đáy nhỏ?",
     "answer_key": "4:1",
-    "worked_solution": "\\(36:9 = 4:1\\).\n\n**Kiểm lỗi**\n\nNếu lấy tỉ số cạnh \\(6:3=2:1\\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 52** và **Bài luyện 62**.",
+    "worked_solution": "\\(36:9 = 4:1\\).\n\n**Kiểm lỗi**\n\nNếu lấy tỉ số cạnh \\(6:3=2:1\\) làm ngay tỉ số diện tích, đọc **Kiến thức 4.7**: hai đáy chóp cụt đều đồng dạng nên tỉ số diện tích là bình phương tỉ số cạnh tương ứng. Thử **Bài luyện 49** và **Bài luyện 62**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B25-REGULAR_FRUSTUM"
@@ -4080,7 +4080,7 @@
     "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T01-D6-20261128",
     "stem": "\\(H\\in d,\\ AH\\perp d,\\ AH=3\\,\\mathrm{cm}\\). Khoảng cách \\(d(A,d)\\) bằng bao nhiêu?",
     "answer_key": "3 cm.",
-    "worked_solution": "H là chân vuông góc từ A xuống d, nên khoảng cách là \\(AH=3\\,\\mathrm{cm}\\). Với mọi \\(X\\in d\\) khác H, \\(AX^2=AH^2+HX^2>AH^2\\), nên AX dài hơn AH.\n\n**Kiểm lỗi**\n\nNếu lấy đoạn xiên AX làm khoảng cách từ A đến d, trở lại **Kiến thức 1.1**: \\(AH\\perp d\\) mới cho đoạn ngắn nhất, với X khác H thì \\(AX^2=AH^2+HX^2\\). Tự thử **Bài luyện 1** và **Bài luyện 12**, tìm chân H trước khi tính.",
+    "worked_solution": "H là chân vuông góc từ A xuống d, nên khoảng cách là \\(AH=3\\,\\mathrm{cm}\\). Với mọi \\(X\\in d\\) khác H, \\(AX^2=AH^2+HX^2>AH^2\\), nên AX dài hơn AH.\n\n**Kiểm lỗi**\n\nNếu lấy đoạn xiên AX làm khoảng cách từ A đến d, trở lại **Kiến thức 1.1**: \\(AH\\perp d\\) mới cho đoạn ngắn nhất, với X khác H thì \\(AX^2=AH^2+HX^2\\). Tự thử **Bài luyện 5** và **Bài luyện 12**, tìm chân H trước khi tính.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B26-POINT_LINE"
@@ -4142,7 +4142,7 @@
     "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T02-D6-20261128",
     "stem": "\\(A\\in(P)\\). Khoảng cách \\(d(A,(P))\\) bằng bao nhiêu?",
     "answer_key": "0.",
-    "worked_solution": "0, không cần dựng đoạn khác.\n\n**Kiểm lỗi**\n\nNếu điểm A đã thuộc (P) mà em vẫn cho khoảng cách dương, đọc **Kiến thức 1.2**: chân vuông góc trùng chính A, khoảng cách bằng 0. Thử **Bài luyện 2** và **Bài luyện 13**, phân biệt đoạn vuông góc với đoạn xiên.",
+    "worked_solution": "0, không cần dựng đoạn khác.\n\n**Kiểm lỗi**\n\nNếu điểm A đã thuộc (P) mà em vẫn cho khoảng cách dương, đọc **Kiến thức 1.2**: chân vuông góc trùng chính A, khoảng cách bằng 0. Thử **Bài luyện 1** và **Bài luyện 13**, phân biệt đoạn vuông góc với đoạn xiên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B26-POINT_PLANE"
@@ -4204,7 +4204,7 @@
     "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T03-D6-20261128",
     "stem": "Đường \\(d\\parallel(P)\\); hai điểm A, B thuộc d. Có \\(d(A,(P))=d(B,(P))\\) không?",
     "answer_key": "Có, hai khoảng cách bằng nhau.",
-    "worked_solution": "Có, vì khoảng cách đường song song mặt phẳng không đổi theo điểm.\n\n**Kiểm lỗi**\n\nNếu dùng bất kì điểm trên d mà chưa chứng minh \\(d\\parallel(P)\\), đọc **Kiến thức 1.3**: khi đường song song phân biệt mặt, độ cao từ mọi điểm trên đường không đổi. Thử **Bài luyện 3** và **Bài luyện 14**.",
+    "worked_solution": "Có, vì khoảng cách đường song song mặt phẳng không đổi theo điểm.\n\n**Kiểm lỗi**\n\nNếu dùng bất kì điểm trên d mà chưa chứng minh \\(d\\parallel(P)\\), đọc **Kiến thức 1.3**: khi đường song song phân biệt mặt, độ cao từ mọi điểm trên đường không đổi. Thử **Bài luyện 6** và **Bài luyện 14**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B26-PARALLEL_LINE_PLANE"
@@ -4266,7 +4266,7 @@
     "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T04-D6-20261128",
     "stem": "Hai mặt song song cách nhau theo pháp tuyến 4 m. Khoảng cách hai mặt?",
     "answer_key": "4 m.",
-    "worked_solution": "4 m, là độ dài đoạn vuông góc chung.\n\n**Kiểm lỗi**\n\nNếu dùng đoạn xiên nối hai điểm bất kì làm khoảng cách hai mặt, đọc **Kiến thức 1.4**: phải có hai mặt song song và đo bằng đoạn vuông góc chung. Thử **Bài luyện 4** và **Bài luyện 15**, tìm chân vuông góc.",
+    "worked_solution": "4 m, là độ dài đoạn vuông góc chung.\n\n**Kiểm lỗi**\n\nNếu dùng đoạn xiên nối hai điểm bất kì làm khoảng cách hai mặt, đọc **Kiến thức 1.4**: phải có hai mặt song song và đo bằng đoạn vuông góc chung. Thử **Bài luyện 2** và **Bài luyện 15**, tìm chân vuông góc.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B26-PARALLEL_PLANES"
@@ -4390,7 +4390,7 @@
     "content_version": "CD17-BANK-PARTIAL-20261127-THPT-TOP17-T06-D6-20261128",
     "stem": "Chóp có chiều cao 4 và cạnh bên 5. Giá trị h trong công thức \\(V=\\frac13S_{\\text{đáy}}h\\) là bao nhiêu?",
     "answer_key": "\\(h=4\\).",
-    "worked_solution": "4, vì chiều cao là đoạn vuông góc.\n\n**Kiểm lỗi**\n\nNếu nhầm cạnh bên hoặc đường cao mặt bên với chiều cao chóp, đọc **Kiến thức 1.6**: h là khoảng cách vuông góc từ đỉnh đến mặt đáy. Thử **Bài luyện 6** và **Bài luyện 17**, dựng tâm đáy và tam giác vuông.",
+    "worked_solution": "4, vì chiều cao là đoạn vuông góc.\n\n**Kiểm lỗi**\n\nNếu nhầm cạnh bên hoặc đường cao mặt bên với chiều cao chóp, đọc **Kiến thức 1.6**: h là khoảng cách vuông góc từ đỉnh đến mặt đáy. Thử **Bài luyện 4** và **Bài luyện 17**, dựng tâm đáy và tam giác vuông.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B26-HEIGHT_APPLICATION"
@@ -5198,7 +5198,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T07-D6-20261128",
     "stem": "Điểm \\(M=(2;-1;0)\\) thuộc mặt phẳng tọa độ nào?",
     "answer_key": "M thuộc Oxy.",
-    "worked_solution": "Thuộc Oxy vì \\(z=0\\).\n\n**Kiểm lỗi**\n\nMặt Oxy cần \\(z=0\\), Oyz cần \\(x=0\\); trục Oz cần \\(x=y=0\\). Không suy dấu tọa độ từ nét hình xiên. Quay về **Kiến thức 2.1**, sau đó tự giải **Bài luyện 31** và **Bài luyện 35** trong Luyện tập.",
+    "worked_solution": "Thuộc Oxy vì \\(z=0\\).\n\n**Kiểm lỗi**\n\nMặt Oxy cần \\(z=0\\), Oyz cần \\(x=0\\); trục Oz cần \\(x=y=0\\). Không suy dấu tọa độ từ nét hình xiên. Quay về **Kiến thức 2.1**, sau đó tự giải **Bài luyện 31** và **Bài luyện 46** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O01"
@@ -5260,7 +5260,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T08-D6-20261128",
     "stem": "Điểm \\(M(1;2;3)\\), tọa độ vectơ \\(\\overrightarrow{OM}\\)?",
     "answer_key": "\\(\\overrightarrow{OM}=(1;2;3)\\).",
-    "worked_solution": "\\((1;2;3)\\) trong cùng hệ Oxyz.\n\n**Kiểm lỗi**\n\nTọa độ \\(\\overrightarrow{OM}\\) bằng tọa độ M chỉ khi O là gốc của cùng hệ; không tự đổi dấu các thành phần âm của vectơ. Quay về **Kiến thức 2.2**, sau đó tự giải **Bài luyện 37** và **Bài luyện 40** trong Luyện tập.",
+    "worked_solution": "\\((1;2;3)\\) trong cùng hệ Oxyz.\n\n**Kiểm lỗi**\n\nTọa độ \\(\\overrightarrow{OM}\\) bằng tọa độ M chỉ khi O là gốc của cùng hệ; không tự đổi dấu các thành phần âm của vectơ. Quay về **Kiến thức 2.2**, sau đó tự giải **Bài luyện 36** và **Bài luyện 38** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O02"
@@ -5322,7 +5322,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T09-D6-20261128",
     "stem": "Trong hệ Ox Đông, Oy Bắc, Oz lên, \\(N=(-4;3;2)\\) m nằm về phía nào của O?",
     "answer_key": "4 m về Tây, 3 m về Bắc, cao 2 m so với O.",
-    "worked_solution": "4 m về Tây, 3 m về Bắc, cao 2 m.\n\n**Kiểm lỗi**\n\nVị trí phụ thuộc gốc và chiều dương đã chọn; xác định hướng trục, mốc và đơn vị trước khi đọc tọa độ. Quay về **Kiến thức 2.3**, sau đó tự giải **Bài luyện 42** và **Bài luyện 45** trong Luyện tập.",
+    "worked_solution": "4 m về Tây, 3 m về Bắc, cao 2 m.\n\n**Kiểm lỗi**\n\nVị trí phụ thuộc gốc và chiều dương đã chọn; xác định hướng trục, mốc và đơn vị trước khi đọc tọa độ. Quay về **Kiến thức 2.3**, sau đó tự giải **Bài luyện 47** và **Bài luyện 48** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O03"
@@ -5384,7 +5384,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T10-D6-20261128",
     "stem": "\\(A=(2;0;-1)\\), \\(B=(5;-2;3)\\). Tính vectơ \\(\\overrightarrow{AB}\\).",
     "answer_key": "\\(\\overrightarrow{AB}=(3;-2;4)\\).",
-    "worked_solution": "\\((3;-2;4)\\).\n\n**Kiểm lỗi**\n\nVectơ từ A tới B là \\(\\overrightarrow{OB}-\\overrightarrow{OA}\\), không phải \\(\\overrightarrow{OA}-\\overrightarrow{OB}\\); kiểm lại bằng phép cộng \\(\\overrightarrow{OA}+\\overrightarrow{AB}=\\overrightarrow{OB}\\). Quay về **Kiến thức 2.4**, sau đó tự giải **Bài luyện 46** và **Bài luyện 50** trong Luyện tập.",
+    "worked_solution": "\\((3;-2;4)\\).\n\n**Kiểm lỗi**\n\nVectơ từ A tới B là \\(\\overrightarrow{OB}-\\overrightarrow{OA}\\), không phải \\(\\overrightarrow{OA}-\\overrightarrow{OB}\\); kiểm lại bằng phép cộng \\(\\overrightarrow{OA}+\\overrightarrow{AB}=\\overrightarrow{OB}\\). Quay về **Kiến thức 2.4**, sau đó tự giải **Bài luyện 41** và **Bài luyện 50** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O04"
@@ -5818,7 +5818,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T17-D6-20261128",
     "stem": "Một mặt phẳng có hai vectơ chỉ phương \\(\\vec u=(1;0;0),\\ \\vec v=(0;1;0)\\). Nêu một vectơ pháp tuyến khác không.",
     "answer_key": "Một pháp tuyến là \\((0;0;1)\\).",
-    "worked_solution": "\\(\\vec n=(0;0;1)\\), vì vuông góc cả u lẫn v.\n\n**Kiểm lỗi**\n\nNếu hai hướng trong mặt cùng phương thì tích có hướng bằng 0, **không** được chọn vectơ đó làm pháp tuyến. Quay về **Kiến thức 4.1**, sau đó tự giải **Bài luyện 83** và **Bài luyện 86** trong Luyện tập.",
+    "worked_solution": "\\(\\vec n=(0;0;1)\\), vì vuông góc cả u lẫn v.\n\n**Kiểm lỗi**\n\nNếu hai hướng trong mặt cùng phương thì tích có hướng bằng 0, **không** được chọn vectơ đó làm pháp tuyến. Quay về **Kiến thức 4.1**, sau đó tự giải **Bài luyện 83** và **Bài luyện 100** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O01"
@@ -5880,7 +5880,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T18-D6-20261128",
     "stem": "Viết phương trình mặt phẳng đi qua \\(M_0(0;0;2)\\), có pháp tuyến \\(\\vec n=(0;0;1)\\).",
     "answer_key": "\\(z=2\\).",
-    "worked_solution": "\\(z-2=0\\), tức \\(z=2\\).\n\n**Kiểm lỗi**\n\nMặt có pháp tuyến khác 0 phải đi qua đúng điểm \\(M_0\\); thay \\(M_0\\) vào phương trình để kiểm dấu. Quay về **Kiến thức 4.2**, sau đó tự giải **Bài luyện 87** và **Bài luyện 91** trong Luyện tập.",
+    "worked_solution": "\\(z-2=0\\), tức \\(z=2\\).\n\n**Kiểm lỗi**\n\nMặt có pháp tuyến khác 0 phải đi qua đúng điểm \\(M_0\\); thay \\(M_0\\) vào phương trình để kiểm dấu. Quay về **Kiến thức 4.2**, sau đó tự giải **Bài luyện 84** và **Bài luyện 87** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O02"
@@ -5942,7 +5942,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T19-D6-20261128",
     "stem": "Viết phương trình mặt phẳng qua ba điểm \\(A(2;0;0), B(0;2;0), C(0;0;2)\\).",
     "answer_key": "\\(x+y+z=2\\).",
-    "worked_solution": "\\(x+y+z=2\\). Ba điểm không thẳng hàng.\n\n**Kiểm lỗi**\n\nBa điểm không thẳng hàng mới xác định một mặt duy nhất; kiểm \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}\\ne\\vec0\\) và thế lại đủ ba điểm. Quay về **Kiến thức 4.3**, sau đó tự giải **Bài luyện 93** và **Bài luyện 96** trong Luyện tập.",
+    "worked_solution": "\\(x+y+z=2\\). Ba điểm không thẳng hàng.\n\n**Kiểm lỗi**\n\nBa điểm không thẳng hàng mới xác định một mặt duy nhất; kiểm \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}\\ne\\vec0\\) và thế lại đủ ba điểm. Quay về **Kiến thức 4.3**, sau đó tự giải **Bài luyện 89** và **Bài luyện 104** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O03"
@@ -6004,7 +6004,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T20-D6-20261128",
     "stem": "Mặt chứa trục Oz và điểm \\((1;1;0)\\). Tìm phương trình đơn giản.",
     "answer_key": "\\(x-y=0\\).",
-    "worked_solution": "\\(x-y=0\\), vì mọi điểm Oz có \\(x=y=0\\) và điểm thêm cũng thỏa.\n\n**Kiểm lỗi**\n\nMặt chứa cả trục phải nhận **mọi** điểm trên trục, không chỉ qua gốc; cần kiểm cả điểm ngoài trục đã cho. Quay về **Kiến thức 4.4**, sau đó tự giải **Bài luyện 99** và **Bài luyện 102** trong Luyện tập.",
+    "worked_solution": "\\(x-y=0\\), vì mọi điểm Oz có \\(x=y=0\\) và điểm thêm cũng thỏa.\n\n**Kiểm lỗi**\n\nMặt chứa cả trục phải nhận **mọi** điểm trên trục, không chỉ qua gốc; cần kiểm cả điểm ngoài trục đã cho. Quay về **Kiến thức 4.4**, sau đó tự giải **Bài luyện 92** và **Bài luyện 107** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O04"
@@ -6066,7 +6066,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T21-D6-20261128",
     "stem": "\\((P):x+y+z=1\\), \\((Q):2x+2y+2z=2\\). Hai mặt trùng hay song song phân biệt?",
     "answer_key": "Hai mặt phẳng trùng nhau.",
-    "worked_solution": "Trùng nhau do chia phương trình Q cho 2 thu đúng P.\n\n**Kiểm lỗi**\n\nPháp tuyến tỉ lệ chưa đủ phân biệt hai mặt trùng hay song song; kiểm cả hệ số tự do, còn vuông góc dùng tích vô hướng. Quay về **Kiến thức 4.5**, sau đó tự giải **Bài luyện 103** và **Bài luyện 107** trong Luyện tập.",
+    "worked_solution": "Trùng nhau do chia phương trình Q cho 2 thu đúng P.\n\n**Kiểm lỗi**\n\nPháp tuyến tỉ lệ chưa đủ phân biệt hai mặt trùng hay song song; kiểm cả hệ số tự do, còn vuông góc dùng tích vô hướng. Quay về **Kiến thức 4.5**, sau đó tự giải **Bài luyện 93** và **Bài luyện 109** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O05"
@@ -6128,7 +6128,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T22-D6-20261128",
     "stem": "Khoảng cách từ O đến mặt \\(z=-5\\)?",
     "answer_key": "5 đơn vị độ dài.",
-    "worked_solution": "5 đơn vị, bởi pháp tuyến \\((0;0;1)\\), độ chênh z là 5.\n\n**Kiểm lỗi**\n\nKhoảng cách điểm–mặt phải lấy trị tuyệt đối tử và chia độ dài pháp tuyến khác 0, không thể âm. Quay về **Kiến thức 4.6**, sau đó tự giải **Bài luyện 108** và **Bài luyện 112** trong Luyện tập.",
+    "worked_solution": "5 đơn vị, bởi pháp tuyến \\((0;0;1)\\), độ chênh z là 5.\n\n**Kiểm lỗi**\n\nKhoảng cách điểm–mặt phải lấy trị tuyệt đối tử và chia độ dài pháp tuyến khác 0, không thể âm. Quay về **Kiến thức 4.6**, sau đó tự giải **Bài luyện 96** và **Bài luyện 112** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B14-O06"
@@ -6624,7 +6624,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T31-D6-20261128",
     "stem": "Hai đường thẳng có vectơ chỉ phương \\(\\vec u=(1;0;0),\\ \\vec v=(-1;0;0)\\). Tính góc giữa hai đường.",
     "answer_key": "\\(0^\\circ\\).",
-    "worked_solution": "\\(0^\\circ\\), không phải \\(180^\\circ\\), vì hai phương cùng đường dù mũi tên ngược.\n\n**Kiểm lỗi**\n\nGóc giữa hai **đường** là góc không tù; dùng trị tuyệt đối tích vô hướng và hai hướng khác 0. Quay về **Kiến thức 6.1**, sau đó tự giải **Bài luyện 151** và **Bài luyện 154** trong Luyện tập.",
+    "worked_solution": "\\(0^\\circ\\), không phải \\(180^\\circ\\), vì hai phương cùng đường dù mũi tên ngược.\n\n**Kiểm lỗi**\n\nGóc giữa hai **đường** là góc không tù; dùng trị tuyệt đối tích vô hướng và hai hướng khác 0. Quay về **Kiến thức 6.1**, sau đó tự giải **Bài luyện 152** và **Bài luyện 165** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B16-O01"
@@ -6686,7 +6686,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T32-D6-20261128",
     "stem": "Đường có hướng \\((0;0;1)\\), mặt \\(z=0\\). Góc đường–mặt bằng bao nhiêu?",
     "answer_key": "\\(90^\\circ\\).",
-    "worked_solution": "\\(90^\\circ\\) vì hướng đường trùng phương pháp tuyến, nên hình chiếu của đường co thành một điểm. Công thức cho \\(\\sin\\theta=1\\).\n\n**Kiểm lỗi**\n\nGóc giữa đường và mặt **phụ** với góc không tù giữa hướng đường và phương pháp tuyến; dùng \\(\\sin\\theta=\\frac{|\\vec u\\cdot\\vec n|}{|\\vec u||\\vec n|}\\). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 156** và **Bài luyện 159** trong Luyện tập.",
+    "worked_solution": "\\(90^\\circ\\) vì hướng đường trùng phương pháp tuyến, nên hình chiếu của đường co thành một điểm. Công thức cho \\(\\sin\\theta=1\\).\n\n**Kiểm lỗi**\n\nGóc giữa đường và mặt **phụ** với góc không tù giữa hướng đường và phương pháp tuyến; dùng \\(\\sin\\theta=\\frac{|\\vec u\\cdot\\vec n|}{|\\vec u||\\vec n|}\\). Quay về **Kiến thức 6.2**, sau đó tự giải **Bài luyện 155** và **Bài luyện 167** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B16-O02"
@@ -6748,7 +6748,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T33-D6-20261128",
     "stem": "Hai mặt \\((P):x=0\\),\\((Q):y=0\\) có góc bao nhiêu?",
     "answer_key": "\\(90^\\circ\\).",
-    "worked_solution": "\\(90^\\circ\\), vì \\(\\vec n_P=(1;0;0)\\),\\(\\vec n_Q=(0;1;0)\\) vuông góc.\n\n**Kiểm lỗi**\n\nGóc hai mặt dùng hai pháp tuyến khác 0 và góc không tù; đổi dấu pháp tuyến không đổi góc. Quay về **Kiến thức 6.3**, sau đó tự giải **Bài luyện 162** và **Bài luyện 165** trong Luyện tập.",
+    "worked_solution": "\\(90^\\circ\\), vì \\(\\vec n_P=(1;0;0)\\),\\(\\vec n_Q=(0;1;0)\\) vuông góc.\n\n**Kiểm lỗi**\n\nGóc hai mặt dùng hai pháp tuyến khác 0 và góc không tù; đổi dấu pháp tuyến không đổi góc. Quay về **Kiến thức 6.3**, sau đó tự giải **Bài luyện 157** và **Bài luyện 170** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B16-O03"
@@ -6810,7 +6810,7 @@
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-T34-D6-20261128",
     "stem": "Đường \\(d(t)=(t;0;0)\\), mặt \\(z=0\\). Quan hệ?",
     "answer_key": "d nằm trong mặt phẳng \\(z=0\\).",
-    "worked_solution": "Đường nằm trong mặt vì \\(z=0\\) với mọi t.\n\n**Kiểm lỗi**\n\n\\(\\vec u\\cdot\\vec n=0\\) mới chỉ xác định hướng song song mặt; kiểm điểm thuộc mặt để phân biệt nằm trong và song song phân biệt. Quay về **Kiến thức 6.4**, sau đó tự giải **Bài luyện 169** và **Bài luyện 170** trong Luyện tập.",
+    "worked_solution": "Đường nằm trong mặt vì \\(z=0\\) với mọi t.\n\n**Kiểm lỗi**\n\n\\(\\vec u\\cdot\\vec n=0\\) mới chỉ xác định hướng song song mặt; kiểm điểm thuộc mặt để phân biệt nằm trong và song song phân biệt. Quay về **Kiến thức 6.4**, sau đó tự giải **Bài luyện 169** và **Bài luyện 172** trong Luyện tập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B16-O04"
@@ -17351,7 +17351,7 @@
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT01",
     "stem": "Hàm \\(f(x)=x^2\\) có tốc độ biến thiên trung bình bao nhiêu trên đoạn \\([0;2]\\)?",
     "answer_key": "2 đơn vị đầu ra trên một đơn vị đầu vào.",
-    "worked_solution": "\\(\\frac{f(2)-f(0)}{2-0}=\\frac{4-0}2=2\\) đơn vị đầu ra trên một đơn vị đầu vào. Nếu em dùng \\(\\frac{f(2)}2\\) ở trường hợp này thì may mắn ra cùng kết quả vì \\(f(0)=0\\); hãy thử khoảng \\([1;3]\\) để thấy công thức đúng phải dùng **hai hiệu**.\n\n\n**Kiểm lỗi**\n\nNếu chỉ lấy giá trị cuối chia cho độ dài khoảng thay vì hiệu hai giá trị, đọc **Kiến thức 1.1** rồi giải **Bài 10** và **Bài 3**. Trong bài chuyển động, tách hiệu tọa độ khỏi quãng đường và giữ đúng đơn vị; với hàm số tổng quát, dùng đơn vị đầu ra trên đơn vị đầu vào.",
+    "worked_solution": "\\(\\frac{f(2)-f(0)}{2-0}=\\frac{4-0}2=2\\) đơn vị đầu ra trên một đơn vị đầu vào. Nếu em dùng \\(\\frac{f(2)}2\\) ở trường hợp này thì may mắn ra cùng kết quả vì \\(f(0)=0\\); hãy thử khoảng \\([1;3]\\) để thấy công thức đúng phải dùng **hai hiệu**.\n\n\n**Kiểm lỗi**\n\nNếu chỉ lấy giá trị cuối chia cho độ dài khoảng thay vì hiệu hai giá trị, đọc **Kiến thức 1.1** rồi giải **Bài 10** và **Bài 4**. Trong bài chuyển động, tách hiệu tọa độ khỏi quãng đường và giữ đúng đơn vị; với hàm số tổng quát, dùng đơn vị đầu ra trên đơn vị đầu vào.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B31-AVERAGE_RATE"
@@ -17408,7 +17408,7 @@
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT02",
     "stem": "Trên đồ thị \\(f(x)=x^2\\), xét cát tuyến qua điểm có hoành độ 3 và điểm có hoành độ \\(3+h\\), \\(h\\ne0\\). Hệ số góc cát tuyến theo h là gì? Khi \\(h\\to0\\) được giá trị nào?",
     "answer_key": "\\(6+h\\) với \\(h\\ne0\\); giới hạn bằng 6.",
-    "worked_solution": "\\(\\frac{(3+h)^2-9}h=6+h\\), \\(h\\ne0\\); giới hạn 6.\n\nNếu gọi \\(\\frac00\\) là độ dốc, cần biểu diễn h khác 0 và khử nhân tử.\n\n\n**Kiểm lỗi**\n\nNếu thay \\(h=0\\) trực tiếp vào thương sai phân rồi viết \\(\\frac00\\), đọc **Kiến thức 1.2**, làm **Bài 11** và **Bài 4**; rút gọn khi \\(h\\ne0\\) trước khi cho \\(h\\to0\\).",
+    "worked_solution": "\\(\\frac{(3+h)^2-9}h=6+h\\), \\(h\\ne0\\); giới hạn 6.\n\nNếu gọi \\(\\frac00\\) là độ dốc, cần biểu diễn h khác 0 và khử nhân tử.\n\n\n**Kiểm lỗi**\n\nNếu thay \\(h=0\\) trực tiếp vào thương sai phân rồi viết \\(\\frac00\\), đọc **Kiến thức 1.2**, làm **Bài 11** và **Bài 5**; rút gọn khi \\(h\\ne0\\) trước khi cho \\(h\\to0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B31-LIMIT_QUOTIENT"
@@ -20788,7 +20788,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT01",
     "stem": "Tìm họ nguyên hàm của \\(f(x)=8x^3-2\\). Em kiểm lại được bằng đạo hàm không?",
     "answer_key": "\\(2x^4-2x+C\\), vì đạo hàm bằng \\(8x^3-2\\).",
-    "worked_solution": "\\(F(x)=2x^4-2x+C\\). Đạo hàm của biểu thức này là \\(8x^3-2\\), đúng bằng \\(f\\). Nếu em quên \\(+C\\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ thấy một nguyên hàm mà bỏ \\(+C\\), hoặc kết luận bằng cách nhìn dạng hàm, đọc **Kiến thức 1.1**, giải **Bài 1** (đạo hàm để kiểm) và **Bài 3** (tìm cả họ). Cứ lấy đạo hàm kết quả để đối chiếu với \\(f\\).",
+    "worked_solution": "\\(F(x)=2x^4-2x+C\\). Đạo hàm của biểu thức này là \\(8x^3-2\\), đúng bằng \\(f\\). Nếu em quên \\(+C\\), hãy thử cộng thêm 5 vào nguyên hàm của mình rồi lấy đạo hàm: kết quả vẫn không đổi.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ thấy một nguyên hàm mà bỏ \\(+C\\), hoặc kết luận bằng cách nhìn dạng hàm, đọc **Kiến thức 1.1**, giải **Bài 2** (đạo hàm để kiểm) và **Bài 4** (tìm cả họ). Cứ lấy đạo hàm kết quả để đối chiếu với \\(f\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O01"
@@ -20902,7 +20902,7 @@
     "content_version": "CD11-BANK-PARTIAL-20261127-THPT-TOP11-KFT03",
     "stem": "\\(\\int (5x^4+2x)\\,\\mathrm dx\\)?",
     "answer_key": "\\(x^5+x^2+C\\).",
-    "worked_solution": "Lấy nguyên hàm từng hạng: \\(\\int(5x^4+2x)\\,\\mathrm dx=x^5+x^2+C\\). Đạo hàm ngược đúng bằng \\(5x^4+2x\\).\n\nNếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.\n\n\n**Kiểm lỗi**\n\nNếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa, đọc **Kiến thức 1.3**, làm **Bài 17** rồi **Bài 6**. Lấy đạo hàm ngược để phát hiện hệ số thiếu.",
+    "worked_solution": "Lấy nguyên hàm từng hạng: \\(\\int(5x^4+2x)\\,\\mathrm dx=x^5+x^2+C\\). Đạo hàm ngược đúng bằng \\(5x^4+2x\\).\n\nNếu không chia hệ số mũ mới, kiểm đạo hàm ngược sẽ phát hiện hệ số dư.\n\n\n**Kiểm lỗi**\n\nNếu em quên chia hệ số theo mũ mới khi tính nguyên hàm lũy thừa, đọc **Kiến thức 1.3**, làm **Bài 17** rồi **Bài 7**. Lấy đạo hàm ngược để phát hiện hệ số thiếu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIV-B11-O03"
