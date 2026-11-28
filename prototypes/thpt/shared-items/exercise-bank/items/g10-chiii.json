@@ -2,7 +2,7 @@
   {
     "item_id": "THPT-G10-B05-C01",
     "content_version": "CD12-BANK-PARTIAL-20261127-THPT-G10-B05-C01",
-    "stem": "Trên nửa đường tròn đơn vị, điểm M ứng với góc \\(\\alpha\\) có tọa độ \\(\\left(-\\frac45;\\frac35\\right)\\). Giá trị \\(\\cos\\alpha\\) bằng bao nhiêu?",
+    "stem": "Trên nửa đường tròn đơn vị tâm O trong mặt phẳng tọa độ Oxy, điểm M ứng với góc \\(\\alpha\\in[0^\\circ;180^\\circ]\\) có tọa độ \\(\\left(-\\frac45;\\frac35\\right)\\). Giá trị \\(\\cos\\alpha\\) bằng bao nhiêu?",
     "answer_key": "\\(-\\frac45\\)",
     "worked_solution": "Trên nửa đường tròn đơn vị, điểm M có tọa độ \\((\\cos\\alpha;\\sin\\alpha)\\). Côsin là hoành độ, nên \\(\\cos\\alpha=-\\frac45\\); tung độ là \\(\\sin\\alpha=\\frac35\\). Dấu âm của côsin phù hợp với vị trí M bên trái trục Oy, ứng với góc tù.",
     "options": [
@@ -760,7 +760,7 @@
     "content_version": "CD12-BANK-PARTIAL-20261127-THPT-G10-B06-P05",
     "stem": "Hai người khảo sát đứng tại A, B cách nhau 100 m, ngắm điểm C bên kia khu vực khó tiếp cận. Trong tam giác ABC, \\(A=40^\\circ,\\ B=65^\\circ\\). Tính BC và AC, làm tròn đến 0,1 m.",
     "answer_key": "\\(BC\\approx66{,}5\\,\\mathrm m;\\ AC\\approx93{,}8\\,\\mathrm m\\).",
-    "worked_solution": "Tính góc còn lại: \\(C=180^\\circ-40^\\circ-65^\\circ=75^\\circ\\). Vì AB đối diện góc C, định lí sin cho \\(\\frac{BC}{\\sin A}=\\frac{AC}{\\sin B}=\\frac{AB}{\\sin C}\\). Suy ra \\(BC=\\frac{100\\sin40^\\circ}{\\sin75^\\circ}\\approx66{,}5\\,\\mathrm m\\) và \\(AC=\\frac{100\\sin65^\\circ}{\\sin75^\\circ}\\approx93{,}8\\,\\mathrm m\\) (máy DEG, làm tròn cuối bước). Vì \\(A<B<C\\), ta có \\(BC<AC<AB\\), phù hợp với thứ tự cạnh đối diện góc.",
+    "worked_solution": "Tính góc còn lại: \\(C=180^\\circ-40^\\circ-65^\\circ=75^\\circ\\). Vì AB đối diện góc C, định lí sin cho \\(\\frac{BC}{\\sin A}=\\frac{AC}{\\sin B}=\\frac{AB}{\\sin C}\\). Suy ra \\(BC=\\frac{100\\sin40^\\circ}{\\sin75^\\circ}\\approx66{,}5\\,\\mathrm m\\) và \\(AC=\\frac{100\\sin65^\\circ}{\\sin75^\\circ}\\approx93{,}8\\,\\mathrm m\\). Dùng máy ở chế độ DEG, chỉ làm tròn ở bước cuối. Vì \\(A<B<C\\), ta có \\(BC<AC<AB\\), phù hợp với thứ tự cạnh đối diện góc. Kết quả dựa trên giả thiết ba điểm khảo sát tạo thành tam giác phẳng với các góc đã cho.",
     "skill_ids": [
       "G10-B06-APPLICATION"
     ],
@@ -869,7 +869,7 @@
     "content_version": "SGK-G10-CHIII-BANK-CANDIDATE-20261127-THPT-G10-CHIII-TRY01",
     "stem": "Trên nửa đường tròn đơn vị, với \\(\\alpha=180^\\circ\\), điểm \\(M\\) có tọa độ gì? Từ đó tìm \\(\\sin180^\\circ\\) và \\(\\cos180^\\circ\\). Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "M=(−1,0); sin180°=0; cos180°=−1.",
-    "worked_solution": "\\(M=(-1,0)\\) nên \\(\\sin180^\\circ=0\\), \\(\\cos180^\\circ=-1\\). Điểm nằm trên trục \\(Ox\\) âm: tung độ bằng 0, hoành độ bằng \\(-1\\).",
+    "worked_solution": "Góc \\(180^\\circ\\) có tia cuối trùng nửa trục Ox âm. Trên nửa đường tròn đơn vị, điểm M có tọa độ \\((-1;0)\\). Vì côsin là hoành độ, sin là tung độ, nên \\(\\cos180^\\circ=-1\\) và \\(\\sin180^\\circ=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B05-UNIT_SEMICIRCLE"
@@ -1149,7 +1149,7 @@
   {
     "item_id": "THPT-G10-CHIII-TRY11",
     "content_version": "SGK-G10-CHIII-BANK-CANDIDATE-20261127-THPT-G10-CHIII-TRY11",
-    "stem": "Dùng máy ở DEG: (a) tính \\(\\cos127^\\circ\\), làm tròn đến bốn chữ số thập phân; (b) tìm **tất cả** góc \\(\\alpha\\in[0^\\circ,180^\\circ]\\) thỏa \\(\\sin\\alpha=0{,}4\\), làm tròn đến \\(0{,}1^\\circ\\). Vì sao \\(\\sin^{-1}\\) chỉ hiển thị một góc? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Dùng máy tính ở chế độ DEG: (a) tính \\(\\cos127^\\circ\\), làm tròn đến bốn chữ số thập phân; (b) tìm tất cả góc \\(\\alpha\\in[0^\\circ;180^\\circ]\\) thỏa \\(\\sin\\alpha=0{,}4\\), làm tròn đến \\(0{,}1^\\circ\\). Vì sao chức năng SIN⁻¹ chỉ hiển thị một góc? Chọn phương án đúng sau khi tự giải.",
     "answer_key": "cos127°≈−0,6018; α≈23,6° hoặc 156,4°; máy cho góc chính, phải xét góc bù.",
     "worked_solution": "(a) \\(\\cos127^\\circ\\approx-0{,}6018\\); dấu âm đúng vì góc tù. (b) \\(\\sin^{-1}(0{,}4)\\approx23{,}5782^\\circ\\), nên \\(\\alpha\\approx23{,}6^\\circ\\) hoặc \\(180^\\circ-23{,}5782^\\circ\\approx156{,}4^\\circ\\). Cả hai góc trong đoạn và có sin bằng \\(0{,}4\\). Máy chỉ hiện **góc chính**, còn góc bù phải xét bằng đối xứng. Nếu kết quả khác, kiểm lại DEG/RAD và quy tắc làm tròn.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -1432,7 +1432,7 @@
   {
     "item_id": "THPT-G10-CHIII-TRY09",
     "content_version": "SGK-G10-CHIII-BANK-CANDIDATE-20261127-THPT-G10-CHIII-TRY09",
-    "stem": "Với ba cạnh \\((3,4,5)\\), hãy tính \\(S,r\\). Bộ ba \\((2,3,6)\\) có dùng Heron như một tam giác được không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Cho tam giác có ba cạnh dài 3, 4, 5. Tính diện tích S và bán kính đường tròn nội tiếp r. Ba độ dài 2, 3, 6 có tạo thành tam giác để áp dụng công thức Heron không? Chọn phương án đúng sau khi tự giải.",
     "answer_key": "S=6, r=1; (2,3,6) không tạo thành tam giác.",
     "worked_solution": "Với \\(3,4,5\\): \\(p=6\\), \\(S=\\sqrt{6\\cdot3\\cdot2\\cdot1}=6\\), \\(r=S/p=1\\). Bộ ba \\(2,3,6\\) **không tạo tam giác** vì \\(2+3\\le6\\), nên không dùng như một bài toán diện tích tam giác thực.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
