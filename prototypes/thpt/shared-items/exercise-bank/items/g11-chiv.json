@@ -207,7 +207,7 @@
       },
       {
         "id": "C",
-        "text": "Kéo dài MN và AB, lấy I là giao điểm; MN không song song AB vì SM/SA khác SN/SB. I nằm ngoài đoạn AB."
+        "text": "Kéo dài MN và AB, lấy I là giao điểm. Vì \\(\\frac{SM}{SA}\\ne\\frac{SN}{SB}\\), hai đường không song song; I nằm ngoài đoạn AB."
       },
       {
         "id": "D",
@@ -265,7 +265,7 @@
       },
       {
         "id": "D",
-        "text": "Đúng một mặt phẳng."
+        "text": "Đúng một mặt phẳng, vì A và hai điểm phân biệt trên a tạo thành ba điểm không thẳng hàng."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1574,7 +1574,7 @@
     "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B14-P04",
     "stem": "Cho hình hộp chữ nhật \\(ABCD.A'B'C'D'\\). Chiếu song song toàn bộ hình chữ nhật \\(ABB'A'\\) (gồm cả phần trong) xuống mặt phẳng đáy \\((ABCD)\\). (a) Theo phương \\(AA'\\), ảnh là hình gì? (b) Theo phương \\(AC'\\), gọi E,F lần lượt là ảnh của A',B'. Hãy xác định vị trí E,F trên mặt phẳng đáy (có thể ngoài hình chữ nhật ABCD) và chứng minh ảnh là hình bình hành không có góc vuông. (c) Nêu điều kiện để ảnh của một hình bình hành không suy biến vẫn là hình bình hành không suy biến.",
     "answer_key": "(a) Đoạn AB. (b) E đối xứng C qua A, BF cùng hướng và bằng AE, ảnh ABFE là hình bình hành không vuông. (c) Phương chiếu không song song mặt phẳng chứa hình.",
-    "worked_solution": "(a) A,B nằm trên mặt chiếu nên bất biến. Các đường chiếu qua A',B' lần lượt là AA',BB', nên A' có ảnh A, B' có ảnh B. Mọi điểm của mặt bên nằm trên một đoạn song song AA' đi từ AB lên A'B', vì vậy ảnh của cả hình là đoạn AB. (b) Phương AC' không song song mặt phẳng đáy. Lấy E đối xứng C qua A. Tứ giác EAC'A' là hình bình hành: EA song song và bằng A'C', đồng thời EA và A'C' cùng hướng. Vì vậy A'E song song AC', nên E là ảnh của A'. Từ B dựng F sao cho đoạn có hướng BF bằng đoạn có hướng AE. Khi đó ABFE là hình bình hành không suy biến vì AE cùng đường AC, không song song AB. Tứ giác A'B'FE là hình bình hành vì A'B' và EF cùng hướng, bằng nhau; do đó B'F song song A'E, tức song song phương chiếu. F là ảnh của B'. Phương AC' không song song mặt bên (ABB'A') vì C' không thuộc mặt bên và A thuộc mặt bên. Bởi vậy hình chiếu không suy biến, các cạnh đối vẫn song song và ảnh của cả hình là hình bình hành ABFE. Đường chéo AC của hình chữ nhật đáy không vuông góc AB, nên AE cũng không vuông góc AB. Vì vậy ảnh không phải hình chữ nhật. (c) Nếu phương chiếu không song song mặt phẳng chứa hình bình hành ban đầu, mỗi đường chiếu gặp mặt ấy nhiều nhất một điểm, nên không có hai điểm phân biệt cùng ảnh và hình bình hành không suy biến. Nếu phương chiếu song song mặt ấy, toàn bộ hình có ảnh trên một đường thẳng, nên suy biến thành đoạn.",
+    "worked_solution": "(a) A,B nằm trên mặt chiếu nên bất biến. Các đường chiếu qua A',B' lần lượt là AA',BB', nên A' có ảnh A, B' có ảnh B. Mọi điểm của mặt bên nằm trên một đoạn song song AA' đi từ AB lên A'B', vì vậy ảnh của cả hình là đoạn AB. (b) Phương AC' không song song mặt phẳng đáy. Lấy E đối xứng C qua A. Tứ giác EAC'A' là hình bình hành: EA song song và bằng A'C', đồng thời EA và A'C' cùng hướng. Vì vậy A'E song song AC', nên E là ảnh của A'. Từ B dựng F sao cho đoạn có hướng BF bằng đoạn có hướng AE. Khi đó ABFE là hình bình hành không suy biến vì AE cùng đường AC, không song song AB. Tứ giác A'B'FE là hình bình hành vì A'B' và EF cùng hướng, bằng nhau; do đó B'F song song A'E, tức song song phương chiếu. F là ảnh của B'. Phương AC' không song song mặt bên (ABB'A') vì C' không thuộc mặt bên và A thuộc mặt bên. Bởi vậy hình chiếu không suy biến, các cạnh đối vẫn song song và ảnh của cả hình là hình bình hành ABFE. Đường chéo AC của hình chữ nhật đáy không vuông góc AB, nên AE cũng không vuông góc AB. Vì vậy ảnh không phải hình chữ nhật. (c) Nếu phương chiếu không song song mặt phẳng chứa hình bình hành ban đầu, mỗi đường chiếu gặp mặt ấy nhiều nhất một điểm, nên không có hai điểm phân biệt cùng ảnh và hình bình hành không suy biến. Nếu phương chiếu song song mặt ấy, toàn bộ hình có ảnh trên một đường thẳng, nên suy biến thành đoạn. Trong phần (c), vẫn giả thiết phương chiếu không song song mặt phẳng chiếu để phép chiếu được xác định. Điều kiện bổ sung là phương chiếu không song song với mặt phẳng chứa hình ban đầu.",
     "skill_ids": [
       "G11-B14-PARALLEL_AND_SHAPES"
     ],
@@ -1863,7 +1863,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Điểm A."
+        "text": "Điểm A, vì mọi điểm của cạnh AA′ có cùng đường chiếu AA′."
       },
       {
         "id": "B",
