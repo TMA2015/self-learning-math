@@ -2539,7 +2539,7 @@
   },
   {
     "item_id": "THPT-G11-YR-PROB-P02",
-    "content_version": "G11-YR-XG6-20261127-PROB-P02",
+    "content_version": "G11-YR-XG6-20261127-PROB-P02-XG6-20261128",
     "stem": "Biết \\(P(A)=0{,}7\\). Tính xác suất biến cố đối của A.",
     "answer_key": "0,3.",
     "worked_solution": "\\(P(\\overline A)=1-P(A)=1-0{,}7=0{,}3\\).",
@@ -2548,7 +2548,7 @@
       "G11-YR-PROBABILITY_COMBINE"
     ],
     "problem_type_id": null,
-    "difficulty": "RECOGNIZE",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Một biến cố và biến cố đối có tổng xác suất bằng 1."
     ],
