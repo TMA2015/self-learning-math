@@ -17536,9 +17536,9 @@
   {
     "item_id": "THPT-TOP09-KFT05",
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT05",
-    "stem": "Xét \\(f(x)=|x|+x\\) tại \\(0\\). Hàm có liên tục không? Tính thương sai phân từ trái và phải để quyết định có đạo hàm hay không.",
+    "stem": "Xét \\(f(x)=\\lvert x\\rvert+x\\) tại \\(0\\). Hàm có liên tục không? Tính thương sai phân từ trái và phải để quyết định có đạo hàm hay không.",
     "answer_key": "Liên tục tại 0; đạo hàm trái bằng 0, phải bằng 2, nên không khả vi tại 0.",
-    "worked_solution": "Hàm liên tục tại \\(0\\) vì \\(|h|+h\\to0=f(0)\\). Với \\(h<0\\), \\(|h|+h=0\\) nên thương bằng 0; với \\(h>0\\), thương bằng 2. Hai giới hạn khác nhau, nên hàm không khả vi tại 0.\n\nNếu dùng tính liên tục để suy đạo hàm, đối chiếu phản ví dụ góc nhọn.\n\n\n**Kiểm lỗi**\n\nNếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, làm **Bài 20** và **Bài 8**; \\(|x|\\) liên tục tại góc nhọn nhưng đạo hàm trái/phải khác nhau.",
+    "worked_solution": "Hàm liên tục tại \\(0\\) vì \\(\\lvert h\\rvert+h\\to0=f(0)\\). Với \\(h<0\\), \\(\\lvert h\\rvert+h=0\\) nên thương bằng 0; với \\(h>0\\), thương bằng 2. Hai giới hạn khác nhau, nên hàm không khả vi tại 0.\n\nNếu dùng tính liên tục để suy đạo hàm, đối chiếu phản ví dụ góc nhọn.\n\n\n**Kiểm lỗi**\n\nNếu suy ngược 'liên tục ⇒ khả vi', đọc **Kiến thức 1.5**, làm **Bài 20** và **Bài 8**; \\(\\lvert x\\rvert\\) liên tục tại góc nhọn nhưng đạo hàm trái/phải khác nhau.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B31-CONTINUITY_NECESSARY"
@@ -17593,9 +17593,9 @@
   {
     "item_id": "THPT-TOP09-KFT06",
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT06",
-    "stem": "Tại \\(x=0\\), đạo hàm một phía của \\(|2x|\\) là gì?",
+    "stem": "Tại \\(x=0\\), đạo hàm một phía của \\(\\lvert 2x\\rvert\\) là gì?",
     "answer_key": "Trái: \\(-2\\); phải: 2; không có đạo hàm hai phía.",
-    "worked_solution": "Vì \\(f(0)=0\\), thương sai phân là \\(\\frac{|2h|}{h}\\). Với \\(h<0\\) thương bằng −2, với \\(h>0\\) thương bằng 2. Hai giới hạn khác nhau, nên không có đạo hàm hai phía.\n\nNếu một bài chỉ cho đồ thị, kiểm bên trái và bên phải tại điểm gãy.\n\n\n**Kiểm lỗi**\n\nNếu lấy một độ dốc cho cả trái và phải ở điểm gãy, đọc **Kiến thức 1.6**, làm **Bài 17** và **Bài 18**; vẽ hai nhánh rồi xét hai giới hạn thương riêng.",
+    "worked_solution": "Vì \\(f(0)=0\\), thương sai phân là \\(\\frac{\\lvert 2h\\rvert}{h}\\). Với \\(h<0\\) thương bằng −2, với \\(h>0\\) thương bằng 2. Hai giới hạn khác nhau, nên không có đạo hàm hai phía.\n\nNếu một bài chỉ cho đồ thị, kiểm bên trái và bên phải tại điểm gãy.\n\n\n**Kiểm lỗi**\n\nNếu lấy một độ dốc cho cả trái và phải ở điểm gãy, đọc **Kiến thức 1.6**, làm **Bài 17** và **Bài 18**; vẽ hai nhánh rồi xét hai giới hạn thương riêng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B31-CORNER_CUSP"
@@ -17766,7 +17766,7 @@
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT09",
     "stem": "Vật chuyển động trên một trục có tọa độ \\(s(t)=-3t\\) (m), t tính bằng giây. Tốc độ của vật là bao nhiêu?",
     "answer_key": "3 m/s (vận tốc \\(-3\\) m/s).",
-    "worked_solution": "Vận tốc \\(v(t)=s'(t)=-3\\) m/s. Tốc độ là \\(|v(t)|=3\\) m/s.\n\nNếu gọi tốc độ âm, kiểm định nghĩa \\(|v|\\).\n\n\n**Kiểm lỗi**\n\nNếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, làm **Bài 30** và **Bài 32**; vận tốc \\(s'(t)\\) có hướng còn tốc độ là \\(|s'(t)|\\).",
+    "worked_solution": "Vận tốc \\(v(t)=s'(t)=-3\\) m/s. Tốc độ là \\(\\lvert v(t)\\rvert=3\\) m/s.\n\nNếu gọi tốc độ âm, kiểm định nghĩa \\(\\lvert v\\rvert\\).\n\n\n**Kiểm lỗi**\n\nNếu gọi vận tốc âm là tốc độ âm, đọc **Kiến thức 2.3**, làm **Bài 30** và **Bài 32**; vận tốc \\(s'(t)\\) có hướng còn tốc độ là \\(\\lvert s'(t)\\rvert\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B31-INSTANT_VELOCITY"
@@ -18279,7 +18279,7 @@
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT19",
     "stem": "\\((\\sin(5x))'\\) là gì? (Góc đo bằng radian.)",
     "answer_key": "\\(5\\cos(5x)\\).",
-    "worked_solution": "\\(5\\cos(5x)\\) khi góc đo bằng radian.\n\nNếu ra \\(\\cos(5x)\\), đạo hàm trong 5x chưa được nhân.\n\n\n**Kiểm lỗi**\n\nNếu lấy đạo hàm \\(\\sin(2x^2)\\) mà quên đạo hàm \\(2x^2\\) hoặc bỏ điều kiện của tan hợp, đọc **Kiến thức 4.3**, làm **Bài 70** và **Bài 71**; áp quy tắc dây chuyền sau khi kiểm miền.",
+    "worked_solution": "\\(5\\cos(5x)\\) khi góc đo bằng radian.\n\nNếu ra \\(\\cos(5x)\\), đạo hàm trong \\(5x\\) chưa được nhân.\n\n\n**Kiểm lỗi**\n\nNếu lấy đạo hàm \\(\\sin(2x^2)\\) mà quên đạo hàm \\(2x^2\\) hoặc bỏ điều kiện của tan hợp, đọc **Kiến thức 4.3**, làm **Bài 70** và **Bài 71**; áp quy tắc dây chuyền sau khi kiểm miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B32-TRIG_CHAIN"
@@ -18290,7 +18290,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Nhân đạo hàm của hàm trong 5x."
+      "Nhân đạo hàm của hàm trong \\(5x\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -18621,7 +18621,7 @@
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT25",
     "stem": "Vật có tọa độ \\(s(t)=t^3-3t\\) (m), t tính bằng giây. Tính vận tốc \\(v(1)\\).",
     "answer_key": "\\(v(1)=0\\) m/s.",
-    "worked_solution": "\\(v(t)=s'(t)=3t^2-3\\) m/s. Thay \\(t=1\\), được \\(v(1)=0\\) m/s.\n\nNếu dùng \\(s(1)=-2\\) thay v(1), phân biệt vị trí với đạo hàm.\n\n\n**Kiểm lỗi**\n\nNếu đánh đồng \\(s(t)\\) với vận tốc \\(v(t)\\), đọc **Kiến thức 5.1**, làm **Bài 90** và **Bài 91**; lấy \\(s'(t)\\), xét dấu vận tốc và cuối cùng mới lấy \\(|v|\\).",
+    "worked_solution": "\\(v(t)=s'(t)=3t^2-3\\) m/s. Thay \\(t=1\\), được \\(v(1)=0\\) m/s.\n\nNếu dùng \\(s(1)=-2\\) thay \\(v(1)\\), phân biệt vị trí với đạo hàm.\n\n\n**Kiểm lỗi**\n\nNếu đánh đồng \\(s(t)\\) với vận tốc \\(v(t)\\), đọc **Kiến thức 5.1**, làm **Bài 90** và **Bài 91**; lấy \\(s'(t)\\), xét dấu vận tốc và cuối cùng mới lấy \\(\\lvert v\\rvert\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B32-APPLIED_VELOCITY"
@@ -18632,7 +18632,7 @@
     "problem_type_id": null,
     "difficulty": "APPLY",
     "hints": [
-      "Đạo hàm tọa độ theo thời gian trước khi thế t=1."
+      "Đạo hàm tọa độ theo thời gian trước khi thế \\(t=1\\)."
     ],
     "rubric": null,
     "interaction": {
@@ -18904,9 +18904,9 @@
   {
     "item_id": "THPT-TOP09-KFT32",
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-TOP09-KFT32",
-    "stem": "Với \\(f(x)=\\frac1x\\), \\(a=2\\), \\(dx=0{,}2\\): (a) kiểm miền từ \\(a\\) tới \\(a+dx\\); (b) tính vi phân \\(dy\\) và độ tăng thật \\(\\Delta y\\); (c) tìm \\(|\\Delta y-dy|\\) và giải thích vì sao vi phân chỉ là xấp xỉ.",
+    "stem": "Với \\(f(x)=\\frac1x\\), \\(a=2\\), \\(dx=0{,}2\\): (a) kiểm miền từ \\(a\\) tới \\(a+dx\\); (b) tính vi phân \\(dy\\) và độ tăng thật \\(\\Delta y\\); (c) tìm \\(\\lvert\\Delta y-dy\\rvert\\) và giải thích vì sao vi phân chỉ là xấp xỉ.",
     "answer_key": "Đoạn \\([2;2{,}2]\\) thuộc miền; \\(dy=-\\frac1{20}\\), \\(\\Delta y=-\\frac1{22}\\), sai số tuyệt đối \\(\\frac1{220}\\approx0{,}00455\\). Vi phân chỉ giữ phần tuyến tính của độ tăng; sai số nhỏ dần so với độ lớn bước khi \\(dx\\to0\\).",
-    "worked_solution": "Vì \\(f(x)=\\frac1x\\) có miền \\(x\\ne0\\), cả đoạn \\([2;2{,}2]\\) đều thuộc miền. Ta có \\(f'(x)=-\\frac1{x^2}\\), nên \\(dy=f'(2)\\,dx=(-\\frac14)(\\frac15)=-\\frac1{20}=-0{,}05\\). Độ tăng thật \\(\\Delta y=f(2{,}2)-f(2)=\\frac5{11}-\\frac12=-\\frac1{22}\\approx-0{,}04545\\). Sai số tuyệt đối \\(|\\Delta y-dy|=|-\\frac1{22}+\\frac1{20}|=\\frac1{220}\\approx0{,}00455\\). Cả hai độ tăng đều âm, nhưng ở bài này không bằng nhau khi bước \\(dx\\) hữu hạn. Đặt \\(h=dx\\), với \\(\\lvert h\\rvert<1\\) để không gặp điểm \\(x=0\\). Khi đó \\(\\Delta y-dy=\\frac{1}{2+h}-\\frac12+\\frac h4=\\frac{h^2}{4(2+h)}\\). Chia sai số cho \\(\\lvert h\\rvert\\) (khi \\(h\\ne0\\)) được \\(\\frac{\\lvert h\\rvert}{4\\lvert2+h\\rvert}\\to0\\) khi \\(h\\to0\\). Đây là lý do vi phân xấp xỉ độ tăng thật ở bậc nhất, chứ không phải một đẳng thức.\n\nNếu em tính \\(dy\\) dương, kiểm dấu \\(f'(2)<0\\); nếu đặt \\(dy=\\Delta y\\), so hai phân số \\(-\\frac1{20}\\) và \\(-\\frac1{22}\\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.\n\n\n**Kiểm lỗi**\n\nNếu cho rằng vi phân dy luôn bằng chính xác độ tăng Δy hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 52** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.",
+    "worked_solution": "Vì \\(f(x)=\\frac1x\\) có miền \\(x\\ne0\\), cả đoạn \\([2;2{,}2]\\) đều thuộc miền. Ta có \\(f'(x)=-\\frac1{x^2}\\), nên \\(dy=f'(2)\\,dx=(-\\frac14)(\\frac15)=-\\frac1{20}=-0{,}05\\). Độ tăng thật \\(\\Delta y=f(2{,}2)-f(2)=\\frac5{11}-\\frac12=-\\frac1{22}\\approx-0{,}04545\\). Sai số tuyệt đối \\(\\lvert\\Delta y-dy\\rvert=\\lvert-\\frac1{22}+\\frac1{20}\\rvert=\\frac1{220}\\approx0{,}00455\\). Cả hai độ tăng đều âm, nhưng ở bài này không bằng nhau khi bước \\(dx\\) hữu hạn. Đặt \\(h=dx\\), với \\(\\lvert h\\rvert<1\\) để không gặp điểm \\(x=0\\). Khi đó \\(\\Delta y-dy=\\frac{1}{2+h}-\\frac12+\\frac h4=\\frac{h^2}{4(2+h)}\\). Chia sai số cho \\(\\lvert h\\rvert\\) (khi \\(h\\ne0\\)) được \\(\\frac{\\lvert h\\rvert}{4\\lvert2+h\\rvert}\\to0\\) khi \\(h\\to0\\). Đây là lý do vi phân xấp xỉ độ tăng thật ở bậc nhất, chứ không phải một đẳng thức.\n\nNếu em tính \\(dy\\) dương, kiểm dấu \\(f'(2)<0\\); nếu đặt \\(dy=\\Delta y\\), so hai phân số \\(-\\frac1{20}\\) và \\(-\\frac1{22}\\). Với mô hình xấp xỉ phải kiểm tính khả vi tại a và bước đủ nhỏ trong miền.\n\n\n**Kiểm lỗi**\n\nNếu cho rằng vi phân \\(dy\\) luôn bằng chính xác độ tăng \\(\\Delta y\\) hoặc bỏ miền xác định, đọc **Kiến thức 5.8**, làm **Bài 52** (hàm phân thức, điều kiện mẫu) và **Bài 108** (tự tính sai số vi phân). Phân biệt xấp xỉ bậc nhất với độ tăng thật.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "TOP09-SKILL-DIFFERENTIAL_APPROXIMATION"
