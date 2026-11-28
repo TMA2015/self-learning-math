@@ -19007,7 +19007,7 @@
       },
       {
         "id": "C",
-        "text": "Chỉ đồng biến khi x>0."
+        "text": "Chỉ đồng biến khi \\(x>0\\)."
       },
       {
         "id": "D",
@@ -19189,9 +19189,9 @@
   {
     "item_id": "THPT-TOP10-KFT05",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT05-D07",
-    "stem": "\\(f=x^4\\) có cực tiểu tại0 không?",
+    "stem": "\\(f=x^4\\) có cực tiểu tại 0 không?",
     "answer_key": "Có, cực tiểu tại \\(x=0\\), giá trị 0.",
-    "worked_solution": "\\(f'(x)=4x^3\\) đổi dấu từ âm sang dương qua 0. Vì vậy hàm có cực tiểu tại \\(x=0\\), giá trị \\(f(0)=0\\).\n\nNếu cho rằng đạo hàm bằng 0 thì không thể có cực tiểu, kiểm dấu đạo hàm ở hai phía của 0.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ có \\(f'=0\\) chắc chắn có cực trị hoặc bỏ điểm không khả vi, đọc **Kiến thức 1.5**, làm **Bài 5** và **Bài 7**. Đối chiếu \\(|x|\\) với \\(x^5\\) quanh 0.",
+    "worked_solution": "\\(f'(x)=4x^3\\) đổi dấu từ âm sang dương qua 0. Vì vậy hàm có cực tiểu tại \\(x=0\\), giá trị \\(f(0)=0\\).\n\nNếu cho rằng đạo hàm bằng 0 thì không thể có cực tiểu, kiểm dấu đạo hàm ở hai phía của 0.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ có \\(f'=0\\) chắc chắn có cực trị hoặc bỏ điểm không khả vi, đọc **Kiến thức 1.5**, làm **Bài 5** và **Bài 7**. Đối chiếu \\(\\lvert x\\rvert\\) với \\(x^5\\) quanh 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-ZERO_DERIVATIVE_NOT_SUFFICIENT"
@@ -19246,9 +19246,9 @@
   {
     "item_id": "THPT-TOP10-KFT06",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT06",
-    "stem": "\\(s(t)=t^2\\), t>0, tọa độ tăng hay giảm?",
+    "stem": "\\(s(t)=t^2\\), \\(t>0\\), tọa độ tăng hay giảm?",
     "answer_key": "Tọa độ tăng khi \\(t>0\\).",
-    "worked_solution": "\\(v=2t>0\\) nên tăng.\n\nNếu nhìn s âm hay dương để đo chiều, thay bằng dấu s'.\n\n\n**Kiểm lỗi**\n\nNếu em dùng dấu tọa độ \\(s(t)\\) để kết luận chiều chuyển động, đọc **Kiến thức 1.6**, làm **Bài 18** và **Bài 14**. Xét vận tốc có hướng \\(v=s'\\), còn tốc độ là \\(|v|\\).",
+    "worked_solution": "\\(v=2t>0\\) nên tăng.\n\nNếu nhìn s âm hay dương để đo chiều, thay bằng dấu \\(s'\\).\n\n\n**Kiểm lỗi**\n\nNếu em dùng dấu tọa độ \\(s(t)\\) để kết luận chiều chuyển động, đọc **Kiến thức 1.6**, làm **Bài 18** và **Bài 14**. Xét vận tốc có hướng \\(v=s'\\), còn tốc độ là \\(\\lvert v\\rvert\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-MOTION_CONTEXT"
@@ -19284,7 +19284,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Tọa độ giảm khi t>0."
+        "text": "Tọa độ giảm khi \\(t>0\\)."
       },
       {
         "id": "B",
@@ -19292,7 +19292,7 @@
       },
       {
         "id": "C",
-        "text": "Tọa độ giảm rồi tăng trên t>0."
+        "text": "Tọa độ giảm rồi tăng trên \\(t>0\\)."
       },
       {
         "id": "D",
@@ -19362,7 +19362,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT08",
     "stem": "\\(f=x^2\\) trên \\([-1;2]\\) có GTLN?",
     "answer_key": "GTLN 4 tại \\(x=2\\).",
-    "worked_solution": "Hàm liên tục trên đoạn. \\(f'(x)=2x=0\\) tại 0. So \\(f(-1)=1,\\ f(0)=0,\\ f(2)=4\\); GTLN 4 tại 2 (GTNN 0 tại 0).\n\nNếu miền mở, thử xét f=x trên \\((0;1)\\) không đạt cận1.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng định lí GTLN/GTNN cho miền hở hoặc không liên tục, đọc **Kiến thức 2.2**, làm **Bài 21** và **Bài 27**. Điều kiện đủ quen thuộc là **liên tục trên đoạn đóng hữu hạn**.",
+    "worked_solution": "Hàm liên tục trên đoạn. \\(f'(x)=2x=0\\) tại 0. So \\(f(-1)=1,\\ f(0)=0,\\ f(2)=4\\); GTLN 4 tại 2 (GTNN 0 tại 0).\n\nNếu miền mở, thử xét \\(f=x\\) trên \\((0;1)\\) không đạt cận 1.\n\n\n**Kiểm lỗi**\n\nNếu em áp dụng định lí GTLN/GTNN cho miền hở hoặc không liên tục, đọc **Kiến thức 2.2**, làm **Bài 21** và **Bài 27**. Điều kiện đủ quen thuộc là **liên tục trên đoạn đóng hữu hạn**.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CLOSED_INTERVAL_EXISTENCE"
@@ -19419,7 +19419,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT09",
     "stem": "\\(f=x^2-4x\\) trên \\([0;3]\\), GTNN?",
     "answer_key": "GTNN \\(-4\\) tại \\(x=2\\).",
-    "worked_solution": "\\(f'=2x-4=0\\) tại2: \\(f(0)=0,\\ f(2)=-4,\\ f(3)=-3\\)⇒GTNN−4 tại2.\n\nNếu thấy nghiệm đạo hàm nằm ngoài đoạn, bỏ ứng viên ấy.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ kiểm nghiệm \\(f'=0\\) mà bỏ hai đầu đoạn hoặc điểm không khả vi, đọc **Kiến thức 2.3**, làm **Bài 30** và **Bài 34**. Ghi đủ các giá trị ứng viên rồi so sánh.",
+    "worked_solution": "\\(f'=2x-4=0\\) tại 2: \\(f(0)=0,\\ f(2)=-4,\\ f(3)=-3\\); suy ra GTNN \\(-4\\) tại 2.\n\nNếu thấy nghiệm đạo hàm nằm ngoài đoạn, bỏ ứng viên ấy.\n\n\n**Kiểm lỗi**\n\nNếu em chỉ kiểm nghiệm \\(f'=0\\) mà bỏ hai đầu đoạn hoặc điểm không khả vi, đọc **Kiến thức 2.3**, làm **Bài 30** và **Bài 34**. Ghi đủ các giá trị ứng viên rồi so sánh.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-CRITICAL_END_POINTS"
@@ -19476,7 +19476,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT10",
     "stem": "\\(g(x)=-x\\) trên \\((0;1)\\) có GTLN bằng 0 không?",
     "answer_key": "Không đạt GTLN.",
-    "worked_solution": "Không, vì \\(g\\to0\\) khi \\(x\\to0^+\\) nhưng \\(x=0\\) bị loại.\n\nNếu ghi GTLN là cận không đạt, hãy hỏi có \\(x\\in D\\) sao cho f(x)=cận không.\n\n\n**Kiểm lỗi**\n\nNếu em gọi một cận tiến tới nhưng không đạt là GTLN/GTNN, đọc **Kiến thức 2.4**, làm **Bài 22** và **Bài 24**. Hỏi rõ có tồn tại \\(x\\) trong miền để \\(f(x)\\) bằng cận không.",
+    "worked_solution": "Không, vì \\(g\\to0\\) khi \\(x\\to0^+\\) nhưng \\(x=0\\) bị loại.\n\nNếu ghi GTLN là cận không đạt, hãy hỏi có \\(x\\in D\\) sao cho \\(f(x)\\) bằng cận không.\n\n\n**Kiểm lỗi**\n\nNếu em gọi một cận tiến tới nhưng không đạt là GTLN/GTNN, đọc **Kiến thức 2.4**, làm **Bài 22** và **Bài 24**. Hỏi rõ có tồn tại \\(x\\) trong miền để \\(f(x)\\) bằng cận không.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B02-OPEN_DOMAIN_NONATTAINMENT"
@@ -19647,7 +19647,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT13",
     "stem": "\\(f=\\frac{3x-2}{x+4}\\) có TCN?",
     "answer_key": "\\(y=3\\).",
-    "worked_solution": "Chia tử và mẫu cho x: \\(\\frac{3-2/x}{1+4/x}\\to3\\) khi \\(x\\to\\pm\\infty\\). Do đó tiệm cận ngang là \\(y=3\\).\n\nNếu lấy hệ số hằng ở tử làm tiệm cận, chia cho x bậc cao nhất.\n\n\n**Kiểm lỗi**\n\nNếu em nhầm hệ số tự do với tỉ số bậc cao nhất của phân thức, đọc **Kiến thức 3.1**, làm **Bài 47** và **Bài 40**. Tính giới hạn khi \\(x\\to\\pm\\infty\\), rồi viết tiệm cận ngang \\(y=L\\).",
+    "worked_solution": "Chia tử và mẫu cho x: \\(\\frac{3-\\frac2x}{1+\\frac4x}\\to3\\) khi \\(x\\to\\pm\\infty\\). Do đó tiệm cận ngang là \\(y=3\\).\n\nNếu lấy hệ số hằng ở tử làm tiệm cận, chia cho x bậc cao nhất.\n\n\n**Kiểm lỗi**\n\nNếu em nhầm hệ số tự do với tỉ số bậc cao nhất của phân thức, đọc **Kiến thức 3.1**, làm **Bài 47** và **Bài 40**. Tính giới hạn khi \\(x\\to\\pm\\infty\\), rồi viết tiệm cận ngang \\(y=L\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-HORIZONTAL_LIMIT"
@@ -19884,7 +19884,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT19",
     "stem": "Khảo sát \\(f(x)=x^2\\) trên \\(\\mathbb R\\): tìm miền, đạo hàm, khoảng tăng giảm, cực trị và mô tả hình dạng đồ thị theo đúng thứ tự.",
     "answer_key": "\\(D=\\mathbb R,\\ f'(x)=2x\\); nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\); cực tiểu 0 tại 0, parabol mở lên.",
-    "worked_solution": "Miền \\(D=\\mathbb R\\), đạo hàm \\(f'(x)=2x\\). Hàm nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\), đạt cực tiểu 0 tại 0. Khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to+\\infty\\). Đồ thị là parabol mở lên, đỉnh \\(O(0;0)\\), trục đối xứng Oy, không có tiệm cận đứng, ngang hoặc xiên.\n\nNếu thiếu nhánh phía trái, bảng dấu f' là nơi tìm lại.\n\n\n**Kiểm lỗi**\n\nNếu em bắt đầu phác hình trước khi kiểm miền xác định, đạo hàm và giao trục, đọc **Kiến thức 4.1**, làm **Bài 60** và **Bài 67**. Bảng biến thiên phải xuất phát từ miền và dấu \\(f'\\).",
+    "worked_solution": "Miền \\(D=\\mathbb R\\), đạo hàm \\(f'(x)=2x\\). Hàm nghịch biến trên \\((-\\infty;0)\\), đồng biến trên \\((0;+\\infty)\\), đạt cực tiểu 0 tại 0. Khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to+\\infty\\). Đồ thị là parabol mở lên, đỉnh \\(O(0;0)\\), trục đối xứng Oy, không có tiệm cận đứng, ngang hoặc xiên.\n\nNếu thiếu nhánh phía trái, bảng dấu \\(f'\\) là nơi tìm lại.\n\n\n**Kiểm lỗi**\n\nNếu em bắt đầu phác hình trước khi kiểm miền xác định, đạo hàm và giao trục, đọc **Kiến thức 4.1**, làm **Bài 60** và **Bài 67**. Bảng biến thiên phải xuất phát từ miền và dấu \\(f'\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-SURVEY_WORKFLOW",
@@ -19943,7 +19943,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT21",
     "stem": "\\(f=\\frac{x+3}{x-2}\\), dấu đạo hàm?",
     "answer_key": "\\(f'(x)<0\\) với \\(x\\ne2\\).",
-    "worked_solution": "Với \\(x\\ne2\\), \\(f'(x)=\\frac{(x-2)-(x+3)}{(x-2)^2}=-\\frac5{(x-2)^2}<0\\). Hàm nghịch biến trên từng khoảng \\((-\\infty;2)\\) và \\((2;+\\infty)\\). Từ \\(f(x)=1+\\frac5{x-2}\\), còn thấy tiệm cận đứng \\(x=2\\), ngang \\(y=1\\).\n\nNếu đọc 'giảm trên toàn ℝ\\{2}' theo mọi cặp, lưu ý hai nhánh không tạo một khoảng.\n\n\n**Kiểm lỗi**\n\nNếu em gộp hai khoảng bị ngăn bởi tiệm cận đứng thành một khoảng giảm/tăng, đọc **Kiến thức 4.3**, làm **Bài 71** và **Bài 72**. Tách nhánh theo từng thành phần liên thông của miền.",
+    "worked_solution": "Với \\(x\\ne2\\), \\(f'(x)=\\frac{(x-2)-(x+3)}{(x-2)^2}=-\\frac5{(x-2)^2}<0\\). Hàm nghịch biến trên từng khoảng \\((-\\infty;2)\\) và \\((2;+\\infty)\\). Từ \\(f(x)=1+\\frac5{x-2}\\), còn thấy tiệm cận đứng \\(x=2\\), ngang \\(y=1\\).\n\nNếu đọc 'giảm trên toàn \\(\\mathbb R\\setminus\\{2\\}\\)' theo mọi cặp, lưu ý hai nhánh không tạo một khoảng.\n\n\n**Kiểm lỗi**\n\nNếu em gộp hai khoảng bị ngăn bởi tiệm cận đứng thành một khoảng giảm/tăng, đọc **Kiến thức 4.3**, làm **Bài 71** và **Bài 72**. Tách nhánh theo từng thành phần liên thông của miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B01-DERIVATIVE_SIGN",
@@ -20001,7 +20001,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT22",
     "stem": "\\(f=\\frac{x-1}{x-1}\\), \\(x\\ne1\\) có giao Ox không?",
     "answer_key": "Không có giao điểm với \\(Ox\\).",
-    "worked_solution": "Không; f=1 trên D nên không có nghiệm f=0, \\(x=1\\) bị loại.\n\nNếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị.\n\n\n**Kiểm lỗi**\n\nNếu em giải tử bằng 0 nhưng quên mẫu cũng bằng 0 tại nghiệm đó, đọc **Kiến thức 4.4**, làm **Bài 62** và **Bài 74**. Điểm giao trục chỉ hợp lệ khi tọa độ thuộc miền.",
+    "worked_solution": "Không; \\(f=1\\) trên D nên không có nghiệm \\(f=0\\), \\(x=1\\) bị loại.\n\nNếu rút gọn rồi tự điền điểm bị loại, đã đổi đồ thị.\n\n\n**Kiểm lỗi**\n\nNếu em giải tử bằng 0 nhưng quên mẫu cũng bằng 0 tại nghiệm đó, đọc **Kiến thức 4.4**, làm **Bài 62** và **Bài 74**. Điểm giao trục chỉ hợp lệ khi tọa độ thuộc miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-INTERCEPTS_LIMITS"
@@ -20037,7 +20037,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Có giao tại (1;0)."
+        "text": "Có giao tại \\((1;0)\\)."
       },
       {
         "id": "B",
@@ -20045,7 +20045,7 @@
       },
       {
         "id": "C",
-        "text": "Có giao tại (0;0)."
+        "text": "Có giao tại \\((0;0)\\)."
       },
       {
         "id": "D",
@@ -20115,7 +20115,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT24",
     "stem": "Cho \\(f\\) liên tục tại \\(x=2\\), khả vi ở hai phía gần 2, \\(f'(x)>0\\) khi \\(x<2\\) và \\(f'(x)<0\\) khi \\(x>2\\), \\(f(2)=5\\). Điểm \\((2;5)\\) là cực trị nào?",
     "answer_key": "Cực đại tại \\(x=2\\), giá trị 5.",
-    "worked_solution": "Do f liên tục tại 2 và tăng trước2, giảm sau2 theo dấu đạo hàm, f đạt cực đại địa phương ở \\((2;5)\\). Điều kiện liên tục tại 2 rất quan trọng; chỉ biết dấu đạo hàm hai phía và f(2) thì chưa đủ.\n\nNếu tưởng min, nhớ +→− là đi lên rồi đi xuống.\n\n\n**Kiểm lỗi**\n\nNếu em kết luận cực trị chỉ từ dấu hai phía mà quên tính liên tục tại điểm, đọc **Kiến thức 4.6**, làm **Bài 79** và **Bài 64**. Với hàm liên tục ở mốc, dấu đạo hàm \\(+\\to-\\) cho cực đại, \\(-\\to+\\) cho cực tiểu.",
+    "worked_solution": "Do f liên tục tại 2 và tăng trước 2, giảm sau 2 theo dấu đạo hàm, f đạt cực đại địa phương ở \\((2;5)\\). Điều kiện liên tục tại 2 rất quan trọng; chỉ biết dấu đạo hàm hai phía và \\(f(2)\\) thì chưa đủ.\n\nNếu tưởng min, nhớ +→− là đi lên rồi đi xuống.\n\n\n**Kiểm lỗi**\n\nNếu em kết luận cực trị chỉ từ dấu hai phía mà quên tính liên tục tại điểm, đọc **Kiến thức 4.6**, làm **Bài 79** và **Bài 64**. Với hàm liên tục ở mốc, dấu đạo hàm \\(+\\to-\\) cho cực đại, \\(-\\to+\\) cho cực tiểu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B04-READ_VARIATION_TABLE"
@@ -20155,11 +20155,11 @@
       },
       {
         "id": "B",
-        "text": "Cực tiểu tại x=2, giá trị 5."
+        "text": "Cực tiểu tại \\(x=2\\), giá trị 5."
       },
       {
         "id": "C",
-        "text": "Không có cực trị vì chưa biết f'(2)."
+        "text": "Không có cực trị vì chưa biết \\(f'(2)\\)."
       },
       {
         "id": "D",
@@ -20172,7 +20172,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT26",
     "stem": "Tổng chi phí \\(C(q)=50+3q\\) (nghìn đồng), q là số sản phẩm được mô hình hóa liên tục. Tính \\(C'(q)\\) và nêu đơn vị.",
     "answer_key": "3 nghìn đồng/sản phẩm.",
-    "worked_solution": "\\(C'(q)=3\\) nghìn đồng/sản phẩm tại các điểm trong miền liên tục của mô hình. Đây là tốc độ thay đổi tức thời của tổng chi phí theo số sản phẩm.\n\nNếu trả 50+3q, bạn đang nêu mức chi phí chứ không tốc độ.\n\n\n**Kiểm lỗi**\n\nNếu em trả tổng chi phí thay vì chi phí cận biên hoặc bỏ đơn vị, đọc **Kiến thức 5.1**, làm **Bài 89** và **Bài 90**. Đơn vị \\(C'\\) là đơn vị tiền trên một sản phẩm.",
+    "worked_solution": "\\(C'(q)=3\\) nghìn đồng/sản phẩm tại các điểm trong miền liên tục của mô hình. Đây là tốc độ thay đổi tức thời của tổng chi phí theo số sản phẩm.\n\nNếu trả \\(50+3q\\), bạn đang nêu mức chi phí chứ không tốc độ.\n\n\n**Kiểm lỗi**\n\nNếu em trả tổng chi phí thay vì chi phí cận biên hoặc bỏ đơn vị, đọc **Kiến thức 5.1**, làm **Bài 89** và **Bài 90**. Đơn vị \\(C'\\) là đơn vị tiền trên một sản phẩm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-MARGINAL_COST",
@@ -20456,7 +20456,7 @@
   {
     "item_id": "THPT-TOP10-KFT31",
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT31",
-    "stem": "Tìm GTLN và GTNN của \\(g(x)=3-|x-1|\\) trên \\([-1;4]\\). Chỉ rõ điểm cần kiểm dù đạo hàm không tồn tại ở đó.",
+    "stem": "Tìm GTLN và GTNN của \\(g(x)=3-\\lvert x-1\\rvert\\) trên \\([-1;4]\\). Chỉ rõ điểm cần kiểm dù đạo hàm không tồn tại ở đó.",
     "answer_key": "GTLN 3 tại 1; GTNN 0 tại 4; phải xét điểm gãy \\(x=1\\).",
     "worked_solution": "Hàm liên tục trên đoạn. Với \\(x<1\\), \\(g(x)=2+x\\) tăng; với \\(x>1\\), \\(g(x)=4-x\\) giảm. Tại \\(1\\) có điểm gãy với độ dốc trái 1 và phải \\(-1\\), nên phải đưa vào danh sách ứng viên. So \\(g(-1)=1\\), \\(g(1)=3\\), \\(g(4)=0\\). GTLN bằng 3 tại \\(1\\), GTNN bằng 0 tại \\(4\\). Nếu chỉ xét hai đầu đoạn, em sẽ bỏ mất GTLN ở điểm không khả vi.\n\n\n**Kiểm lỗi**\n\nNếu em bỏ điểm không khả vi hoặc bỏ đầu đoạn trong bài GTLN/GTNN, đọc **Kiến thức 5.6**, làm **Bài 100** và **Bài 101**. Liệt kê cả điểm gãy, điểm tới hạn và biên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -20632,7 +20632,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT34-D07",
     "stem": "\\(f=\\frac{x+2}{x-1}\\), TCD và TCN?",
     "answer_key": "Tiệm cận đứng \\(x=1\\); ngang \\(y=1\\).",
-    "worked_solution": "\\(f(x)=1+\\frac3{x-1}\\) với \\(x\\ne1\\). Khi \\(x\\to1^\\pm\\), các giới hạn là vô cực tương ứng; khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to1\\). Tiệm cận đứng \\(x=1\\), ngang \\(y=1\\).\n\nNếu nói \\(y=x\\), kiểm bậc tử/mẫu trước.\n\n\n**Kiểm lỗi**\n\nNếu tử và mẫu cùng bậc, thương đa thức là hằng số (tỉ số hệ số đầu), cho tiệm cận ngang; nếu bậc tử lớn hơn bậc mẫu đúng 1, thương là đa thức bậc nhất, cho tiệm cận xiên. Bài này thuộc trường hợp thứ nhất: tử và mẫu cùng bậc, nên tiệm cận ngang là y=1. Để xác định tiệm cận đứng, còn phải kiểm phần dư và giới hạn gần điểm cấm. Đọc **Kiến thức 6.2**, làm **Bài 116** và **Bài 105**; lập dấu đạo hàm riêng qua từng khoảng của miền.",
+    "worked_solution": "\\(f(x)=1+\\frac3{x-1}\\) với \\(x\\ne1\\). Khi \\(x\\to1^\\pm\\), các giới hạn là vô cực tương ứng; khi \\(x\\to\\pm\\infty\\), \\(f(x)\\to1\\). Tiệm cận đứng \\(x=1\\), ngang \\(y=1\\).\n\nNếu nói \\(y=x\\), kiểm bậc tử/mẫu trước.\n\n\n**Kiểm lỗi**\n\nNếu tử và mẫu cùng bậc, thương đa thức là hằng số (tỉ số hệ số đầu), cho tiệm cận ngang; nếu bậc tử lớn hơn bậc mẫu đúng 1, thương là đa thức bậc nhất, cho tiệm cận xiên. Bài này thuộc trường hợp thứ nhất: tử và mẫu cùng bậc, nên tiệm cận ngang là \\(y=1\\). Để xác định tiệm cận đứng, còn phải kiểm phần dư và giới hạn gần điểm cấm. Đọc **Kiến thức 6.2**, làm **Bài 116** và **Bài 105**; lập dấu đạo hàm riêng qua từng khoảng của miền.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-VERTICAL_ONE_SIDED",
@@ -20690,7 +20690,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT35",
     "stem": "Với doanh thu \\(R(q)=10q\\), chi phí \\(C(q)=q^2+2q+1\\), \\(q\\in[0;6]\\), tìm q làm lợi nhuận lớn nhất.",
     "answer_key": "\\(q=4\\); lợi nhuận lớn nhất 15.",
-    "worked_solution": "\\(P=-q^2+8q-1\\); \\(P'=-2q+8=0\\Rightarrow q=4\\); \\(P(4)=15,\\ P(0)=-1,\\ P(6)=11\\). So ba giá trị, lợi nhuận lớn nhất là 15 tại \\(q=4\\).\n\nPhải thiết lập P=R−C thay vì tối ưu trực tiếp C.\n\n\n**Kiểm lỗi**\n\nNếu em tối ưu chi phí thay vì lợi nhuận, đọc **Kiến thức 6.3**, làm **Bài 117**, **Bài 114** và **Bài 119**. Viết mục tiêu \\(P=R-C\\), kiểm ràng buộc sản lượng và so biên.",
+    "worked_solution": "\\(P=-q^2+8q-1\\); \\(P'=-2q+8=0\\Rightarrow q=4\\); \\(P(4)=15,\\ P(0)=-1,\\ P(6)=11\\). So ba giá trị, lợi nhuận lớn nhất là 15 tại \\(q=4\\).\n\nPhải thiết lập \\(P=R-C\\) thay vì tối ưu trực tiếp C.\n\n\n**Kiểm lỗi**\n\nNếu em tối ưu chi phí thay vì lợi nhuận, đọc **Kiến thức 6.3**, làm **Bài 117**, **Bài 114** và **Bài 119**. Viết mục tiêu \\(P=R-C\\), kiểm ràng buộc sản lượng và so biên.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B05-UNIT_ASSUMPTION_CHECK"
@@ -20747,7 +20747,7 @@
     "content_version": "CD10-BANK-PARTIAL-20261127-THPT-TOP10-KFT36",
     "stem": "\\(f=\\frac{x^2-1}{x-1}\\), \\(x\\ne1\\), có TCD tại \\(x=1\\) không?",
     "answer_key": "Không; giới hạn bằng 2 hữu hạn.",
-    "worked_solution": "Với \\(x\\ne1\\), \\(\\frac{x^2-1}{x-1}=x+1\\). Vì \\(\\lim_{x\\to1}f(x)=2\\) hữu hạn nên \\(x=1\\) không phải tiệm cận đứng; đồ thị thiếu điểm \\((1;2)\\).\n\nNếu chỉ nhìn mẫu bằng0, cần rút nhân tử trên miền bỏ điểm.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ mẫu bằng 0 chắc chắn có TCD hoặc \\(f'(a)=0\\) chắc chắn có cực tiểu, đọc **Kiến thức 6.4**, làm **Bài 106**, **Bài 107** và **Bài 120**. Phân biệt lỗ, tiệm cận đứng, điểm dừng và cực trị bằng giới hạn/dấu.",
+    "worked_solution": "Với \\(x\\ne1\\), \\(\\frac{x^2-1}{x-1}=x+1\\). Vì \\(\\lim_{x\\to1}f(x)=2\\) hữu hạn nên \\(x=1\\) không phải tiệm cận đứng; đồ thị thiếu điểm \\((1;2)\\).\n\nNếu chỉ nhìn mẫu bằng 0, cần rút nhân tử trên miền bỏ điểm.\n\n\n**Kiểm lỗi**\n\nNếu em nghĩ mẫu bằng 0 chắc chắn có TCD hoặc \\(f'(a)=0\\) chắc chắn có cực tiểu, đọc **Kiến thức 6.4**, làm **Bài 106**, **Bài 107** và **Bài 120**. Phân biệt lỗ, tiệm cận đứng, điểm dừng và cực trị bằng giới hạn/dấu.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-B03-REMOVABLE_DISCONTINUITY"
