@@ -522,19 +522,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\((\\sqrt6-\\sqrt2)/4\\)"
+        "text": "\\(\\frac{\\sqrt6-\\sqrt2}{4}>0\\), vì coi góc là \\(75^\\circ\\)."
       },
       {
         "id": "B",
-        "text": "\\((\\sqrt6+\\sqrt2)/4\\)"
+        "text": "\\(\\frac{\\sqrt6+\\sqrt2}{4}>0\\), do dùng dấu cộng giữa hai tích."
       },
       {
         "id": "C",
-        "text": "\\(-(\\sqrt6+\\sqrt2)/4\\)"
+        "text": "\\(-\\frac{\\sqrt6+\\sqrt2}{4}<0\\), do lấy đối của cos góc \\(15^\\circ\\)."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{\\sqrt2-\\sqrt6}{4}<0\\)."
+        "text": "\\(\\frac{\\sqrt2-\\sqrt6}{4}<0\\), phù hợp với góc phần tư II."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -846,19 +846,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(1\\)"
+        "text": "Có; \\(\\tan(u+v)=1\\), vì hai tang ban đầu xác định."
       },
       {
         "id": "B",
-        "text": "\\(\\tan(u+v)\\) không xác định."
+        "text": "Không; \\(1-\\tan u\\tan v=0\\) nên \\(\\cos(u+v)=0\\), tang tổng không xác định."
       },
       {
         "id": "C",
-        "text": "\\(5/2\\)"
+        "text": "Có; \\(\\tan(u+v)=\\frac52\\), chỉ cần cộng hai tang."
       },
       {
         "id": "D",
-        "text": "\\(0\\)"
+        "text": "Có; \\(\\tan(u+v)=0\\) vì mẫu của công thức bằng 0."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1409,7 +1409,7 @@
     "content_version": "CD06-BANK-CP126-20261127-B03-P07",
     "stem": "Trên \\((0;\\pi)\\), hàm \\(y=\\cot x\\) đồng biến hay nghịch biến?",
     "answer_key": "Nghịch biến.",
-    "worked_solution": "Đồ thị cot trên \\((0;\\pi)\\) là một nhánh đi xuống liên tục khi x tăng, từ giá trị dương rất lớn đến giá trị âm rất nhỏ. Do đó hàm nghịch biến trên khoảng này; không gộp các nhánh qua điểm không xác định.",
+    "worked_solution": "Trên đường tròn lượng giác, \\(\\cot x=\\frac{\\cos x}{\\sin x}\\) với \\(\\sin x>0\\) khi \\(0<x<\\pi\\). Đồ thị cot trên khoảng này là một nhánh đi xuống liên tục, từ \\(+\\infty\\) khi \\(x\\to0^+\\) đến \\(-\\infty\\) khi \\(x\\to\\pi^-\\). Vì thế hàm nghịch biến trên \\((0;\\pi)\\). Không gộp hai nhánh qua điểm không xác định.",
     "skill_ids": [
       "G11-B03-COT_GRAPH"
     ],
@@ -2197,19 +2197,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(t=2,4\\text{ giờ}\\)"
+        "text": "\\(t=2\\) hoặc \\(t=4\\) giờ."
       },
       {
         "id": "B",
-        "text": "\\(t=5\\text{ giờ}\\)"
+        "text": "\\(t=5\\) giờ."
       },
       {
         "id": "C",
-        "text": "t bằng 1 và 5 giờ."
+        "text": "\\(t=1\\) hoặc \\(t=5\\) giờ."
       },
       {
         "id": "D",
-        "text": "\\(t=1,11\\text{ giờ}\\)"
+        "text": "\\(t=1\\) hoặc \\(t=11\\) giờ."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -2907,7 +2907,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Tại 0: sin=0, cos=1, tan không xác định, cot=0. Tại π/2: sin=1, cos=0, tan=0, cot không xác định."
+        "text": "Tại \\(0\\): sin = 0, cos = 1, tan không xác định, cot = 0. Tại \\(\\frac{\\pi}{2}\\): sin = 1, cos = 0, tan = 0, cot không xác định."
       },
       {
         "id": "B",
@@ -2915,7 +2915,7 @@
       },
       {
         "id": "C",
-        "text": "Tại 0: sin=0, cos=1, tan=0, cot không xác định. Tại π/2: sin=1, cos=0, tan không xác định, cot=0."
+        "text": "Tại \\(0\\): sin = 0, cos = 1, tan = 0, cot không xác định. Tại \\(\\frac{\\pi}{2}\\): sin = 1, cos = 0, tan không xác định, cot = 0."
       },
       {
         "id": "D",
@@ -3050,7 +3050,7 @@
     "content_version": "SGK-G11-CHI-BANK-CANDIDATE-20261127-THPT-G11-B03-KFT05",
     "stem": "Trên \\((-\\pi/2;\\pi/2)\\), tìm tập nghiệm \\(\\tan x\\ge0\\). Chọn phương án đúng sau khi tự giải.",
     "answer_key": "x∈[0;π/2).",
-    "worked_solution": "**Lời giải:** Nhánh đi qua \\(O\\), nằm dưới trục hoành khi \\(x0\\). Vậy \\(x\\in[0;\\pi/2)\\). Không lấy \\(\\pi/2\\) vì hàm không xác định.",
+    "worked_solution": "Trên \\((-\\frac{\\pi}{2};\\frac{\\pi}{2})\\), \\(\\cos x>0\\). Vì \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), tang cùng dấu với sin: âm khi \\(x<0\\), bằng 0 tại \\(x=0\\), dương khi \\(x>0\\). Vậy tập nghiệm là \\([0;\\frac{\\pi}{2})\\). Không lấy \\(\\frac{\\pi}{2}\\) vì tại đó tang không xác định.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B03-TAN_GRAPH"
@@ -3517,19 +3517,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Dương trên \\((0;\\pi)\\); lớn nhất 1 tại π/2, nhỏ nhất −1 tại 3π/2."
+        "text": "Dương trên \\((0;\\pi)\\); lớn nhất 1 tại \\(\\frac{\\pi}{2}\\), nhỏ nhất \\(-1\\) tại \\(\\frac{3\\pi}{2}\\)."
       },
       {
         "id": "B",
-        "text": "Dương trên \\((0;\\pi/2)\\); lớn nhất 1 tại π/2, nhỏ nhất −1 tại 3π/2."
+        "text": "Dương trên \\((0;\\frac{\\pi}{2})\\); lớn nhất 1 tại \\(\\frac{\\pi}{2}\\), nhỏ nhất \\(-1\\) tại \\(\\frac{3\\pi}{2}\\)."
       },
       {
         "id": "C",
-        "text": "Dương trên \\([0;\\pi]\\); lớn nhất 1 tại π/2, nhỏ nhất −1 tại 3π/2."
+        "text": "Dương trên \\([0;\\pi]\\); lớn nhất 1 tại \\(\\frac{\\pi}{2}\\), nhỏ nhất \\(-1\\) tại \\(\\frac{3\\pi}{2}\\)."
       },
       {
         "id": "D",
-        "text": "Dương trên \\((\\pi;2\\pi)\\); lớn nhất 1 tại 3π/2, nhỏ nhất −1 tại π/2."
+        "text": "Dương trên \\((\\pi;2\\pi)\\); lớn nhất 1 tại \\(\\frac{3\\pi}{2}\\), nhỏ nhất \\(-1\\) tại \\(\\frac{\\pi}{2}\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -3647,19 +3647,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pi/2+2k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: π/2."
+        "text": "\\(x=\\frac{\\pi}{2}+2k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: \\(\\frac{\\pi}{2}\\)."
       },
       {
         "id": "B",
-        "text": "\\(x=k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: 0 và π."
+        "text": "\\(x=k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: \\(0,\\pi\\)."
       },
       {
         "id": "C",
-        "text": "\\(x=\\pi/2+k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: π/2 và 3π/2."
+        "text": "\\(x=\\frac{\\pi}{2}+k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: \\(\\frac{\\pi}{2},\\frac{3\\pi}{2}\\)."
       },
       {
         "id": "D",
-        "text": "\\(x=\\pi/2+k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: chỉ 3π/2."
+        "text": "\\(x=\\frac{\\pi}{2}+k\\pi,\\ k\\in\\mathbb Z\\); trong khoảng: chỉ \\(\\frac{3\\pi}{2}\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
