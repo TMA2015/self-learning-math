@@ -3081,10 +3081,10 @@
   },
   {
     "item_id": "THPT-G12-B16-A05",
-    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A05",
-    "stem": "Mái phẳng \\(3y+4z-12=0\\), nền z=0. Tính độ nghiêng của mái, làm tròn hai chữ số thập phân theo độ; giải thích vai trò của -12.",
-    "answer_key": "\\(\\arccos\\frac45\\approx36{,}87^\\circ\\).",
-    "worked_solution": "Pháp tuyến mái \\((0;3;4)\\), nền \\((0;0;1)\\). \\(\\cos\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\) nên góc khoảng 36,87°. Hằng số -12 tịnh tiến vị trí mặt nhưng không đổi pháp tuyến hay góc nghiêng.",
+    "content_version": "CD18-BANK-PARTIAL-20261127-THPT-G12-B16-A05.DELTA07A",
+    "stem": "Mái phẳng \\(3y+4z-12=0\\), nền \\(z=0\\). Tính độ nghiêng của mái, làm tròn hai chữ số thập phân theo độ; giải thích vai trò của \\(-12\\).",
+    "answer_key": "\\(\\arccos\\frac45\\approx36{,}87^\\circ\\). Hằng số \\(-12\\) chỉ ảnh hưởng vị trí mặt phẳng, không làm đổi pháp tuyến hay góc nghiêng.",
+    "worked_solution": "Pháp tuyến mái \\((0;3;4)\\), nền \\((0;0;1)\\). \\(\\cos\\theta=\\frac{|4|}{5\\cdot1}=\\frac45\\) nên góc khoảng \\(36{,}87^\\circ\\). Hằng số \\(-12\\) chỉ ảnh hưởng vị trí mặt phẳng, không làm đổi pháp tuyến hay góc nghiêng.",
     "skill_ids": [
       "G12-CHV-B16-O05"
     ],
@@ -3117,19 +3117,19 @@
     "options": [
       {
         "id": "A",
-        "text": "53,13°; −12 không đổi góc."
+        "text": "\\(53{,}13^\\circ\\); \\(-12\\) không đổi góc."
       },
       {
         "id": "B",
-        "text": "36,87°; −12 quyết định góc."
+        "text": "\\(36{,}87^\\circ\\); \\(-12\\) quyết định góc."
       },
       {
         "id": "C",
-        "text": "36,87°; −12 chỉ ảnh hưởng vị trí, không đổi góc."
+        "text": "\\(36{,}87^\\circ\\); \\(-12\\) chỉ ảnh hưởng vị trí, không đổi góc."
       },
       {
         "id": "D",
-        "text": "45,00°; −12 quyết định góc."
+        "text": "\\(45{,}00^\\circ\\); \\(-12\\) quyết định góc."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -4081,10 +4081,10 @@
   },
   {
     "item_id": "THPT-G12-B15-T02",
-    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B15-T02",
-    "stem": "Cho đường thẳng d có phương trình tham số x=t, y=1, z=2t (t∈ℝ) và mặt phẳng (P): x+z−6=0. Tìm giao điểm của d và (P). Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "(2;1;4)",
-    "worked_solution": "Thay \\(x=t,\\ y=1,\\ z=2t\\) vào phương trình mặt phẳng: \\(3t-6=0\\), suy ra \\(t=2\\) duy nhất. Tọa độ giao điểm là (2;1;4), kiểm tra \\(2+4-6=0\\).",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B15-T02.DELTA07A",
+    "stem": "Cho đường thẳng \\(d\\) có phương trình tham số \\(x=t,\\ y=1,\\ z=2t\\), \\(t\\in\\mathbb R\\), và mặt phẳng \\((P):x+z-6=0\\). Tìm giao điểm của \\(d\\) và \\((P)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "\\((2;1;4)\\).",
+    "worked_solution": "Thay \\(x=t,\\ y=1,\\ z=2t\\) vào phương trình mặt phẳng: \\(3t-6=0\\), suy ra \\(t=2\\) duy nhất. Tọa độ giao điểm là \\((2;1;4)\\), kiểm tra \\(2+4-6=0\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B15-O07"
@@ -4122,19 +4122,19 @@
     "options": [
       {
         "id": "A",
-        "text": "(4;1;2)"
+        "text": "\\((4;1;2)\\)"
       },
       {
         "id": "B",
-        "text": "(6;1;12)"
+        "text": "\\((6;1;12)\\)"
       },
       {
         "id": "C",
-        "text": "(2;0;4)"
+        "text": "\\((2;0;4)\\)"
       },
       {
         "id": "D",
-        "text": "(2;1;4)"
+        "text": "\\((2;1;4)\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -4265,10 +4265,10 @@
   },
   {
     "item_id": "THPT-G12-B17-T02",
-    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B17-T02",
-    "stem": "Cho mặt cầu tâm C(1;0;0), bán kính R=2 và mặt phẳng (P): x=3. Xác định vị trí tương đối của mặt cầu và (P). Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "Tiếp xúc tại (3;0;0).",
-    "worked_solution": "Khoảng cách từ C đến mặt phẳng x=3 bằng \\(|1-3|=2=R\\). Do đó mặt phẳng tiếp xúc mặt cầu. Hình chiếu vuông góc của C lên mặt phẳng là (3;0;0), chính là tiếp điểm.",
+    "content_version": "SGK-G12-CHV-BANK-CANDIDATE-20261127-THPT-G12-B17-T02.DELTA07A",
+    "stem": "Cho mặt cầu tâm \\(C(1;0;0)\\), bán kính \\(R=2\\) và mặt phẳng \\((P):x=3\\). Xác định vị trí tương đối của mặt cầu và \\((P)\\). Chọn phương án đúng sau khi tự giải.",
+    "answer_key": "Tiếp xúc tại \\((3;0;0)\\).",
+    "worked_solution": "Khoảng cách từ \\(C\\) đến mặt phẳng \\(x=3\\) bằng \\(|1-3|=2=R\\). Do đó mặt phẳng tiếp xúc mặt cầu. Hình chiếu vuông góc của \\(C\\) lên mặt phẳng là \\((3;0;0)\\), chính là tiếp điểm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B17-O05"
@@ -4314,11 +4314,11 @@
       },
       {
         "id": "C",
-        "text": "Tiếp xúc tại (3;0;0)."
+        "text": "Tiếp xúc tại \\((3;0;0)\\)."
       },
       {
         "id": "D",
-        "text": "Tiếp xúc tại (1;0;0)."
+        "text": "Tiếp xúc tại \\((1;0;0)\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
