@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "7ff11b8af1704caa1865daaf0ca5221e37cb7deb",
+    "as_of_commit": "b255d8c947ae20e57bd9f562900b5487830576c1",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.1: shared interactive 815/815; Written 15/160; next G11 ChI–III. Owner clarified: fix errors directly in canonical bank, do not defer authoring fixes to RELEASE; preserve historical blobs and projections, no parallel active source.",
+    "next": "08.1: shared interactive 815/815; Written 74/160; first batch G11 59/59 completed (25 corrected); remaining 86 G12 Written. Owner authorizes 1–2 consolidated Written batches; fix directly in bank.",
     "status": "CHECKLIST_08_XG5_BATCH_1_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -4737,18 +4737,409 @@
                     ]
                   ],
                   "findings": "Resolved deferred historical HTML issue directly in bank, one active canonical source per ID; preserve previous source blob and historical projection, same stem meaning, answers, rubric criteria/points, role, skill IDs and auto_grade=false. Scope verified by exact source readback and reference-only diff."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHII",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHII_B05_B07_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+                  "source_blob": "ac2e861ed6ea9a109169a3f871613a287a8b1a4d",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHII-W05-01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHII-W05-02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHII-W06-01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHII-W06-02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHII-W07-01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHII-W07-02-ANCHOR",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHV",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHV_B15_B17_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+                  "source_blob": "4766115d3f89d926aa785e5778c6ea372e740171",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHV-B15-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHV-B15-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHV-B16-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHV-B16-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHV-B17-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHV-B17-W02-ANCHOR",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHVI",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHVI_B18_B21_PUBLIC_CANONICAL_R01_POSTPASS_DELTA_B_SOURCE_LOCK.md",
+                  "source_blob": "db8dfdf25129a641fb37c61a2e01e67c60f75694",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHVI-B18-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B18-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B19-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B19-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B20-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B20-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B21-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVI-B21-W02-ANCHOR",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHI",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHI_B01_B04_CONCEPT_FIRST_PED_R03_SOURCE_CANDIDATE_20261102.md",
+                  "source_blob": "92eac98d087770dfb1a7d55f3c4929c1c1c2fd79",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHI-W01",
+                      0,
+                      157
+                    ],
+                    [
+                      "THPT-G11-CHI-W02-ANCHOR",
+                      0,
+                      157
+                    ],
+                    [
+                      "THPT-G11-CHI-W03",
+                      0,
+                      157
+                    ],
+                    [
+                      "THPT-G11-CHI-W04-ANCHOR",
+                      0,
+                      157
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHIX",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/review-packets/Temp_THPT_G11_CHIX_B31_B33_PUBLIC_D1_D6_AUTHOR_REVIEW_R00_20261101.md",
+                  "source_blob": "668ac139ca6455b8f26b61b2e1e90b59a7db419b",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHIX-B31-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B31-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B31-W03",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B32-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B32-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B32-W03",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B33-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B33-W02",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIX-B33-W03",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHIV",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHIV_B10_B14_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+                  "source_blob": "bbc23d78c69b8f93d24d852103455d288e9521b2",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHIV-B10-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B10-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B11-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B11-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B12-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B12-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B13-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B13-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B14-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHIV-B14-W02-ANCHOR",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHVII",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+                  "source_blob": "7fd2a125ff5015880be51186394b80e4e69d7a2d",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHVII-B22-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B22-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B23-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B23-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B24-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B24-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B25-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B25-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B26-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B26-W02-ANCHOR",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B27-W01",
+                      0,
+                      145
+                    ],
+                    [
+                      "THPT-G11-CHVII-B27-W02-ANCHOR",
+                      0,
+                      145
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
+                },
+                {
+                  "shard": "written-references.json",
+                  "chapter": "G11 CHIII",
+                  "blob": "73c1e8f2d37f0ffea26083b602cfe1f557d0f408",
+                  "source_path": "prototypes/thpt/content-drafts/G11_CHIII_B08_B09_S1_PAGINATION_EQUIVALENT_R03_SOURCE_20261102.md",
+                  "source_blob": "f706f5da0282699159541f974d0833b6941af8a7",
+                  "source_kind": "WRITTEN_REFERENCE_ONLY",
+                  "evidence_cp": "08.1 Written G11 consolidated scoped source review; owner batch 1 of 2",
+                  "records": [
+                    [
+                      "THPT-G11-CHIII-W08-01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G11-CHIII-W08-02-ANCHOR",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G11-CHIII-W09-01",
+                      0,
+                      149
+                    ],
+                    [
+                      "THPT-G11-CHIII-W09-02-ANCHOR",
+                      0,
+                      149
+                    ]
+                  ],
+                  "findings": "Reviewed learner source sections for remaining X-G.5 notation, preserving prior academic evidence. Exact canonical path and blob readback verified; 25 corrections total across G11: fractions/limits/units, grouped statistics notation and boundary, plane/line relations and projection/orthogonality. No changes to answer meaning, rubric points, assessment mode, placement or website."
                 }
               ],
               "completed_interactive": 815,
-              "completed_written": 15,
+              "completed_written": 74,
               "remaining_interactive": 0,
-              "remaining_written": 145,
+              "remaining_written": 86,
               "counts": {
-                "ids": 830,
+                "ids": 889,
                 "inherited": 3480,
-                "newly_checked": 1455
+                "newly_checked": 1644
               },
-              "next": "08.1 shared Written G11 ChI–III; skip verified sections. All three previously deferred G10 Written resolved in canonical bank sources. Interactive 815/815; Written 15/160."
+              "next": "Batch 2/2: remaining 86 shared Written G12, grouped by exact active source; fix directly in canonical bank, skip already verified fields; after completion reconcile and tick 08.1. G11 complete; no deferred."
             }
           },
           {
