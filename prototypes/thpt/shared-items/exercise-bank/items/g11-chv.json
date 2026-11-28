@@ -56,7 +56,7 @@
   {
     "item_id": "THPT-G11-CHV-B15-C02",
     "content_version": "CD08-BANK-CP128-20261127-B15-C02",
-    "stem": "Dãy \\(u_n=-2n\\) có giới hạn \\(-\\infty\\) không? Giải thích bằng lời. Chọn kết luận đúng và tự trình bày lập luận trước khi đối chiếu.",
+    "stem": "Dãy \\(u_n=-2n\\) có tiến đến \\(-\\infty\\) không? Chọn lập luận đúng sau khi tự giải thích.",
     "answer_key": "Có, \\(\\lim_{n\\to\\infty}u_n=-\\infty\\).",
     "worked_solution": "Với mỗi số dương M lớn tùy ý, nếu \\(n>\\frac M2\\) thì \\(u_n=-2n<-M\\). Nghĩa là từ một chỉ số đủ lớn trở đi, mọi số hạng nhỏ hơn ngưỡng âm đã chọn. Dãy tiến đến âm vô cực, không phải một số thực.",
     "skill_ids": [
@@ -90,19 +90,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(+\\infty\\)"
+        "text": "Tiến đến \\(+\\infty\\) vì n tăng mãi."
       },
       {
         "id": "B",
-        "text": "\\(0\\)"
+        "text": "Tiến đến 0 vì các số hạng âm."
       },
       {
         "id": "C",
-        "text": "\\(-2\\)"
+        "text": "Tiến đến \\(-2\\) vì hệ số của n bằng \\(-2\\)."
       },
       {
         "id": "D",
-        "text": "Có, \\(\\lim_{n\\to\\infty}u_n=-\\infty\\)."
+        "text": "Tiến đến \\(-\\infty\\): với mọi \\(M>0\\), nếu \\(n>\\frac{M}{2}\\) thì \\(u_n<-M\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -252,19 +252,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(+\\infty\\)"
+        "text": "\\(+\\infty\\), vì n tăng mãi."
       },
       {
         "id": "B",
-        "text": "\\(-4\\)."
+        "text": "\\(-4\\), vì \\(\\frac{9}{n}\\to0\\)."
       },
       {
         "id": "C",
-        "text": "\\(5\\)"
+        "text": "\\(5\\), vì cộng \\(-4+9\\)."
       },
       {
         "id": "D",
-        "text": "\\(0\\)"
+        "text": "\\(0\\), vì bỏ cả phần hằng số."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -468,19 +468,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(4\\)"
+        "text": "\\(4\\), vì chỉ cộng hai số hạng đầu."
       },
       {
         "id": "B",
-        "text": "\\(16\\)"
+        "text": "\\(16\\), vì lấy công bội dương \\(\\frac12\\)."
       },
       {
         "id": "C",
-        "text": "\\(8/3\\)"
+        "text": "\\(\\frac83\\), vì dùng mẫu \\(1-q=3\\)."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{16}3\\)."
+        "text": "\\(\\frac{16}{3}\\), vì \\(q=-\\frac12,\\ |q|<1\\) nên tổng riêng hội tụ."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -576,19 +576,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Có, giới hạn bằng 6."
+        "text": "Có, bằng 6 vì \\(f(x)=x+3\\) với \\(x\\ne3\\)."
       },
       {
         "id": "B",
-        "text": "\\(\\text{không vì }f(3)\\text{ không xác định}\\)"
+        "text": "Không, vì \\(f(3)\\) không xác định."
       },
       {
         "id": "C",
-        "text": "\\(\\text{có, bằng }0\\)"
+        "text": "Có, bằng 0 vì tử số tiến đến 0."
       },
       {
         "id": "D",
-        "text": "\\(\\text{có, bằng }3\\)"
+        "text": "Có, bằng 3 vì x tiến đến 3."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -630,19 +630,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{có, bằng }5/2\\)"
+        "text": "Có, bằng \\(\\frac52\\), lấy trung bình hai phía."
       },
       {
         "id": "B",
-        "text": "Không."
+        "text": "Không, vì giới hạn trái bằng 2, giới hạn phải bằng 3."
       },
       {
         "id": "C",
-        "text": "\\(\\text{có, bằng }2\\)"
+        "text": "Có, bằng 2 vì dùng nhánh bên trái."
       },
       {
         "id": "D",
-        "text": "\\(\\text{có, bằng }3\\)"
+        "text": "Có, bằng 3 vì \\(f(0)=3\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1116,19 +1116,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{không vì giới hạn là }0\\)"
+        "text": "Không vì giới hạn bằng 0."
       },
       {
         "id": "B",
-        "text": "\\(\\text{không vì }f(1)=2\\ne1\\)"
+        "text": "Không vì \\(f(1)=2\\ne1\\)."
       },
       {
         "id": "C",
-        "text": "Có."
+        "text": "Có, vì \\(\\lim_{x\\to1}f(x)=2=f(1)\\)."
       },
       {
         "id": "D",
-        "text": "\\(\\text{không vì biểu thức phân thức không xác định tại }1\\)"
+        "text": "Không vì phân thức ban đầu không xác định tại 1."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1170,19 +1170,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{có vì }f(1)\\text{ xác định}\\)"
+        "text": "Có vì \\(f(1)\\) xác định."
       },
       {
         "id": "B",
-        "text": "\\(\\text{có vì giới hạn bằng }0\\)"
+        "text": "Có vì giới hạn bằng 0."
       },
       {
         "id": "C",
-        "text": "\\(\\text{có vì rút gọn được phân thức}\\)"
+        "text": "Có vì rút gọn được phân thức."
       },
       {
         "id": "D",
-        "text": "Không."
+        "text": "Không, vì \\(\\lim_{x\\to1}f(x)=2\\ne0=f(1)\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1386,19 +1386,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{vô nghiệm vì hai đầu không bằng }0\\)"
+        "text": "Vô nghiệm vì hai đầu không bằng 0."
       },
       {
         "id": "B",
-        "text": "\\(\\text{có nghiệm nhưng chỉ ngoài }(1;2)\\)"
+        "text": "Có nghiệm nhưng chỉ ngoài \\((1;2)\\)."
       },
       {
         "id": "C",
-        "text": "\\(\\text{không dùng được định lí vì đa thức không liên tục}\\)"
+        "text": "Không dùng được định lí vì đa thức không liên tục."
       },
       {
         "id": "D",
-        "text": "Có ít nhất một nghiệm trong \\((1;2)\\)."
+        "text": "Có ít nhất một nghiệm vì f liên tục trên \\([1;2]\\) và \\(f(1)f(2)=-2<0\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1494,19 +1494,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{không vì tại }x=0\\text{ hàm không xác định}\\)"
+        "text": "Không vì tại \\(x=0\\) hàm không xác định."
       },
       {
         "id": "B",
-        "text": "Có."
+        "text": "Có; hàm liên tục trong khoảng và giới hạn một phía tại mỗi đầu mút bằng giá trị hàm ở đó."
       },
       {
         "id": "C",
-        "text": "\\(\\text{không vì không xác định tại hai đầu}\\)"
+        "text": "Không vì không xác định tại hai đầu."
       },
       {
         "id": "D",
-        "text": "\\(\\text{không vì thiếu giới hạn ngoài miền}\\)"
+        "text": "Không vì thiếu giới hạn ngoài miền."
       }
     ],
     "exercise_type": "INTERACTIVE"
