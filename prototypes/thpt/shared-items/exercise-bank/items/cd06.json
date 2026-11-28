@@ -194,15 +194,15 @@
       },
       {
         "id": "B",
-        "text": "\\(x\\ne2k\\pi;\\tan(x/2)\\)"
+        "text": "\\(x\\ne2k\\pi;\\tan(\\frac{x}{2})\\)"
       },
       {
         "id": "C",
-        "text": "\\(x\\in\\mathbb R;\\tan(x/2)\\)"
+        "text": "\\(x\\in\\mathbb R;\\tan(\\frac{x}{2})\\)"
       },
       {
         "id": "D",
-        "text": "\\(x\\ne(2k+1)\\pi;\\cot(x/2)\\)"
+        "text": "\\(x\\ne(2k+1)\\pi;\\cot(\\frac{x}{2})\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -346,15 +346,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(2\\sin3x\\sin2x\\)"
+        "text": "\\(2\\sin(3x)\\sin(2x)\\)"
       },
       {
         "id": "B",
-        "text": "\\(-2\\cos3x\\cos2x\\)"
+        "text": "\\(-2\\cos(3x)\\cos(2x)\\)"
       },
       {
         "id": "C",
-        "text": "\\(-2\\sin6x\\sin4x\\)"
+        "text": "\\(-2\\sin(6x)\\sin(4x)\\)"
       },
       {
         "id": "D",
@@ -402,11 +402,11 @@
       },
       {
         "id": "B",
-        "text": "\\(\\mathbb R\\setminus\\{\\pi/6+k\\pi\\}\\)"
+        "text": "\\(\\mathbb R\\setminus\\{\\frac{\\pi}{6}+k\\pi\\}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\mathbb R\\setminus\\{\\pi/2+k\\pi\\}\\)"
+        "text": "\\(\\mathbb R\\setminus\\{\\frac{\\pi}{2}+k\\pi\\}\\)"
       },
       {
         "id": "D",
@@ -450,7 +450,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\pi/4\\)"
+        "text": "\\(\\frac{\\pi}{4}\\)"
       },
       {
         "id": "B",
@@ -458,7 +458,7 @@
       },
       {
         "id": "C",
-        "text": "\\(\\pi/2\\)"
+        "text": "\\(\\frac{\\pi}{2}\\)"
       },
       {
         "id": "D",
@@ -554,15 +554,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x\\ne k\\pi/3;T=\\pi/3\\)"
+        "text": "\\(x\\ne \\frac{k\\pi}{3};T=\\frac{\\pi}{3}\\)"
       },
       {
         "id": "B",
-        "text": "\\(x\\ne\\pi/6+k\\pi/3;T=\\pi\\)"
+        "text": "\\(x\\ne\\frac{\\pi}{6}+\\frac{k\\pi}{3};T=\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x\\ne\\pi/2+k\\pi;T=3\\pi\\)"
+        "text": "\\(x\\ne\\frac{\\pi}{2}+k\\pi;T=3\\pi\\)"
       },
       {
         "id": "D",
@@ -610,15 +610,15 @@
       },
       {
         "id": "B",
-        "text": "\\(x=\\pm2\\pi/3+2k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{2\\pi}{3}+2k\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x=2\\pi/9+2k\\pi/3\\)"
+        "text": "\\(x=\\frac{2\\pi}{9}+\\frac{2k\\pi}{3}\\)"
       },
       {
         "id": "D",
-        "text": "\\(x=\\pm2\\pi/9+2k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{2\\pi}{9}+2k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -658,7 +658,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=-\\pi/8+k\\pi/2\\)"
+        "text": "\\(x=-\\frac{\\pi}{8}+\\frac{k\\pi}{2}\\)"
       },
       {
         "id": "B",
@@ -666,11 +666,11 @@
       },
       {
         "id": "C",
-        "text": "\\(x=\\pi/4+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{4}+k\\pi\\)"
       },
       {
         "id": "D",
-        "text": "\\(x=\\pi/8+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{8}+k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -714,7 +714,7 @@
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/2+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{2}+k\\pi\\)"
       },
       {
         "id": "C",
@@ -762,15 +762,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(-\\pi/3;\\pi/3\\)"
+        "text": "\\(-\\frac{\\pi}{3};\\frac{\\pi}{3}\\)"
       },
       {
         "id": "B",
-        "text": "\\(2\\pi/3\\)"
+        "text": "\\(\\frac{2\\pi}{3}\\)"
       },
       {
         "id": "C",
-        "text": "\\(-\\pi;2\\pi/3\\)"
+        "text": "\\(-\\pi;\\frac{2\\pi}{3}\\)"
       },
       {
         "id": "D",
