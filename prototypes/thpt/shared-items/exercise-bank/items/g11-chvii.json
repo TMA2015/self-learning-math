@@ -1597,7 +1597,7 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B25-C07",
-    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C07",
+    "content_version": "CD16-BANK-PARTIAL-20261127-THPT-G11-CHVII-B25-C07-XG6-20261128",
     "stem": "Hai đáy của hình chóp cụt đều có quan hệ nào?",
     "answer_key": "Hai đa giác đều đồng dạng, nằm trong hai mặt phẳng song song.",
     "worked_solution": "Chóp cụt đều được tạo khi cắt một hình chóp đều bởi mặt phẳng song song với đáy. Thiết diện đồng dạng với đáy ban đầu và vẫn là đa giác đều. Hai đáy của chóp cụt có mặt phẳng song song, khác kích thước trong hình chóp cụt không suy biến.",
@@ -1605,7 +1605,7 @@
       "G11-B25-REGULAR_FRUSTUM"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Chóp cụt đều là phần giữa hai mặt cắt song song của chóp đều."
     ],
@@ -1872,7 +1872,7 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C02",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C02",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C02-XG6-20261128",
     "stem": "Nếu \\(M\\in(P)\\), khoảng cách \\(d(M,(P))\\) bằng bao nhiêu?",
     "answer_key": "0.",
     "worked_solution": "Hình chiếu vuông góc của M lên \\((P)\\) chính là M, nên khoảng cách bằng độ dài đoạn MM, tức 0.",
@@ -1880,7 +1880,7 @@
       "G11-B26-POINT_PLANE"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Điểm đã nằm trong mặt phẳng tự là hình chiếu của nó."
     ],
@@ -1982,7 +1982,7 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C04",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C04",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C04-XG6-20261128",
     "stem": "Hai mặt phẳng song song cách nhau 4,5 m. M thuộc mặt thứ nhất. Khoảng cách từ M đến mặt thứ hai bằng bao nhiêu?",
     "answer_key": "4,5 m.",
     "worked_solution": "Khoảng cách giữa hai mặt phẳng song song là khoảng cách từ một điểm bất kì trên mặt thứ nhất đến mặt thứ hai. Dựng đường vuông góc từ M xuống mặt kia, độ dài đoạn đó bằng 4,5 m.",
@@ -1990,7 +1990,7 @@
       "G11-B26-PARALLEL_PLANES"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Khoảng cách giữa hai mặt song song đo theo phương vuông góc."
     ],
@@ -2037,7 +2037,7 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C05",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C05",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C05-XG6-20261128",
     "stem": "Đoạn nối hai đường chéo nhau chỉ vuông góc với đường đầu, không vuông góc đường thứ hai. Có phải đoạn vuông góc chung không?",
     "answer_key": "Không.",
     "worked_solution": "Đoạn vuông góc chung phải có hai đầu lần lượt thuộc hai đường và đồng thời vuông góc với cả hai đường. Thiếu điều kiện vuông góc thứ hai nên đoạn đã cho không phải đoạn vuông góc chung.",
@@ -2045,7 +2045,7 @@
       "G11-B26-SKEW_COMMON_PERP"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Đoạn vuông góc chung phải vuông góc cả hai đường."
     ],
@@ -2092,7 +2092,7 @@
   },
   {
     "item_id": "THPT-G11-CHVII-B26-C06",
-    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C06",
+    "content_version": "CD17-BANK-PARTIAL-20261127-THPT-G11-CHVII-B26-C06-XG6-20261128",
     "stem": "Trong hình chóp S.ABC, \\(SA=10\\), \\(SH=8\\), H là hình chiếu vuông góc của S lên đáy. Tính chiều cao hình chóp.",
     "answer_key": "8 (cùng đơn vị độ dài).",
     "worked_solution": "Chiều cao là khoảng cách vuông góc từ đỉnh đến mặt đáy. Vì H là hình chiếu của S, chiều cao bằng SH, tức 8. SA là cạnh bên, không phải chiều cao.",
@@ -2100,7 +2100,7 @@
       "G11-B26-HEIGHT_APPLICATION"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "H là hình chiếu của S lên đáy."
     ],
@@ -2939,5 +2939,68 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G11-B27-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G11-B27-L1-01",
+    "stem": "Một khối lăng trụ và một khối chóp có cùng diện tích đáy \\(S\\) và cùng chiều cao vuông góc \\(h\\). Cặp công thức thể tích tương ứng nào đúng?",
+    "answer_key": "\\(V_{\\text{lăng trụ}}=Sh,\\ V_{\\text{chóp}}=\\frac13Sh\\).",
+    "worked_solution": "Thể tích lăng trụ bằng diện tích đáy nhân chiều cao, \\(V=Sh\\). Thể tích chóp bằng một phần ba thể tích lăng trụ cùng diện tích đáy và chiều cao, \\(V=\\frac13Sh\\). Chiều cao phải đo vuông góc đáy.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G11-B27-PRISM_VOLUME",
+      "G11-B27-PYRAMID_VOLUME"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ sự khác nhau giữa lăng trụ và hình chóp cùng đáy, cùng cao."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/G11_CHVII_B22_B27_PUBLIC_CANONICAL_R01_SOURCE_LOCK.md",
+        "blob": "0dac60b05d670a74a670e0e423e11ffbbc2d2303",
+        "commit": "792e227269ed0b0a50cc2b3b5d32162b34eab6e0"
+      },
+      "related_item_ids": [
+        "THPT-G11-CHVII-B27-C01",
+        "THPT-G11-CHVII-B27-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu quên hệ số một phần ba hoặc dùng cạnh xiên làm chiều cao, ôn Bài 27 công thức thể tích; luyện câu tính thể tích lăng trụ và hình chóp.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(V_{\\text{lăng trụ}}=\\frac13Sh,\\ V_{\\text{chóp}}=Sh\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(V_{\\text{lăng trụ}}=Sh,\\ V_{\\text{chóp}}=\\frac13Sh\\)."
+      },
+      {
+        "id": "C",
+        "text": "Cả hai đều có \\(V=Sh\\)."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai đều có \\(V=\\frac13Sh\\)."
+      }
+    ]
   }
 ]
