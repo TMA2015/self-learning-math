@@ -467,7 +467,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 32,
+    "order": 45,
     "item_id": "THPT-G12-B07-P01",
     "outcome_id": "TOP18-O07",
     "legacy_order": 32,
@@ -482,7 +482,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 33,
+    "order": 35,
     "item_id": "THPT-G12-B07-P02",
     "outcome_id": "TOP18-O07",
     "legacy_order": 33,
@@ -512,7 +512,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 35,
+    "order": 46,
     "item_id": "THPT-TOP18-P07",
     "outcome_id": "TOP18-O07",
     "legacy_order": 35,
@@ -527,7 +527,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 36,
+    "order": 32,
     "item_id": "THPT-G12-B07-C02",
     "outcome_id": "TOP18-O08",
     "legacy_order": 36,
@@ -542,7 +542,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 37,
+    "order": 36,
     "item_id": "THPT-G12-B07-P03",
     "outcome_id": "TOP18-O08",
     "legacy_order": 37,
@@ -557,7 +557,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 38,
+    "order": 37,
     "item_id": "THPT-G12-B07-P04",
     "outcome_id": "TOP18-O08",
     "legacy_order": 38,
@@ -587,7 +587,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 40,
+    "order": 38,
     "item_id": "THPT-TOP18-P08",
     "outcome_id": "TOP18-O08",
     "legacy_order": 40,
@@ -602,7 +602,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 41,
+    "order": 33,
     "item_id": "THPT-G12-B07-C03",
     "outcome_id": "TOP18-O09",
     "legacy_order": 41,
@@ -617,7 +617,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 42,
+    "order": 47,
     "item_id": "THPT-G12-B07-P05",
     "outcome_id": "TOP18-O09",
     "legacy_order": 42,
@@ -632,7 +632,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 43,
+    "order": 40,
     "item_id": "THPT-G12-B07-P06",
     "outcome_id": "TOP18-O09",
     "legacy_order": 43,
@@ -662,7 +662,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 45,
+    "order": 48,
     "item_id": "THPT-TOP18-P09",
     "outcome_id": "TOP18-O09",
     "legacy_order": 45,
@@ -677,7 +677,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 46,
+    "order": 41,
     "item_id": "THPT-G12-B07-C04",
     "outcome_id": "TOP18-O10",
     "legacy_order": 46,
@@ -692,7 +692,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 47,
+    "order": 42,
     "item_id": "THPT-G12-B07-P07",
     "outcome_id": "TOP18-O10",
     "legacy_order": 47,
@@ -707,7 +707,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 48,
+    "order": 43,
     "item_id": "THPT-G12-B07-P08",
     "outcome_id": "TOP18-O10",
     "legacy_order": 48,
@@ -1247,7 +1247,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 84,
+    "order": 99,
     "item_id": "THPT-G12-B14-A01",
     "outcome_id": "TOP18-O17",
     "legacy_order": 84,
@@ -1277,7 +1277,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 86,
+    "order": 100,
     "item_id": "THPT-TOP18-P17",
     "outcome_id": "TOP18-O17",
     "legacy_order": 86,
@@ -1292,7 +1292,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 87,
+    "order": 84,
     "item_id": "THPT-G12-B14-C02",
     "outcome_id": "TOP18-O18",
     "legacy_order": 87,
@@ -1307,7 +1307,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 88,
+    "order": 86,
     "item_id": "THPT-G12-B14-P02",
     "outcome_id": "TOP18-O18",
     "legacy_order": 88,
@@ -1322,7 +1322,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 89,
+    "order": 102,
     "item_id": "THPT-G12-B14-A02",
     "outcome_id": "TOP18-O18",
     "legacy_order": 89,
@@ -1352,7 +1352,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 91,
+    "order": 87,
     "item_id": "THPT-TOP18-P18",
     "outcome_id": "TOP18-O18",
     "legacy_order": 91,
@@ -1367,7 +1367,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 92,
+    "order": 88,
     "item_id": "THPT-G12-B14-C03",
     "outcome_id": "TOP18-O19",
     "legacy_order": 92,
@@ -1382,7 +1382,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 93,
+    "order": 89,
     "item_id": "THPT-G12-B14-P03",
     "outcome_id": "TOP18-O19",
     "legacy_order": 93,
@@ -1397,7 +1397,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 94,
+    "order": 103,
     "item_id": "THPT-G12-B14-A03",
     "outcome_id": "TOP18-O19",
     "legacy_order": 94,
@@ -1427,7 +1427,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 96,
+    "order": 104,
     "item_id": "THPT-TOP18-P19",
     "outcome_id": "TOP18-O19",
     "legacy_order": 96,
@@ -1457,7 +1457,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 98,
+    "order": 91,
     "item_id": "THPT-G12-B14-C04",
     "outcome_id": "TOP18-O20",
     "legacy_order": 98,
@@ -1472,7 +1472,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 99,
+    "order": 92,
     "item_id": "THPT-G12-B14-P04",
     "outcome_id": "TOP18-O20",
     "legacy_order": 99,
@@ -1487,7 +1487,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 100,
+    "order": 105,
     "item_id": "THPT-G12-B14-A04",
     "outcome_id": "TOP18-O20",
     "legacy_order": 100,
@@ -1517,7 +1517,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 102,
+    "order": 107,
     "item_id": "THPT-TOP18-P20",
     "outcome_id": "TOP18-O20",
     "legacy_order": 102,
@@ -1532,7 +1532,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 103,
+    "order": 93,
     "item_id": "THPT-G12-B14-C05",
     "outcome_id": "TOP18-O21",
     "legacy_order": 103,
@@ -1547,7 +1547,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 104,
+    "order": 94,
     "item_id": "THPT-G12-B14-P05",
     "outcome_id": "TOP18-O21",
     "legacy_order": 104,
@@ -1562,7 +1562,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 105,
+    "order": 108,
     "item_id": "THPT-G12-B14-A05",
     "outcome_id": "TOP18-O21",
     "legacy_order": 105,
@@ -1592,7 +1592,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 107,
+    "order": 109,
     "item_id": "THPT-TOP18-P21",
     "outcome_id": "TOP18-O21",
     "legacy_order": 107,
@@ -1607,7 +1607,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 108,
+    "order": 96,
     "item_id": "THPT-G12-B14-C06",
     "outcome_id": "TOP18-O22",
     "legacy_order": 108,
@@ -1622,7 +1622,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 109,
+    "order": 98,
     "item_id": "THPT-G12-B14-P06",
     "outcome_id": "TOP18-O22",
     "legacy_order": 109,
@@ -2237,7 +2237,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 150,
+    "order": 151,
     "item_id": "THPT-G12-B16-C01",
     "outcome_id": "TOP18-O31",
     "legacy_order": 150,
@@ -2252,7 +2252,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 151,
+    "order": 152,
     "item_id": "THPT-G12-B16-P01",
     "outcome_id": "TOP18-O31",
     "legacy_order": 151,
@@ -2267,7 +2267,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 152,
+    "order": 163,
     "item_id": "THPT-G12-B16-A01",
     "outcome_id": "TOP18-O31",
     "legacy_order": 152,
@@ -2297,7 +2297,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 154,
+    "order": 165,
     "item_id": "THPT-TOP18-P31",
     "outcome_id": "TOP18-O31",
     "legacy_order": 154,
@@ -2312,7 +2312,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 155,
+    "order": 154,
     "item_id": "THPT-G12-B16-C02",
     "outcome_id": "TOP18-O32",
     "legacy_order": 155,
@@ -2327,7 +2327,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 156,
+    "order": 155,
     "item_id": "THPT-G12-B16-P02",
     "outcome_id": "TOP18-O32",
     "legacy_order": 156,
@@ -2342,7 +2342,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 157,
+    "order": 166,
     "item_id": "THPT-G12-B16-A02",
     "outcome_id": "TOP18-O32",
     "legacy_order": 157,
@@ -2372,7 +2372,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 159,
+    "order": 167,
     "item_id": "THPT-TOP18-P32",
     "outcome_id": "TOP18-O32",
     "legacy_order": 159,
@@ -2402,7 +2402,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 161,
+    "order": 156,
     "item_id": "THPT-G12-B16-C03",
     "outcome_id": "TOP18-O33",
     "legacy_order": 161,
@@ -2417,7 +2417,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 162,
+    "order": 157,
     "item_id": "THPT-G12-B16-P03",
     "outcome_id": "TOP18-O33",
     "legacy_order": 162,
@@ -2432,7 +2432,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 163,
+    "order": 168,
     "item_id": "THPT-G12-B16-A03",
     "outcome_id": "TOP18-O33",
     "legacy_order": 163,
@@ -2462,7 +2462,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 165,
+    "order": 170,
     "item_id": "THPT-TOP18-P33",
     "outcome_id": "TOP18-O33",
     "legacy_order": 165,
@@ -2477,7 +2477,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 166,
+    "order": 150,
     "item_id": "THPT-G12-B16-C04",
     "outcome_id": "TOP18-O34",
     "legacy_order": 166,
@@ -2492,7 +2492,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 167,
+    "order": 159,
     "item_id": "THPT-G12-B16-P04",
     "outcome_id": "TOP18-O34",
     "legacy_order": 167,
@@ -2507,7 +2507,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 168,
+    "order": 171,
     "item_id": "THPT-G12-B16-A04",
     "outcome_id": "TOP18-O34",
     "legacy_order": 168,
@@ -2537,7 +2537,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 170,
+    "order": 172,
     "item_id": "THPT-TOP18-P34",
     "outcome_id": "TOP18-O34",
     "legacy_order": 170,
@@ -2552,7 +2552,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 171,
+    "order": 161,
     "item_id": "THPT-G12-B16-C05",
     "outcome_id": "TOP18-O35",
     "legacy_order": 171,
@@ -2567,7 +2567,7 @@
   {
     "collection": "TOPIC:CD18:PRACTICE",
     "role": "TOPIC_PRACTICE",
-    "order": 172,
+    "order": 162,
     "item_id": "THPT-G12-B16-P05",
     "outcome_id": "TOP18-O35",
     "legacy_order": 172,
