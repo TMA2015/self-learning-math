@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA19_G11_COMPLETE_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
+  "academic_audit": "DELTA20_G10_CHI_III_COMPLETE_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "de2f2f07bec98db718119cdde540fe29cb4440cc",
+    "as_of_commit": "8c2622314d7978ca9ec846efb82264bc957afde4",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "G10 remaining converted Core/Practice/Application/FirstTry scopes, by coherent chapter groups, preserving 143 dedicated public selfcheck reviewed IDs. Then G12 and remaining Topic groups. Resolve material Delta/PED, notation and applicable Q01–Q18 before handoff.",
-    "status": "DELTA19_G11_COMPLETE_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
+    "next": "Complete G10 ChIV–VI remaining converted Core/Practice/Application/FirstTry group; preserve dedicated public selfcheck scope. Then G10 ChVII–IX, G12 chapter and supplement groups, remaining Topic groups. Resolve material Delta/PED and applicable full Q01–Q18 before handoff.",
+    "status": "DELTA20_G10_CHI_III_COMPLETE_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,76 +112,203 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave19",
-    "delta_audit_wave19": {
-      "baseline": "2f1964e5d13d65e0d49008642391a50c048dde30",
-      "verified_head": "de2f2f07bec98db718119cdde540fe29cb4440cc",
+    "current_checkpoint_key": "delta_audit_wave20",
+    "delta_audit_wave20": {
+      "baseline": "d2905da48f77a46cb75c37af732efd2eafefd72a",
+      "verified_head": "8c2622314d7978ca9ec846efb82264bc957afde4",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "Inherited inventory; no IDs or placement changes."
+        "evidence": "Inherited inventory; IDs and placements unchanged."
       },
-      "written": "325 source-reviewed, 40 flagged Written deltas closed; G11 supplement Written placements unchanged.",
+      "written": "325 source-reviewed, 40 flagged Written deltas closed; G10 ChI–III six Written placements unchanged.",
       "interactive": {
-        "reviewed": 52,
-        "revised": 10,
-        "retained": 42,
-        "old_blob": "148d13c2031b1ae87fff41dd5c601b409a23003c",
-        "new_blob": "411cbd605d1b64b1f2ac1fa3dc343e03d12212c4",
-        "source_blob": "b848436621c17c89919e3d3f93519d12612fe039",
-        "original_source_blobs": [
-          "7d369b8e6c3aa25fcfcbe5e10418d87f59d4b8e5",
-          "f78e1f4bcb477c995ffdb1281d366bf3b0e88a59"
+        "reviewed": 80,
+        "revised": 12,
+        "retained": 68,
+        "prior_dedicated_selfcheck": 42,
+        "scope_total": 122,
+        "chapters": [
+          {
+            "ch": "I",
+            "reviewed": 27,
+            "old_blob": "6e257e9a74c239bdb6598301792a04f4fcd64a8f",
+            "new_blob": "e9d5300484824428d9ab3db9df8a4d02d96d8e24",
+            "source_blobs": [
+              "95a554e31a613b8e215679fe6790738473d598df",
+              "dba6430cd79b17dee0591fb2dcd075ea5200b126",
+              "3002487e974f2693528a39b2b2055fad8724d698"
+            ],
+            "prior_selfcheck_blob": "394e88ab4ce1a1b7a563d7f6cb3b17d49b6a0b55",
+            "changed": [
+              "B02-P05",
+              "CHI-TRY04",
+              "CHI-TRY11"
+            ]
+          },
+          {
+            "ch": "II",
+            "reviewed": 26,
+            "old_blob": "f7d03a8458126874c9d5ef0f8ab9948e90706ffa",
+            "new_blob": "ed68a8f4948ada93b09b3ba86a6795895353a534",
+            "source_blobs": [
+              "acea9776d1c7534a4cd0cd28e98db26dedf0c122",
+              "03cf894ec9e4fb55b86201ab43dab21c48337ef3",
+              "4c8bfa2bd9af3ac5a31da945abdc990ceaee4618"
+            ],
+            "prior_selfcheck_blob": "c7f8b7b8c224ae194af887cefced8bcca70cba06",
+            "changed": [
+              "CHII-TRY01",
+              "CHII-TRY05",
+              "CHII-TRY07",
+              "CHII-TRY09"
+            ]
+          },
+          {
+            "ch": "III",
+            "reviewed": 27,
+            "old_blob": "d8c93545e86d254f17346ca28654cadf94a31456",
+            "new_blob": "f94e29418e19f2fe4159ff20875d0c81d4c8fc5f",
+            "source_blobs": [
+              "6320aeaa89bd51c514b07461e01fad5e3aca833f",
+              "79f8101d34430bc0d672558115191a95875014a6",
+              "2f0b998bb7306b47dff3a4e9f0c8c910edf7f6f9"
+            ],
+            "prior_selfcheck_blob": "13837c4da26c57c4bdc84e24cbaca058e94af13f",
+            "changed": [
+              "B05-C01",
+              "B06-P05",
+              "CHIII-TRY01",
+              "CHIII-TRY11",
+              "CHIII-TRY09"
+            ]
+          }
         ],
-        "source_headings": 52,
-        "changed": [
-          "THPT-G11-SUPP-E01-P01",
-          "THPT-G11-SUPP-E02-P01",
-          "THPT-G11-SUPP-E02-P03",
-          "THPT-G11-YR-TRIG-P01",
-          "THPT-G11-YR-DERIV-P01",
-          "THPT-G11-YR-DERIV-P02",
-          "THPT-G11-YR-SPACE-P02",
-          "THPT-G11-YR-STAT-C01",
-          "THPT-G11-YR-STAT-P01",
-          "THPT-G11-YR-STAT-P02"
-        ],
-        "proof_exp": "E01 C01–05:220.5,3 half-lives,pH6,M5,L20dB. P01–06:k=ln(1+r),2^(-3/2)≈.3536,100-fold decrease,ΔM.7 (common reference),1000-fold intensity increase,stable rate/resources and environment. E02 C01–05:2 triangular bases/3 lateral faces,45°,same-origin perpendicular rays in both half-planes,24cm³,corresponding vertices parallel equal edges. P01–05:net without lid with matching edges and no unintended overlap,tan1/3 and sin1/sqrt10,not perspective angle but perpendicular rays,5cm height,hidden dashed edge.",
-        "proof_year": "TRIG C01/P01/P02 cos sum minus,2π/3,0/π/2π; SEQ 15,45,165 million; LIMIT 4,a3,3; EXPL x9 domain>1,x5,x≤3; DERIV 1,2x sin x+(x²+1)cos x,v−2 and speed2; SPACE d⊥P,tan1/2,BC common perpendicular length a; VOL 24,72,45 cm³; STAT median group[10;20),modal group frequency5,Q1=11.25,Q3=23.75 interpolated not exact raw quartiles; PROB .8,.6,.3; IND .06,.36,not independent 1/6≠1/5; INT separate remediation for 0/0 and log positive domain. All 52 source headings and skills match; no material task/key change, limited question scope clarification and reasoning. Source packet AUTHOR_SOURCE_LOCKED_CANDIDATE__NOT_NOTEBOOKLM_REVIEWED preserved, no fresh S1 PDF or independent review claimed.",
-        "parity": true,
-        "valid": true
+        "proof_i": "B01 C01–02 true and open predicate, false P and true negation. P01–06 universal x²+1>0, no integer square2 and universal negation, divisibility10 implies5 not converse n5, parity equivalence, negation exists x with OR (x3), false antecedent implication true. B02 C01–02 TTTF and intersection3/4 union1..5. P01–06 differences1/2 and5, relative complements A2/4/6 and U\\A1/3/5/7/8 with extra1/7/8, intersection singleton2, union separated intervals and only−1 among test points, 4 outside both CLBs, A=B subset Z/Q/R and C only R. TRY01–11 true/question/open predicate, exists non-swimmer, 8→4 not converse, parity two directions, counterexample0, membership/subset TTF, intersection b/c and union a..d, differences1/3 and6, complement0/2/4, intersection[1;4] union(−2;6), counts12/9/5.",
+        "proof_ii": "B03 C01–02 linear with one nonzero coefficient, point(2;−1) boundary. P01–06 closed boundary, y≥(2x−6)/3, O on boundary not side test, revenue2x+3y≥600 integer nonnegative, point(0;1), average price 5y≤3x with total positive. B04 C01–02 (2;3), closed triangle(0;0)(4;0)(0;4). P01–06 (3;4), max24 at(3;4), all points on x+y=8 optimal, empty contradictory inequalities, max0 no min, integer max8 at(2;1). TRY01–10 only linear(a), A/C with A boundary, strict dashed boundary excludes(2;0), y>3x−3 and O included, 4x+6y≤120 integer and(10;10) feasible, (2;3) feasible only, closed triangle(0;0)(6;0)(0;3), empty, vertex values0/3/12, fractional point infeasible and pair objective10/11 (not global claim).",
+        "proof_iii": "B05 C01–02 cos−4/5, tan90 undefined. P01–06 sin/cos150 1/2 and−sqrt3/2, sin4/5 tan−4/3, (sqrt2+1)/2, universal sin²+cos²=1, arcsin.7 44.4°/135.6°, sin2/sqrt5 cos−1/sqrt5 cot−1/2. B06 C01–02 sqrt39, area10. P01–06 b4sqrt2/R4sqrt2, S12/r1.5/R25/8, SSA two cases B60/C90/c10 or B120/C30/c5, cosC2/7/S12sqrt5, survey BC66.5/AC93.8, two angles30/150 and sides sqrt(61∓30sqrt3). TRY01–11 point−1/0, sin/cos135 signs, tan0/cot90 zero other undefined, supplementary sin same others change signs, 12/13 and−12/5, a5sqrt3, R5 and B+C150 not unique, equal area12, S6/r1 and invalid triple2/3/6, survey legs20/h10sqrt2, cos127−.6018 and arcsin.4 23.6°/156.4°. Source packet headings and FirstTry source markers inspected; removed stale above-figure references in standalone wording. All 80 key and nonedited metadata parity verified; 4 distinct choices and auto_grade=false."
       },
       "placements": {
-        "blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
-        "interactive_rows": 74,
+        "blob": "240d485678b3182add1fb3acd7035e6fc9994e08",
+        "interactive_rows": 122,
         "counts": {
-          "SGK_CORE": 20,
-          "SGK_PRACTICE": 28,
-          "SGK_APPLICATION": 4,
-          "CLIENT_SELF_CHECK_NO_MASTERY": 22
+          "SGK_CORE": 12,
+          "SGK_PRACTICE": 36,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 42,
+          "SGK_FIRST_TRY": 32
         },
         "unresolved": 0,
-        "written_rows": 16
+        "written_rows": 6
       },
-      "aggregate_g11": {
-        "chapter_unique": 424,
-        "supplement_unique": 52,
-        "total_unique": 476,
-        "chapter_placements": 574,
-        "supplement_placements": 74,
-        "total_placements": 648,
-        "written_placements": 83,
-        "scope": "All G11 SGK interactive IDs, scoped math/source/choice only."
+      "source_delta": {
+        "material": [
+          [
+            "B01-P03",
+            "divisible6→3",
+            "10→5 with necessary/sufficient"
+          ],
+          [
+            "B01-P05",
+            "negate all x²≥0",
+            "restricted conjunction with disjunction negation"
+          ],
+          [
+            "B02-C01",
+            "2∈A and A⊆B",
+            "add empty subset vs membership"
+          ],
+          [
+            "B02-P02",
+            "single complement U",
+            "nested reference sets and two complements"
+          ],
+          [
+            "B02-P03",
+            "intersection(1;3]",
+            "singleton2"
+          ],
+          [
+            "B02-P04",
+            "union R",
+            "separated intervals"
+          ],
+          [
+            "B02-P06",
+            "equal sets",
+            "add number-set hierarchy"
+          ],
+          [
+            "B03-C01",
+            "0x−3y>1",
+            "4x+0y≥8"
+          ],
+          [
+            "B03-P02",
+            "3x−y<2",
+            "2x−3y≤6"
+          ],
+          [
+            "B03-P03",
+            "2x+y≥0",
+            "3x−2y>0"
+          ],
+          [
+            "B03-P06",
+            "integer purchase budget",
+            "weighted average price, positive denominator"
+          ],
+          [
+            "B05-C01",
+            "cos120",
+            "read unit semicircle coordinates"
+          ],
+          [
+            "B05-P03",
+            "sin135+cos120",
+            "supplement/complement identity"
+          ],
+          [
+            "B05-P05",
+            "sin=sqrt3/2 exact",
+            "sin=.7 DEG approximate"
+          ],
+          [
+            "B06-P01",
+            "A30 B60 a4",
+            "A45 B30 a8"
+          ],
+          [
+            "B06-P02",
+            "S,r",
+            "also R"
+          ],
+          [
+            "B06-P03",
+            "two angles and side",
+            "SSA ambiguous solutions"
+          ],
+          [
+            "B06-P05",
+            "survey A30 B60",
+            "A40 B65 approximate"
+          ],
+          [
+            "B06-P06",
+            "given three sides find right angle/area",
+            "given area and adjacent sides find both angles and sides"
+          ]
+        ],
+        "disposition": "Mathematical/skill fit scoped verified; preserve active candidate; source variants not historical equivalence; final applicable Delta/PED acceptance and consistent generation pending. No fresh S1 or independent review claim."
       },
-      "q_audit_scope": "Complete G11 interactive scoped math/source/choice review; full Q01–Q18/notation/PED, material source Delta acceptance and RELEASE projection/reveal/scoring QA pending.",
+      "q_audit_scope": "G10 ChI–III scoped math/source/choice review 122 IDs incl 42 prior dedicated. Full Q01–Q18, notation/coverage/PED and RELEASE projection/reveal/scoring QA pending.",
       "protected_scope": "No runtime, private RD1, Final Submit, Mastery, Firebase, LIVE, merge/deploy."
     },
     "previous_manifest": {
-      "commit": "2f1964e5d13d65e0d49008642391a50c048dde30",
-      "blob": "e10d4837d787edc53ed30b963375b5ea612e38a6",
-      "key": "delta_audit_wave18"
+      "commit": "d2905da48f77a46cb75c37af732efd2eafefd72a",
+      "blob": "551ad65834148c8ce3ae08cd96eada3637f1c949",
+      "key": "delta_audit_wave19"
     }
   },
   "pending_review": {
@@ -282,7 +409,7 @@
     "cd20": "34 interactive IDs scoped math/choices reviewed Delta15 (17 topic+17 reused optional, including 12 extra); four materially different historical tasks P03/P08/P14/P16 and four scope extensions explicitly recorded, final source delta acceptance and consistent practice/replay cutover pending. Three Written retained.",
     "cd21": "Eight CĐ21 candidate items checked, seven revised wave08. P06 historical practice AND replay source parameter mismatch, cutover regenerate both from candidate; other reused placement/coverage and full Q01–Q18 pending.",
     "cd22": "Seven new CĐ22 practice items checked/revised wave08, four previously flagged Written scoped verifications closed. Other reused/converted placements, source/coverage and full Q01–Q18 pending.",
-    "sgk_g10_chi_chiii": "All 42 public selfcheck candidates ChI–III math/source/interaction scoped reviewed Delta11/12. Other FirstTry/converted scope, legacy hint/key/rubric typography and coverage/PED pending; earlier Written unchanged.",
+    "sgk_g10_chi_chiii": "122 interactive IDs scoped reviewed (42 dedicated public selfcheck prior; 80 remaining Core/Practice/FirstTry Delta20); all chapter placements resolve; Written unchanged. Material historical source deltas logged, final applicable Delta/PED and notation/coverage and RELEASE pending.",
     "sgk_g10_chiv_chvi": "All 59 G10 ChIV–VI public selfcheck candidates scoped source/math/interaction reviewed Delta12/13; 143/143 G10 public selfcheck scope now closed. Other converted/FirstTry, legacy notation/assessment and PED/coverage remain; B15_OUT_03 mappings preserved; scoped Written deltas closed.",
     "sgk_g10_chvii_chix": "All G10 ChVII 22 public selfcheck records now math/source/interaction scoped reviewed in Delta09/10; ChVIII 14 and ChIX 6 scoped reviewed in Delta08/09. No global Q18 or full chapter coverage inferred. W25 practice-only. Actual projection and reveal RELEASE.",
     "sgk_g11_chi_chiii": "All 153 interactive IDs across G11 ChI–III scoped math/source/choice review complete (Delta14/15/16), 181 placement rows resolve, prior 14 Written placements retained. Six explicit material source deltas and historical pending B01/B02 PED receipt require applicable final acceptance, no historical equivalence or global Q18 inferred. Remaining full notation, coverage/PED and authorized RELEASE generation/QA.",
