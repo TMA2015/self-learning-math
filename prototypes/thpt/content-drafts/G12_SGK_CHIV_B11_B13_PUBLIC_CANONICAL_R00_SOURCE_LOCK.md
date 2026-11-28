@@ -282,9 +282,9 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W01 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W01` · `OUTCOME_ID`: `G12-CHIV-B11-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Viết lời giải kiểm tra hai hàm F(x)=x^3-2x và G(x)=x^3-2x+6 có cùng là nguyên hàm của f(x)=3x^2-2 không.
-- **Đáp án canonical (chỉ mở khi được phép):** Cả hai đúng; G-F=6.
-- **Lời giải từng bước:** F'=G'=3x^2-2; cùng trên R; G-F=hằng số 6.
+- **Đề duy nhất:** Viết lời giải kiểm tra hai hàm \(F(x)=x^3-2x\) và \(G(x)=x^3-2x+6\) có cùng là nguyên hàm của \(f(x)=3x^2-2\) không.
+- **Đáp án canonical (chỉ mở khi được phép):** Cả hai đúng; \(G-F=6\).
+- **Lời giải từng bước:** \(F'(x)=G'(x)=3x^2-2=f(x)\) trên \(\mathbb R\); \(G-F=6\) là hằng số.
 - **Rubric tự luận /5:** 2đ tính đúng hai đạo hàm; 1đ đối chiếu f; 1đ xét chung khoảng R; 1đ kết luận hai hàm chênh hằng số.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -343,9 +343,9 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W02 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W02` · `OUTCOME_ID`: `G12-CHIV-B11-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tìm F nếu F'(x)=6x và F(-1)=1; kiểm lại đầy đủ.
-- **Đáp án canonical (chỉ mở khi được phép):** F(x)=3x^2-2.
-- **Lời giải từng bước:** F=3x^2+C; F(-1)=3+C=1 nên C=-2; đạo hàm 6x và giá trị tại -1 bằng 1.
+- **Đề duy nhất:** Tìm F nếu \(F'(x)=6x\) và \(F(-1)=1\); kiểm lại đầy đủ.
+- **Đáp án canonical (chỉ mở khi được phép):** \(F(x)=3x^2-2\).
+- **Lời giải từng bước:** \(F(x)=3x^2+C\); \(F(-1)=3+C=1\) nên \(C=-2\). Kiểm lại: \(F'(x)=6x\), \(F(-1)=1\).
 - **Rubric tự luận /5:** 2đ lấy đúng họ nguyên hàm; 1đ lập điều kiện; 1đ giải C; 1đ kiểm lại cả hai điều kiện.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -404,10 +404,10 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W03 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W03` · `OUTCOME_ID`: `G12-CHIV-B11-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `ANCHOR_TAG`: true (nhãn của Written, KHÔNG tạo ngân hàng riêng)
-- **Đề duy nhất:** Giải đầy đủ ∫(2x^3+6x−2)dx và kiểm bằng đạo hàm.
-- **Đáp án canonical (chỉ mở khi được phép):** x^4/2+3x^2−2x+C.
-- **Lời giải từng bước:** Từng hạng tử cho x^4/2,3x^2,−2x; lấy đạo hàm khôi phục 2x^3+6x−2.
-- **Rubric tự luận /5:** 1đ nêu tuyến tính; 2đ tính ba hạng tử; 1đ +C; 1đ kiểm đạo hàm.
+- **Đề duy nhất:** Giải đầy đủ \(\int(2x^3+6x-2)\,\mathrm dx\) và kiểm bằng đạo hàm.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{x^4}{2}+3x^2-2x+C\).
+- **Lời giải từng bước:** Tính từng hạng tử được \(\frac{x^4}{2}\), \(3x^2\), \(-2x\); cộng hằng số C. Lấy đạo hàm khôi phục \(2x^3+6x-2\).
+- **Rubric tự luận /5:** 1đ nêu tuyến tính; 2đ tính ba hạng tử; 1đ \( +C \); 1đ kiểm đạo hàm.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B11-03 — D6: đường khắc phục 5 bước
@@ -465,10 +465,10 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W04 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W04` · `OUTCOME_ID`: `G12-CHIV-B11-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính ∫(4/x−x^(−2))dx trên mỗi khoảng không chứa 0; kiểm đạo hàm.
-- **Đáp án canonical (chỉ mở khi được phép):** 4ln|x|+1/x+C.
-- **Lời giải từng bước:** ∫−x^(−2)dx=+1/x; đạo hàm của 1/x là −1/x².
-- **Rubric tự luận /5:** 1đ điều kiện x≠0; 2đ log và lũy thừa; 1đ +C; 1đ đạo hàm kiểm.
+- **Đề duy nhất:** Tính \(\int(\frac4x-x^{-2})\,\mathrm dx\) trên mỗi khoảng không chứa 0; kiểm đạo hàm.
+- **Đáp án canonical (chỉ mở khi được phép):** \(4\ln|x|+\frac1x+C\).
+- **Lời giải từng bước:** \(\int\frac4x\,\mathrm dx=4\ln|x|+C_1\), \(\int-x^{-2}\,\mathrm dx=\frac1x+C_2\). Đạo hàm của kết quả là \(\frac4x-\frac1{x^2}\) khi \(x\ne0\).
+- **Rubric tự luận /5:** 1đ điều kiện \(x\ne0\); 2đ log và lũy thừa; 1đ \( +C \); 1đ đạo hàm kiểm.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B11-04 — D6: đường khắc phục 5 bước
@@ -526,10 +526,10 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W05 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W05` · `OUTCOME_ID`: `G12-CHIV-B11-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Giải ∫(2^x+3e^x)dx và kiểm đạo hàm.
-- **Đáp án canonical (chỉ mở khi được phép):** 2^x/ln2+3e^x+C.
-- **Lời giải từng bước:** Tách tuyến tính, phần 2^x phải chia ln2; kiểm bằng đạo hàm.
-- **Rubric tự luận /5:** 1đ nêu a>0,a≠1; 2đ hai nguyên hàm đúng; 1đ hằng số; 1đ kiểm đạo hàm.
+- **Đề duy nhất:** Giải \(\int(2^x+3e^x)\,\mathrm dx\) và kiểm đạo hàm.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{2^x}{\ln2}+3e^x+C\).
+- **Lời giải từng bước:** Tách tuyến tính; nguyên hàm của \(2^x\) là \(\frac{2^x}{\ln2}\), nguyên hàm của \(3e^x\) là \(3e^x\) (chưa kể hằng số). Kiểm bằng đạo hàm được \(2^x+3e^x\).
+- **Rubric tự luận /5:** 1đ nêu \(a>0,\ a\ne1\); 2đ hai nguyên hàm đúng; 1đ hằng số; 1đ kiểm đạo hàm.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B11-05 — D6: đường khắc phục 5 bước
@@ -587,10 +587,10 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W06 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W06` · `OUTCOME_ID`: `G12-CHIV-B11-O06` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `ANCHOR_TAG`: true (nhãn của Written, KHÔNG tạo ngân hàng riêng)
-- **Đề duy nhất:** Tính ∫(1/cos²x+2sin x)dx trên khoảng cosx≠0; kiểm bằng đạo hàm.
-- **Đáp án canonical (chỉ mở khi được phép):** tan x−2cos x+C.
-- **Lời giải từng bước:** Dùng (tan x)'=sec²x và d(−2cos x)=2sin x.
-- **Rubric tự luận /5:** 1đ điều kiện cosx≠0; 2đ hai nguyên hàm; 1đ +C; 1đ kiểm đạo hàm.
+- **Đề duy nhất:** Tính \(\int(\frac1{\cos^2 x}+2\sin x)\,\mathrm dx\) trên mỗi khoảng \(\cos x\ne0\); kiểm bằng đạo hàm.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\tan x-2\cos x+C\).
+- **Lời giải từng bước:** Dùng \((\tan x)'=\frac1{\cos^2 x}\) và \((-2\cos x)'=2\sin x\) trên khoảng xác định.
+- **Rubric tự luận /5:** 1đ điều kiện \(\cos x\ne0\); 2đ hai nguyên hàm; 1đ \( +C \); 1đ kiểm đạo hàm.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B11-06 — D6: đường khắc phục 5 bước
@@ -648,9 +648,9 @@ Nếu cần, quay lại HELP gắn với B11-O04 / B11-O03.
 #### THPT-G12-B11-W07 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B11-W07` · `OUTCOME_ID`: `G12-CHIV-B11-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Lợi nhuận biên P'(x)=12x²−4, P(0)=100. Tìm P(x), nêu đơn vị phù hợp nếu P tính bằng nghìn đồng.
-- **Đáp án canonical (chỉ mở khi được phép):** P(x)=4x³−4x+100 (nghìn đồng).
-- **Lời giải từng bước:** P=4x³−4x+C; C=100; P' đúng, P(0)=100.
+- **Đề duy nhất:** Lợi nhuận biên \(P'(x)=12x^2-4\), \(P(0)=100\). Tìm \(P(x)\), nêu đơn vị phù hợp nếu P tính bằng nghìn đồng.
+- **Đáp án canonical (chỉ mở khi được phép):** \(P(x)=4x^3-4x+100\) (nghìn đồng).
+- **Lời giải từng bước:** \(P(x)=4x^3-4x+C\); điều kiện \(P(0)=100\) cho \(C=100\). Kiểm lại \(P'(x)=12x^2-4\) và \(P(0)=100\).
 - **Rubric tự luận /5:** 1đ đọc P' đúng; 2đ nguyên hàm; 1đ điều kiện đầu; 1đ kiểm đơn vị và đạo hàm.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -766,10 +766,10 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W01 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W01` · `OUTCOME_ID`: `G12-CHIV-B12-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính ∫_{−1}^2 (2x+1)dx và giải thích vì sao kết quả không có +C.
+- **Đề duy nhất:** Tính \(\int_{-1}^{2}(2x+1)\,\mathrm dx\) và giải thích vì sao kết quả không có \(+C\).
 - **Đáp án canonical (chỉ mở khi được phép):** 6.
-- **Lời giải từng bước:** F=x²+x; F(2)=6; F(−1)=0; tích phân xác định là số 6.
-- **Rubric tự luận /5:** 1đ chọn F đúng; 1đ ghi F(b)−F(a); 2đ thế cận và tính; 1đ nêu không có +C.
+- **Lời giải từng bước:** Chọn \(F(x)=x^2+x\); \(F(2)=6\), \(F(-1)=0\). Tích phân bằng \(F(2)-F(-1)=6\); hằng số nguyên hàm triệt tiêu khi lấy hiệu.
+- **Rubric tự luận /5:** 1đ chọn F đúng; 1đ ghi \(F(b)-F(a)\); 2đ thế cận và tính; 1đ nêu không có \( +C \).
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B12-01 — D6: đường khắc phục 5 bước
@@ -827,9 +827,9 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W02 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W02` · `OUTCOME_ID`: `G12-CHIV-B12-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Giải ∫_1^2 (6x²−4x+1)dx bằng tính tuyến tính; kiểm kết quả.
+- **Đề duy nhất:** Giải \(\int_1^2(6x^2-4x+1)\,\mathrm dx\) bằng tính tuyến tính; kiểm kết quả.
 - **Đáp án canonical (chỉ mở khi được phép):** 9.
-- **Lời giải từng bước:** F=2x³−2x²+x, F(2)=10 và F(1)=1 =>9.
+- **Lời giải từng bước:** Chọn \(F(x)=2x^3-2x^2+x\); \(F(2)=10\) và \(F(1)=1\), suy ra tích phân bằng \(10-1=9\).
 - **Rubric tự luận /5:** 1đ nêu tính tuyến tính; 2đ F đúng; 1đ thế hai cận; 1đ kiểm phép tính.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -888,9 +888,9 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W03 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W03` · `OUTCOME_ID`: `G12-CHIV-B12-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `ANCHOR_TAG`: true (nhãn của Written, KHÔNG tạo ngân hàng riêng)
-- **Đề duy nhất:** Cho ∫_{−1}^1 f=5 và ∫_1^4 f=−3. Tính ∫_4^{−1} f.
+- **Đề duy nhất:** Cho \(\int_{-1}^1 f(x)\,\mathrm dx=5\) và \(\int_1^4 f(x)\,\mathrm dx=-3\). Tính \(\int_4^{-1} f(x)\,\mathrm dx\).
 - **Đáp án canonical (chỉ mở khi được phép):** −2.
-- **Lời giải từng bước:** ∫_{−1}^4 f=5−3=2; đảo cận được −2.
+- **Lời giải từng bước:** \(\int_{-1}^4 f(x)\,\mathrm dx=5-3=2\); đảo cận được \(\int_4^{-1} f(x)\,\mathrm dx=-2\).
 - **Rubric tự luận /5:** 1đ ghép hai đoạn; 1đ cộng đúng dấu; 1đ dùng đảo cận; 1đ kết quả; 1đ giải thích dấu.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -951,9 +951,9 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W04 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W04` · `OUTCOME_ID`: `G12-CHIV-B12-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính diện tích giữa y=4−x² và Ox từ x=0 đến x=2, kèm kiểm dấu.
-- **Đáp án canonical (chỉ mở khi được phép):** 16/3 đơn vị².
-- **Lời giải từng bước:** 4−x²≥0 trên [0,2], S=[4x−x³/3]_0²=8−8/3=16/3.
+- **Đề duy nhất:** Tính diện tích giữa \(y=4-x^2\) và Ox từ \(x=0\) đến \(x=2\), kèm kiểm dấu.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{16}{3}\) đơn vị diện tích.
+- **Lời giải từng bước:** \(4-x^2\ge0\) trên \([0;2]\). Do đó \(S=\int_0^2(4-x^2)\,\mathrm dx=\left[4x-\frac{x^3}{3}\right]_0^2=8-\frac83=\frac{16}{3}\).
 - **Rubric tự luận /5:** 1đ chứng minh không âm; 1đ viết tích phân; 2đ nguyên hàm và cận; 1đ đơn vị/kết luận.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1014,9 +1014,9 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W05 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W05` · `OUTCOME_ID`: `G12-CHIV-B12-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Diện tích giữa y=x²−1 và Ox trên [−2,2] là bao nhiêu?
-- **Đáp án canonical (chỉ mở khi được phép):** 4 đơn vị².
-- **Lời giải từng bước:** Nghiệm ±1; hai vùng ngoài tổng 8/3, vùng giữa 4/3; S=4.
+- **Đề duy nhất:** Diện tích giữa \(y=x^2-1\) và Ox trên \([-2;2]\) là bao nhiêu?
+- **Đáp án canonical (chỉ mở khi được phép):** 4 đơn vị diện tích.
+- **Lời giải từng bước:** Nghiệm \(x=\pm1\); hai vùng ngoài có tổng diện tích \(\frac83\), vùng giữa có diện tích \(\frac43\). Tổng \(S=\frac83+\frac43=4\).
 - **Rubric tự luận /5:** 1đ nghiệm và bảng dấu; 1đ chia tích phân; 2đ tính từng phần; 1đ cộng và phân biệt tích phân có dấu.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1075,9 +1075,9 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W06 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W06` · `OUTCOME_ID`: `G12-CHIV-B12-O06` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `ANCHOR_TAG`: true (nhãn của Written, KHÔNG tạo ngân hàng riêng)
-- **Đề duy nhất:** Tính ∫_0^{π/2}(2cos x+sin x)dx bằng nguyên hàm; giải rõ cận.
+- **Đề duy nhất:** Tính \(\int_0^{\frac\pi2}(2\cos x+\sin x)\,\mathrm dx\) bằng nguyên hàm; giải rõ cận.
 - **Đáp án canonical (chỉ mở khi được phép):** 3.
-- **Lời giải từng bước:** F=2sin x−cos x; F(π/2)=2, F(0)=−1 =>3.
+- **Lời giải từng bước:** Chọn \(F(x)=2\sin x-\cos x\); \(F(\frac\pi2)=2\), \(F(0)=-1\), nên tích phân bằng \(2-(-1)=3\).
 - **Rubric tự luận /5:** 1đ nêu điều kiện liên tục; 2đ nguyên hàm; 1đ thế cận; 1đ kết quả/chính xác.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1136,9 +1136,9 @@ Nếu cần, quay lại HELP gắn với B12-O03 / B12-O02.
 #### THPT-G12-B12-W07 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B12-W07` · `OUTCOME_ID`: `G12-CHIV-B12-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** a(t)=4m/s², v(0)=−3m/s, s(0)=2m. Tìm độ dời trong [0,2]s, giải thích tại sao không được coi là quãng đường.
-- **Đáp án canonical (chỉ mở khi được phép):** Độ dời 2m.
-- **Lời giải từng bước:** v(t)=4t−3; ∫_0²vdt=[2t²−3t]_0²=8−6=2m. Vì v đổi dấu ở t=3/4 nên quãng đường >|2m|.
+- **Đề duy nhất:** \(a(t)=4\,\mathrm{m/s^2}\), \(v(0)=-3\,\mathrm{m/s}\), \(s(0)=2\,\mathrm m\). Tìm độ dời trong \([0;2]\) giây, giải thích tại sao không được coi là quãng đường.
+- **Đáp án canonical (chỉ mở khi được phép):** Độ dời 2 m.
+- **Lời giải từng bước:** \(v(t)=4t-3\). Độ dời là \(\int_0^2v(t)\,\mathrm dt=[2t^2-3t]_0^2=8-6=2\,\mathrm m\). Vì v đổi dấu ở \(t=\frac34\) giây nên quãng đường lớn hơn 2 m.
 - **Rubric tự luận /5:** 1đ tìm v(t); 1đ tìm thời điểm đổi dấu; 2đ tính tích phân; 1đ nêu phân biệt độ dời và quãng đường.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1257,9 +1257,9 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W01 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W01` · `OUTCOME_ID`: `G12-CHIV-B13-O01` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính diện tích hình giới hạn bởi y=9−x², Ox, x=0 và x=3; kiểm dấu.
-- **Đáp án canonical (chỉ mở khi được phép):** 18 đơn vị².
-- **Lời giải từng bước:** 9−x²≥0 trên [0,3]; S=[9x−x³/3]_0³=27−9=18.
+- **Đề duy nhất:** Tính diện tích hình giới hạn bởi \(y=9-x^2\), Ox, \(x=0\) và \(x=3\); kiểm dấu.
+- **Đáp án canonical (chỉ mở khi được phép):** 18 đơn vị diện tích.
+- **Lời giải từng bước:** \(9-x^2\ge0\) trên \([0;3]\); \(S=\int_0^3(9-x^2)\,\mathrm dx=\left[9x-\frac{x^3}{3}\right]_0^3=27-9=18\).
 - **Rubric tự luận /5:** 1đ chứng minh dấu; 1đ mô tả hình/cận; 2đ tích phân; 1đ đơn vị/kết luận.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1320,9 +1320,9 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W02 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W02` · `OUTCOME_ID`: `G12-CHIV-B13-O02` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Diện tích giữa y=x²−4 và Ox trên [−3,3] là bao nhiêu?
-- **Đáp án canonical (chỉ mở khi được phép):** 46/3 đơn vị².
-- **Lời giải từng bước:** Nghiệm ±2; ngoài [−3,−2],[2,3] mỗi phần7/3; giữa [−2,2] là32/3; tổng46/3.
+- **Đề duy nhất:** Diện tích giữa \(y=x^2-4\) và Ox trên \([-3;3]\) là bao nhiêu?
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{46}{3}\) đơn vị diện tích.
+- **Lời giải từng bước:** Nghiệm \(x=\pm2\); trên \([-3;-2]\), \([2;3]\) mỗi phần có diện tích \(\frac73\); phần giữa \([-2;2]\) có diện tích \(\frac{32}3\). Tổng \(S=\frac73+\frac{32}3+\frac73=\frac{46}3\).
 - **Rubric tự luận /5:** 1đ nghiệm/đổi dấu; 1đ chia ba đoạn; 2đ tích phân mỗi vùng; 1đ cộng kết quả đúng.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1383,10 +1383,10 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W03 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W03` · `OUTCOME_ID`: `G12-CHIV-B13-O03` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `ANCHOR_TAG`: true (nhãn của Written, KHÔNG tạo ngân hàng riêng)
-- **Đề duy nhất:** Diện tích giữa y=x+3 và y=x²+1 trên [0,2]?
-- **Đáp án canonical (chỉ mở khi được phép):** 10/3 đơn vị².
-- **Lời giải từng bước:** Hiệu trên−dưới=−x²+x+2≥0 trong [0,2]; tích phân [−x³/3+x²/2+2x]_0²=10/3.
-- **Rubric tự luận /5:** 1đ nhận diện đường trên; 1đ kiểm hiệu≥0; 2đ tích phân; 1đ đơn vị/kết luận.
+- **Đề duy nhất:** Tính diện tích giữa \(y=x+3\) và \(y=x^2+1\) trên \([0;2]\).
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{10}{3}\) đơn vị diện tích.
+- **Lời giải từng bước:** Hiệu hàm trên và hàm dưới là \(-x^2+x+2\ge0\) trên \([0;2]\). Tích phân diện tích bằng \(\left[-\frac{x^3}3+\frac{x^2}2+2x\right]_0^2=\frac{10}3\).
+- **Rubric tự luận /5:** 1đ nhận diện đường trên; 1đ kiểm hiệu không âm; 2đ tích phân; 1đ đơn vị/kết luận.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B13-03 — D6: đường khắc phục 5 bước
@@ -1446,9 +1446,9 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W04 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W04` · `OUTCOME_ID`: `G12-CHIV-B13-O04` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Tính diện tích giữa y=x và y=x³ từ x=−1 đến1; chỉ rõ đoạn đổi thứ tự.
-- **Đáp án canonical (chỉ mở khi được phép):** 1/2 đơn vị².
-- **Lời giải từng bước:** Giao tại −1,0,1; trên [-1,0] x³≥x, trên [0,1] x≥x³; mỗi vùng1/4, tổng1/2.
+- **Đề duy nhất:** Tính diện tích giữa \(y=x\) và \(y=x^3\) từ \(x=-1\) đến \(x=1\); chỉ rõ đoạn đổi thứ tự.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac12\) đơn vị diện tích.
+- **Lời giải từng bước:** Giao tại \(x=-1,0,1\); trên \([-1;0]\), \(x^3\ge x\); trên \([0;1]\), \(x\ge x^3\). Mỗi vùng có diện tích \(\frac14\), tổng \(\frac12\).
 - **Rubric tự luận /5:** 1đ giao điểm; 1đ thứ tự theo đoạn; 2đ hai tích phân; 1đ tổng S.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1507,10 +1507,10 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W05 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W05` · `OUTCOME_ID`: `G12-CHIV-B13-O05` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Một đoạn đất có biên y=√x (m) từ x=0 đến4 (m). Tính diện tích, nêu công thức và đơn vị.
-- **Đáp án canonical (chỉ mở khi được phép):** 16/3 m².
-- **Lời giải từng bước:** h≥0; S=∫_0⁴√x dx=[(2/3)x^(3/2)]_0⁴=(2/3)·8=16/3 m².
-- **Rubric tự luận /5:** 1đ nêu biến/cận đơn vị; 1đ h≥0; 2đ nguyên hàm; 1đ kết luận m².
+- **Đề duy nhất:** Một đoạn đất có biên \(y=\sqrt x\) (m) từ \(x=0\) đến \(x=4\) (m). Tính diện tích, nêu công thức và đơn vị.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{16}{3}\,\mathrm{m}^2\).
+- **Lời giải từng bước:** Chiều cao không âm; \(S=\int_0^4\sqrt x\,\mathrm dx=\left[\frac23x^{\frac32}\right]_0^4=\frac23\cdot8=\frac{16}3\,\mathrm{m}^2\).
+- **Rubric tự luận /5:** 1đ nêu biến/cận đơn vị; 1đ chiều cao không âm; 2đ nguyên hàm; 1đ kết luận m².
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B13-05 — D6: đường khắc phục 5 bước
@@ -1570,9 +1570,9 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W06 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W06` · `OUTCOME_ID`: `G12-CHIV-B13-O06` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3 · `ANCHOR_TAG`: true (nhãn của Written, KHÔNG tạo ngân hàng riêng)
-- **Đề duy nhất:** Các lát cắt vuông góc Ox là hình vuông cạnh (x+1) cm với x∈[0,2] cm. Tính V.
-- **Đáp án canonical (chỉ mở khi được phép):** 26/3 cm³.
-- **Lời giải từng bước:** S(x)=(x+1)² cm²; V=∫_0²(x+1)²dx=[(x+1)³/3]_0²=(27−1)/3=26/3.
+- **Đề duy nhất:** Các lát cắt vuông góc Ox là hình vuông cạnh \((x+1)\,\mathrm{cm}\) với \(x\in[0;2]\) (cm). Tính V.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{26}{3}\,\mathrm{cm}^3\).
+- **Lời giải từng bước:** \(S(x)=(x+1)^2\,\mathrm{cm}^2\); \(V=\int_0^2(x+1)^2\,\mathrm dx=\left[\frac{(x+1)^3}3\right]_0^2=\frac{27-1}3=\frac{26}3\,\mathrm{cm}^3\).
 - **Rubric tự luận /5:** 1đ mô tả lát cắt; 1đ biểu thức S đúng; 2đ tích phân; 1đ đơn vị/kết luận.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
@@ -1633,10 +1633,10 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W07 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W07` · `OUTCOME_ID`: `G12-CHIV-B13-O07` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Lát cắt có đường kính d(x)=2x+2 (cm), x∈[0,1] cm. Tính V, nêu kiểm tra đổi đường kính.
-- **Đáp án canonical (chỉ mở khi được phép):** 7π/3 cm³.
-- **Lời giải từng bước:** r=d/2=x+1; V=π∫_0¹(x+1)²dx=7π/3.
-- **Rubric tự luận /5:** 1đ đổi d thành r; 1đ S=πr²; 2đ tích phân; 1đ đơn vị/kết luận.
+- **Đề duy nhất:** Lát cắt có đường kính \(d(x)=2x+2\) (cm), \(x\in[0;1]\) (cm). Tính V, nêu kiểm tra đổi đường kính.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{7\pi}{3}\,\mathrm{cm}^3\).
+- **Lời giải từng bước:** Bán kính \(r=\frac d2=x+1\); \(V=\pi\int_0^1(x+1)^2\,\mathrm dx=\frac{7\pi}3\,\mathrm{cm}^3\).
+- **Rubric tự luận /5:** 1đ đổi d thành r; 1đ \(S=\pi r^2\); 2đ tích phân; 1đ đơn vị/kết luận.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B13-07 — D6: đường khắc phục 5 bước
@@ -1696,10 +1696,10 @@ Nếu cần, quay lại HELP gắn với B13-O08 / B13-O06.
 #### THPT-G12-B13-W08 — Tự luận Written — một thư viện
 
 - `ITEM_ID`: `THPT-G12-B13-W08` · `OUTCOME_ID`: `G12-CHIV-B13-O08` · `SOURCE_ROLE`: `SGK_WRITTEN` · `DIFFICULTY`: 3
-- **Đề duy nhất:** Quay miền dưới y=√(4−x²) từ x=0 tới2 quanh Ox. Tính V và nêu ý nghĩa hình học.
-- **Đáp án canonical (chỉ mở khi được phép):** 16π/3 đơn vị³.
-- **Lời giải từng bước:** V=π∫_0²(4−x²)dx=π(8−8/3)=16π/3; là nửa thể tích khối cầu bán kính2.
-- **Rubric tự luận /5:** 1đ xác định r(x); 1đ công thức π∫r²; 2đ tích phân; 1đ nhận xét hình học và đơn vị.
+- **Đề duy nhất:** Quay miền dưới \(y=\sqrt{4-x^2}\) từ \(x=0\) tới \(x=2\) quanh Ox. Tính V và nêu ý nghĩa hình học.
+- **Đáp án canonical (chỉ mở khi được phép):** \(\frac{16\pi}{3}\) đơn vị thể tích.
+- **Lời giải từng bước:** \(V=\pi\int_0^2(4-x^2)\,\mathrm dx=\pi(8-\frac83)=\frac{16\pi}3\); đây là nửa thể tích khối cầu bán kính 2.
+- **Rubric tự luận /5:** 1đ xác định r(x); 1đ công thức \(\pi\int_a^b r(x)^2\,\mathrm dx\); 2đ tích phân; 1đ nhận xét hình học và đơn vị.
 - **Lưu ý đánh giá:** học sinh tự đối chiếu, không tự động ghi Mastery khi chưa có hệ thống kiểm tra độc lập hợp lệ.
 
 #### HELP-G12-B13-08 — D6: đường khắc phục 5 bước
