@@ -65,7 +65,7 @@
 
         **Kết quả:** \(\overrightarrow{CB}\).
 
-        **Vì sao:** Đổi trừ thành cộng \(\overrightarrow{CA}\): CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.
+        **Vì sao:** Đổi trừ thành cộng \(\overrightarrow{CA}\): \(\overrightarrow{CA}+\overrightarrow{AB}=\overrightarrow{CB}\) theo quy tắc ba điểm; \(\overrightarrow{CB}\) và \(\overrightarrow{BC}\) là hai vectơ đối.
 
 
     <a id="HELP-G10-B08-01" aria-hidden="true"></a>
@@ -194,7 +194,7 @@
 
 === "Ví dụ"
 
-    ### 3.1. Ví dụ 1 — Rút gọn khi các mũi tên chưa được xếp nối tiếp
+    ### 3.1. Ví dụ 1 — Rút gọn chuỗi vectơ bằng quy tắc ba điểm
 
     **Đề bài.** Cho bốn điểm phân biệt \(A,B,C,D\) bất kì. Rút gọn \(\overrightarrow{AC}+\overrightarrow{CB}+\overrightarrow{BD}\).
 
@@ -230,7 +230,7 @@
 
     **Đề bài.** Cho tam giác \(ABC\), gọi \(M\) là trung điểm cạnh \(BC\). Biểu diễn \(\overrightarrow{AB}+\overrightarrow{AC}\) theo \(\overrightarrow{AM}\).
 
-    **Phân tích.** Hai vectơ xuất phát từ cùng đỉnh \(A\) nhưng chưa nối đuôi nhau. Hãy thêm điểm \(M\) vào từng vectơ để dùng quy tắc ba điểm, rồi dùng tính chất trung điểm \(MB\) và \(MC\) đối nhau.
+    **Phân tích.** Hai vectơ xuất phát từ cùng đỉnh \(A\) nhưng chưa nối đuôi nhau. Hãy thêm điểm \(M\) vào từng vectơ để dùng quy tắc ba điểm, rồi dùng tính chất trung điểm: hai vectơ \(\overrightarrow{MB}\) và \(\overrightarrow{MC}\) đối nhau.
 
     **Lời giải.**
 

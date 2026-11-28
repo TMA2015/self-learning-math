@@ -66,7 +66,7 @@
 
         **Kết quả:** Đều có độ dài 3 m, nhưng hai vectơ không bằng nhau.
 
-        **Vì sao:** Độ lớn chỉ bằng 3 m cho cả hai; chiều Đông và Tây khác nhau. Nếu cùng đường thẳng thì chúng ngược hướng.
+        **Vì sao:** Độ lớn chỉ bằng 3 m cho cả hai; chiều Đông và Tây khác nhau. Hai vectơ ngược hướng dù giá của chúng trùng nhau hay là hai đường thẳng song song khác nhau.
 
 
 

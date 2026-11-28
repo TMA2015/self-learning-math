@@ -18,7 +18,7 @@
 
     ### 1.3. Tại sao tan/cot có lúc không xác định?
 
-    \(\tan\alpha=\sin\alpha/\cos\alpha\) so sánh độ cao với độ lệch ngang; \(\cot\alpha=\cos\alpha/\sin\alpha\) làm ngược lại. Đây là **phép chia**, nên nếu mẫu bằng 0 thì biểu thức không xác định, **không phải bằng 0**. Ví dụ tại \(45^\circ\), cả hai tỉ số bằng 1; ở các vị trí tia nằm đúng trên trục, cần xét mẫu số trước khi tính.
+    \(\tan\alpha=\sin\alpha/\cos\alpha\) là tỉ số giữa tung độ và hoành độ có dấu trên nửa đường tròn đơn vị; \(\cot\alpha=\cos\alpha/\sin\alpha\) làm ngược lại. Đây là **phép chia**, nên nếu mẫu bằng 0 thì biểu thức không xác định, **không phải bằng 0**. Ví dụ tại \(45^\circ\), cả hai tỉ số bằng 1; ở các vị trí tia nằm đúng trên trục, cần xét mẫu số trước khi tính.
 
     ### 1.4. Dùng máy tính đúng cách và đọc ứng dụng
 
@@ -108,7 +108,7 @@
 
     **Bước 2 — tính giá trị:** Trong DEG, tính \(\sin23^\circ\approx0{,}390731\). Với \(\cos123^\circ\approx-0{,}544639\), dấu âm phù hợp vì \(123^\circ\) tù. Nếu hiển thị sai dấu hoặc số có độ lớn bất thường, kiểm lại đơn vị và cách nhập.
 
-    **Bước 3 — tìm góc:** Dùng \(\sin^{-1}(0{,}6)\) (thường qua SHIFT/2nd và phím sin) nhận \(36{,}8699^\circ\). Trong khoảng \(0^\circ\le\alpha\le180^\circ\), còn \(180^\circ-36{,}8699^\circ\approx143{,}1301^\circ\) có cùng sin. Máy cho một **góc chính**, học sinh phải kiểm miền để tìm đủ nghiệm. Tương tự, \(\cos^{-1}(-0{,}6)\approx126{,}8699^\circ\) là nghiệm duy nhất trong đoạn này; với \(\tan^{-1}\), phải kiểm dấu và khả năng cộng \(180^\circ\) để đưa góc vào khoảng cần xét.
+    **Bước 3 — tìm góc:** Dùng \(\sin^{-1}(0{,}6)\) (thường qua SHIFT/2nd và phím sin) nhận \(36{,}8699^\circ\). Trong khoảng \(0^\circ\le\alpha\le180^\circ\), còn \(180^\circ-36{,}8699^\circ\approx143{,}1301^\circ\) có cùng sin. Máy cho một **góc chính**, học sinh phải kiểm miền để tìm đủ nghiệm. Tương tự, \(\cos^{-1}(-0{,}6)\approx126{,}8699^\circ\) là nghiệm duy nhất trong đoạn này; với \(\tan^{-1}\), phải kiểm dấu và khả năng cộng \(180^\circ\) để đưa góc vào khoảng cần xét. Các phím hàm ngược dùng để tìm góc, không phải lấy nghịch đảo của giá trị sin, cos hay tan. Riêng khi tan bằng 0, cả góc 0° và 180° đều là nghiệm trong đoạn đang xét.
 
     **Tự kiểm giá trị:** bấm lại sin/cos của góc tìm được, đối chiếu với số ban đầu; làm tròn ở bước cuối. Với góc có độ–phút–giây, dùng chế độ DMS hoặc đổi về độ thập phân. Không suy ra “không còn góc khác” chỉ vì máy in một kết quả.
 
@@ -158,7 +158,7 @@
 
     **Góc phụ nhau** có tổng \(90^\circ\). Với \(0^\circ\le\alpha\le90^\circ\), \(\sin(90^\circ-\alpha)=\cos\alpha\) và \(\cos(90^\circ-\alpha)=\sin\alpha\). Đây là kiến thức lớp 9 hỗ trợ bài này, không thay thế quy tắc **góc bù** (tổng \(180^\circ\)) vừa học.
 
-    Nếu một cabin đu quay xuất phát từ vị trí **thấp nhất** của vòng tròn bán kính \(R\), tâm cao \(H_0\), sau khi quay góc \(\theta\) (trong nửa vòng đầu) thì độ cao là \(H=H_0-R\cos\theta\). Lý do là thành phần tọa độ đứng tính từ **vị trí thấp nhất**, nên không được thay tùy ý bằng \(H_0+R\sin\theta\) khi chưa đổi gốc góc.
+    Nếu một cabin đu quay xuất phát từ vị trí **thấp nhất** của vòng tròn bán kính \(R\), tâm cao \(H_0\), sau khi quay góc \(\theta\) (trong nửa vòng đầu) thì độ cao là \(H=H_0-R\cos\theta\). Lý do là độ lệch theo phương đứng so với tâm là \(-R\cos\theta\), còn góc quay được đo từ **vị trí thấp nhất**, nên không được thay tùy ý bằng \(H_0+R\sin\theta\) khi chưa đổi gốc góc.
 
     **Vận dụng.** Dùng máy ở DEG: (a) tính \(\cos127^\circ\), làm tròn đến bốn chữ số thập phân; (b) tìm **tất cả** góc \(\alpha\in[0^\circ,180^\circ]\) thỏa \(\sin\alpha=0{,}4\), làm tròn đến \(0{,}1^\circ\). Vì sao \(\sin^{-1}\) chỉ hiển thị một góc?
 
