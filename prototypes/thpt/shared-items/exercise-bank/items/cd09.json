@@ -462,7 +462,7 @@
       },
       {
         "id": "D",
-        "text": "\\(v(2)=-3\\) m/s; tốc độ=3 m/s."
+        "text": "\\(v(2)=-3\\) m/s; tốc độ bằng 3 m/s."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1554,7 +1554,7 @@
       },
       {
         "id": "D",
-        "text": "Tại t=1 tốc độ tăng; tại t=3 tốc độ giảm."
+        "text": "Tại \\(t=1\\) tốc độ tăng; tại \\(t=3\\) tốc độ giảm."
       }
     ],
     "exercise_type": "INTERACTIVE"
