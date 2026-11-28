@@ -261,7 +261,7 @@ content_version: 1
 
 **Rubric tự đối chiếu:** 7 điểm: \(u_2\) (1); \(u_3\) (1); đổi biến và truy hồi (1); công thức (1); quy nạp (1); chứng minh tăng (1); \(u_4\) và kiểm (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 
-**D6 tự khắc phục:** Nếu nhầm 3u_n\(-2\) thành 3(u_n\(-2\)), hãy khai triển; kiểm lại u_2.
+**D6 tự khắc phục:** Nếu nhầm \(3u_n-2\) thành \(3(u_n-2)\), hãy khai triển; kiểm lại \(u_2\).
 
 
 ## THPT-TOP07-W02 · TOP07-O09
@@ -279,7 +279,7 @@ content_version: 1
 
 **Rubric tự đối chiếu:** 7 điểm: thiết lập hiệu (1); d (1); \(u_1\) (1); \(u_{20}\) (1); tổng đầu–cuối (1); tổng công sai (1); đối chiếu (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 
-**D6 tự khắc phục:** Đếm bước 10\(-4\)=6; n=20 có 19 lần tăng d.
+**D6 tự khắc phục:** Đếm bước \(10-4=6\); \(n=20\) có 19 lần tăng d.
 
 
 ## THPT-TOP07-W03 · TOP07-O15
@@ -291,13 +291,13 @@ written_role: DEEP_ANCHOR (only tag, not second ID)
 problem_family_id: TOP07-GP_INFINITE_ERROR
 difficulty_band: TRANSFER
 content_version: 1
-**Đề bài:** Cấp số nhân có \(u_1=12,q=-\frac12\). (a) Viết \(S_n\) và giải thích vì sao có tổng vô hạn. (b) Tính \(S_\infty\). (c) Tìm n nguyên dương nhỏ nhất sao cho \(|S_\infty-S_n|<\frac14\).
+**Đề bài:** Cấp số nhân có \(u_1=12,q=-\frac12\). (a) Viết \(S_n\) và giải thích vì sao có tổng vô hạn. (b) Tính \(S_\infty\). (c) Tìm n nguyên dương nhỏ nhất sao cho \(\lvert S_\infty-S_n\rvert<\frac14\).
 
-**Lời giải:** Vì \(q\ne1\), \(S_n=\frac{12[1-(-\frac12)^n]}{1+\frac12}=8[1-(-\frac12)^n]\). Do \(|q|<1\), \((-\frac12)^n\to0\), nên \(S_\infty=8\). Sai số tuyệt đối \(|8-S_n|=\frac8{2^n}\). Điều kiện \(\frac8{2^n}<\frac14\iff2^n>32=2^5\), tức \(n>5\). Nhỏ nhất là 6: tại \(n=5\) sai số bằng \(\frac14\) (không thỏa dấu nghiêm), tại \(n=6\) bằng \(\frac18\).
+**Lời giải:** Vì \(q\ne1\), \(S_n=\frac{12[1-(-\frac12)^n]}{1+\frac12}=8[1-(-\frac12)^n]\). Do \(\lvert q\rvert<1\), \((-\frac12)^n\to0\), nên \(S_\infty=8\). Sai số tuyệt đối \(\lvert 8-S_n\rvert=\frac8{2^n}\). Điều kiện \(\frac8{2^n}<\frac14\iff2^n>32=2^5\), tức \(n>5\). Nhỏ nhất là 6: tại \(n=5\) sai số bằng \(\frac14\) (không thỏa dấu nghiêm), tại \(n=6\) bằng \(\frac18\).
 
 **Rubric tự đối chiếu:** 7 điểm: số hạng đầu/công bội và điều kiện (1); thiết lập tổng (1); rút gọn (1); giải thích hội tụ (1); tổng vô hạn (1); bất đẳng thức sai số (1); n nhỏ nhất và loại 5 (1). Chấp nhận cách giải khác đúng; không trừ lặp lỗi kéo theo.
 
-**D6 tự khắc phục:** Nếu chọn n=5, phân biệt 'nhỏ hơn' và 'nhỏ hơn hoặc bằng'.
+**D6 tự khắc phục:** Nếu chọn \(n=5\), phân biệt 'nhỏ hơn' và 'nhỏ hơn hoặc bằng'.
 
 
 ## THPT-TOP07-W04 · TOP07-O18
