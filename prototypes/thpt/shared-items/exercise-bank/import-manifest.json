@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "DELTA15_CD20_AND_G11_CHIII_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
+  "academic_audit": "DELTA16_G11_CHI_III_COMPLETE_INTERACTIVE_SCOPED_REVIEW_FULL_Q01_Q18_OPEN",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "697cec1a574fe6b26145d5b29a1a7f3f954ea290",
+    "as_of_commit": "028d851472c120fb7f5ef645aa55e401fd3344fe",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Continue remaining SGK reused selfcheck/FirstTry and Topic converted scopes. G11 ChIII 29 and CD20 34 interactive IDs math/source scoped checked. Preserve active candidate; CD20 practice/replay must be regenerated consistently from canonical candidate at cutover; four materially changed tasks have explicit provenance delta, not historical equivalence.",
-    "status": "DELTA15_CD20_AND_G11_CHIII_SCOPED_INTERACTIVE_REVIEW_FULL_Q01_Q18_OPEN",
+    "next": "Process G11 ChIV–VI as one coherent work group, then ChVII–IX and remaining grade/topic groups; preserve prior scoped review snapshots. Resolve material source deltas and full applicable Q01–Q18/PED before handoff.",
+    "status": "DELTA16_G11_CHI_III_COMPLETE_INTERACTIVE_SCOPED_REVIEW_FULL_Q01_Q18_OPEN",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,114 +112,133 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "delta_audit_wave15",
-    "delta_audit_wave15": {
-      "baseline": "0f4085507333a17b49d293e8c27b3897438f2186",
-      "verified_head": "697cec1a574fe6b26145d5b29a1a7f3f954ea290",
+    "current_checkpoint_key": "delta_audit_wave16",
+    "delta_audit_wave16": {
+      "baseline": "1513d1b0c33b8d3d68dc74541f705986bc44c836",
+      "verified_head": "028d851472c120fb7f5ef645aa55e401fd3344fe",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
         "placement_rows": 4301,
-        "evidence": "Inherited inventory; no ID or placement change."
+        "evidence": "Inherited inventory; no identity or placement changes."
       },
-      "written": "325 source-reviewed, 40/40 flagged Written unchanged.",
+      "written": "325 source-reviewed/40 flagged deltas closed; unchanged.",
       "interactive": {
-        "reviewed": 63,
-        "revised": 8,
-        "retained": 55,
-        "stat": {
-          "reviewed": 29,
-          "changed": [
-            "THPT-G11-B08-P07",
-            "THPT-G11-B09-C04",
-            "THPT-G11-B09-P03",
-            "THPT-G11-B09-P05",
-            "THPT-G11-B09-P06",
-            "THPT-G11-B09-P07",
-            "THPT-G11-B09-P08",
-            "THPT-G11-B09-KFT01"
-          ],
-          "old_blob": "2a948af98ec848273e70cf590d4ca1cce6857604",
-          "new_blob": "c9cef49a21d36b6325c9ab5a997fb1190cdeaba3",
-          "canonical_blob": "4ea8df2ca2682d9fac8b1556852334af336930a5",
-          "public_blob": "ac9b93b1b62d4976fc78a7b1807e87e9cf878448",
-          "kft_source_blob": "46aa17f758783330c2b396f9ed36a25ab77a4094",
-          "placements_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
-          "proof": "B08 C01–05:15,second interval,6,5/14,not identifiable; P01–08:1/3/2,equal widths4/no overlap,3/3/4,45%,2,2 and bounds2..4 attainable examples,10 in interval not exactly midpoint,no finite lower bound. B09 C01–05:25,12.5,3/8/10/14,median class10..20,equal width condition. P01–10:18,17.5,11.25/25,50/3,20,3/9/18/20 class20..25,185/9,56/70 boundary,all equal frequencies no mode by source convention,different raw means. KFT01 n20, position10 in second group (positions5..12); exact source first-try block verified. Candidate expands B08-P06 reasoning, preserves task objective. 28 canonical source headings verified; historical R03 S1 citation-equivalent receipt retained, no fresh PDF. 12 reused selfcheck placements and 2 FirstTry placements identified in same chapter, actual renderer not verified."
-        },
-        "cd20": {
-          "reviewed": 34,
-          "changed": 0,
-          "retained": 34,
-          "topic_blob": "c2d9324e79a59b9cc2ac070e34c41afe51b6da7e",
-          "source_blob": "b40b01cfbd89e3fd3cc4fe75adb599f55df2a3d9",
-          "placement_blob": "6ed23958724b244ff771a1f7b5bd7bc8db5517c8",
-          "g10_shared_blob": "d70083e80e8f321252e233a2525cb50ebb3c0109",
-          "g11_shared_blob": "4f484fc95da312d8bcc5edd5f82ef08e2be1ebb2",
-          "shared_ids": [
-            "THPT-G10-B26-C01",
-            "THPT-G10-B26-P01",
-            "THPT-G10-B26-P04",
-            "THPT-G10-B26-P05",
-            "THPT-G10-B27-C01",
-            "THPT-G10-B27-P01",
-            "THPT-G10-B27-P02",
-            "THPT-G10-B27-P03",
-            "THPT-G10-B27-P05",
-            "THPT-G11-CHVIII-B28-C02",
-            "THPT-G11-CHVIII-B28-P01",
-            "THPT-G11-CHVIII-B28-P04",
-            "THPT-G11-CHVIII-B29-P02",
-            "THPT-G11-CHVIII-B29-P04",
-            "THPT-G11-CHVIII-B30-C01",
-            "THPT-G11-CHVIII-B30-P07",
-            "THPT-G11-CHVIII-CHVIII-P01"
-          ],
-          "proof_topic": "P01–17: even set0,2,4,6,8; impossible/possible/certain; 5/10=1/2; 2/3;1/40,0,1;4/12 vs2/12;3/21=1/7;46/56=23/28;2/8=1/4;2/20 vs4/25; intersection5 union1,3,5,6;1/6; disjoint not independent;3/20 and 3/5 invalid;1/3;13/15 and2/5;1/6,2/3,1/2. All choices and solutions mathematically valid on current stems.",
-          "proof_shared": "G10 B26-C01 12 pairs; P01 7/9,P04 1/1000 possible,P05 insufficient model; B27-C01 4/6,P01 8/15,8/15,4/15 (expanded assignment),P02 5/7,P03 3/10 vs6/25 (expanded replacement),P05 2/36 not1/21. G11 B28-C02 primes2,3,5,P01 union2,3,4,6,8,P04 disjoint not independent; B29-P02 sum1.1 impossible,P04 outside union40; B30-C01 3/25,P07 23/24; CHVIII-P01 1/10,11/20. 17 optional placements (5 existing +12 additional), all math/choices/outcome relevant. Retain original candidate content. Two G10 shared extensions must use same canonical at all placements.",
-          "source_delta": {
-            "baseline_practice_blob": "b6753b682ad90c9bb2410c3aa7487d2cfae7d96b",
-            "baseline_replay_blob": "bf84193df1d6bf1600fdca91c0542ef478a038c1",
-            "material_changes": [
-              {
-                "id": "THPT-TOP20-P03",
-                "legacy": "3 winning of 10; 3/10",
-                "candidate": "3 A+2 B of 10; 1/2, distinguish labels"
-              },
-              {
-                "id": "THPT-TOP20-P08",
-                "legacy": "2 red+4 green choose2; 3/5",
-                "candidate": "3 red+5 green choose3; 23/28, check direct count"
-              },
-              {
-                "id": "THPT-TOP20-P14",
-                "legacy": "dice sets union5/6",
-                "candidate": "given marginal and union, intersection3/20; bound check"
-              },
-              {
-                "id": "THPT-TOP20-P16",
-                "legacy": "coin/die intersection1/6",
-                "candidate": "independent devices, intersection2/5, union13/15"
-              }
+        "reviewed": 104,
+        "revised": 15,
+        "retained": 89,
+        "chapters": [
+          {
+            "ch": "G11 CHI",
+            "reviewed": 65,
+            "revised": 8,
+            "old_blob": "087e39332ed87322e80948c1fe63c2fe3e43ea5a",
+            "new_blob": "f4f171f101446cc09755bb881341dcf015fad712",
+            "source_blobs": [
+              "256ceb5edc5e02aec320e83e99c8e08e035654f3",
+              "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+              "d628a3af98495c5e7ade5d4fa19d7ad4107b7ff6",
+              "9177a10ade8788712c6b9fbf39789822df2a417a",
+              "0714c5b72389d29dbc8993c2ce9828fc98cf7a92"
             ],
-            "scope_extensions": [
-              "P02 adds impossible/certain cases",
-              "P05 adds certain case",
-              "P10 adds replacement",
-              "P17 adds intersection/exactly one"
+            "changed_ids": [
+              "THPT-G11-B02-P02",
+              "THPT-G11-B02-P07",
+              "THPT-G11-B03-P07",
+              "THPT-G11-B04-P09",
+              "THPT-G11-B03-KFT01",
+              "THPT-G11-B03-KFT05",
+              "THPT-G11-B03-KFT03",
+              "THPT-G11-B04-KFT03"
             ],
-            "disposition": "Current candidate mathematically and outcome valid, not historically identical. Keep previously authored candidate pending final applicable Q18/PED acceptance, no silent claim of historical PASS. For authorized cutover generate practice and replay question/options/key/solution together from same active candidate; no historical key reuse. No live projection change."
+            "proof": "B01 C01–02:3π/4 II; 1/2,−sqrt3/2,−sqrt3/3,−sqrt3. P01–05:−4/5,−3/4;45°,sqrt2/2;10π;−2sqrt5/5,sqrt5/5,−1/2;4/5,3/5,−4/5. B02 C01–02:1/2,−1/2. P01–07:(sqrt6+sqrt2)/4;(sqrt2−sqrt6)/4; sqrt3/2;1/2;sqrt6/2;24/25,7/25;undefined (denominator0). B03 C01–04:excludeπ/2+kπ;cos even others odd;2π,π;[-1;1],max atπ/2+2kπ. P01–08:exclude kπ/2;[-1;3];π/2; increasing [0;π/2],[3π/2;5π/2], decreasing middle and compare sin;zeros π/2,3π/2;vertical ±π/2;cot decreasing;period12,max25.5 at2/10,min21 at6. B04 C01–04:−π/6 or7π/6 mod2π;±π/3 mod2π;−π/4 modπ;π/4 modπ. P01–10:π/12 or5π/12 modπ;0 orπ/3 mod2π;π/9 modπ/3;2kπ/3; kπ orπ/4+kπ/2;π/6,5π/6;π/4,3π/4;domain excludes π/2+kπ andπ/4+kπ/2,roots kπ;t1,5;|m|≤1. TRY01–06:2π,4π; coterminal +360k;1700π≈5341;−1/2,−sqrt3/2,sqrt3/3;−1,0,tan undefined,cot0;−1/2,−sqrt3/2. B02 KFT01–05:cos15 plus radicals/4;−120/169,−119/169; (sqrt3−1)/2;sqrt2/2;2sin840πt cos40πt variable envelope. B03 KFT01–06:correct sin/cos/tan/cot at 0 and π/2; x sin x even,constant no smallest positive period;sin positive (0;π),max1/min−1;cos negative (π/2;3π/2);tan nonnegative [0;π/2);cot negative (π/2;π). B04 KFT01–06:equivalence first only; sin−1/2 two families and7π/6,11π/6;cos0 two roots within period;tan2x=1 ->π/8+kπ/2;cot−1 ->3π/4+kπ;π/6≈0.5236 rad=30°. Repaired B03-KFT05 malformed x0 from exact historical source, improved reasoning-bearing options B02-P02/P07 and mathematical notation. Historical R03 source explicitly pending targeted B01/B02 PED review; do not infer approval."
+          },
+          {
+            "ch": "G11 CHII",
+            "reviewed": 39,
+            "revised": 7,
+            "old_blob": "c9b96e0d236d8563f00235a83e48321a307c55dc",
+            "new_blob": "1a900b09f5f1ef992ad818b9a0d43956eb5b10cd",
+            "source_blobs": [
+              "2101e2a248e0cf53ee11847b913b937cebcd0806",
+              "8634196e27b5bac8cb3089f433779b592809d955",
+              "43b285b679941e0748ad78f377ab9bbdd73ec3d3",
+              "3d0886889e383cd76963e1fa3a5eef175a389080"
+            ],
+            "changed_ids": [
+              "THPT-G11-B05-P03",
+              "THPT-G11-B05-P08",
+              "THPT-G11-B06-C01",
+              "THPT-G11-B06-P01",
+              "THPT-G11-B07-C01",
+              "THPT-G11-B05-KFT01",
+              "THPT-G11-B07-KFT01"
+            ],
+            "proof": "B05 C01–04:1,4,9,16,25;1,21;2,7,12,17;decrease. P01–08:n17;15;difference −3/((n+2)(n+3))<0;[1;2);alternating bounded;32;28;[1/2;1). B06 C01–04:d−4;30;30;x10. P01–08:d4,u1=2;difference6n+3 nonconstant;16;n12;10/3;16.5 million;102;S_n=n(n+19),S14=462,S15=510,500 unattainable. B07 C01–04:q3;128;45;x6. P01–08:q−2,u4−56;q3,u1=2;22;72; x±3,q±1/3 corresponding;6400;q0 by recurrence;56.2432 million. KFT01 each B05/06/07:7,21,121. Improved proof-bearing options and FirstTry notation, exact source blocks checked. No runtime change."
           }
+        ],
+        "parity": "Readback: all 104 preserve original item IDs/content version/answer key/source/skill/difficulty/rubric/hints/interaction and remaining nonedited fields. Four distinct options, correct keys resolve, auto_grade=false."
+      },
+      "aggregate_g11_chi_iii": {
+        "scoped_interactive_ids": 153,
+        "unique": 153,
+        "counts": {
+          "chi": 85,
+          "chii": 39,
+          "chiii": 29
+        },
+        "placement_blob": "ed0461148642c53f6849d943a6f1ffbbe5a11016",
+        "placements": {
+          "SGK_CORE": 34,
+          "SGK_PRACTICE": 72,
+          "CLIENT_SELF_CHECK_NO_MASTERY": 47,
+          "SGK_FIRST_TRY": 28
+        },
+        "other_scope": "Only 14 Written placements outside these interactive IDs in ChI–III; prior Written review untouched. 181 interactive placement rows resolve to scoped IDs; no actual render/scoring claim.",
+        "source_delta": {
+          "material": [
+            {
+              "id": "THPT-G11-B02-P02",
+              "historical": "cos75°, positive (sqrt6−sqrt2)/4",
+              "candidate": "cos105°, negative (sqrt2−sqrt6)/4"
+            },
+            {
+              "id": "THPT-G11-B02-P07",
+              "historical": "tan u=1/2,tan v=1/3 -> tan sum=1",
+              "candidate": "tan u=2,tan v=1/2 -> undefined"
+            },
+            {
+              "id": "THPT-G11-B03-P04",
+              "historical": "choose increasing segment",
+              "candidate": "partition longer domain, compare and counterexample"
+            },
+            {
+              "id": "THPT-G11-B03-P08",
+              "historical": "unrestricted temperature max27",
+              "candidate": "restricted [2;10], max25.5"
+            },
+            {
+              "id": "THPT-G11-B06-P08",
+              "historical": "15 rows, sum510",
+              "candidate": "minimum rows for ≥500 and exact feasibility"
+            },
+            {
+              "id": "THPT-G11-B07-P05",
+              "historical": "all positive, x3",
+              "candidate": "real CSN, x±3, corresponding q"
+            }
+          ],
+          "disposition": "Current candidate math/skill valid; preserve authored expansions and explicit changes, not source-identical. Final applicable Delta/PED acceptance and authorized regeneration of all placements from same active candidate remain. No fresh S1 or independent review."
         }
       },
-      "q_audit_scope": "Scoped math/source/interaction and targeted notation. No global Q01–Q18 PASS, no fresh S1 or independent review. CD20 material parameter/context delta requires explicit final acceptance and RELEASE same-source regeneration; other scopes remain open.",
+      "q_audit_scope": "G11 ChI–III complete scoped interaction math/source and choice checks. Historical approvals not inferred from candidate validity. Full Q01–Q18, remaining notation and coverage/PED, actual projection/reveal/browser QA remain open.",
       "protected_scope": "No runtime, private RD1, Final Submit, Mastery, Firebase, LIVE, merge/deploy."
     },
     "previous_manifest": {
-      "commit": "0f4085507333a17b49d293e8c27b3897438f2186",
-      "blob": "6acd4e04b65b8a44ece1384d26d74b74e58e463c",
-      "key": "delta_audit_wave14"
+      "commit": "1513d1b0c33b8d3d68dc74541f705986bc44c836",
+      "blob": "fc5ed2913c3ec6c8bbf42701866e4a687d1aa310",
+      "key": "delta_audit_wave15"
     }
   },
   "pending_review": {
@@ -323,7 +342,7 @@
     "sgk_g10_chi_chiii": "All 42 public selfcheck candidates ChI–III math/source/interaction scoped reviewed Delta11/12. Other FirstTry/converted scope, legacy hint/key/rubric typography and coverage/PED pending; earlier Written unchanged.",
     "sgk_g10_chiv_chvi": "All 59 G10 ChIV–VI public selfcheck candidates scoped source/math/interaction reviewed Delta12/13; 143/143 G10 public selfcheck scope now closed. Other converted/FirstTry, legacy notation/assessment and PED/coverage remain; B15_OUT_03 mappings preserved; scoped Written deltas closed.",
     "sgk_g10_chvii_chix": "All G10 ChVII 22 public selfcheck records now math/source/interaction scoped reviewed in Delta09/10; ChVIII 14 and ChIX 6 scoped reviewed in Delta08/09. No global Q18 or full chapter coverage inferred. W25 practice-only. Actual projection and reveal RELEASE.",
-    "sgk_g11_chi_chiii": "G11 ChI 20 dedicated scoped reviewed Delta14; G11 ChIII 29 interactive scoped reviewed Delta15 incl B09-KFT01 exact first-try source and 12 reused selfcheck placements. Remaining ChI/II converted and reused, broader source/PED/coverage/notation; prior Written scoped checks preserved.",
+    "sgk_g11_chi_chiii": "All 153 interactive IDs across G11 ChI–III scoped math/source/choice review complete (Delta14/15/16), 181 placement rows resolve, prior 14 Written placements retained. Six explicit material source deltas and historical pending B01/B02 PED receipt require applicable final acceptance, no historical equivalence or global Q18 inferred. Remaining full notation, coverage/PED and authorized RELEASE generation/QA.",
     "sgk_g11_chiv_chvi": "10 FirstTry conversions; 50 reused public selfcheck placements and two reused FirstTry IDs; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
     "sgk_g11_chvii_chix": "39 conversions; ChVIII Written B28-W01, B29-W01 explanation gaps and B29-W03 ambiguous neither/not-both wording; 69 reused public selfcheck placements and one reused FirstTry ID; scoped assessment-format/PED, independent evidence, notation and reveal parity pending; no final acceptance.",
     "sgk_g12_chi_chiii": "G12 ChI 10 dedicated interactive selfcheck scoped reviewed Delta14; CHI-END-W01/W02 Written exception unchanged. Remaining FirstTry conversions, 28 reused selfcheck and three reused FirstTry IDs and other applicable coverage/PED/notation pending; prior Written deltas closed.",
