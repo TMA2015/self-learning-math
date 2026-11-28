@@ -51,9 +51,11 @@
     Tại điểm \(x_0\), ta thu nhỏ khoảng cách \(|x-x_0|\). Nhưng khi \(x\to+\infty\), ta không tới gần một số thực nào cả: \(x\) lớn hơn mọi mốc cho trước. Tương tự \(x\to-\infty\), \(x\) nhỏ hơn mọi mốc âm. Để xét giới hạn tại \(+\infty\), hàm số cần xác định trên một khoảng dạng \((a;+\infty)\); với \(-\infty\), cần một khoảng dạng \((-\infty;b)\). Câu hỏi về **giới hạn hữu hạn** vẫn có nghĩa: chẳng hạn \(f(x)=2+\frac1x\) tiến gần 2 cả khi \(x\) rất lớn dương lẫn rất lớn âm.
 
     Với phân thức \(f(x)=\frac{3x^2+1}{x^2+2}\), cả tử và mẫu đều bậc hai. Chia cả hai cho \(x^2\) (với \(x\ne0\)) để được
+
     \[
     f(x)=\frac{3+1/x^2}{1+2/x^2}\longrightarrow3
     \]
+
     khi \(x\to+\infty\) **hoặc** \(x\to-\infty\). Mẫu chuẩn hóa tiến đến 1 khác 0; đây là lí do dùng được phép chia giới hạn hữu hạn.
 
     Với số nguyên dương \(k\), \(x^k\to+\infty\) khi \(x\to+\infty\). Khi \(x\to-\infty\), \(x^k\to+\infty\) nếu \(k\) chẵn và \(x^k\to-\infty\) nếu \(k\) lẻ. Trong cả hai hướng, \(1/x^k\to0\).
