@@ -5,7 +5,9 @@
  * Safety invariant: no answer reveal or Mastery before learner action.
  */
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
-const {chromium}=require("playwright");
+const {chromium,webkit}=require("playwright");
+const engine=process.env.SCOPED_BROWSER_ENGINE||"chromium";
+assert(["chromium","webkit"].includes(engine),"Unknown scoped browser engine");
 const root=path.resolve(__dirname,"..");
 const base=(process.env.SCOPED_BASE_URL||"http://127.0.0.1:8765").replace(/\/$/,"");
 const lessons=(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean);
@@ -194,7 +196,7 @@ async function execute(){
  assert(lessons.length>0&&lessons.length<=120,"No canonical SGK page paths or too many scoped targets");
  assert.equal(new Set(lessons).size,lessons.length,"Duplicate lesson target");
  for(const rel of lessons)assert((re.test(rel)||chapter.test(rel))&&fs.existsSync(path.join(root,rel)),"Invalid canonical SGK page "+rel);
- const browser=await chromium.launch({headless:true,args:["--no-sandbox"]});
+ const browser=await (engine==="webkit"?webkit:chromium).launch(engine==="webkit"?{headless:true}:{headless:true,args:["--no-sandbox"]});
  let checks=0;
  try{
   for(const rel of lessons){
@@ -398,6 +400,26 @@ async function execute(){
      if(mathExpected)assert(layout.math>0,rel+" "+width+" MathJax did not typeset");
      assert.equal(layout.unstyled,0,rel+" "+width+" Golden concept/rule cards lack style");
      await verifyG12DisplayMath(page,source,rel,width);
+     // #1132: the changed standalone blocks belong to Discovery. Verify the
+     // actual learner-visible MathJax nodes after switching away and back.
+     if(/^docs\/thpt-preview\/sgk\/lop-11\/(?:chuong-ii\/bai-7|chuong-v\/bai-16|chuong-vi\/bai-19)\.md$/.test(rel)){
+      const tabs=page.locator(".md-content .tabbed-set").first();
+      const panel=tabs.locator(".tabbed-content > .tabbed-block").first();
+      const display=panel.locator("div.arithmatex");
+      const wanted=rel.endsWith("/bai-16.md")?1:3;
+      assert.equal(await display.count(),wanted,rel+" #1132 Discovery display count");
+      for(const i of [0,1,0]){
+       await tabs.locator(".tabbed-labels > label").nth(i).click();
+       if(i!==0)continue;
+       for(const node of await display.all()){
+        assert(await node.isVisible(),rel+" #1132 display must be visible in Discovery");
+        await node.locator("mjx-container").waitFor({state:"visible",timeout:30000});
+        assert.equal(await node.locator("mjx-container").count(),1,rel+" #1132 duplicate/nested MathJax");
+        assert.equal(await node.locator("mjx-merror").count(),0,rel+" #1132 MathJax error");
+       }
+      }
+      console.log("PASS #1132 visible display tab-switch "+engine+" "+rel+" @"+width+" "+wanted+" formulas");
+     }
      await goldenW1Parity(page,browser,width,rel);
      checks++;
      console.log("PASS SCOPED Golden AP "+rel+" @"+width+"px: "+(isLesson?"4 tabs / ":"chapter hub / ")+
@@ -406,7 +428,7 @@ async function execute(){
    }
   }
   assert.equal(checks,lessons.length*widths.length,"Every scoped lesson must pass all viewports");
-  console.log("PASS scoped SGK browser "+lessons.length+" canonical lesson(s) x 390/820/1440; "+
+  console.log("PASS scoped SGK browser ["+engine+"] "+lessons.length+" canonical lesson(s) x 390/820/1440; "+
    "presentation-only; NOT academic review, no global site changes or deploy");
  }finally{await browser.close();}
 }

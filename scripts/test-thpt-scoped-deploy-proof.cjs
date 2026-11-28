@@ -1103,7 +1103,7 @@ function main(){
   verifyG11W1(previous,current,changed,(process.env.SCOPED_LESSONS||"").split(",").filter(Boolean));
   return;
  }
- const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml"];
+ const b19Display1132Files=["docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md","prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md","scripts/test-thpt-release-impact.cjs","scripts/test-thpt-scoped-deploy-proof.cjs",".github/workflows/thpt-scoped-release-qa.yml","scripts/test-thpt-scoped-lesson-browser.cjs"];
  if(changed.length===b19Display1132Files.length&&new Set(changed).size===changed.length&&changed.every(x=>b19Display1132Files.includes(x))){
   const lesson="docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md",receipt=fs.readFileSync(path.join(root,"prototypes/thpt/ux795/G11_B19_DISPLAY_Q18_DELTA_1132_20261128.md"),"utf8");
   assert.deepEqual((process.env.SCOPED_LESSONS||"").split(",").filter(Boolean),[lesson]);
