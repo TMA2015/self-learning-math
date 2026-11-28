@@ -276,21 +276,21 @@ Quy tắc: mỗi mục là một câu học liệu tự biên soạn (không ch�
 ## E. D4 – Thư viện Written/Anchor dùng chung (Anchor là nhãn Written, không phải bank mới)
 
 ### `THPT-G11-CHIII-W08-01` · WRITTEN · `G11-B08-FREQUENCY-TABLE`
-**Đề:** Dữ liệu quãng đường (km): 1,2,2,3,3,4,5,5,6,7,8,9. Lập bảng tần số ghép nhóm [0;3),[3;6),[6;9),[9;12), kiểm cỡ mẫu.
-**Đáp án:** [3,5,3,1]; n=12.
-**Lời giải:** [0;3) nhận 1,2,2; [3;6) nhận 3,3,4,5,5; [6;9) nhận 6,7,8; [9;12) nhận 9. Tổng 12.
+**Đề:** Dữ liệu quãng đường (km): 1,2,2,3,3,4,5,5,6,7,8,9. Lập bảng tần số ghép nhóm \([0;3),[3;6),[6;9),[9;12)\), kiểm cỡ mẫu.
+**Đáp án:** Tần số lần lượt là 3, 5, 3, 1; \(n=12\).
+**Lời giải:** Nhóm \([0;3)\) nhận 1, 2, 2; nhóm \([3;6)\) nhận 3, 3, 4, 5, 5; nhóm \([6;9)\) nhận 6, 7, 8; nhóm \([9;12)\) nhận 9. Tổng \(3+5+3+1=12\).
 **Rubric /4:** (1) Xác định bốn nhóm đúng — 1đ; (2) Đếm đúng hai nhóm đầu — 1đ; (3) Đếm đúng hai nhóm cuối — 1đ; (4) Cộng tổng và giải thích biên — 1đ
 
 ### `THPT-G11-CHIII-W08-02-ANCHOR` · WRITTEN/ANCHOR · `G11-B08-INTERPRETATION`
-**Đề:** Bảng khoảng thời gian [0;15),[15;30),[30;45) có tần số 8,12,4. (a) Tỉ lệ từ 15 tới dưới 30 phút? (b) Có thể nói mọi người nhóm 2 mất đúng 22,5 phút không?
+**Đề:** Bảng khoảng thời gian \([0;15),[15;30),[30;45)\) có tần số 8,12,4. (a) Tỉ lệ từ 15 tới dưới 30 phút? (b) Có thể nói mọi người nhóm 2 mất đúng 22,5 phút không?
 **Đáp án:** 50%; không.
-**Lời giải:** Tổng 24; 12/24=50%. 22,5 là giá trị đại diện theo trung điểm, không xác định từng thời gian thực.
+**Lời giải:** Tổng 24; \(\frac{12}{24}=50\%\). 22,5 là giá trị đại diện theo trung điểm, không xác định từng thời gian thực.
 **Rubric /4:** (1) Tính cỡ mẫu — 1đ; (2) Tỉ lệ phân số — 1đ; (3) Quy đổi phần trăm — 1đ; (4) Nhận xét mất thông tin/không gán mọi cá thể — 1đ
 
 ### `THPT-G11-CHIII-W09-01` · WRITTEN · `G11-B09-GROUPED-MEDIAN`
-**Đề:** Với mẫu D [2;4)→4 | [4;6)→6 | [6;8)→8 | [8;10)→2, tính số trung bình, trung vị và giải thích đây là các ước lượng.
-**Đáp án:** x̄=5,8; Me=6.
-**Lời giải:** n=20; trung điểm 3,5,7,9; tổng 4·3+6·5+8·7+2·9=116, x̄=116/20=5,8. Tích lũy [4,10,18,20]; n/2=10 thuộc nhóm [4;6); Me=4+(10-4)·2/6=6. Đây là hai ước lượng khi chỉ biết bảng ghép nhóm, không phải giá trị gốc chính xác.
+**Đề:** Với mẫu D có các nhóm \([2;4),[4;6),[6;8),[8;10)\) với tần số lần lượt 4, 6, 8, 2, tính số trung bình, trung vị và giải thích đây là các ước lượng.
+**Đáp án:** \(\bar x=5{,}8\); \(\mathrm{Me}=6\).
+**Lời giải:** \(n=20\); trung điểm 3, 5, 7, 9; tổng \(4\cdot3+6\cdot5+8\cdot7+2\cdot9=116\), \(\bar x=\frac{116}{20}=5{,}8\). Tần số tích lũy lần lượt 4, 10, 18, 20; vị trí \(\frac n2=10\) trùng biên trên nhóm \([4;6)\). Nội suy \(\mathrm{Me}=4+\frac{10-4}{6}\cdot2=6\), cũng là cận dưới nhóm kế tiếp. Đây là hai ước lượng khi chỉ biết bảng ghép nhóm, không phải giá trị gốc chính xác.
 **Rubric /4:** (1) Giá trị đại diện — 1đ; (2) Tổng trọng số và n — 1đ; (3) Nội suy Me đúng — 1đ; (4) Nêu tính xấp xỉ — 1đ
 
 ### `THPT-G11-CHIII-W09-02-ANCHOR` · WRITTEN/ANCHOR · `G11-B09-GROUPED-MODE`
