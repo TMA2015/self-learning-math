@@ -56,8 +56,8 @@
   },
   {
     "item_id": "THPT-TOP21-P02",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P02",
-    "stem": "Chọn đều một số trong tập \\(\\{1,2,\\ldots,12\\}\\). A: chia hết cho 4; B: lớn hơn 6; C: lớn hơn 12. Tính \\(P(A\\mid B)\\), \\(P(B\\mid A)\\) và cho biết \\(P(A\\mid C)\\) có xác định không.",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P02.DELTA08",
+    "stem": "Chọn đều một số trong tập \\(\\{1,2,\\ldots,12\\}\\). A: chia hết cho 4; B: lớn hơn 6; C: lớn hơn 12. Tính \\(P(A\\mid B)\\), \\(P(B\\mid A)\\) và cho biết \\(P(A\\mid C)\\) có xác định không. Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "\\(P(A\\mid B)=\\frac13\\); \\(P(B\\mid A)=\\frac23\\); \\(P(A\\mid C)\\) không xác định.",
     "worked_solution": "\\(A=\\{4,8,12\\}\\), \\(B=\\{7,8,9,10,11,12\\}\\), \\(A\\cap B=\\{8,12\\}\\). Vì các số đồng khả năng, \\(P(A\\mid B)=\\frac26=\\frac13\\), \\(P(B\\mid A)=\\frac23\\). Hai xác suất dùng cùng giao nhưng mẫu số khác nhau. C là biến cố rỗng, \\(P(C)=0\\), nên \\(P(A\\mid C)\\) không xác định; không gán kết quả bằng 0.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -92,26 +92,27 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{1}{3}\\); \\(\\frac{2}{3}\\); không xác định"
+        "text": "\\(\\frac13;\\frac23\\); không xác định, vì giao có 2 phần tử, hai mẫu điều kiện có 6 và 3 phần tử, còn C rỗng."
       },
       {
         "id": "B",
-        "text": "\\(\\frac{2}{3}\\); \\(\\frac{1}{3}\\); không xác định"
+        "text": "\\(\\frac23;\\frac13\\); không xác định, vì lấy mẫu điều kiện theo thứ tự ngược."
       },
       {
         "id": "C",
-        "text": "\\(\\frac{1}{3}\\); \\(\\frac{2}{3}\\); 0"
+        "text": "\\(\\frac13;\\frac23;0\\), vì coi điều kiện rỗng cho xác suất 0."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{1}{6}\\); \\(\\frac{1}{6}\\); không xác định"
+        "text": "\\(\\frac16;\\frac16\\); không xác định, vì lấy cả 12 số làm mẫu số cho hai xác suất đầu."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. No change to the candidate problem parameters or answer."
   },
   {
     "item_id": "THPT-TOP21-P03",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P03",
-    "stem": "Hộp có 5 thẻ đỏ, 2 thẻ vàng phân biệt. Rút đều ba thẻ liên tiếp không hoàn lại. Tính xác suất (a) đúng thứ tự đỏ–vàng–đỏ; (b) đúng hai đỏ và một vàng, không yêu cầu thứ tự.",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P03.DELTA08",
+    "stem": "Hộp có 5 thẻ đỏ, 2 thẻ vàng phân biệt. Rút đều ba thẻ liên tiếp không hoàn lại. Tính xác suất (a) đúng thứ tự đỏ–vàng–đỏ; (b) đúng hai đỏ và một vàng, không yêu cầu thứ tự. Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "(a) \\(\\frac4{21}\\); (b) \\(\\frac47\\).",
     "worked_solution": "(a) Sau mỗi lượt, cập nhật số thẻ còn lại. Xác suất rút đúng thứ tự đỏ–vàng–đỏ là \\(\\frac57\\cdot\\frac26\\cdot\\frac45=\\frac4{21}\\). (b) Có ba thứ tự rời nhau: ĐĐV, ĐVĐ, VĐĐ (Đ: đỏ, V: vàng). Mỗi thứ tự có cùng tử số \\(5\\cdot4\\cdot2\\) và mẫu số \\(7\\cdot6\\cdot5\\), nên xác suất mỗi thứ tự bằng \\(\\frac4{21}\\). Cộng ba xác suất được \\(\\frac{12}{21}=\\frac47\\). Kiểm bằng cách chọn nhóm không thứ tự: \\(\\frac{C_5^2C_2^1}{C_7^3}=\\frac{20}{35}=\\frac47\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -147,26 +148,27 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{4}{7}\\); \\(\\frac{4}{21}\\)"
+        "text": "\\(\\frac47;\\frac4{21}\\), vì đổi chỗ kết quả có thứ tự và không thứ tự."
       },
       {
         "id": "B",
-        "text": "\\(\\frac{4}{21}\\); \\(\\frac{4}{7}\\)"
+        "text": "\\(\\frac4{21};\\frac47\\), vì nhánh Đ–V–Đ có xác suất \\(\\frac57\\cdot\\frac26\\cdot\\frac45\\), và có ba thứ tự rời nhau cùng xác suất ấy."
       },
       {
         "id": "C",
-        "text": "\\(\\frac{50}{343}\\); \\(\\frac{150}{343}\\)"
+        "text": "\\(\\frac{50}{343};\\frac{150}{343}\\), vì giữ nguyên xác suất từng màu ở cả ba lượt."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{4}{21}\\); \\(\\frac{8}{21}\\)"
+        "text": "\\(\\frac4{21};\\frac8{21}\\), vì chỉ đếm hai trong ba thứ tự màu."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. No change to the candidate problem parameters or answer."
   },
   {
     "item_id": "THPT-TOP21-P04",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P04",
-    "stem": "Gieo một xúc xắc sáu mặt cân đối. A: mặt chẵn; B: mặt lớn hơn 3; C: mặt chia hết cho 3. So sánh \\(P(A\\mid B)\\), \\(P(A\\mid C)\\) với \\(P(A)\\) và kết luận tính độc lập của A với từng biến cố.",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P04.DELTA08",
+    "stem": "Gieo một xúc xắc sáu mặt cân đối. A: mặt chẵn; B: mặt lớn hơn 3; C: mặt chia hết cho 3. So sánh \\(P(A\\mid B)\\), \\(P(A\\mid C)\\) với \\(P(A)\\) và kết luận tính độc lập của A với từng biến cố. Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "\\(P(A)=\\frac12\\); \\(P(A\\mid B)=\\frac23\\), A và B không độc lập; \\(P(A\\mid C)=\\frac12\\), A và C độc lập.",
     "worked_solution": "\\(A=\\{2,4,6\\}\\), \\(B=\\{4,5,6\\}\\), \\(C=\\{3,6\\}\\). \\(P(A)=\\frac36=\\frac12\\). \\(A\\cap B=\\{4,6\\}\\) nên \\(P(A\\mid B)=\\frac23\\ne P(A)\\). \\(A\\cap C=\\{6\\}\\) nên \\(P(A\\mid C)=\\frac12=P(A)\\). Vì \\(P(B)>0\\) và \\(P(C)>0\\), tính độc lập tương đương với xác suất của A không đổi khi biết biến cố kia. Do đó A, B không độc lập; A, C độc lập.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -201,26 +203,27 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{1}{2}\\); \\(\\frac{1}{2}\\); \\(\\frac{1}{2}\\); cả hai độc lập"
+        "text": "\\(P(A)=\\frac12,\\ P(A\\mid B)=P(A\\mid C)=\\frac12\\); cả hai độc lập, vì coi xác suất của A không đổi theo giả thiết."
       },
       {
         "id": "B",
-        "text": "\\(\\frac{1}{2}\\); \\(\\frac{2}{3}\\); \\(\\frac{1}{2}\\); cả hai không độc lập"
+        "text": "\\(P(A)=\\frac12,\\ P(A\\mid B)=\\frac23,\\ P(A\\mid C)=\\frac12\\); cả hai không độc lập, vì cả hai giao đều khác rỗng."
       },
       {
         "id": "C",
-        "text": "\\(\\frac{1}{2}\\); \\(\\frac{1}{3}\\); \\(\\frac{1}{2}\\); A và B không độc lập, A và C độc lập"
+        "text": "\\(P(A)=\\frac12,\\ P(A\\mid B)=\\frac13,\\ P(A\\mid C)=\\frac12\\); A và B không độc lập, A và C độc lập, nhưng dùng mẫu số 6 khi xét giao với B."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{1}{2}\\); \\(\\frac{2}{3}\\); \\(\\frac{1}{2}\\); A và B không độc lập, A và C độc lập"
+        "text": "\\(P(A)=\\frac12,\\ P(A\\mid B)=\\frac23,\\ P(A\\mid C)=\\frac12\\); A và B không độc lập, A và C độc lập vì chỉ xác suất điều kiện thứ hai bằng \\(P(A)\\)."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. No change to the candidate problem parameters or answer."
   },
   {
     "item_id": "THPT-TOP21-P05",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P05",
-    "stem": "Kho nhập \\(\\frac25\\) số kiện hàng từ X với tỉ lệ hỏng \\(\\frac1{20}\\) và \\(\\frac35\\) từ Y với tỉ lệ hỏng \\(\\frac1{10}\\). Chọn đều một kiện trong kho. Tính xác suất hỏng. Nếu tỉ trọng X tăng lên \\(\\frac45\\), Y còn \\(\\frac15\\) và các tỉ lệ hỏng giữ nguyên, xác suất hỏng chung thay đổi thế nào?",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P05.DELTA08",
+    "stem": "Kho nhập \\(\\frac25\\) số kiện hàng từ X với tỉ lệ hỏng \\(\\frac1{20}\\) và \\(\\frac35\\) từ Y với tỉ lệ hỏng \\(\\frac1{10}\\). Chọn đều một kiện trong kho. Tính xác suất hỏng. Nếu tỉ trọng X tăng lên \\(\\frac45\\), Y còn \\(\\frac15\\) và các tỉ lệ hỏng giữ nguyên, xác suất hỏng chung thay đổi thế nào? Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "Ban đầu \\(\\frac2{25}\\); sau \\(\\frac3{50}\\), giảm \\(\\frac1{50}\\) (2 điểm phần trăm).",
     "worked_solution": "Gọi H là biến cố kiện hàng hỏng. Hai nguồn rời nhau và phủ hết kho. Ban đầu \\(P(H)=\\frac25\\cdot\\frac1{20}+\\frac35\\cdot\\frac1{10}=\\frac1{50}+\\frac3{50}=\\frac2{25}\\). Sau thay đổi, \\(P(H)=\\frac45\\cdot\\frac1{20}+\\frac15\\cdot\\frac1{10}=\\frac2{50}+\\frac1{50}=\\frac3{50}\\). Chênh lệch \\(\\frac2{25}-\\frac3{50}=\\frac1{50}=0{,}02\\), tức giảm 2 điểm phần trăm (từ 8% xuống 6%). Nguồn X có tỉ lệ hỏng thấp hơn nên tăng trọng số X làm giảm tỉ lệ chung.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -255,26 +258,27 @@
     "options": [
       {
         "id": "A",
-        "text": "Ban đầu \\(\\frac{2}{25}\\); sau \\(\\frac{3}{50}\\); giảm \\(\\frac{1}{50}\\)"
+        "text": "Ban đầu \\(\\frac2{25}\\); sau \\(\\frac3{50}\\); giảm \\(\\frac1{50}\\), vì cộng xác suất hỏng có trọng số từng nguồn."
       },
       {
         "id": "B",
-        "text": "Ban đầu \\(\\frac{3}{20}\\); sau \\(\\frac{3}{20}\\); không đổi"
+        "text": "Cả hai \\(\\frac3{20}\\), vì cộng trực tiếp hai tỉ lệ hỏng."
       },
       {
         "id": "C",
-        "text": "Ban đầu \\(\\frac{2}{25}\\); sau \\(\\frac{9}{100}\\); tăng \\(\\frac{1}{100}\\)"
+        "text": "Ban đầu \\(\\frac2{25}\\); sau \\(\\frac9{100}\\); tăng \\(\\frac1{100}\\), vì đảo tỉ trọng hai nguồn ở lần sau."
       },
       {
         "id": "D",
-        "text": "Ban đầu \\(\\frac{3}{40}\\); sau \\(\\frac{3}{40}\\); không đổi"
+        "text": "Cả hai \\(\\frac3{40}\\), vì lấy trung bình cộng hai tỉ lệ hỏng."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. No change to the candidate problem parameters or answer."
   },
   {
     "item_id": "THPT-TOP21-P06",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P06",
-    "stem": "Một lô có \\(\\frac15\\) sản phẩm từ H, \\(\\frac45\\) từ K. Tỉ lệ nhãn xanh của H là \\(\\frac34\\), của K là \\(\\frac14\\). Chọn đều một sản phẩm. Biết nó có nhãn xanh, tính xác suất thuộc H và so với tỉ lệ H ban đầu.",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P06.DELTA08",
+    "stem": "Một lô có \\(\\frac15\\) sản phẩm từ H, \\(\\frac45\\) từ K. Tỉ lệ nhãn xanh của H là \\(\\frac34\\), của K là \\(\\frac14\\). Chọn đều một sản phẩm. Biết nó có nhãn xanh, tính xác suất thuộc H và so với tỉ lệ H ban đầu. Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "\\(P(H\\mid X)=\\frac37\\), với X là biến cố sản phẩm có nhãn xanh; lớn hơn tỉ lệ ban đầu \\(\\frac15\\).",
     "worked_solution": "Gọi H, K là các biến cố sản phẩm thuộc từng nguồn, X là biến cố có nhãn xanh. \\(P(H\\cap X)=\\frac15\\cdot\\frac34=\\frac3{20}\\); \\(P(K\\cap X)=\\frac45\\cdot\\frac14=\\frac4{20}\\). Hai nguồn rời nhau và bao phủ toàn lô nên \\(P(X)=\\frac7{20}>0\\). Theo Bayes, \\(P(H\\mid X)=\\frac{P(H\\cap X)}{P(X)}=\\frac{\\frac3{20}}{\\frac7{20}}=\\frac37\\). Xác suất thuộc H tăng từ \\(\\frac15\\) lên \\(\\frac37\\) vì nhãn xanh gặp nhiều hơn trong H; không được lấy \\(\\frac34\\) làm xác suất hậu nghiệm.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -309,26 +313,27 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{3}{4}\\), lớn hơn tỉ lệ ban đầu"
+        "text": "\\(\\frac34\\), tăng, vì dùng xác suất nhãn xanh khi biết nguồn H."
       },
       {
         "id": "B",
-        "text": "\\(\\frac{3}{20}\\), nhỏ hơn tỉ lệ ban đầu"
+        "text": "\\(\\frac3{20}\\), giảm, vì chỉ tính xác suất đồng thời H và nhãn xanh."
       },
       {
         "id": "C",
-        "text": "\\(\\frac{3}{7}\\), lớn hơn tỉ lệ ban đầu"
+        "text": "\\(\\frac37\\), tăng so với \\(\\frac15\\), vì chia xác suất H và nhãn xanh \\(\\frac3{20}\\) cho tổng xác suất nhãn xanh \\(\\frac7{20}\\)."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{1}{5}\\), bằng tỉ lệ ban đầu"
+        "text": "\\(\\frac15\\), không đổi, vì cho rằng nhãn xanh không cung cấp thông tin về nguồn."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. Both historical practice and replay at e526468f2452221e08070fc96e3a64d42ad5c8f9 use 1/4,3/4,3/5,1/5 giving 1/2. Candidate uses 1/5,4/5,3/4,1/4 giving 3/7; regenerate both placements from candidate at cutover, no second ID."
   },
   {
     "item_id": "THPT-TOP21-P07",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P07",
-    "stem": "Chọn tuyến R với xác suất \\(\\frac25\\), xác suất thành công khi đi R là \\(\\frac34\\). Chọn tuyến S với xác suất \\(\\frac35\\), xác suất thành công khi đi S là \\(\\frac12\\). Tính xác suất chọn S và thất bại, và xác suất thành công.",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P07.DELTA08",
+    "stem": "Chọn tuyến R với xác suất \\(\\frac25\\), xác suất thành công khi đi R là \\(\\frac34\\). Chọn tuyến S với xác suất \\(\\frac35\\), xác suất thành công khi đi S là \\(\\frac12\\). Tính xác suất chọn S và thất bại, và xác suất thành công. Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "\\(P(S\\cap\\overline T)=\\frac3{10}\\); \\(P(T)=\\frac35\\), với T là biến cố thành công.",
     "worked_solution": "Gọi T là biến cố thành công. Cây có hai nhánh gốc: R xác suất \\(\\frac25\\) và S xác suất \\(\\frac35\\). Sau khi chọn S, xác suất thất bại là \\(1-\\frac12=\\frac12\\), nên đường S rồi thất bại có xác suất \\(P(S\\cap\\overline T)=\\frac35\\cdot\\frac12=\\frac3{10}\\). Muốn tính xác suất thành công, cộng hai lá thành công rời nhau: \\(P(T)=\\frac25\\cdot\\frac34+\\frac35\\cdot\\frac12=\\frac3{10}+\\frac3{10}=\\frac35\\). Hai lá thất bại còn lại là R thất bại \\(\\frac1{10}\\) và S thất bại \\(\\frac3{10}\\); tổng bốn lá bằng 1.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -363,26 +368,27 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\frac{1}{2}\\); \\(\\frac{5}{4}\\)"
+        "text": "\\(\\frac12;\\frac54\\), vì dùng xác suất thất bại riêng của S và cộng trực tiếp hai xác suất thành công có điều kiện."
       },
       {
         "id": "B",
-        "text": "\\(\\frac{3}{10}\\); \\(\\frac{3}{5}\\)"
+        "text": "\\(\\frac3{10};\\frac35\\), vì nhân dọc đường S–thất bại rồi cộng hai lá thành công rời nhau."
       },
       {
         "id": "C",
-        "text": "\\(\\frac{3}{5}\\); \\(\\frac{3}{10}\\)"
+        "text": "\\(\\frac35;\\frac3{10}\\), vì đổi thứ tự hai kết quả cần tìm."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{3}{10}\\); \\(\\frac{5}{8}\\)"
+        "text": "\\(\\frac3{10};\\frac58\\), vì lấy trung bình cộng hai xác suất thành công có điều kiện."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. No change to the candidate problem parameters or answer."
   },
   {
     "item_id": "THPT-TOP21-P08",
-    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P08",
-    "stem": "Mô hình gồm 1 000 sản phẩm, đúng 20 sản phẩm lỗi. Máy báo đúng 80% sản phẩm lỗi và báo nhầm 5% sản phẩm tốt. Chọn đều một sản phẩm. Tính xác suất sản phẩm lỗi khi biết máy báo lỗi. Nếu giảm tỉ lệ báo nhầm xuống 1% trong một mô hình xác suất có cùng tỉ lệ nền và độ nhạy, tính lại xác suất.",
+    "content_version": "CD21-BANK-CANDIDATE-20261127-THPT-TOP21-P08.DELTA08",
+    "stem": "Mô hình gồm 1 000 sản phẩm, đúng 20 sản phẩm lỗi. Máy báo đúng 80% sản phẩm lỗi và báo nhầm 5% sản phẩm tốt. Chọn đều một sản phẩm. Tính xác suất sản phẩm lỗi khi biết máy báo lỗi. Nếu giảm tỉ lệ báo nhầm xuống 1% trong một mô hình xác suất có cùng tỉ lệ nền và độ nhạy, tính lại xác suất. Chọn kết quả kèm lập luận phù hợp.",
     "answer_key": "Ban đầu \\(\\frac{16}{65}\\approx24{,}62\\%\\); mô hình mới \\(\\frac{80}{129}\\approx62{,}02\\%\\).",
     "worked_solution": "Gọi L là biến cố sản phẩm lỗi, B là biến cố máy báo lỗi. Ban đầu 20 sản phẩm lỗi tạo 16 báo đúng, 980 sản phẩm tốt tạo 49 báo nhầm. Trong 65 sản phẩm bị báo lỗi, có 16 sản phẩm lỗi: \\(P(L\\mid B)=\\frac{16}{65}\\). Với mô hình xác suất mới, \\(P(L)=0{,}02\\), \\(P(B\\mid L)=0{,}8\\), \\(P(B\\mid\\overline L)=0{,}01\\). Do đó \\(P(L\\cap B)=0{,}016\\), \\(P(\\overline L\\cap B)=0{,}98\\cdot0{,}01=0{,}0098\\). Tổng xác suất báo lỗi là \\(0{,}016+0{,}0098>0\\), nên \\(P(L\\mid B)=\\frac{0{,}016}{0{,}016+0{,}0098}=\\frac{80}{129}\\approx62{,}02\\%\\). Tỉ lệ báo nhầm giảm làm mẫu số giảm, độ nhạy và tỉ lệ nền không đổi. Đây là mô hình xác suất, không diễn giải 9,8 sản phẩm là số đếm thực tế.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -417,20 +423,21 @@
     "options": [
       {
         "id": "A",
-        "text": "80%; 80%"
+        "text": "80% ở cả hai mô hình, vì đồng nhất xác suất phát hiện lỗi với xác suất thật sự lỗi khi được báo."
       },
       {
         "id": "B",
-        "text": "\\(\\frac{16}{1000}\\); \\(\\frac{16}{1000}\\)"
+        "text": "\\(\\frac{16}{1000}\\) ở cả hai, vì chia số báo đúng cho toàn bộ sản phẩm."
       },
       {
         "id": "C",
-        "text": "\\(\\frac{16}{49}\\); \\(\\frac{80}{49}\\)"
+        "text": "\\(\\frac{16}{49};\\frac{80}{49}\\), vì chia xác suất báo đúng chỉ cho phần báo nhầm."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{16}{65}\\); \\(\\frac{80}{129}\\)"
+        "text": "\\(\\frac{16}{65};\\frac{80}{129}\\), vì mỗi mẫu số gồm cả báo đúng lẫn báo nhầm; mô hình sau dùng xác suất thay cho số đếm."
       }
-    ]
+    ],
+    "author_review_note": "DELTA08 Q05/PED5/X-G.6: reason-bearing choices for multi-step task; independently checked mathematics, preserved original correct option ID, skill, difficulty, source and exposure. No change to the candidate problem parameters or answer."
   }
 ]
