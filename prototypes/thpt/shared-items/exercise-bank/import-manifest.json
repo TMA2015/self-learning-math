@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "ad5cdea83b28ef9f5213e1a763694ca3c1d69866",
+    "as_of_commit": "a8743ad2ce38d8166e20bfd67cd3c5125f2e2c23",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "09: finish exact-scope academic/PED source-lock for 23 new SGK items (19 Level1 + 3 first-try + 1 D6 variant), seven materially revised CD22 first-tries plus two mapping-only records, and changed D6/order placements; reconcile existing 01–08 evidence (not full re-audit), validate cross-shard ID/placement integrity and all applicable A1–A7/Q01–Q18. If PASS, sign one Q18 receipt and V2/ready/REGISTER under X-E, then 10 handoff. No runtime QA or automatic PASS.",
+    "next": "09: finish exact global cross-shard ID/placement join, consolidate inherited 01–08 evidence against affected fields and applicable Q01–Q18/A1–A7, resolve any actual findings, then sign one source-locked Q18 receipt and V2/ready/REGISTER under X-E. Targeted 23 SGK and nine CD22 math/choice/placement review performed; two CD22 edits verified. Check scope-source references against current accepted S1 evidence (historical source file is not a new direct SGK PDF read). Retain prior D6/order evidence for unchanged sources; no re-audit 01–08. Then item10. No runtime QA or automatic PASS.",
     "status": "CHECKLIST_09_Q18_CONTENT_CHECK_PENDING",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -112,65 +112,85 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "checklist09_inventory_and_q16_candidate_modes_20261128",
-    "checklist09_inventory_and_q16_candidate_modes_20261128": {
-      "scope": "Start item09 at exact item08 checkpoint; full structural inventory read, candidate use corrections for CD21/CD22; academic acceptance not inferred.",
-      "base_commit": "3d7ac03305906014c1acb92aa7570a83ab5c46dd",
-      "after_commit": "ad5cdea83b28ef9f5213e1a763694ca3c1d69866",
-      "inventory": {
-        "interactive_rows": 2237,
-        "written_reference_rows": 325,
-        "total_rows": 2562,
-        "placement_rows": 4310,
-        "interactive_by_shard_group": {
-          "topic_cd01_11": 243,
-          "topic_cd12_16": 98,
-          "topic_cd17_22_and_topic_first_try": 491,
-          "g10_formative": 365,
-          "g10_public_selfcheck": 143,
-          "g11_all": 482,
-          "g12_all": 415
-        },
-        "placements_by_shard_group": {
-          "cd01_11": 962,
-          "cd12_22": 991,
-          "g10": 547,
-          "g11": 737,
-          "g12": 659,
-          "topic_first_try": 414
-        },
-        "duplicates_within_read_groups": 0,
-        "note": "Counts independently recomputed from exact snapshot, agree with item08 delta. Cross-group identity/placement join still requires final exact reconciliation; source field variants basis_blob and scope_receipt.blob legitimate, not missing source claims. Structural checks do not prove Q18."
+    "current_checkpoint_key": "checklist09_targeted_math_and_ped_20261128",
+    "checklist09_targeted_math_and_ped_20261128": {
+      "scope": "Item09 targeted new/changed candidate review and correction, not whole-bank Q18 or CONTENT_READY.",
+      "base_commit": "8050df9019ae11852e06d6e0e0e65a94073c670b",
+      "after_commit": "a8743ad2ce38d8166e20bfd67cd3c5125f2e2c23",
+      "prior_inventory": {
+        "interactive": 2237,
+        "written": 325,
+        "placements": 4310,
+        "note": "Prior exact read-group inventory; count unchanged by two in-place edits; global cross-group join pending."
       },
-      "candidate_q16_delta": {
-        "missing_selfcheck_modes_fixed": 47,
-        "missing_practice_modes_fixed": 109,
-        "cd21": {
-          "selfcheck": 8,
-          "practice": 14,
-          "blob": "7bdfa23e15c80169e1f75564762d19b3928554e8"
-        },
-        "cd22": {
-          "selfcheck": 39,
-          "practice": 95,
-          "blob": "33651602c384ee0eb50590135283dddba3d2430c"
-        },
-        "selfcheck_invalid_after": 0,
-        "practice_invalid_after": 0,
-        "reveal": "AFTER_WHOLE_SUBMISSION",
-        "hints_before_submission": false,
-        "mastery": false,
-        "scope": "Metadata only; no runtime, grading activation, Firebase, private RD1, or score changes."
+      "targeted_sgk": {
+        "ids": [
+          "THPT-G10-B06-L1-01",
+          "THPT-G10-B18-L1-01",
+          "THPT-G10-B15-D6-01",
+          "THPT-G10-B19-L1-01",
+          "THPT-G10-B20-L1-01",
+          "THPT-G10-B21-L1-01",
+          "THPT-G10-B22-L1-01",
+          "THPT-G10-B23-L1-01",
+          "THPT-G10-B24-L1-01",
+          "THPT-G10-B25-L1-01",
+          "THPT-G10-B26-L1-01",
+          "THPT-G10-B27-L1-01",
+          "THPT-G11-B16-L1-01",
+          "THPT-G11-B17-L1-01",
+          "THPT-G11-B27-L1-01",
+          "THPT-G11-B24-KFT01",
+          "THPT-G11-B25-KFT01",
+          "THPT-G11-B27-KFT01",
+          "THPT-G12-B12-L1-01",
+          "THPT-G12-B13-L1-01",
+          "THPT-G12-B13-L1-02",
+          "THPT-G12-B15-L1-01",
+          "THPT-G12-B17-L1-01"
+        ],
+        "math": "11 G10 recognition: cosine/area, radical equivalence, normals, circle, conic, sum/product, permutations/arrangements, binomial, finite equiprobable probability, full tree path. D6 sqrt(x+1): domain x>=-1, only A(3;2). G11 one-sided limit, continuity, prism/pyramid; KFT B24 6m and 3/5, B25 (SAB) perpendicular to base not all sides, B27 volumes 90,30,28. G12 FTC F(b)-F(a), integral abs gap, integral cross-sectional area, parametric line, sphere. Correct choices/keys/solutions read; 23/23 option ID resolves uniquely, core/first-try/practice placements read.",
+        "source": "13 exact historical source paths/blobs matched; three G11 KFT original §1.7 pre-revealed answers inspected and new stems preserve mathematical tasks. Prior source scope only; B06 v0.1 source contains a historical S1 review-pending note; reconcile current accepted S1 receipt rather than treating historical note as fresh blocker or declaring fresh primary PDF read."
       },
-      "remaining": {
-        "status": "Q18_CONTENT_CHECK_PENDING",
-        "scope": "23 new SGK IDs from item08 checkpoints, 7 material CD22 IDs and 2 mapping-only IDs, D6/order affected scope and exact Q18/A1–A7 consolidation, global cross-shard integrity and X-E source lock/V2/ready/REGISTER. No claim of P0/P1=0 or CONTENT_READY; no need for independent review unless unresolved academic question."
-      }
+      "cd22": {
+        "ids": [
+          "THPT-TOP22-T01",
+          "THPT-TOP22-T02",
+          "THPT-TOP22-T05",
+          "THPT-TOP22-T06",
+          "THPT-TOP22-T07",
+          "THPT-TOP22-T09",
+          "THPT-TOP22-T10",
+          "THPT-TOP22-T12",
+          "THPT-TOP22-T13"
+        ],
+        "math": "T01 round 9.7, abs .02, rel .206%; T02 4,mode1 then mean8 median4; T05 variance 2/3 and 6, sd sqrt, translation invariant; T06 frequencies 1,2,2, n5,40%; T07 mean17.5 cumulative1,2,4; T09 grouped mode16, equal-width condition; T10 range30 then50, not exact raw range; T12 mean15 E[c²]275, variance50 both methods, sd5sqrt2; T13 variances 100/3 and 200/3, no inference of superiority. Public knowledge source bde0820d157a5169d3cf365c846cf11169d40035 matched; relevant sections read. No direct fresh S1 PDF claim.",
+        "changed": [
+          "THPT-TOP22-T10: insert explicit empty interval [40;50) and reasoning, same range result/key/options",
+          "THPT-TOP22-T13: align instruction to single-choice options; no math/key change"
+        ],
+        "readback": {
+          "blob": "a135e2c991bf678d48e71574fc868e7689571115",
+          "total_records": 393,
+          "unchanged_records": 391,
+          "changed_records": 2,
+          "placement_blob": "6c2e7984a3e1def769a575397c487b216de9f6da",
+          "cd22_first_try_bindings": 13,
+          "invalid_bindings": 0
+        }
+      },
+      "sgk_d6_readback": {
+        "checked_role_SGK_FIRST_TRY": 206,
+        "invalid": 0,
+        "note": "Scope of actual query; do not equate 206 with prior 231 broader first-try inventory. Existing order/placement sources unchanged."
+      },
+      "remaining": "Global cross-shard identity/placement and full applicable evidence join, final Q18 self-QA and one X-E packaging. No P0/P1 finding in inspected math subset; no bank-wide clearance.",
+      "no_merge_deploy": true
     },
     "previous_manifest": {
-      "commit": "3d7ac03305906014c1acb92aa7570a83ab5c46dd",
-      "blob": "81da6b4cf35e5f150c368499e848beb312618fdc",
-      "key": "checklist08_targeted_gaps_closed_20261128"
+      "commit": "8050df9019ae11852e06d6e0e0e65a94073c670b",
+      "blob": "2e74628d6611c0ecfc36ba62dc92da9f2ccf88d5",
+      "key": "checklist09_inventory_and_q16_candidate_modes_20261128"
     }
   },
   "pending_review": {
