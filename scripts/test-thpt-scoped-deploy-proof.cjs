@@ -1120,7 +1120,7 @@ function main(){
    assert(receipt.includes("**CANDIDATE_B"+n+"_SOURCE_BLOB:** "+String.fromCharCode(96)+next+String.fromCharCode(96)),"exact signed successor B"+n);
    assert.equal(next,candidateG10KnowledgeBlob(n),"exact reversible Q18 source delta B"+n);
    verifySource(before.toString("utf8"),now.toString("utf8"),receipt,prev,next,lesson);
-   assert.deepEqual(latex(now),latex(before),"no changed math token B"+n);
+   assert.deepEqual(latex(now.toString("utf8")),latex(before.toString("utf8")),"no changed math token B"+n);
    console.log("PASS #1132 exact source/Q15/Q16 B"+n+" "+prev+" -> "+next);
   }
   return;
