@@ -13647,7 +13647,7 @@
     "item_id": "THPT-TOP05-KFT04",
     "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT04",
     "stem": "Vì sao đường tròn \\(x^2+y^2=9\\) không biểu diễn hàm \\(y=f(x)\\) trên \\([-3;3]\\)? Chọn kết luận đầy đủ và tự trình bày lập luận trước khi đối chiếu.",
-    "answer_key": "Không, vì tại x=0 có hai giá trị y=3 và y=\\(-3\\).",
+    "answer_key": "Không, vì tại \\(x=0\\) có hai giá trị \\(y=3\\) và \\(y=-3\\).",
     "worked_solution": "\\(x=0\\) cho hai giá trị \\(y=3\\) và \\(y=-3\\), vi phạm một đầu vào một đầu ra.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -13990,7 +13990,7 @@
       }
     ],
     "exercise_type": "INTERACTIVE",
-    "remediation": "Nếu dịch phải vì dấu+, tìm x để đối số bằng0; làm lại Bài 19 và Bài 24 trong phần Luyện tập."
+    "remediation": "Nếu dịch phải vì dấu +, tìm x để đối số bằng 0; làm lại Bài 19 và Bài 24 trong phần Luyện tập."
   },
   {
     "item_id": "THPT-TOP05-KFT11",
@@ -14171,7 +14171,7 @@
     "item_id": "THPT-TOP05-KFT14",
     "content_version": "CD05-BANK-CP125-20261127-TOP05-KFT14",
     "stem": "Cho \\(f(x)=x^2-1\\), tính \\(\\lvert f(0)\\rvert\\) và \\(f(\\lvert0\\rvert)\\).",
-    "answer_key": "\\(|f(0)|=1,\\ f(|0|)=-1\\).",
+    "answer_key": "\\(\\lvert f(0)\\rvert=1,\\ f(\\lvert 0\\rvert)=-1\\).",
     "worked_solution": "\\(\\lvert-1\\rvert=1\\), còn \\(f(0)=-1\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -14207,7 +14207,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(|f(0)|=-1,\\ f(|0|)=-1\\)."
+        "text": "\\(\\lvert f(0)\\rvert=-1,\\ f(\\lvert 0\\rvert)=-1\\)."
       },
       {
         "id": "B",
@@ -14215,11 +14215,11 @@
       },
       {
         "id": "C",
-        "text": "\\(|f(0)|=1,\\ f(|0|)=-1\\)."
+        "text": "\\(\\lvert f(0)\\rvert=1,\\ f(\\lvert 0\\rvert)=-1\\)."
       },
       {
         "id": "D",
-        "text": "\\(|f(0)|=1,\\ f(|0|)=1\\)."
+        "text": "\\(\\lvert f(0)\\rvert=1,\\ f(\\lvert 0\\rvert)=1\\)."
       }
     ],
     "exercise_type": "INTERACTIVE",
