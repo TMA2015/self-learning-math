@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "f20ca55024383308b7912b08f440867ec2f7e03a",
+    "as_of_commit": "e02559e9ff59755f6a75895d33ba1305390acb32",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,7 +67,7 @@
     "completed_interactive": 2237,
     "completed_written": 325,
     "partial_topic": null,
-    "next": "08.2: 33/910 (33 interactive, 0 Written) complete; CD01 complete 15/15; CD02 local Practice/Replay 18/36; next CD02 FirstTry 16 + Written 2 then CD03–04. 08.1 immutable 975/975; no CONTENT_READY.",
+    "next": "08.2: 51/910 (49 interactive +2 Written) complete; CD01 15/15, CD02 36/36. Next CD03–04 (74 IDs). 08.1 immutable 975/975; no CONTENT_READY.",
     "status": "CHECKLIST_08_XG5_BATCH_2_IN_PROGRESS",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
@@ -5872,12 +5872,118 @@
                     ]
                   ],
                   "findings": "Read all present learner-visible fields of nine Topic-only CD01 FirstTry items, including answer_key; no earlier X-G.5 evidence assumed. No notation defect found."
+                },
+                {
+                  "shard": "items/topic-knowledge-first-try.json",
+                  "blob": "528b246aa9edadc32f5d7d13dbd9cf36b63b4d47",
+                  "evidence_cp": "08.2-CD02-KFT",
+                  "records": [
+                    [
+                      "THPT-TOP02-KFT01",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT02",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT03",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT04",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT05",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT06",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT07",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT08",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT09",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT10",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT11",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT12",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT13",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT14",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT15",
+                      0,
+                      95
+                    ],
+                    [
+                      "THPT-TOP02-KFT16",
+                      0,
+                      95
+                    ]
+                  ],
+                  "findings": "Read all 16 learner-visible FirstTry records. One notation-only correction TOP02-KFT02 worked_solution 2a -> inline math; exact data diff only that field; data commit e02559e9ff59755f6a75895d33ba1305390acb32. CD01 KFT records unchanged from earlier blob. No answer/interaction change."
+                },
+                {
+                  "shard": "written-references.json",
+                  "blob": "3d28d297bb91b94c28b0f316aed8e63c8d8646d9",
+                  "source_path": "prototypes/thpt/shared-items/Temp_TOPIC02_INEQ_QUAD_REGION_ORIGINAL20_EXTENSION_R01_20261112.md",
+                  "source_blob": "278aec1c45c9e661722de3989077f6385d61ef5d",
+                  "evidence_cp": "08.2-CD02-Written",
+                  "records": [
+                    [
+                      "THPT-TOP02-W01",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ],
+                    [
+                      "THPT-TOP02-W02",
+                      "DIRECT_SOURCE_BLOCK_ALL_LEARNER_FIELDS"
+                    ]
+                  ],
+                  "findings": "Read both exact canonical heading blocks including stem, hints, answer, solution, rubric and remediation; no source notation defect found. No change to rubric, ID or source reference."
                 }
               ],
-              "completed_interactive": 33,
-              "completed_written": 0,
-              "remaining_interactive": 796,
-              "remaining_written": 81,
+              "completed_interactive": 49,
+              "completed_written": 2,
+              "remaining_interactive": 780,
+              "remaining_written": 79,
               "counts": {
                 "CD01": {
                   "interactive": 15,
@@ -5885,14 +5991,12 @@
                   "state": "COMPLETE"
                 },
                 "CD02": {
-                  "interactive": 18,
-                  "written": 0,
-                  "state": "PARTIAL",
-                  "remaining_interactive": 16,
-                  "remaining_written": 2
+                  "interactive": 34,
+                  "written": 2,
+                  "state": "COMPLETE"
                 }
               },
-              "next": "CD02 KFT (16) and Written (2), then CD03–04; exclude all 975 shared IDs."
+              "next": "CD03–04 (74 Topic-only IDs), exclude 975 shared IDs and 51 done 08.2 IDs."
             }
           },
           {
