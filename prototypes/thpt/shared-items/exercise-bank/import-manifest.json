@@ -19,7 +19,7 @@
     "authoring_answer_draft_items": 18
   },
   "counts_scope": "Historical import inventory retained verbatim from pre-compaction snapshot; not live authoring completion totals. Recompute from relevant item/placement shards for current inventory when needed.",
-  "academic_audit": "CANDIDATE_AUTHORING_COMPLETE_TARGETED_ACCEPTANCE_ONLY",
+  "academic_audit": "TARGETED_ACCEPTANCE_XG6_WRITTEN_PLACEMENT_CONFLICTS_RESOLVED",
   "interaction_conversion": "Owner-defined candidate authoring sequence complete: CD01–22, 24/24 SGK chapters, 3/3 G11/G12 supplement groups. Scoped Delta, notation, whole-bank inventory/field reconciliation and Q01–Q18 audit/acceptance pending; no release.",
   "release_authorization": false,
   "public_legacy_selfcheck_note": "163 already-public historical G10/G11 client items under #662 plus 10 G12 ChI public self-check; no private RD1, independent credit or Mastery.",
@@ -58,7 +58,7 @@
     "note": "Complete original JSON preserved byte-for-byte in Git at this commit/blob, including every nested field, import/source/projection map, flag, review, ID, receipt and checkpoint. Retrieve by exact commit/path or blob SHA; select required JSON key programmatically. No history rewrite, no separate archive file."
   },
   "current_progress": {
-    "as_of_commit": "f9ea5870478532cea419f1b1c5c073dbddf54287",
+    "as_of_commit": "0941f777beafd994985cc8a32641ce011f9de375",
     "latest_issue_checkpoint": "https://github.com/TMA2015/self-learning-math/issues/1090",
     "completed_candidate_topics": 22,
     "total_topics": 22,
@@ -67,8 +67,8 @@
     "completed_interactive": 1644,
     "completed_written": 241,
     "partial_topic": null,
-    "next": "Acceptance only: use existing exact PASS snapshots/receipts, semantic field diffs and completed scoped evidence to classify actual unresolved academic/material changes and genuinely unverified conversions. Filter existing pending_review and immutable checkpoints, preserve every valid unaffected PASS; close remaining applicable Q01–Q18/A1–A7 in scope, resolve concrete defects or source uncertainty, and complete source-locked Q18/V2/ready/REGISTER handoff in the same completion pass per X-E. No grade-by-grade blanket re-audit, no new checklist, no RELEASE runtime or deploy work.",
-    "status": "CANDIDATE_AUTHORING_COMPLETE_TARGETED_ACCEPTANCE_ONLY",
+    "next": "Continue targeted acceptance under #1090 and the corrected scope lock: resolve genuinely material conversion/coverage and notation defects with exact existing source/receipt/diff evidence, rather than a chapter reading queue. In particular reconcile source-dependent semantic changes, proof-bearing choices and missing acceptance evidence; close applicable Q18/A1–A7 and handoff in same pass when supported. Do not reopen closed placement conflict or delimiter/controls check unless affected.",
+    "status": "TARGETED_ACCEPTANCE_XG6_WRITTEN_PLACEMENT_CONFLICTS_RESOLVED",
     "completed_candidate_sgk_chapters": 24,
     "total_sgk_chapters": 24,
     "completed_sgk_chapter_ids": [
@@ -112,11 +112,10 @@
     "supplement_remaining_written": 0
   },
   "global_reconciliation": {
-    "current_checkpoint_key": "acceptance_scope_correction_20261128",
-    "acceptance_scope_correction_20261128": {
-      "baseline": "9f15c2530349507ed15c9986c427bd362d54c83e",
-      "verified_head": "f9ea5870478532cea419f1b1c5c073dbddf54287",
-      "owner_instruction": "28/11/2026: identify and eliminate the cause of checkpoint-driven scope drift; do not continue grade-by-grade review merely because checkpoint next says so.",
+    "current_checkpoint_key": "acceptance_xg6_written_placement_20261128",
+    "acceptance_xg6_written_placement_20261128": {
+      "baseline": "e6b7f4f89b4b84fe758c4e486d1c3a2148ab7ea9",
+      "verified_head": "0941f777beafd994985cc8a32641ce011f9de375",
       "authority": {
         "issue": 1090,
         "owner_decision_comment": 7215691090,
@@ -132,27 +131,41 @@
         "governance_draft": 1130,
         "agents_commit": "f77d2d6af173804b0b3a3f48f4ec0cab10f8e324"
       },
-      "root_cause": "Candidate conversion sequence finished at f44755f6. Repeated checkpoint next actions selected chapter batches instead of deriving the remaining acceptance work from original owner goal, exact PASS receipts, semantic Delta and scope. Scoped audit evidence was retained but not consistently used to close final applicable gates. This is operational drift, not proof that every individual review was redundant; new choice conversions and material changes require genuine verification.",
-      "superseded_next": "Complete G10 ChVII–IX remaining converted Core/Practice/Application/FirstTry/support/optional group, preserving 42 dedicated selfcheck IDs and already reviewed CD20 shared IDs. Then G12 chapter and supplement groups and remaining Topics; resolve material Delta/PED, applicable Q01–Q18 and RELEASE handoff.",
       "inventory": {
         "interactive_unique": 2214,
         "written_unique": 325,
         "total_unique": 2539,
-        "placement_rows": 4301,
-        "topics": 22,
-        "sgk_chapters": 24,
-        "supplement_groups": 3,
-        "source": "Existing exact global join Delta02, unchanged ID/placement inventory through Delta21."
+        "placement_rows": 4285,
+        "prior_placement_rows": 4301,
+        "reason": "16 duplicate Written references removed only from interactive self-check; 2 reclassified in same chapter Written collection; zero item deletion or addition."
       },
-      "accepted_scope": "40/40 flagged Written reference deltas closed, 38/38 skill mappings resolved, 80 projection flags triaged; prior scoped checks and source/receipt evidence preserved exactly. This does not grant full Q18 or imply all historical candidate wording is PASS.",
-      "execution": "Use the existing pending_review and exact Git history, not a new tracking system. Identify actual semantic changes since applicable PASS source (including converted choices/hints/key/rubric/difficulty and contextual placements), determine applicable Delta A/B/C/D, carry forward verified evidence; check only material changes or genuinely missing verification. Programmatic checks across inventory for actual notation/coverage/reference/exposure defects, not a new reading queue by grade. Resolve actual blockers with S1 or targeted review when needed. Close applicable acceptance gates rather than reassert generic pending. Do not mark CONTENT_READY until genuine evidence and X-E handoff are complete. If a gate is already satisfied, package in the same pass; do not manufacture a further review stage.",
-      "exit_condition": "Q01–Q18/A1–A7 applicable evidence, source locked, no unresolved P0/P1; Q18 receipt, V2, ready/REGISTER and handoff per existing X-E. RELEASE controls actual projection/reveal/browser/CI and owner authorization; not an AUTHORING re-audit prerequisite.",
-      "protected_scope": "No item/placement/Written/source/schema content changes in this process correction; no private RD1/runtime/Final Submit/Mastery/Firebase/LIVE, merge or deploy."
+      "closed_defect": {
+        "standard": "X-G.6 / Q05-Q06-Q15",
+        "evidence": "All 26 placement shards (4301 baseline rows) joined programmatically against all 325 Written IDs; 18 incompatible placements, all G12, no other Written IDs in non-Written/Anchor role. No item body inspected or re-audited merely to close placement typing.",
+        "old_placement_blob": "8f1f02b762930fe937af785d2f63b00d9f0205ad",
+        "new_placement_blob": "ab5b3dca33bb6856eedafa708d3fb89e4034a884",
+        "moved_ids": [
+          "THPT-G12-CHI-END-W01",
+          "THPT-G12-CHI-END-W02"
+        ],
+        "moved_to": "SGK:G12:CHI:WRITTEN orders 11/12; original roles and skill preserved",
+        "duplicate_ids_removed_from_selfcheck": "THPT-G12-YE-W01 through W16; all retained in existing SGK:G12:SUPPLEMENT:YEAR:WRITTEN",
+        "remaining_selfcheck": "G12 ChI 10 interactive items cover all four previous skill IDs; YEAR 15 interactive items cover all six previous skill IDs. Exact skill-set parity only, not blanket depth/PED PASS. No arbitrary replacement items or new IDs. Candidate placement only; actual public website generation and reveal remain RELEASE.",
+        "verification": "G12 670→654 rows, unique item-ID set equal, unique collection/order keys, all 18 conflicts removed, same selfcheck skill sets, all other records unchanged."
+      },
+      "notation_subcheck": {
+        "standard": "X-G.5",
+        "scope": "61 interactive shards, 2214 items (topic own+FirstTry 832, G10 496, G11 476, G12 410); stem, answer_key string, worked_solution, option text and hints. Exact baseline unchanged by placement-only edit.",
+        "result": "No unclosed/mismatched/nested explicit inline/display delimiter or disallowed control character found by parser scan.",
+        "limits": "Not a full X-G.5 result; raw notation, ambiguous expressions, rubric/remediation and actual rendering not certified. This narrow check is closed at exact snapshot; do not repeat without affected diff."
+      },
+      "remaining": "Material change and missing evidence acceptance, actual cognitive-depth/coverage and notation defects, Q18/source-locked handoff. Historical snapshot receipts remain valid only in exact scope. Not CONTENT_READY.",
+      "protected_scope": "No item/answer/hint/rubric/Written source/schema changes; no private RD1, runtime/Final Submit/Mastery/Firebase/LIVE, merge/deploy."
     },
     "previous_manifest": {
-      "commit": "9f15c2530349507ed15c9986c427bd362d54c83e",
-      "blob": "f6a707fe5752758b7a117a41aa3df70ca9d20e18",
-      "key": "delta_audit_wave21"
+      "commit": "e6b7f4f89b4b84fe758c4e486d1c3a2148ab7ea9",
+      "blob": "a6a67adc78cf2341ef49e341b95ad6af6fe769e6",
+      "key": "acceptance_scope_correction_20261128"
     }
   },
   "pending_review": {
@@ -259,7 +272,7 @@
     "sgk_g11_chi_chiii": "All 153 interactive IDs across G11 ChI–III scoped math/source/choice review complete (Delta14/15/16), 181 placement rows resolve, prior 14 Written placements retained. Six explicit material source deltas and historical pending B01/B02 PED receipt require applicable final acceptance, no historical equivalence or global Q18 inferred. Remaining full notation, coverage/PED and authorized RELEASE generation/QA.",
     "sgk_g11_chiv_chvi": "All 111 interactive IDs G11 ChIV–VI scoped math/source/choice review complete Delta17; 163 placement rows resolve (50 reused selfcheck, 12 FirstTry incl 2 reused). 24 Written placements preserved. Twelve material historical task deltas recorded; final applicable Delta/PED acceptance, notation/coverage and authorized RELEASE generation/QA pending.",
     "sgk_g11_chvii_chix": "160 interactive IDs scoped math/source/choice reviewed, 152 newly covered and 8 prior CD20 IDs exact record unchanged; 230 interactive placements resolve, 29 Written retained. Material source deltas recorded; final applicable Delta/PED, notation/coverage and RELEASE generation pending.",
-    "sgk_g12_chi_chiii": "G12 ChI 10 dedicated interactive selfcheck scoped reviewed Delta14; CHI-END-W01/W02 Written exception unchanged. Remaining FirstTry conversions, 28 reused selfcheck and three reused FirstTry IDs and other applicable coverage/PED/notation pending; prior Written deltas closed.",
+    "sgk_g12_chi_chiii": "X-G.6 CHI-END-W01/W02 placement exception CLOSED: both now SGK_WRITTEN, all four skill IDs still represented by ten interactive selfcheck items. Preserve bodies and receipts. Remaining actual conversion/PED/material and notation evidence only; no blanket chapter re-audit.",
     "sgk_g12_chiv_chvi": "52 conversions; seven ChVI Written scoped notes recorded, 60 reused public selfcheck placements and one reused FirstTry ID; scoped assessment-format/PED, independence, notation and reveal parity pending; no final acceptance.",
     "g11_supplement_written": "52 supplement EXP/YEAR interactive IDs scoped math/source/choice reviewed Delta19, 74 placements resolve; original source packet independent-review status unchanged; full Q01–Q18/notation/PED and RELEASE pending.",
     "g12_experience_written": {
@@ -288,7 +301,8 @@
       "note": "Five affected Written source delta accepted on exact historical #735 receipt and wave07 evidence. System exposure/release gates remain separate.",
       "candidate_source_blob": "0c56221669c632c5d1c80a9782eced156c585b5f",
       "receipt": "3b5b7f70e3b68895fd976a265ae6f454f774e1cc",
-      "status": "SCOPED_WRITTEN_Q18_AUTHOR_SELF_VERIFIED_PROJECTION_PENDING_RELEASE"
+      "status": "SCOPED_WRITTEN_Q18_AUTHOR_SELF_VERIFIED_PROJECTION_PENDING_RELEASE",
+      "selfcheck_placement": "CLOSED: 16 duplicate Written references removed from interactive SELF_CHECK, retained in WRITTEN; 15 interactive items cover same six skill IDs."
     },
     "sgk_g11_vii_ix_written_delta": "Three affected B28/B29 Written scoped Q18 author verified wave08, #694. Projection pending authorized RELEASE.",
     "sgk_g12_chvi_written_delta": "All seven scoped Written accepted wave08 using #731 historical S1/PED receipt and wave06 math/rubric/D6 evidence. Projection pending authorized RELEASE.",
