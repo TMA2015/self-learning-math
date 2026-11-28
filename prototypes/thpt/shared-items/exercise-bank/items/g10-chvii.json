@@ -2995,5 +2995,257 @@
       }
     ],
     "exercise_type": "INTERACTIVE"
+  },
+  {
+    "item_id": "THPT-G10-B19-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B19-L1-01",
+    "stem": "Cho \\(\\vec n=(a;b)\\ne\\vec0\\) và \\(M_0(x_0;y_0)\\). Công thức nào biểu diễn đường thẳng qua \\(M_0\\) có vectơ pháp tuyến \\(\\vec n\\)?",
+    "answer_key": "\\(a(x-x_0)+b(y-y_0)=0\\).",
+    "worked_solution": "Một điểm \\(M(x;y)\\) thuộc đường thẳng khi \\(\\overrightarrow{M_0M}\\) vuông góc với vectơ pháp tuyến. Tích vô hướng bằng 0 cho \\(a(x-x_0)+b(y-y_0)=0\\).",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B19-NORMAL_DIRECTION",
+      "G10-B19-GENERAL_POINT"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ quan hệ giữa vectơ pháp tuyến và vectơ nối hai điểm của đường thẳng."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "D"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "fe6a93ec5083062dbf1949f8c8a26b127faa7875",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B19-C01",
+        "THPT-G10-B19-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu đổi hệ số hoặc dấu của tọa độ điểm, ôn Bài 19 phương trình tổng quát và vectơ pháp tuyến; thay điểm đã cho vào phương trình, rồi luyện câu viết phương trình qua một điểm.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(b(x-x_0)+a(y-y_0)=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(a(x+x_0)+b(y+y_0)=0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(a(x-x_0)-b(y-y_0)=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(a(x-x_0)+b(y-y_0)=0\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B20-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B20-L1-01",
+    "stem": "Hai đường thẳng có vectơ pháp tuyến khác \\(\\vec0\\) là \\(\\vec n_1=(a_1;b_1)\\), \\(\\vec n_2=(a_2;b_2)\\). Điều kiện nào tương đương với hai đường thẳng vuông góc?",
+    "answer_key": "\\(a_1a_2+b_1b_2=0\\).",
+    "worked_solution": "Hai vectơ pháp tuyến khác không vuông góc với nhau khi tích vô hướng bằng 0. Góc giữa hai đường thẳng và góc giữa hai pháp tuyến có cùng tính chất vuông góc. Điều kiện định thức bằng 0 lại nói đến hai pháp tuyến cùng phương.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B20-RELATIVE_POSITION",
+      "G10-B20-PERPENDICULAR"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ điều kiện tích vô hướng của hai vectơ vuông góc."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "A"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "fe6a93ec5083062dbf1949f8c8a26b127faa7875",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B20-C01",
+        "THPT-G10-B20-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm tích vô hướng với định thức, ôn Bài 20 phân biệt hai đường song song hoặc trùng và hai đường vuông góc; luyện hai câu vị trí tương đối và vuông góc.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a_1a_2+b_1b_2=0\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(a_1b_2-a_2b_1=0\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(a_1+a_2=b_1+b_2=0\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(a_1a_2+b_1b_2=1\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B21-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B21-L1-01",
+    "stem": "Với \\(R>0\\), phương trình đường tròn tâm \\(I(a;b)\\), bán kính \\(R\\) là phương trình nào?",
+    "answer_key": "\\( (x-a)^2+(y-b)^2=R^2\\).",
+    "worked_solution": "Mỗi điểm \\(M(x;y)\\) trên đường tròn cách tâm \\(I\\) đúng \\(R\\). Bình phương đẳng thức khoảng cách cho \\((x-a)^2+(y-b)^2=R^2\\). Dạng này vẫn đúng khi tâm là gốc tọa độ.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B21-CIRCLE_STANDARD",
+      "G10-B21-CIRCLE_GENERAL"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ định nghĩa đường tròn qua khoảng cách từ điểm đến tâm."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "fe6a93ec5083062dbf1949f8c8a26b127faa7875",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B21-C01",
+        "THPT-G10-B21-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm dấu của tâm hoặc quên bình phương bán kính, ôn Bài 21 dạng chính tắc; luyện câu viết phương trình từ tâm và bán kính, rồi câu tìm tâm từ dạng tổng quát.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(x^2+y^2=R^2\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\( (x-a)^2+(y-b)^2=R^2\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\( (x+a)^2+(y+b)^2=R^2\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\( (x-a)^2+(y-b)^2=R\\)."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B22-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B22-L1-01",
+    "stem": "Với elip \\(\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\) (\\(a>b>0\\)) và hypebol \\(\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=1\\) (\\(a,b>0\\)), gọi \\(c>0\\) là khoảng cách từ tâm đến mỗi tiêu điểm của từng conic. Hệ thức tương ứng nào đúng?",
+    "answer_key": "Elip: \\(c^2=a^2-b^2\\); hypebol: \\(c^2=a^2+b^2\\).",
+    "worked_solution": "Elip có \\(b^2=a^2-c^2\\), nên \\(c^2=a^2-b^2\\). Hypebol dạng đã cho có \\(b^2=c^2-a^2\\), nên \\(c^2=a^2+b^2\\). Đây là hai hệ thức khác nhau; không dùng chung một dấu.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B22-ELLIPSE_PARAMETERS",
+      "G10-B22-HYPERBOLA_PARAMETERS"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ quan hệ giữa ba tham số theo từng conic."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "C"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/THPT_G10_CHVII_S1_VISUAL_SOURCE_RECEIPT_AND_SCOPE_20261028.md",
+        "blob": "fe6a93ec5083062dbf1949f8c8a26b127faa7875",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B22-P01",
+        "THPT-G10-B22-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm dấu, ôn Bài 22 bảng tham số elip và hypebol rồi luyện câu xác định phương trình elip và tìm tiêu điểm hypebol.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "Elip: \\(c^2=a^2+b^2\\); hypebol: \\(c^2=a^2-b^2\\)."
+      },
+      {
+        "id": "B",
+        "text": "Cả hai đều có \\(c^2=a^2-b^2\\)."
+      },
+      {
+        "id": "C",
+        "text": "Elip: \\(c^2=a^2-b^2\\); hypebol: \\(c^2=a^2+b^2\\)."
+      },
+      {
+        "id": "D",
+        "text": "Cả hai đều có \\(c^2=a^2+b^2\\)."
+      }
+    ]
   }
 ]
