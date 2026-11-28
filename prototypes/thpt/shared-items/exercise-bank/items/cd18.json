@@ -1008,19 +1008,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(2x-4y-z+1=0\\)."
+        "text": "\\(2x-4y-z+1=0\\); pháp tuyến khác không."
       },
       {
         "id": "B",
-        "text": "\\(2x+4y-z-1=0\\)."
+        "text": "\\(2x+4y-z-1=0\\); hai vectơ cạnh cùng phương."
       },
       {
         "id": "C",
-        "text": "\\(2x-4y-z-1=0\\)."
+        "text": "\\(2x-4y-z-1=0\\); \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}=(2;-4;-1)\\ne\\vec0\\), cả ba điểm thỏa."
       },
       {
         "id": "D",
-        "text": "\\(2x-4y+z-1=0\\)."
+        "text": "\\(2x-4y+z-1=0\\); chỉ cần thử điểm A."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1676,9 +1676,9 @@
   {
     "item_id": "THPT-TOP18-P33",
     "content_version": "CD18-BANK-PARTIAL-20261127-THPT-TOP18-P33",
-    "stem": "Tính góc giữa hai mặt phẳng \\((P):x+y+z=0\\) và \\((Q):-x-y=1\\). Giải thích vì sao đổi dấu toàn bộ phương trình (Q) không đổi kết quả.",
-    "answer_key": "\\(\\cos\\theta=\\frac{\\sqrt6}{3}\\); \\(\\theta=\\arccos\\frac{\\sqrt6}{3}\\).",
-    "worked_solution": "\\(\\vec n_P=(1;1;1)\\), \\(\\vec n_Q=(-1;-1;0)\\). Tích vô hướng bằng −2, hai độ dài là \\(\\sqrt3\\) và \\(\\sqrt2\\). Cos của góc giữa hai mặt phẳng là \\(\\frac{\\lvert-2\\rvert}{\\sqrt3\\cdot\\sqrt2}=\\frac2{\\sqrt6}=\\frac{\\sqrt6}{3}\\). Đổi dấu toàn bộ phương trình (Q) chỉ đổi hướng pháp tuyến, không đổi trị tuyệt đối tích vô hướng hay độ dài.",
+    "stem": "Tính côsin của góc giữa hai mặt phẳng \\((P):x+y+z=0\\) và \\((Q):-x-y=1\\), rồi xác định góc đó (dùng máy ở chế độ DEG nếu cần). Giải thích vì sao đổi dấu toàn bộ phương trình (Q) không đổi kết quả.",
+    "answer_key": "\\(\\cos\\theta=\\frac{\\sqrt6}{3}\\), \\(\\theta\\approx35{,}26^\\circ\\); đổi dấu pháp tuyến không đổi góc.",
+    "worked_solution": "Hai pháp tuyến \\(\\vec n_P=(1;1;1)\\), \\(\\vec n_Q=(-1;-1;0)\\) có tích vô hướng −2 và độ dài lần lượt \\(\\sqrt3,\\sqrt2\\). Vì góc giữa hai mặt phẳng thuộc \\([0^\\circ;90^\\circ]\\), ta có \\(\\cos\\theta=\\frac{\\lvert-2\\rvert}{\\sqrt3\\sqrt2}=\\frac{\\sqrt6}{3}\\). Suy ra \\(\\theta=\\arccos\\frac{\\sqrt6}{3}\\approx35{,}26^\\circ\\). Đổi dấu cả phương trình (Q) chỉ đảo hướng pháp tuyến, không làm đổi trị tuyệt đối tích vô hướng hay độ dài.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHV-B16-O03"
@@ -1710,11 +1710,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\cos\\theta=\\frac{\\sqrt6}3\\); đổi dấu pháp tuyến không đổi góc."
+        "text": "\\(\\cos\\theta=\\frac{\\sqrt6}{3}\\), \\(\\theta\\approx35{,}26^\\circ\\); đổi dấu pháp tuyến không đổi góc."
       },
       {
         "id": "B",
-        "text": "\\(\\cos\\theta=-\\frac{\\sqrt6}3\\); góc tù."
+        "text": "\\(\\cos\\theta=-\\frac{\\sqrt6}{3}\\); góc tù."
       },
       {
         "id": "C",
