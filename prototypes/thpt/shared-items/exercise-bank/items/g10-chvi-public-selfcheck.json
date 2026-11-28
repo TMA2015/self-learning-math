@@ -2,9 +2,9 @@
   {
     "item_id": "THPT-G10-B15-R01",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R01",
-    "stem": "Bảng có các cặp `(1;4),(2;5),(2;5)`. Đây có phải quan hệ hàm số `y` của `x` không? Tập xác định là gì? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Bảng có các cặp \\((1;4),(2;5),(2;5)\\). Đây có phải quan hệ hàm số \\(y\\) của \\(x\\) không? Tập xác định là gì? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Có; `D={1;2}`.",
-    "worked_solution": "Giá trị đầu vào `2` lặp lại nhưng đều có đầu ra `5`, nên mỗi đầu vào có đúng một đầu ra. `D` gồm các giá trị `x` phân biệt.",
+    "worked_solution": "Mỗi đầu vào phải có đúng một đầu ra. Đầu vào 1 cho 4; đầu vào 2 dù lặp lại vẫn chỉ cho 5. Vì vậy đây là quan hệ hàm số, với tập xác định \\(D=\\{1,2\\}\\).",
     "skill_ids": [
       "FUNCTION_MAPPING",
       "FUNCTION_DOMAIN"
@@ -70,9 +70,9 @@
   {
     "item_id": "THPT-G10-B15-R02",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R02",
-    "stem": "Với hàm `F(x)=7x` trên `0≤x≤2` và `F(x)=14+3(x−2)` khi `x>2`, tính `F(4)` (đơn vị tùy ý). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với hàm \\(F(x)=7x\\) trên \\(0\\le x\\le2\\) và \\(F(x)=14+3(x-2)\\) khi \\(x>2\\), tính \\(F(4)\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`20`.",
-    "worked_solution": "`4>2`, nên `F(4)=14+3·2=20`.",
+    "worked_solution": "Vì \\(4>2\\), phải dùng công thức thứ hai: \\(F(4)=14+3(4-2)=20\\).",
     "skill_ids": [
       "FUNCTION_PIECEWISE"
     ],
@@ -137,9 +137,9 @@
   {
     "item_id": "THPT-G10-B15-R03",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R03",
-    "stem": "Hàm `h(x)=−2x+4` đồng biến hay nghịch biến trên `ℝ`? Vì sao? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Hàm \\(h(x)=-2x+4\\) đồng biến hay nghịch biến trên \\(\\mathbb R\\)? Vì sao? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Nghịch biến toàn `ℝ`.",
-    "worked_solution": "Khi `x₁<x₂`, `h(x₁)−h(x₂)=−2(x₁−x₂)>0`.",
+    "worked_solution": "Với mọi \\(x_1<x_2\\), hiệu \\(h(x_1)-h(x_2)=-2(x_1-x_2)>0\\), tức \\(h(x_1)>h(x_2)\\). Theo định nghĩa, hàm nghịch biến trên \\(\\mathbb R\\).",
     "skill_ids": [
       "FUNCTION_MONOTONICITY"
     ],
@@ -204,9 +204,9 @@
   {
     "item_id": "THPT-G10-B15-R04",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R04",
-    "stem": "Với đồ thị hàm `y=x²−x−6`, hai điểm `P(2;−4)` và `Q(−1;−5)` có thuộc đồ thị không? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với đồ thị hàm \\(y=x^2-x-6\\), hai điểm \\(P(2;-4)\\), \\(Q(-1;-5)\\) có thuộc đồ thị không? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`P` thuộc, `Q` không thuộc.",
-    "worked_solution": "`f(2)=4−2−6=−4`; `f(−1)=1+1−6=−4≠−5`.",
+    "worked_solution": "Một điểm thuộc đồ thị nếu tung độ bằng giá trị hàm tại hoành độ. Ta có \\(f(2)=4-2-6=-4\\), nên \\(P\\) thuộc đồ thị; \\(f(-1)=1+1-6=-4\\ne-5\\), nên \\(Q\\) không thuộc.",
     "skill_ids": [
       "FUNCTION_GRAPH_MEMBERSHIP"
     ],
@@ -272,9 +272,9 @@
   {
     "item_id": "THPT-G10-B15-R05",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B15-R05",
-    "stem": "Tìm tập xác định trong số thực của `f(x)=√(9−3x)/(x+1)`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Tìm tập xác định trong số thực của \\(f(x)=\\frac{\\sqrt{9-3x}}{x+1}\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`D=(−∞;3]\\{−1}`.",
-    "worked_solution": "Căn đòi `9−3x≥0 ↔ x≤3`; mẫu `x+1≠0 ↔ x≠−1`; lấy giao hai điều kiện.",
+    "worked_solution": "Biểu thức dưới căn không âm: \\(9-3x\\ge0\\iff x\\le3\\). Mẫu khác 0: \\(x+1\\ne0\\iff x\\ne-1\\). Lấy giao hai điều kiện, được \\(D=(-\\infty;3]\\setminus\\{-1\\}\\).",
     "skill_ids": [
       "FUNCTION_DOMAIN"
     ],
@@ -339,9 +339,9 @@
   {
     "item_id": "THPT-G10-B16-R01",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R01",
-    "stem": "Cho `f(x)=2x²−12x+11`. Tìm tọa độ đỉnh, trục đối xứng, GTNN và tập giá trị. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Cho \\(f(x)=2x^2-12x+11\\). Tìm tọa độ đỉnh, trục đối xứng, giá trị nhỏ nhất và tập giá trị. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`I(3;−7)`, trục `x=3`, GTNN `−7`, `T=[−7;+∞)`.",
-    "worked_solution": "`f(x)=2(x−3)²−7`; hệ số trước bình phương dương.",
+    "worked_solution": "Hoàn thành bình phương: \\(f(x)=2(x-3)^2-7\\). Parabol mở lên, đỉnh \\(I(3;-7)\\), trục đối xứng \\(x=3\\). Vì \\((x-3)^2\\ge0\\), giá trị nhỏ nhất bằng \\(-7\\) tại \\(x=3\\); tập giá trị là \\(T=[-7;+\\infty)\\).",
     "skill_ids": [
       "B16_OUT_04",
       "B16_OUT_02"
@@ -407,9 +407,9 @@
   {
     "item_id": "THPT-G10-B16-R02",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R02",
-    "stem": "Với `y=−x²+4x+5`, xác định đỉnh/trục và các điểm cắt `Ox,Oy`; mô tả chiều mở của parabol. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(y=-x^2+4x+5\\), xác định đỉnh, trục đối xứng và các giao điểm với \\(Ox,Oy\\); mô tả chiều mở của parabol. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`I(2;9)`, trục `x=2`, cắt `Ox` tại `(-1;0)` và `(5;0)`, cắt `Oy` tại `(0;5)`, parabol mở xuống.",
-    "worked_solution": "`y=−(x−2)²+9=−(x+1)(x−5)`.",
+    "worked_solution": "Hoàn thành bình phương: \\(y=-(x-2)^2+9\\), nên đỉnh \\(I(2;9)\\), trục \\(x=2\\), mở xuống vì hệ số bậc hai âm. Giải \\(y=-(x+1)(x-5)=0\\) được \\(x=-1,5\\), nên giao \\(Ox\\) tại \\((-1;0),(5;0)\\). Cho \\(x=0\\) được \\(y=5\\), giao \\(Oy\\) tại \\((0;5)\\).",
     "skill_ids": [
       "B16_OUT_03",
       "B16_OUT_02"
@@ -475,9 +475,9 @@
   {
     "item_id": "THPT-G10-B16-R03",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R03",
-    "stem": "Chuyển động giả định có độ cao `h(t)=−4t²+24t` (m), trong đó t tính bằng giây, tính từ khi bắt đầu `t=0` đến khi chạm đất. Hỏi thời gian đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Chuyển động giả định có độ cao \\(h(t)=-4t^2+24t\\) (m), với \\(t\\) tính bằng giây từ lúc bắt đầu \\(t=0\\) đến khi chạm đất. Tìm thời điểm đạt độ cao cực đại, độ cao đó và thời gian trở lại mặt đất. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`t=3s`, `hmax=36m`, `t_landing=6s`.",
-    "worked_solution": "`h(t)=−4(t−3)²+36`; nghiệm `h=0` là `t=0,6`, miền thực tế `[0;6]`.",
+    "worked_solution": "\\(h(t)=-4(t-3)^2+36\\), nên độ cao lớn nhất 36 m tại \\(t=3\\) s. Giải \\(h(t)=-4t(t-6)=0\\) được \\(t=0,6\\). Thời điểm sau lúc bắt đầu mà vật trở lại mặt đất là 6 s; miền thực tế là \\([0;6]\\).",
     "skill_ids": [
       "B16_OUT_05"
     ],
@@ -542,9 +542,9 @@
   {
     "item_id": "THPT-G10-B16-R04",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R04",
-    "stem": "Giá `p` nghìn đồng và nhu cầu dự kiến `n(p)=150−3p` sản phẩm, trên `0≤p≤50`. Tìm giá tối ưu và doanh thu lớn nhất (nghìn đồng), với `R(p)=p·n(p)`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Giá \\(p\\) nghìn đồng và nhu cầu dự kiến \\(n(p)=150-3p\\) sản phẩm, trên \\(0\\le p\\le50\\). Tìm giá tối ưu và doanh thu lớn nhất (nghìn đồng), với \\(R(p)=p\\,n(p)\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`p=25` nghìn đồng, `Rmax=1875` nghìn đồng (1,875 triệu đồng).",
-    "worked_solution": "`R(p)=−3p²+150p=−3(p−25)²+1875`; khi `p=25`, `n=75`. Điều kiện miền thỏa.",
+    "worked_solution": "Doanh thu \\(R(p)=-3p^2+150p=-3(p-25)^2+1875\\). Vì \\(25\\in[0;50]\\), giá tối ưu là 25 nghìn đồng, nhu cầu tương ứng 75 sản phẩm. Doanh thu lớn nhất 1 875 nghìn đồng, tức 1 875 000 đồng.",
     "skill_ids": [
       "B16_OUT_05"
     ],
@@ -589,7 +589,7 @@
     "options": [
       {
         "id": "A",
-        "text": "25 nghìn đồng; 1.875 nghìn đồng."
+        "text": "25 nghìn đồng; 1 875 nghìn đồng."
       },
       {
         "id": "B",
@@ -597,11 +597,11 @@
       },
       {
         "id": "C",
-        "text": "25 nghìn đồng; 3.750 nghìn đồng."
+        "text": "25 nghìn đồng; 3 750 nghìn đồng."
       },
       {
         "id": "D",
-        "text": "15 nghìn đồng; 1.575 nghìn đồng."
+        "text": "15 nghìn đồng; 1 575 nghìn đồng."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -609,9 +609,9 @@
   {
     "item_id": "THPT-G10-B16-R05",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B16-R05",
-    "stem": "Trong ba biểu thức `f(x)=x²+3x+2`, `g(x)=0x²+5x−7`, `h(x)=−4x+1`, biểu thức nào là hàm số bậc hai? Vì sao? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Trong ba biểu thức \\(f(x)=x^2+3x+2,\\ g(x)=0x^2+5x-7,\\ h(x)=-4x+1\\), biểu thức nào là hàm số bậc hai? Vì sao? Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "Chỉ `f` là hàm số bậc hai.",
-    "worked_solution": "Hệ số trước `x²` phải khác 0. Hai biểu thức còn lại chỉ có bậc nhất (`g` có hệ số `x²` bằng 0).",
+    "worked_solution": "Hàm số bậc hai có dạng \\(ax^2+bx+c\\) với \\(a\\ne0\\). Chỉ \\(f\\) có hệ số bậc hai bằng 1; \\(g\\) có hệ số đó bằng 0 và \\(h\\) không có hạng tử bậc hai. Do đó chỉ \\(f\\) là hàm số bậc hai.",
     "skill_ids": [
       "B16_OUT_01"
     ],
@@ -676,9 +676,9 @@
   {
     "item_id": "THPT-G10-B17-R01",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R01",
-    "stem": "Giải `x²−x−6≥0`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Giải bất phương trình \\(x^2-x-6\\ge0\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`(−∞;−2]∪[3;+∞)`.",
-    "worked_solution": "`(x+2)(x−3)≥0` ở ngoài hai nghiệm, lấy cả biên.",
+    "worked_solution": "Phân tích \\(x^2-x-6=(x+2)(x-3)\\), có hai nghiệm \\(-2,3\\) và hệ số bậc hai dương. Tam thức dương ở ngoài hai nghiệm, âm ở giữa, bằng 0 tại hai nghiệm. Vì đề yêu cầu không âm, tập nghiệm là \\((-\\infty;-2]\\cup[3;+\\infty)\\).",
     "skill_ids": [
       "QUAD_INEQUALITY"
     ],
@@ -743,9 +743,9 @@
   {
     "item_id": "THPT-G10-B17-R02",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R02",
-    "stem": "Tìm `m∈ℝ` để `x²−2(m−1)x+m²+1>0` với mọi `x∈ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Tìm \\(m\\in\\mathbb R\\) để \\(x^2-2(m-1)x+m^2+1>0\\) với mọi \\(x\\in\\mathbb R\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`m>0`.",
-    "worked_solution": "`a=1>0`, `Δ=4(m−1)²−4(m²+1)=−8m<0` khi và chỉ khi `m>0`.",
+    "worked_solution": "Hệ số bậc hai bằng 1, dương. Tam thức luôn dương khi và chỉ khi \\(\\Delta<0\\). Tính \\(\\Delta=4(m-1)^2-4(m^2+1)=-8m\\). Vậy \\(-8m<0\\iff m>0\\). Trường hợp \\(m=0\\) có nghiệm kép tại đó tam thức bằng 0, không thỏa dấu nghiêm ngặt.",
     "skill_ids": [
       "QUAD_PARAMETER"
     ],
@@ -810,9 +810,9 @@
   {
     "item_id": "THPT-G10-B17-R03",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R03",
-    "stem": "Với `f(x)=−(x−1)²`, giải bất phương trình `f(x)<0`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Với \\(f(x)=-(x-1)^2\\), giải bất phương trình \\(f(x)<0\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`ℝ\\{1}`.",
-    "worked_solution": "`−(x−1)²<0 ↔ (x−1)²>0`, xảy ra khi `x≠1`. Nghiệm kép không tạo đổi dấu.",
+    "worked_solution": "Ta có \\(-(x-1)^2<0\\iff (x-1)^2>0\\iff x\\ne1\\). Tại \\(x=1\\), tam thức bằng 0; ở cả hai phía đều âm, nên nghiệm kép không làm đổi dấu. Tập nghiệm là \\(\\mathbb R\\setminus\\{1\\}\\).",
     "skill_ids": [
       "QUAD_DOUBLE_ROOT_SIGN",
       "QUAD_INEQUALITY"
@@ -878,9 +878,9 @@
   {
     "item_id": "THPT-G10-B17-R04",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B17-R04",
-    "stem": "Lợi nhuận giả định của một hoạt động theo lượng `x` có dạng `P(x)=−x²+10x−16` (triệu đồng), với `0≤x≤10`. Xác định miền `x` để `P(x)>0`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Lợi nhuận giả định theo lượng \\(x\\) có dạng \\(P(x)=-x^2+10x-16\\) (triệu đồng), với \\(0\\le x\\le10\\). Xác định miền \\(x\\) để \\(P(x)>0\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`2<x<8`.",
-    "worked_solution": "`P(x)=−(x−2)(x−8)`, hệ số âm, dương giữa hai nghiệm, thỏa miền vật lý.",
+    "worked_solution": "Phân tích \\(P(x)=-(x-2)(x-8)\\). Tam thức có hệ số bậc hai âm nên dương giữa hai nghiệm 2 và 8, bằng 0 tại hai nghiệm. Lấy giao với miền \\([0;10]\\), được \\(2<x<8\\).",
     "skill_ids": [
       "QUAD_MODELING"
     ],
@@ -945,9 +945,9 @@
   {
     "item_id": "THPT-G10-B18-R01",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R01",
-    "stem": "Giải `√(2x+5)=x+1` trên `ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Giải phương trình \\(\\sqrt{2x+5}=x+1\\) trên \\(\\mathbb R\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`{2}`.",
-    "worked_solution": "`x+1≥0`. Bình phương: `2x+5=(x+1)² ↔ x²=4` cho `±2`, chỉ `2` hợp lệ.",
+    "worked_solution": "Điều kiện vế phải không âm: \\(x\\ge-1\\); khi đó \\(2x+5\\ge3>0\\). Bình phương hai vế được \\(2x+5=(x+1)^2\\), tương đương \\(x^2=4\\). Hai ứng viên \\(x=-2,2\\); loại \\(-2\\) vì không thỏa điều kiện. Thử \\(x=2\\): \\(\\sqrt9=3=2+1\\). Tập nghiệm \\(\\{2\\}\\).",
     "skill_ids": [
       "RADICAL_CONDITION",
       "RADICAL_FILTER"
@@ -1013,9 +1013,9 @@
   {
     "item_id": "THPT-G10-B18-R02",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R02",
-    "stem": "Giải `√(x²+3x+2)=√(x+2)` trên `ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Giải phương trình \\(\\sqrt{x^2+3x+2}=\\sqrt{x+2}\\) trên \\(\\mathbb R\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`{−2;0}`.",
-    "worked_solution": "Bình phương: `x²+3x+2=x+2 ↔ x(x+2)=0`; ở cả `−2` và `0`, hai biểu thức dưới căn không âm và bằng nhau.",
+    "worked_solution": "Điều kiện: \\(x^2+3x+2\\ge0,\\ x+2\\ge0\\). Trên miền này, bình phương hai vế được \\(x^2+3x+2=x+2\\iff x(x+2)=0\\), suy ra \\(x=-2\\) hoặc \\(x=0\\). Tại \\(-2\\) hai biểu thức dưới căn bằng 0; tại 0 chúng bằng 2. Cả hai đều thỏa, nên tập nghiệm \\(\\{-2,0\\}\\).",
     "skill_ids": [
       "RADICAL_TWO_SIDES",
       "RADICAL_DOMAIN"
@@ -1081,9 +1081,9 @@
   {
     "item_id": "THPT-G10-B18-R03",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R03",
-    "stem": "Giải `√(x²+4x+1)=√(2x+3)` trên `ℝ`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Giải phương trình \\(\\sqrt{x^2+4x+1}=\\sqrt{2x+3}\\) trên \\(\\mathbb R\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`{−1+√3}`.",
-    "worked_solution": "Bình phương `x²+2x−2=0`, cho `x=−1±√3`. Điều kiện `2x+3≥0` loại `x=−1−√3` (nhỏ hơn `−3/2`); nghiệm `−1+√3` đạt cả hai điều kiện.",
+    "worked_solution": "Điều kiện \\(x^2+4x+1\\ge0,\\ 2x+3\\ge0\\). Bình phương trên miền này được \\(x^2+2x-2=0\\), cho \\(x=-1\\pm\\sqrt3\\). Nghiệm \\(-1-\\sqrt3<-\\frac32\\) vi phạm \\(2x+3\\ge0\\). Với \\(x=-1+\\sqrt3\\), hai biểu thức dưới căn bằng nhau và bằng \\(1+2\\sqrt3>0\\). Vậy tập nghiệm \\(\\{-1+\\sqrt3\\}\\).",
     "skill_ids": [
       "RADICAL_TWO_SIDES",
       "RADICAL_DOMAIN",
@@ -1150,9 +1150,9 @@
   {
     "item_id": "THPT-G10-B18-R04",
     "content_version": "SGK-G10-CHVI-PUBLIC-BANK-CANDIDATE-20261127-THPT-G10-B18-R04",
-    "stem": "Một tam giác vuông có hai cạnh góc vuông dài `x>0` m và `4` m, cạnh huyền dài `x+2` m. Tìm `x`. Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
+    "stem": "Một tam giác vuông có hai cạnh góc vuông dài \\(x>0\\) m và 4 m, cạnh huyền dài \\(x+2\\) m. Tìm \\(x\\). Chọn phương án đúng; tự làm và giải thích trước khi nộp toàn bài.",
     "answer_key": "`x=3m`.",
-    "worked_solution": "`√(x²+16)=x+2`. Bình phương cho `x²+16=(x+2)²`, tức `4x=12`, nên `x=3`. Thử `5=3+2`, thỏa điều kiện.",
+    "worked_solution": "Theo định lí Pythagore, \\(\\sqrt{x^2+16}=x+2\\). Vì \\(x>0\\), hai vế không âm. Bình phương được \\(x^2+16=(x+2)^2\\iff 4x=12\\iff x=3\\). Kiểm tra: hai cạnh góc vuông 3 m, 4 m có cạnh huyền 5 m, đúng bằng \\(x+2\\). Vậy \\(x=3\\) m.",
     "skill_ids": [
       "RADICAL_MODELING"
     ],
@@ -1264,19 +1264,19 @@
     "options": [
       {
         "id": "A",
-        "text": "Cùng đỉnh, trục và chiều biến thiên; \\(T_D=(-\\infty;9]\\)."
+        "text": "\\(I(1;9)\\), trục \\(x=1\\); tăng trên \\([-2;1]\\), giảm trên \\([1;5]\\); \\(T_D=(-\\infty;9]\\)."
       },
       {
         "id": "B",
-        "text": "I(1;9), trục x=1; giảm trên [-2;1], tăng trên [1;5]; \\(T_D=[-7;9]\\)."
+        "text": "\\(I(1;9)\\), trục \\(x=1\\); giảm trên \\([-2;1]\\), tăng trên \\([1;5]\\); \\(T_D=[-7;9]\\)."
       },
       {
         "id": "C",
-        "text": "I(1;9), trục x=1; tăng trên [-2;1], giảm trên [1;5]; f(-2)=0,f(1)=9,f(5)=-7; \\(T_D=[-7;9]\\)."
+        "text": "\\(I(1;9)\\), trục \\(x=1\\); tăng trên \\([-2;1]\\), giảm trên \\([1;5]\\); \\(f(-2)=0,f(1)=9,f(5)=-7\\); GTLN 9, GTNN \\(-7\\), \\(T_D=[-7;9]\\)."
       },
       {
         "id": "D",
-        "text": "Cùng đỉnh và chiều biến thiên; f(-2)=0,f(1)=9,f(5)=-7; \\(T_D=[0;9]\\)."
+        "text": "\\(I(1;9)\\), trục \\(x=1\\); tăng trên \\([-2;1]\\), giảm trên \\([1;5]\\); \\(f(-2)=0,f(1)=9,f(5)=-7\\); \\(T_D=[0;9]\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1344,7 +1344,7 @@
       },
       {
         "id": "D",
-        "text": "P: \\(\\Delta=-24,a>0\\), luôn dương. Q: \\(\\Delta=0,a<0\\), âm trừ nghiệm −1. R: \\(\\Delta=36,a<0\\), dương trên (1;4), âm ngoài [1;4], bằng 0 tại 1,4."
+        "text": "P: \\(\\Delta=-24,a>0\\), luôn dương. Q: \\(\\Delta=0,a<0\\), âm trừ \\(x=-1\\) tại đó bằng 0. R: \\(\\Delta=36,a<0\\), dương trên \\((1;4)\\), âm ngoài \\([1;4]\\), bằng 0 tại 1,4. Cần xét cả hướng mở (dấu \\(a\\)) và số nghiệm (dấu \\(\\Delta\\))."
       }
     ],
     "exercise_type": "INTERACTIVE"
