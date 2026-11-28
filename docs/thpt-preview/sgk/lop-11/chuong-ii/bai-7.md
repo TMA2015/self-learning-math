@@ -60,9 +60,11 @@
     ### 1.2. Số hạng tổng quát
 
     Muốn biết lương năm thứ \(10\), không cần tính riêng cả chín năm trước. Từ năm đầu đến năm thứ hai có **một lần nhân** với \(1{,}05\); đến năm thứ ba có **hai lần**, v.v. Vậy đến năm thứ \(n\) ta đã nhân với công bội đúng \(n-1\) lần:
+
     \[
       u_n=u_1q^{\,n-1},\quad n\ge2.
     \]
+
     Với dãy lương, năm thứ \(10\) là \(240(1{,}05)^9\) triệu đồng; mũ là \(9\), không phải \(10\), vì năm thứ nhất là **mốc ban đầu**.
 
     Nếu biết hai số hạng cách xa nhau, lấy \(u_s/u_r=q^{s-r}\) **chỉ khi số hạng ở mẫu khác \(0\)**. Khi \(s-r\) chẵn, phép khai căn có thể cho **hai công bội đối nhau**. Ví dụ \(q^2=4\) chưa đủ để quyết định \(q=2\) hay \(q=-2\). Nếu mọi số hạng đều dương thì \(q>0\), nên loại nghiệm âm. Những giả thiết khác của đề bài cũng có thể giúp xác định dấu của \(q\). Đây là lỗi dễ gặp ở các bài suy ngược.
@@ -82,18 +84,22 @@
     ### 1.3. Tổng của \(n\) số hạng đầu cấp số nhân
 
     Biết công thức lương năm thứ \(n\) vẫn chưa đủ để tính tổng tiền lương \(10\) năm. Ta cần cộng
+
     \[
        S_{10}=u_1+u_1q+u_1q^2+\cdots+u_1q^9.
     \]
+
     Nếu nhân cả tổng với \(q\), ta được \(qS_{10}=u_1q+u_1q^2+\cdots+u_1q^{10}\). Khi lấy dòng đầu **trừ** dòng sau, toàn bộ số hạng nằm ở giữa triệt tiêu, chỉ còn \((1-q)S_{10}=u_1(1-q^{10})\). Đó là lí do xuất hiện công thức tổng, không phải phép biến đổi cần học thuộc không có căn cứ.
 
     Cần phân biệt trường hợp **\(q=1\)**: khi đó \(1-q=0\), không được chia. Dãy có tất cả số hạng bằng \(u_1\) và tổng đơn giản là \(nu_1\). Trường hợp \(q=0\) lại dùng được công thức với \(q\ne1\), kết quả \(S_n=u_1\) cho mọi \(n\ge1\).
 
     Ví dụ lương khởi điểm \(240\) triệu đồng và tăng \(5\%\) mỗi năm: tổng mười năm là
+
     \[
        S_{10}=240\,\frac{1-(1{,}05)^{10}}{1-1{,}05}
        \approx3018{,}694\ {\rm triệu\ đồng}.
     \]
+
     Làm tròn tới triệu đồng được **3019 triệu đồng**. Cộng \(240\) triệu đồng mười lần sẽ bỏ qua tăng trưởng, còn nhân mức lương năm cuối với \(10\) lại coi mọi năm được trả như năm cuối.
 
     **Vận dụng.** Tìm số số hạng đầu cần cộng của cấp số nhân \(2,6,18,\ldots\) để tổng bằng \(728\). Hãy thử thay lại kết quả thay vì chỉ giải phương trình lũy thừa.
