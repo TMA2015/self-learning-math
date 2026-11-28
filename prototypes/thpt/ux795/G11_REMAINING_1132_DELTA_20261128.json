@@ -589,6 +589,21 @@
           "before": "lập thương sai phân s(2+h)-s(2),",
           "after": "lập thương sai phân $\\dfrac{s(2+h)-s(2)}{h}$ với $h\\ne0$,",
           "count": 1
+        },
+        {
+          "before": "Ba bài B31–B33 nguồn Academic/PED đã duyệt: 31 outcomes, 32 ví dụ có suy luận, 62 câu Core/Practice, 9 Written/Anchor, 5 SVG, 11 D6. Tự kiểm tra chương chỉ tự đối chiếu 31 câu Practice công khai, không phải Readiness độc lập hoặc Mastery.",
+          "after": "Ba bài về ý nghĩa đạo hàm, quy tắc tính và đạo hàm cấp hai. Học theo thứ tự, tự thử rồi luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        },
+        {
+          "before": "1. Từ đo **biến thiên trung bình** đến vận tốc tức thời là đưa độ dài khoảng đo về 0 bằng **giới hạn**, chứ không thay h=0 trong phân thức. 2. Tốc độ thay đổi tức thời của f chính là đạo hàm; trong hình học nó là độ dốc tiếp tuyến, trong vật lý là vận tốc có dấu. 3. Quy tắc **tích, thương và hàm hợp** giúp tính nhanh nhưng phải giữ điều kiện xác định; mũ/lôgarit/lượng giác **đều** nằm trong SGK Chương IX. 4. Khi đạo hàm là một hàm mới, đạo hàm tiếp cho **đạo hàm cấp hai**; theo thời gian đó là gia tốc, khác vận tốc. 5. Học sinh chỉ học nhánh SGK vẫn có đủ kiến thức B31–B33, Core/Practice/Written và cơ chế định hướng D6; không cần truy cập Topic.",
+          "after": "1. Từ đo **biến thiên trung bình** đến vận tốc tức thời là đưa độ dài khoảng đo về 0 bằng **giới hạn**, chứ không thay h=0 trong phân thức.\n2. Tốc độ thay đổi tức thời của f chính là đạo hàm; trong hình học nó là độ dốc tiếp tuyến, trong vật lý là vận tốc có dấu.\n3. Quy tắc **tích, thương và hàm hợp** giúp tính nhanh nhưng phải giữ điều kiện xác định; mũ/lôgarit/lượng giác **đều** nằm trong SGK Chương IX.\n4. Khi đạo hàm là một hàm mới, đạo hàm tiếp cho **đạo hàm cấp hai**; theo thời gian đó là gia tốc, khác vận tốc.\n5. Học sinh chỉ học nhánh SGK vẫn có đủ kiến thức B31–B33, bài luyện tập, tự luận và hướng dẫn ôn lại; không cần học thêm nhánh chuyên đề.",
+          "count": 1
+        },
+        {
+          "before": "Đây là bài học công khai, tuyệt đối không thay cho PRIVATE RD1.",
+          "after": "Đây là bài tự thử công khai, không thay cho bài đánh giá độc lập.",
+          "count": 1
         }
       ]
     },
@@ -620,6 +635,132 @@
         {
           "before": "Gọi \\(T\\) là đỉnh chóp lớn, \\(A'=(T+A)/2\\), \\(B'=(T+B)/2\\), \\(C'=(T+C)/2\\) theo quan hệ chia đôi trên các cạnh bên (hiểu các điểm như vectơ vị trí). Vì \\(B_1=(A+B)/2\\), \\(C_1=(A+C)/2\\), nên \\(\\overrightarrow{AA'}=\\overrightarrow{B_1B'}=\\overrightarrow{C_1C'}=(\\overrightarrow{AT})/2\\).",
           "after": "Gọi \\(T\\) là đỉnh chóp lớn. Vì tỉ số cạnh đáy là \\(1/2\\), \\(A',B',C'\\) là trung điểm \\(TA,TB,TC\\). Theo định lí đường trung bình trong tam giác \\(TAB\\), \\(B_1B'\\parallel AT\\) và \\(B_1B'=AT/2\\); tương tự trong tam giác \\(TAC\\), \\(C_1C'\\parallel AT\\) và \\(C_1C'=AT/2\\). Đoạn \\(AA'\\) cũng bằng \\(AT/2\\), nên ba cạnh bên song song và bằng nhau.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii.md",
+      "old": "da62c057a632405e2f90d65dedf6e1db9695cfb3",
+      "edits": [
+        {
+          "before": "Bài 8–9 có kiến thức theo bản chất, 10 ví dụ, 28 câu Core/Practice, 4 Written/Anchor, 3 SVG và 6 thẻ khắc phục. Tự kiểm tra dùng câu công khai đã review để tự đối chiếu; không có Readiness độc lập hay Mastery.",
+          "after": "Hai bài về mẫu số liệu ghép nhóm. Học cách lập bảng, đọc tần số và tính các số đặc trưng; sau đó tự luyện và làm bài tự luận. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iii/luyen-tap.md",
+      "old": "1382e31517c3cbc82a5209c1e653f183a79244a1",
+      "edits": [
+        {
+          "before": "28 câu canonical đã review: 10 Core và 18 Practice. Tự giải rồi mở gợi ý/lời giải. Không phải kiểm tra độc lập và không ghi Mastery.",
+          "after": "28 câu luyện tập: 10 câu kiến thức nền và 18 câu thực hành. Tự giải rồi mở gợi ý hoặc lời giải. Không phải kiểm tra độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v.md",
+      "old": "aa09c96b3d9ac5df955dd4b3c99edf4fd23007ef",
+      "edits": [
+        {
+          "before": "Ba bài học đầy đủ: giới hạn dãy số, giới hạn hàm số và hàm số liên tục; 13 ví dụ suy luận, 30 câu canonical công khai, 6 Written/Anchor, 3 SVG và 6 D6. Tự kiểm tra tự đối chiếu không phải Readiness độc lập hoặc Mastery.",
+          "after": "Ba bài về giới hạn dãy số, giới hạn hàm số và tính liên tục. Học theo thứ tự, tự thử, đọc ví dụ và luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/luyen-tap.md",
+      "old": "d30b31f9641f5d23a33ade06eb429e7b65fc07d0",
+      "edits": [
+        {
+          "before": "30 câu public canonical: 9 Core, 17 Practice, 4 Application. Làm trước, mới mở đối chiếu; không dùng làm đánh giá độc lập hoặc Skill Mastery.",
+          "after": "30 câu luyện tập: 9 câu kiến thức nền, 17 câu thực hành và 4 câu vận dụng. Làm trước rồi tự đối chiếu; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi.md",
+      "old": "ab1f6278b75bab9622840368cff5699f1050a703",
+      "edits": [
+        {
+          "before": "Bốn bài B18–B21: kiến thức D1 đầy đủ, 19 ví dụ có suy luận, 41 câu public Core/Practice/Application, 8 Written/Anchor, 4 SVG và 8 D6. Tự kiểm tra 20 câu công khai chỉ để tự đối chiếu sau Final Submit, không phải Readiness độc lập hoặc Mastery.",
+          "after": "Bốn bài từ lũy thừa, lôgarit đến hàm số và phương trình, bất phương trình. Học theo thứ tự và tự giải bài tập. Tự kiểm tra dùng câu công khai, tự đối chiếu sau khi nộp bài; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        },
+        {
+          "before": "**Không dùng câu này làm RD1 kín**; đây chỉ là hoạt động hướng dẫn công khai, không tạo Skill Mastery.",
+          "after": "Đây là bài tự thử công khai, không thay cho bài đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/luyen-tap.md",
+      "old": "eecfeac22d75a37e5da5d6932cfe3e2686bf058c",
+      "edits": [
+        {
+          "before": "41 câu hỏi PUBLIC canonical đã review: 16 Core, 21 Practice và 4 Application. Chỉ đối chiếu sau khi tự giải và nộp formative; không chấm tự luận tự động, không ghi Mastery/Readiness.",
+          "after": "41 câu luyện tập: 16 câu kiến thức nền, 21 câu thực hành và 4 câu vận dụng. Tự giải và nộp bài trước khi đối chiếu; không chấm tự luận tự động, không ghi Mastery hay kết quả đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii.md",
+      "old": "d44a16b641e2686cfe6158aeecbfd5b75d10fc5d",
+      "edits": [
+        {
+          "before": "Sáu bài B22–B27: đầy đủ kiến thức D1, 27 ví dụ có suy luận D2, 51 câu PUBLIC Core/Practice, 12 Written/Anchor, 6 SVG và 10 D6. Tự kiểm tra gồm 18 câu công khai sau Final Submit, không phải Readiness độc lập hay Skill Mastery.",
+          "after": "Sáu bài từ quan hệ vuông góc đến hình chiếu, khoảng cách và thể tích. Đọc hình, tự thử, rồi luyện tập. Tự kiểm tra dùng câu công khai, tự đối chiếu sau khi nộp bài; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/luyen-tap.md",
+      "old": "90c35aca6df0b5a437d6bacb33b9e0474154deae",
+      "edits": [
+        {
+          "before": "51 câu PUBLIC canonical có source đã review: 33 Core (gồm 1 câu tích hợp Chương VII đặt trong Core B27) và 18 Practice. Giải trước, đối chiếu theo lựa chọn; không dùng làm Readiness độc lập hoặc Skill Mastery.",
+          "after": "51 câu luyện tập: 33 câu kiến thức nền (gồm một câu tổng hợp ở Bài 27) và 18 câu thực hành. Giải trước rồi tự đối chiếu; không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii.md",
+      "old": "852866c070f932c2062dfbc0567ef0e8170443a2",
+      "edits": [
+        {
+          "before": "Ba bài B28–B30 từ nguồn đã review: 20 outcomes, 16 ví dụ có suy luận, 39 câu Core/Practice công khai, 8 câu Written/Anchor, 3 SVG giải thích trực quan và 8 D6. Tự kiểm tra cuối chương chỉ dùng 20 câu Practice công khai để tự đối chiếu; không phải Readiness độc lập hoặc Mastery.",
+          "after": "Ba bài về biến cố, công thức cộng và công thức nhân xác suất. Học cách phân biệt các điều kiện, đọc hình rồi luyện tập. Tự kiểm tra dùng câu công khai để tự đối chiếu, không phải đánh giá độc lập và không ghi Mastery.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/luyen-tap.md",
+      "old": "1264301a50c5860bfa3bb2087cfdeb6eba5ad886",
+      "edits": [
+        {
+          "before": "39 câu PUBLIC canonical (19 Core, 20 Practice). Core B30 gồm các tình huống xác suất độc lập; Practice B30 có một câu tích hợp toàn chương với ID nguồn gốc riêng, không sao chép câu hỏi. Giải trước khi tự mở lời giải; không ghi Mastery hay kết quả Readiness.",
+          "after": "39 câu luyện tập: 19 câu kiến thức nền và 20 câu thực hành, gồm bài tổng hợp ở Bài 30. Giải trước khi tự mở lời giải; không ghi Mastery hay kết quả đánh giá độc lập.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/luyen-tap.md",
+      "old": "84a5ac862840155c9cf68bf4c3378540b6c3d7a1",
+      "edits": [
+        {
+          "before": "62 câu PUBLIC canonical: 31 Core + 31 Practice theo các B31–B33 (trong B33 có một cặp Core/Practice tích hợp chương, vẫn giữ item_id nguồn). Giải trước khi tự mở lời giải; không ghi Mastery/Readiness.",
+          "after": "62 câu luyện tập: 31 câu kiến thức nền và 31 câu thực hành, gồm bài tổng hợp ở Bài 33. Giải trước khi tự mở lời giải; không ghi Mastery hay kết quả đánh giá độc lập.",
           "count": 1
         }
       ]

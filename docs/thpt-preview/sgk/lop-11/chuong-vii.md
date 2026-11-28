@@ -1,6 +1,6 @@
 # Toán 11 · Chương VII. Quan hệ vuông góc trong không gian
 
-<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Sáu bài B22–B27: đầy đủ kiến thức D1, 27 ví dụ có suy luận D2, 51 câu PUBLIC Core/Practice, 12 Written/Anchor, 6 SVG và 10 D6. Tự kiểm tra gồm 18 câu công khai sau Final Submit, không phải Readiness độc lập hay Skill Mastery.</p><div class="thpt-r4-grid">
+<div class="thpt-r4-screen" data-thpt-r4><p class="thpt-r4-eyebrow">TOÁN 11 · CHƯƠNG VII · SGK KNTT TẬP HAI</p><p class="thpt-r4-lead">Sáu bài từ quan hệ vuông góc đến hình chiếu, khoảng cách và thể tích. Đọc hình, tự thử, rồi luyện tập. Tự kiểm tra dùng câu công khai, tự đối chiếu sau khi nộp bài; không phải đánh giá độc lập và không ghi Mastery.</p><div class="thpt-r4-grid">
 <a class="thpt-r4-tile" href="bai-22/"><span aria-hidden="true">22</span><strong>Bài 22 · Hai đường thẳng vuông góc</strong><small>Hiểu bản chất → Tự thử → Thực hành</small><em>Học bài →</em></a>
 <a class="thpt-r4-tile" href="bai-23/"><span aria-hidden="true">23</span><strong>Bài 23 · Đường thẳng vuông góc với mặt phẳng</strong><small>Hiểu bản chất → Tự thử → Thực hành</small><em>Học bài →</em></a>
 <a class="thpt-r4-tile" href="bai-24/"><span aria-hidden="true">24</span><strong>Bài 24 · Phép chiếu vuông góc. Góc giữa đường thẳng và mặt phẳng</strong><small>Hiểu bản chất → Tự thử → Thực hành</small><em>Học bài →</em></a>
