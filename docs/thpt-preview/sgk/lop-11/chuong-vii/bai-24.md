@@ -175,7 +175,7 @@
 
     ### 3.5. Đọc góc đường–mặt từ tam giác 6–8–10
 
-    **Đề bài.** Một đoạn dốc dài 10 m, cao hơn nền 6 m. Tính độ dài hình chiếu trên nền và \(\sin\alpha,\tan\alpha\), với \(\alpha\) là góc giữa đoạn dốc và mặt nền.
+    **Đề bài.** Một đoạn dốc dài 10 m, đầu dưới nằm trên mặt nền phẳng, đầu trên cao hơn nền 6 m. Tính độ dài hình chiếu trên nền và \(\sin\alpha,\tan\alpha\), với \(\alpha\) là góc giữa đoạn dốc và mặt nền.
 
     **Phân tích:** Độ dài 10 là **cạnh huyền**, 6 là **độ cao vuông góc**; hình chiếu là cạnh ngang chưa biết. Dùng Pythagore trước, tỉ số lượng giác sau.
 

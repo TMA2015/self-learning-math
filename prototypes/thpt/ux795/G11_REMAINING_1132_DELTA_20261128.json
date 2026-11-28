@@ -190,6 +190,247 @@
           "count": 1
         }
       ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-1.md",
+      "old": "0603fbb2b61374fcd49eff3c119197cff3fa77e4",
+      "edits": [
+        {
+          "before": "Nêu góc quay theo radian và độ dài cung đã đi.",
+          "after": "Một vòng ứng với 360° hay 2π rad; radian được giải thích ở mục 1.3. Nêu góc quay theo radian và độ dài cung đã đi.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-i/bai-2.md",
+      "old": "7ae9b767e969d13763d81e73b50dbcb33bccdb15",
+      "edits": [
+        {
+          "before": "Chúng cùng dao động theo một biến thời gian nhưng lệch pha; làm thế nào biết biên độ và pha của âm tổng hợp?",
+          "after": "Chúng cùng dao động theo một biến thời gian nhưng lệch pha. Biên độ là độ lệch lớn nhất so với mức 0; pha ban đầu là góc trong đối số lúc \\(t=0\\). Vì \\(\\cos t=\\sin(t+\\pi/2)\\), hai tín hiệu lệch pha \\(\\pi/2\\). Làm thế nào biết biên độ và pha của âm tổng hợp?",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-iv/bai-13.md",
+      "old": "8d662b7d8d8677eb3c8d210f8acacce2cc00824d",
+      "edits": [
+        {
+          "before": "Các hình bình hành \\(ABC'D'\\) và \\(ADC'B'\\) cũng có đường chéo \\(AC'\\);",
+          "after": "Từ cấu tạo hình hộp, \\(AB\\parallel D'C'\\), \\(AB=D'C'\\) và \\(AD\\parallel B'C'\\), \\(AD=B'C'\\). Vì thế \\(ABC'D'\\) và \\(ADC'B'\\) cũng là hình bình hành, có chung đường chéo \\(AC'\\);",
+          "count": 1
+        },
+        {
+          "before": "Hai đường \\(MN,NP\\) cắt nhau tại \\(N\\), đều song song \\((ABCD)\\),",
+          "after": "Vì \\(M,N,P\\) nằm giữa các cạnh bên nên không thuộc đáy; kết hợp hai quan hệ song song với các cạnh đáy, theo dấu hiệu Bài 12 suy ra \\(MN,NP\\) song song \\((ABCD)\\). Hai đường này cắt nhau tại \\(N\\),",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-v/bai-16.md",
+      "old": "17cf25b5629fff519d577635a6803647b3453312",
+      "edits": [
+        {
+          "before": "Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.",
+          "after": "Chẳng hạn với \\(f(x)=(x^2-4)/(x-2)\\), mọi dãy \\(x_n\\ne2\\) tiến tới 2 đều cho \\(f(x_n)=x_n+2\\to4\\), theo kiến thức Bài 15. Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-18.md",
+      "old": "91397166b56f95c8118d0134f7f8cb14916a963c",
+      "edits": [
+        {
+          "before": "với \\(0<a<1\\), thứ tự đảo chiều.",
+          "after": "với \\(0<a<1\\), thứ tự đảo chiều. Ví dụ \\((1/2)^0=1\\), \\((1/2)^1=1/2\\), \\((1/2)^2=1/4\\): mỗi khi số mũ tăng 1, giá trị nhân với một số nhỏ hơn 1 nên giảm. Đây là minh họa cho số mũ nguyên; tính chất với số mũ thực được nêu ở phần sau.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vi/bai-19.md",
+      "old": "406d662118b15c5057f1394432ff3618d52736ad",
+      "edits": [
+        {
+          "before": "Khi tăng số kì ghép không giới hạn, giới hạn dẫn tới \\(A=Pe^{rt}\\).",
+          "after": "Số kì \\(mt\\) phải phù hợp với số kì ghép thực tế. Với \\(r>0\\), đặt \\(s=m/r\\). Khi \\(m\\to+\\infty\\), \\(s\\to+\\infty\\) và \\((1+r/m)^{mt}=[(1+1/s)^s]^{rt}\\to e^{rt}\\). Vì vậy mô hình liên tục lý tưởng cho \\(A=Pe^{rt}\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-22.md",
+      "old": "fde91def1d86063fae77d520852ff683cda71186",
+      "edits": [
+        {
+          "before": "\\(DC'\\parallel AB'\\) vì các đoạn này cùng có hướng theo một cạnh đáy và một cạnh đứng.",
+          "after": "Tứ giác \\(AB'C'D\\) là hình bình hành vì \\(AD\\parallel B'C'\\) và \\(AD=B'C'\\). Do đó \\(DC'\\parallel AB'\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-24.md",
+      "old": "3e25e8777dcdff21bee39cffe5b3814bfa441737",
+      "edits": [
+        {
+          "before": "Một đoạn dốc dài 10 m, cao hơn nền 6 m.",
+          "after": "Một đoạn dốc dài 10 m, đầu dưới nằm trên mặt nền phẳng, đầu trên cao hơn nền 6 m.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-25.md",
+      "old": "6604897838dc1daabe85297fe246cf540c5b3108",
+      "edits": [
+        {
+          "before": "tương tự \\(AD'\\perp SC\\),",
+          "after": "mặt khác \\(CD\\perp AD\\) và \\(CD\\perp SA\\) nên \\(CD\\perp(SAD)\\), suy ra \\((SCD)\\perp(SAD)\\). Vì \\(AD'\\subset(SAD)\\) và \\(AD'\\perp SD\\) (giao tuyến hai mặt), ta có \\(AD'\\perp(SCD)\\), suy ra \\(AD'\\perp SC\\),",
+          "count": 1
+        },
+        {
+          "before": "Khoảng cách từ tâm đáy đến đỉnh tương ứng của hai tam giác lần lượt là \\(a/\\sqrt3\\), \\(a'/\\sqrt3\\).",
+          "after": "Tam giác đều cạnh \\(a\\) có đường cao \\(a\\sqrt3/2\\), tâm ngoại tiếp trùng trọng tâm, nên bán kính bằng \\(2/3\\) đường cao, tức \\(a/\\sqrt3\\). Tương tự đáy nhỏ có bán kính \\(a'/\\sqrt3\\). Khi chiếu vuông góc đỉnh trên xuống đáy lớn, hai bán kính tương ứng cùng hướng vì hai đáy là các mặt cắt song song của cùng hình chóp đều.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-vii/bai-26.md",
+      "old": "280ae1d136d543ab4d2d5a7ddb4e8999f4e8e096",
+      "edits": [
+        {
+          "before": "\\(AO\\perp(BDD'B')\\), suy \\(d(AA',(BDD'B'))=AO\\).",
+          "after": "\\(AO\\perp(BDD'B')\\). Vì \\(AA'\\parallel BB'\\subset(BDD'B')\\) và \\(A\\notin(BDD'B')\\) (giao với đáy là \\(BD\\)), suy \\(AA'\\parallel(BDD'B')\\), nên \\(d(AA',(BDD'B'))=AO\\).",
+          "count": 1
+        },
+        {
+          "before": "là hợp lí vì \\(A\\) là một điểm khác \\(O\\) trên mặt \\((SAC)\\), không phải điểm thuộc \\(BD\\).",
+          "after": "vì \\(O\\) là trung điểm \\(AC\\). Nếu \\(K\\) là hình chiếu của \\(A\\) lên \\(SC\\), thì \\(OH\\parallel AK\\), nên \\(OH=AK/2\\) theo định lí đường trung bình.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-28.md",
+      "old": "ede75c644c6da8305090bf1210e17873144d9367",
+      "edits": [
+        {
+          "before": "“không có cả ti vi lẫn máy vi tính” (không có loại nào)",
+          "after": "“không có ti vi và cũng không có máy vi tính”",
+          "count": 1
+        },
+        {
+          "before": "Một hộp có \\(2\\) bi đỏ và \\(1\\) bi xanh; lấy hai lượt.",
+          "after": "Một hộp có \\(2\\) bi đỏ và \\(1\\) bi xanh; mỗi lượt chọn ngẫu nhiên đều một bi trong số còn lại. Nếu trả lại, trộn đều và chọn lại độc lập.",
+          "count": 1
+        },
+        {
+          "before": "Hai bạn lần lượt rút mỗi người một bi.",
+          "after": "Hai bạn lần lượt chọn ngẫu nhiên đều mỗi người một bi trong số bi còn lại; nếu trả lại, trộn đều và chọn lại độc lập.",
+          "count": 1
+        },
+        {
+          "before": "Với hai biến cố đều có khả năng xảy ra,",
+          "after": "Với hai biến cố có xác suất dương,",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-viii/bai-30.md",
+      "old": "134423d47faeed1a00ab5f9b0ed704119de67c64",
+      "edits": [
+        {
+          "before": "Mỗi bạn lấy đều một bóng từ một hộp khác nhau.",
+          "after": "Mỗi bạn chọn ngẫu nhiên đều một bóng từ một hộp khác nhau, hai lựa chọn độc lập.",
+          "count": 1
+        },
+        {
+          "before": "Hai hộp tách biệt nên kết quả rút ở hộp I không đổi thành phần hộp II. Hai biến cố độc lập.",
+          "after": "Theo giả thiết hai lựa chọn độc lập, hai biến cố lấy bóng cũng độc lập.",
+          "count": 1
+        },
+        {
+          "before": "### 3.6. Không thể nhân khi lấy vật không hoàn lại",
+          "after": "### 3.6. Không dùng công thức nhân xác suất độc lập trong bài rút không hoàn lại",
+          "count": 1
+        },
+        {
+          "before": "rút liên tiếp hai bi **không trả lại**.",
+          "after": "rút liên tiếp hai bi **không trả lại**, mỗi lượt chọn ngẫu nhiên đều trong số bi còn lại.",
+          "count": 1
+        },
+        {
+          "before": "\\(3/5\\) (do mỗi bi có cơ hội như nhau ở vị trí thứ hai).",
+          "after": "\\(3/5\\): có \\(5\\cdot4=20\\) cặp bi có thứ tự đồng khả năng, trong đó \\(3\\cdot4=12\\) cặp có bi thứ hai đỏ, nên \\(P(B)=12/20=3/5\\).",
+          "count": 1
+        },
+        {
+          "before": "Không được lấy \\(P(A)P(B)\\) chỉ vì có hai lượt.",
+          "after": "Không được lấy \\(P(A)P(B)\\) nếu chưa có độc lập; quy tắc nhân để đếm số cặp vẫn dùng được.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-31.md",
+      "old": "8f3d2b6e144a5d5bee5635b7f5058291cc89c9ac",
+      "edits": [
+        {
+          "before": "vận tốc lúc chạm đất là",
+          "after": "vận tốc ngay trước khi chạm đất (giới hạn từ phía trước) là",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-32.md",
+      "old": "82cfd851c3629e67793d91355d970011d8d1134e",
+      "edits": [
+        {
+          "before": "vì hàm có đạo hàm thì liên tục.",
+          "after": "vì hàm có đạo hàm thì liên tục: với \\(\\Delta x\\ne0\\), \\(v(x+\\Delta x)-v(x)=\\Delta x\\cdot[\\Delta v/\\Delta x]\\to0\\) do thương có giới hạn hữu hạn.",
+          "count": 1
+        },
+        {
+          "before": "\\(t\\ge0\\) (s). Tính vận tốc khi vật đạt độ cao cực đại và khi chạm lại mặt đất.",
+          "after": "\\(0\\le t\\le20/4{,}9\\) (s), từ lúc phóng đến lúc chạm lại đất. Tính vận tốc khi vật đạt độ cao cực đại và ngay trước khi chạm lại mặt đất.",
+          "count": 1
+        },
+        {
+          "before": "Thời điểm đạt đỉnh được xác định khi \\(v(t)=0\\).",
+          "after": "Đồ thị độ cao là parabol có hệ số \\(t^2\\) âm, đỉnh tại \\(t=20/9{,}8\\) trong miền vật lí (kiến thức hàm bậc hai Toán 10). Tại đó \\(v(t)=0\\).",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix/bai-33.md",
+      "old": "1102e28f47fb8946fdafca2f86194abd60637b47",
+      "edits": [
+        {
+          "before": "Vì thế, tại thời điểm \\(v\\ne0\\),",
+          "after": "Vì \\(v\\) liên tục, khi \\(v>0\\) thì gần thời điểm xét \\(|v|=v\\) có đạo hàm \\(a\\); khi \\(v<0\\) thì \\(|v|=-v\\) có đạo hàm \\(-a\\). Vì thế, tại thời điểm \\(v\\ne0\\),",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "path": "docs/thpt-preview/sgk/lop-11/chuong-ix.md",
+      "old": "862b99e722cfe268f8a5ebb34768f9f7b644ab3a",
+      "edits": [
+        {
+          "before": "lập thương sai phân s(2+h)-s(2),",
+          "after": "lập thương sai phân $\\dfrac{s(2+h)-s(2)}{h}$ với $h\\ne0$,",
+          "count": 1
+        }
+      ]
     }
   ]
 }

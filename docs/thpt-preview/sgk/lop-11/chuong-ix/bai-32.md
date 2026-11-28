@@ -60,7 +60,7 @@
     \Delta(uv)=v\,\Delta u+u\,\Delta v+\Delta u\,\Delta v.
     \]
 
-    Chia cho \(\Delta x\ne0\) rồi lấy giới hạn: \(\Delta u/\Delta x\to u'\), \(\Delta v/\Delta x\to v'\) và \(\Delta v\to0\), vì hàm có đạo hàm thì liên tục. Do đó \((\Delta u/\Delta x)\Delta v\to0\): phần góc nhỏ không đóng góp vào giới hạn. Vì thế \((uv)'=u'v+uv'\): **hai thành phần cùng biến đổi nên có hai số hạng**.
+    Chia cho \(\Delta x\ne0\) rồi lấy giới hạn: \(\Delta u/\Delta x\to u'\), \(\Delta v/\Delta x\to v'\) và \(\Delta v\to0\), vì hàm có đạo hàm thì liên tục: với \(\Delta x\ne0\), \(v(x+\Delta x)-v(x)=\Delta x\cdot[\Delta v/\Delta x]\to0\) do thương có giới hạn hữu hạn. Do đó \((\Delta u/\Delta x)\Delta v\to0\): phần góc nhỏ không đóng góp vào giới hạn. Vì thế \((uv)'=u'v+uv'\): **hai thành phần cùng biến đổi nên có hai số hạng**.
 
     <figure class="thpt-r4-plot thpt-r4-calculus-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHIX-B32-01_R00.svg" alt="Hình chữ nhật ban đầu diện tích uv, hai dải tăng diện tích v nhân du và u nhân dv, một góc nhỏ diện tích du nhân dv"><figcaption><strong>Đọc hình:</strong> miền giữa là diện tích ban đầu \(uv\), hai dải bên trên và bên phải biểu diễn \(u\,\Delta v\) và \(v\,\Delta u\); góc nhỏ là \(\Delta u\,\Delta v\). Hình minh họa khi hai kích thước tăng; công thức đạo hàm của tích vẫn đúng khi các hàm biến thiên theo chiều ngược lại.</figcaption></figure>
 
@@ -294,9 +294,9 @@
 
     ### 3.4. Vật phóng thẳng đứng — vận tốc khi lên cao và khi chạm đất
 
-    **Đề bài.** Một vật được phóng thẳng đứng từ mặt đất với vận tốc ban đầu \(20\) m/s, bỏ qua lực cản không khí. Độ cao \(h(t)=20t-4{,}9t^2\) (m), \(t\ge0\) (s). Tính vận tốc khi vật đạt độ cao cực đại và khi chạm lại mặt đất.
+    **Đề bài.** Một vật được phóng thẳng đứng từ mặt đất với vận tốc ban đầu \(20\) m/s, bỏ qua lực cản không khí. Độ cao \(h(t)=20t-4{,}9t^2\) (m), \(0\le t\le20/4{,}9\) (s), từ lúc phóng đến lúc chạm lại đất. Tính vận tốc khi vật đạt độ cao cực đại và ngay trước khi chạm lại mặt đất.
 
-    **Phân tích:** Vận tốc là đạo hàm \(h'(t)\). Thời điểm đạt đỉnh được xác định khi \(v(t)=0\). Để tìm lúc chạm đất **lần sau**, giải \(h(t)=0\) rồi loại nghiệm \(t=0\) lúc bắt đầu.
+    **Phân tích:** Vận tốc là đạo hàm \(h'(t)\). Đồ thị độ cao là parabol có hệ số \(t^2\) âm, đỉnh tại \(t=20/9{,}8\) trong miền vật lí (kiến thức hàm bậc hai Toán 10). Tại đó \(v(t)=0\). Để tìm lúc chạm đất **lần sau**, giải \(h(t)=0\) rồi loại nghiệm \(t=0\) lúc bắt đầu.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(v(t)=h'(t)=20-9{,}8t\) (m/s). Tại đỉnh quỹ đạo, \(v(t_1)=0\), nên \(t_1=20/9{,}8\) s và vận tốc khi đó bằng \(0\). Khi vật chạm đất, \(20t-4{,}9t^2=0\), tức \(t(20-4{,}9t)=0\). Nghiệm \(t=0\) là lúc phóng; nghiệm tiếp theo \(t_2=20/4{,}9=40/9{,}8\) s. Thay vào \(v(t)\), được \(v(t_2)=20-9{,}8(40/9{,}8)=-20\) m/s.</p></div>
 

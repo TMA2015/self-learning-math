@@ -26,7 +26,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B16-01_R01.svg" alt="Đồ thị y bằng x cộng 2 có lỗ tại điểm hai bốn"><figcaption><strong>Hướng dẫn đọc:</strong> chấm tròn rỗng ở \((2,4)\) nói rằng **hàm gốc không xác định tại \(x=2\)**; hai nhánh xanh tiến gần cao độ 4 khi \(x\to2\). Giới hạn bằng 4 không có nghĩa \(f(2)=4\).</figcaption></figure>
 
-    Đây là điểm cốt lõi: **giới hạn xét ở gần \(x_0\)** chứ không bắt buộc biết hàm số **ngay tại \(x_0\)**. SGK định nghĩa qua dãy: nếu mọi dãy \((x_n)\) trong miền xác định, \(x_n\ne x_0\), \(x_n\to x_0\) đều cho \(f(x_n)\to L\) thì \(f(x)\to L\) khi \(x\to x_0\). Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.
+    Đây là điểm cốt lõi: **giới hạn xét ở gần \(x_0\)** chứ không bắt buộc biết hàm số **ngay tại \(x_0\)**. SGK định nghĩa qua dãy: nếu mọi dãy \((x_n)\) trong miền xác định, \(x_n\ne x_0\), \(x_n\to x_0\) đều cho \(f(x_n)\to L\) thì \(f(x)\to L\) khi \(x\to x_0\). Chẳng hạn với \(f(x)=(x^2-4)/(x-2)\), mọi dãy \(x_n\ne2\) tiến tới 2 đều cho \(f(x_n)=x_n+2\to4\), theo kiến thức Bài 15. Không thể chỉ thử **một** dãy rồi coi đã chứng minh toàn bộ, vì dãy khác có thể cho kết quả khác.
 
     Khi biết các giới hạn hữu hạn của hai biểu thức, ta có thể cộng, trừ, nhân chúng; phép chia chỉ áp dụng khi giới hạn mẫu khác 0. Chẳng hạn, với phân thức trên, ta phải khử nhân tử chung \(x-2\) khi \(x\ne2\) rồi mới thay \(x=2\), vì mẫu ban đầu tiến về 0.
 

@@ -42,7 +42,7 @@
 
     <figure class="thpt-r4-plot thpt-r4-probability-figure"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-CHVIII-B28-01_R00.svg" alt="Sơ đồ Venn trong đó vùng A giao B nằm giữa hai hình tròn A và B"><figcaption><strong>Đọc hình:</strong> lần này chỉ quan sát miền ghi \(A\cap B\). Điểm ở miền “chỉ \(A\)” hoặc “chỉ \(B\)” không thỏa yêu cầu đồng thời hai điều kiện.</figcaption></figure>
 
-    Cách đọc này cũng giúp diễn đạt những câu dài. Nếu \(M\) là “gia đình có ti vi” và \(N\) là “gia đình có máy vi tính”, thì “có **cả hai**” là \(M\cap N\). Còn “có **đúng một trong hai**” gồm hai khả năng **không thể xảy ra đồng thời**: có ti vi nhưng không có máy vi tính, hoặc ngược lại. Ta cần phép hợp \((M\cap\overline N)\cup(\overline M\cap N)\), chứ không phải phép giao \(M\cap N\). Còn “không có cả ti vi lẫn máy vi tính” (không có loại nào) là \(\overline{M\cup N}=\overline M\cap\overline N\).
+    Cách đọc này cũng giúp diễn đạt những câu dài. Nếu \(M\) là “gia đình có ti vi” và \(N\) là “gia đình có máy vi tính”, thì “có **cả hai**” là \(M\cap N\). Còn “có **đúng một trong hai**” gồm hai khả năng **không thể xảy ra đồng thời**: có ti vi nhưng không có máy vi tính, hoặc ngược lại. Ta cần phép hợp \((M\cap\overline N)\cup(\overline M\cap N)\), chứ không phải phép giao \(M\cap N\). Còn “không có ti vi và cũng không có máy vi tính” là \(\overline{M\cup N}=\overline M\cap\overline N\).
 
     Nhắc lại biến cố đối: \(\overline A\) là biến cố “\(A\) không xảy ra”. Vì vậy “chỉ \(A\), không \(B\)” được viết \(A\cap\overline B\), còn “không điều kiện nào xảy ra” là \(\overline A\cap\overline B\). Những kí hiệu này chỉ viết gọn một câu nói; muốn dùng đúng, trước hết hãy đọc rõ **mỗi kết quả phải thỏa điều kiện nào**.
 
@@ -69,7 +69,7 @@
 
     Cũng cần phân biệt **xung khắc** với **độc lập**. Với *một* lần gieo xúc xắc, “ra \(2\)” và “ra \(5\)” không thể cùng xảy ra (xung khắc), nhưng biết đã ra \(2\) khiến cơ hội “ra \(5\)” trở thành \(0\); như vậy chúng **không độc lập**. Ngược lại, hai con xúc xắc độc lập vẫn có thể đồng thời cho kết quả chẵn. Độc lập không có nghĩa “không bao giờ cùng xảy ra”.
 
-    **Vận dụng.** Một hộp có \(2\) bi đỏ và \(1\) bi xanh; lấy hai lượt. Gọi \(C\): “lượt một lấy đỏ”, \(D\): “lượt hai lấy đỏ”. Hãy so sánh xác suất của \(D\) khi **có trả lại** và **không trả lại**, xét riêng trường hợp \(C\) xảy ra và \(C\) không xảy ra. Kết luận về độc lập.
+    **Vận dụng.** Một hộp có \(2\) bi đỏ và \(1\) bi xanh; mỗi lượt chọn ngẫu nhiên đều một bi trong số còn lại. Nếu trả lại, trộn đều và chọn lại độc lập. Gọi \(C\): “lượt một lấy đỏ”, \(D\): “lượt hai lấy đỏ”. Hãy so sánh xác suất của \(D\) khi **có trả lại** và **không trả lại**, xét riêng trường hợp \(C\) xảy ra và \(C\) không xảy ra. Kết luận về độc lập.
 
     ??? question "Đối chiếu"
 
@@ -153,7 +153,7 @@
 
     ### 3.5. Hai lượt lấy bi: có hoàn lại và không hoàn lại
 
-    **Đề bài.** Hộp có \(4\) bi đỏ và \(5\) bi xanh giống nhau. Hai bạn lần lượt rút mỗi người một bi. Gọi \(A\): “bạn đầu rút đỏ”, \(B\): “bạn sau rút xanh”. Trong trường hợp (a) trả bi lại trước lượt sau; (b) không trả bi lại, hãy xét \(A,B\) có độc lập không.
+    **Đề bài.** Hộp có \(4\) bi đỏ và \(5\) bi xanh giống nhau. Hai bạn lần lượt chọn ngẫu nhiên đều mỗi người một bi trong số bi còn lại; nếu trả lại, trộn đều và chọn lại độc lập. Gọi \(A\): “bạn đầu rút đỏ”, \(B\): “bạn sau rút xanh”. Trong trường hợp (a) trả bi lại trước lượt sau; (b) không trả bi lại, hãy xét \(A,B\) có độc lập không.
 
     **Phân tích:** Không xét số lượt bằng cảm giác. Hãy đếm lại **thành phần hộp trước lượt thứ hai** trong hai khả năng: lần đầu rút đỏ và lần đầu rút xanh.
 
@@ -169,7 +169,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> Một lần gieo chỉ cho một số chấm, nên \(C\cap D=\varnothing\): hai biến cố xung khắc. Ban đầu xác suất ra \(5\) là \(1/6\). Nếu đã biết kết quả ra \(2\), xác suất ra \(5\) là \(0\). Vì xác suất của \(D\) thay đổi khi biết \(C\), hai biến cố không độc lập.</p></div>
 
-    **Kiểm lại:** Không được kết luận “xung khắc nên độc lập”. Với hai biến cố đều có khả năng xảy ra, việc một biến cố xảy ra làm biến cố kia không thể xảy ra chính là sự phụ thuộc.
+    **Kiểm lại:** Không được kết luận “xung khắc nên độc lập”. Với hai biến cố có xác suất dương, việc một biến cố xảy ra làm biến cố kia không thể xảy ra chính là sự phụ thuộc.
 
 === "Lỗi thường gặp"
 

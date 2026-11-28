@@ -66,7 +66,7 @@
 
     Kim phút đi từ số 2 đến số 12: ngược chiều kim đồng hồ chỉ đi qua hai khoảng số, cùng chiều kim đồng hồ phải đi qua mười khoảng số. Hai phép quay có cùng tia cuối nhưng khác **chiều** và **độ lớn**. Quy ước ngược chiều kim đồng hồ là chiều dương; chiều ngược lại là âm.
 
-    **Vận dụng.** Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Nêu góc quay theo radian và độ dài cung đã đi.
+    **Vận dụng.** Một bánh xe bán kính 2 cm quay trọn một vòng ngược chiều kim đồng hồ. Một vòng ứng với 360° hay 2π rad; radian được giải thích ở mục 1.3. Nêu góc quay theo radian và độ dài cung đã đi.
 
     <span data-ped-first-try="1" data-outcome-id="G11-B01-SIGNED_ROTATION" data-thpt-first-try-id="THPT-G11-CHI-TRY01" hidden></span>
 

@@ -103,9 +103,9 @@
 
     ### 3.1. Hai hộp bóng và biến cố giao
 
-    **Đề bài.** Hộp I có \(6\) bóng trắng và \(4\) bóng đen; hộp II có \(1\) bóng trắng và \(7\) bóng đen. Mỗi bạn lấy đều một bóng từ một hộp khác nhau. Tính xác suất Long lấy trắng **và** Hải lấy đen.
+    **Đề bài.** Hộp I có \(6\) bóng trắng và \(4\) bóng đen; hộp II có \(1\) bóng trắng và \(7\) bóng đen. Mỗi bạn chọn ngẫu nhiên đều một bóng từ một hộp khác nhau, hai lựa chọn độc lập. Tính xác suất Long lấy trắng **và** Hải lấy đen.
 
-    **Phân tích:** Hai hộp tách biệt nên kết quả rút ở hộp I không đổi thành phần hộp II. Hai biến cố độc lập. Đếm hai cặp kết quả hoặc nhân hai xác suất đều được.
+    **Phân tích:** Theo giả thiết hai lựa chọn độc lập, hai biến cố lấy bóng cũng độc lập. Đếm hai cặp kết quả hoặc nhân hai xác suất đều được.
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> Gọi \(A\): “Long lấy trắng”; \(B\): “Hải lấy đen”. Có \(P(A)=6/10=3/5\), \(P(B)=7/8\). Do độc lập, \(P(AB)=(3/5)(7/8)=21/40\). Có thể kiểm bằng đếm cặp bóng: \(6\cdot7=42\) kết quả thuận lợi trên \(10\cdot8=80\) kết quả đồng khả năng, nên \(42/80=21/40\).</p></div>
 
@@ -158,13 +158,13 @@
 
     **Kiểm lại:** \(752+1236+575+2437=5000\). Phần giao có xác suất \(0{,}1504\), nhỏ hơn từng xác suất biên \(0{,}3976\) và \(0{,}2654\), đúng tính chất tập con.
 
-    ### 3.6. Không thể nhân khi lấy vật không hoàn lại
+    ### 3.6. Không dùng công thức nhân xác suất độc lập trong bài rút không hoàn lại
 
-    **Đề bài.** Hộp có \(3\) bi đỏ và \(2\) bi xanh giống nhau; rút liên tiếp hai bi **không trả lại**. Gọi \(A\): “lần đầu lấy đỏ” và \(B\): “lần hai lấy đỏ”. Xét tính độc lập của \(A,B\), rồi tính xác suất hai lần đều đỏ bằng cách đếm các cặp có thứ tự.
+    **Đề bài.** Hộp có \(3\) bi đỏ và \(2\) bi xanh giống nhau; rút liên tiếp hai bi **không trả lại**, mỗi lượt chọn ngẫu nhiên đều trong số bi còn lại. Gọi \(A\): “lần đầu lấy đỏ” và \(B\): “lần hai lấy đỏ”. Xét tính độc lập của \(A,B\), rồi tính xác suất hai lần đều đỏ bằng cách đếm các cặp có thứ tự.
 
-    **Phân tích:** Nếu lần đầu lấy đỏ, thành phần hộp đổi. Không được lấy \(P(A)P(B)\) chỉ vì có hai lượt. Có \(5\cdot4\) cặp bi có thứ tự đồng khả năng, trong đó \(3\cdot2\) cặp đều đỏ.
+    **Phân tích:** Nếu lần đầu lấy đỏ, thành phần hộp đổi. Không được lấy \(P(A)P(B)\) nếu chưa có độc lập; quy tắc nhân để đếm số cặp vẫn dùng được. Có \(5\cdot4\) cặp bi có thứ tự đồng khả năng, trong đó \(3\cdot2\) cặp đều đỏ.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(P(A)=3/5\). Nếu đã lấy đỏ ở lượt đầu, xác suất lượt hai đỏ là \(2/4=1/2\); trong khi khi chưa biết lượt đầu, xác suất bi lượt hai đỏ là \(3/5\) (do mỗi bi có cơ hội như nhau ở vị trí thứ hai). Hai cơ hội khác nhau nên \(A,B\) không độc lập. Xét các cặp bi có thứ tự, \(P(AB)=(3\cdot2)/(5\cdot4)=6/20=3/10\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.6"><p><strong>Lời giải.</strong> \(P(A)=3/5\). Nếu đã lấy đỏ ở lượt đầu, xác suất lượt hai đỏ là \(2/4=1/2\); trong khi khi chưa biết lượt đầu, xác suất bi lượt hai đỏ là \(3/5\): có \(5\cdot4=20\) cặp bi có thứ tự đồng khả năng, trong đó \(3\cdot4=12\) cặp có bi thứ hai đỏ, nên \(P(B)=12/20=3/5\). Hai cơ hội khác nhau nên \(A,B\) không độc lập. Xét các cặp bi có thứ tự, \(P(AB)=(3\cdot2)/(5\cdot4)=6/20=3/10\).</p></div>
 
     **Kiểm lại:** Nếu dùng sai công thức độc lập sẽ ra \((3/5)(3/5)=9/25\), khác \(3/10\). Số đếm \((3\cdot2)/(5\cdot4)\) đúng nhưng **không được viện dẫn công thức nhân cho hai biến cố độc lập** để biện minh.
 

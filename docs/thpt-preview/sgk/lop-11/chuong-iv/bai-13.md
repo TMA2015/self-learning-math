@@ -88,7 +88,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/FIG-G11-B13-01_R01.svg" alt="Hình hộp ABCD.A phẩy B phẩy C phẩy D phẩy, hai đáy và bốn cạnh bên"><figcaption><strong>Hướng dẫn đọc:</strong> \(ABCD\), \(A'B'C'D'\) là hai đáy song song, \(AA',BB',CC',DD'\) là cạnh bên. Hình hộp có 8 đỉnh, 12 cạnh và 6 mặt; nét khuất vẫn là cạnh thật.</figcaption></figure>
 
-    **Bốn đường chéo của hình hộp:** Các đoạn \(AC',BD',CA',DB'\) nối các đỉnh đối diện. Trong hình bình hành \(ACC'A'\), hai đường chéo \(AC',CA'\) có cùng trung điểm. Các hình bình hành \(ABC'D'\) và \(ADC'B'\) cũng có đường chéo \(AC'\); đường chéo còn lại của chúng lần lượt là \(BD',DB'\). Vì vậy cả bốn đường chéo cùng đi qua trung điểm của mỗi đường, gọi là tâm hình hộp. Chúng không nhất thiết dài bằng nhau.
+    **Bốn đường chéo của hình hộp:** Các đoạn \(AC',BD',CA',DB'\) nối các đỉnh đối diện. Trong hình bình hành \(ACC'A'\), hai đường chéo \(AC',CA'\) có cùng trung điểm. Từ cấu tạo hình hộp, \(AB\parallel D'C'\), \(AB=D'C'\) và \(AD\parallel B'C'\), \(AD=B'C'\). Vì thế \(ABC'D'\) và \(ADC'B'\) cũng là hình bình hành, có chung đường chéo \(AC'\); đường chéo còn lại của chúng lần lượt là \(BD',DB'\). Vì vậy cả bốn đường chéo cùng đi qua trung điểm của mỗi đường, gọi là tâm hình hộp. Chúng không nhất thiết dài bằng nhau.
 
     **Vận dụng.** Lăng trụ tam giác có bao nhiêu đỉnh, cạnh, mặt? Đáy của một lăng trụ tứ giác là hình bình hành thì tên hình là gì?
 
@@ -184,7 +184,7 @@
 
     **Phân tích:** Tìm hai đường trung bình cắt nhau trong \((MNP)\) để dùng dấu hiệu; sau đó dùng tính duy nhất mặt song song qua điểm \(N\) hoặc \(P\).
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(MN\parallel AB\), \(NP\parallel BC\). Hai đường \(MN,NP\) cắt nhau tại \(N\), đều song song \((ABCD)\), nên \((MNP)\parallel(ABCD)\). Tương tự \(NP\parallel BC\), \(PQ\parallel CD\) và \(NP,PQ\) cắt ở \(P\), nên \((NPQ)\parallel(ABCD)\). Hai mặt \((MNP)\), \((NPQ)\) cùng chứa \(P,N\) và cùng song song đáy, bởi tính duy nhất chúng trùng nhau. Do đó \(Q\in(MNP)\), tức bốn điểm đồng phẳng.</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> \(MN\parallel AB\), \(NP\parallel BC\). Vì \(M,N,P\) nằm giữa các cạnh bên nên không thuộc đáy; kết hợp hai quan hệ song song với các cạnh đáy, theo dấu hiệu Bài 12 suy ra \(MN,NP\) song song \((ABCD)\). Hai đường này cắt nhau tại \(N\), nên \((MNP)\parallel(ABCD)\). Tương tự \(NP\parallel BC\), \(PQ\parallel CD\) và \(NP,PQ\) cắt ở \(P\), nên \((NPQ)\parallel(ABCD)\). Hai mặt \((MNP)\), \((NPQ)\) cùng chứa \(P,N\) và cùng song song đáy, bởi tính duy nhất chúng trùng nhau. Do đó \(Q\in(MNP)\), tức bốn điểm đồng phẳng.</p></div>
 
     **Kiểm lại:** \(MN,NP\) là hai đường phân biệt cắt nhau; các điểm trung điểm không thuộc đáy, nên các đường trung bình song song đáy chứ không nằm trong đáy.
 

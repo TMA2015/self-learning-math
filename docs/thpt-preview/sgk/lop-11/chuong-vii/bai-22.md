@@ -141,7 +141,7 @@
 
     **Đề bài.** Với hình lập phương \(ABCD.A'B'C'D'\) cạnh \(a>0\), tính góc giữa \(AC\) và \(DC'\).
 
-    **Phân tích:** \(DC'\parallel AB'\) vì các đoạn này cùng có hướng theo một cạnh đáy và một cạnh đứng. Do đó bài toán đưa về \((AC,AB')\). Chọn tam giác \(AB'C\) để tính góc tại \(A\).
+    **Phân tích:** Tứ giác \(AB'C'D\) là hình bình hành vì \(AD\parallel B'C'\) và \(AD=B'C'\). Do đó \(DC'\parallel AB'\). Do đó bài toán đưa về \((AC,AB')\). Chọn tam giác \(AB'C\) để tính góc tại \(A\).
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.4"><p><strong>Lời giải.</strong> Trong hình lập phương, \(DC'\parallel AB'\). Ba cạnh \(AC,AB',B'C\) đều là đường chéo của các hình vuông cạnh \(a\), nên cùng dài \(a\sqrt2\). Tam giác \(AB'C\) đều, vì vậy \(\angle CAB'=60^\circ\). Suy ra \((AC,DC')=(AC,AB')=60^\circ\).</p></div>
 

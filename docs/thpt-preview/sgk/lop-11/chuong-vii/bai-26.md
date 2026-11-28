@@ -236,7 +236,7 @@
 
     <figure class="thpt-r4-plot"><img loading="lazy" src="../../../../../assets/images/thpt/G11_B26_RHOMBUS_PRISM_DISTANCES_AUTHORING_20261123.svg" alt="Hình hộp đứng đáy thoi, AA phẩy đo h tới mặt đáy, AO đo a chia hai tới mặt bên BDD phẩy B phẩy"><figcaption><strong>Đọc hình trước lời giải:</strong> đường \(A'C'\) ở mặt trên song song mặt đáy nên khoảng cách bằng cạnh đứng \(h\). Đường \(AA'\) song song mặt bên \((BDD'B')\); đoạn \(AO\) màu đỏ vuông góc với \(BD\) và cạnh đứng \(BB'\), là pháp tuyến mặt ấy.</figcaption></figure>
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Vì \(A'C'\subset(A'B'C'D')\parallel(ABCD)\) và \(AA'\perp(ABCD)\), \(d(A'C',(ABCD))=AA'=h\). Gọi \(O\) là giao hai đường chéo đáy. Hình thoi cho \(AO\perp BD\); hình hộp đứng cho \(AO\perp BB'\). Do \(BD,BB'\) cắt nhau trong \((BDD'B')\), \(AO\perp(BDD'B')\), suy \(d(AA',(BDD'B'))=AO\). Tam giác \(BAD\) cân tại \(A\), có \(\angle BAD=120^\circ\) nên \(\angle ABO=30^\circ\); tam giác \(ABO\) vuông tại \(O\) cho \(AO=AB\sin30^\circ=a/2\).</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.5"><p><strong>Lời giải.</strong> Vì \(A'C'\subset(A'B'C'D')\parallel(ABCD)\) và \(AA'\perp(ABCD)\), \(d(A'C',(ABCD))=AA'=h\). Gọi \(O\) là giao hai đường chéo đáy. Hình thoi cho \(AO\perp BD\); hình hộp đứng cho \(AO\perp BB'\). Do \(BD,BB'\) cắt nhau trong \((BDD'B')\), \(AO\perp(BDD'B')\). Vì \(AA'\parallel BB'\subset(BDD'B')\) và \(A\notin(BDD'B')\) (giao với đáy là \(BD\)), suy \(AA'\parallel(BDD'B')\), nên \(d(AA',(BDD'B'))=AO\). Tam giác \(BAD\) cân tại \(A\), có \(\angle BAD=120^\circ\) nên \(\angle ABO=30^\circ\); tam giác \(ABO\) vuông tại \(O\) cho \(AO=AB\sin30^\circ=a/2\).</p></div>
 
     **Kiểm lại:** Hai khoảng cách \(h\) và \(a/2\) đo theo hai **phương khác nhau**; không mặc định chúng bằng nhau. Đã kiểm \(AO\perp\) cả hai đường cắt nhau của mặt bên.
 
@@ -284,7 +284,7 @@
 
     <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.9"><p><strong>Lời giải.</strong> a) Vì \(SA\perp(ABCD)\), \(SA\perp AC\). Đáy hình vuông cho \(AC=a\sqrt2\), nên tam giác \(SAC\) vuông cân tại \(A\), \(SC=\sqrt{SA^2+AC^2}=2a\). Đường cao từ \(A\) xuống \(SC\) có độ dài \(SA\cdot AC/SC=a\), vậy \(d(A,SC)=a\). b) Hình vuông có \(BD\perp AC\); đồng thời \(BD\perp SA\) vì \(SA\perp(ABCD)\). Hai đường \(SA,AC\) cắt tại \(A\) trong \((SAC)\), suy \(BD\perp(SAC)\). c) Gọi \(O=AC\cap BD\), \(H\) là chân từ \(O\) xuống \(SC\). Khi đó \(OH\perp SC\), và \(OH\subset(SAC)\) nên \(OH\perp BD\). Vậy \(OH\) là đoạn vuông góc chung. Diện tích tam giác \(SOC\) theo đáy \(OC=AC/2=a/\sqrt2\) và đường cao \(SA=a\sqrt2\) bằng \(a^2/2\). Mặt khác \(S_{SOC}=SC\cdot OH/2\), nên \(OH=a^2/(2a)=a/2\). Do đó \(d(BD,SC)=a/2\).</p></div>
 
-    **Kiểm lại:** \(d(BD,SC)=a/2\le d(A,SC)=a\) là hợp lí vì \(A\) là một điểm khác \(O\) trên mặt \((SAC)\), không phải điểm thuộc \(BD\). Đã kiểm \(OH\) có **cả hai đầu thuộc đúng đường**, và vuông góc cả hai đường.
+    **Kiểm lại:** \(d(BD,SC)=a/2\le d(A,SC)=a\) vì \(O\) là trung điểm \(AC\). Nếu \(K\) là hình chiếu của \(A\) lên \(SC\), thì \(OH\parallel AK\), nên \(OH=AK/2\) theo định lí đường trung bình. Đã kiểm \(OH\) có **cả hai đầu thuộc đúng đường**, và vuông góc cả hai đường.
 
     ### 3.10. Dựng khoảng cách hai đường chéo nhau qua mặt phẳng phụ
 

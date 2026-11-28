@@ -22,7 +22,7 @@
 
     Ở Bài 1, em đã biết cách đọc sin, cos của một góc trên đường tròn lượng giác, biết giá trị của các góc đặc biệt và hệ thức \(\sin^2x+\cos^2x=1\). Nhưng nếu cần tính \(\sin75^\circ\), ta không thể tra trực tiếp từ bảng \(30^\circ,45^\circ,60^\circ\). Điều đáng chú ý là \(75^\circ=45^\circ+30^\circ\): liệu có thể dùng những giá trị **đã biết** để tìm giá trị của một **góc mới**?
 
-    SGK còn đặt một câu hỏi từ âm thanh: hai tín hiệu \(5\sin t\) và \(5\cos t\) kết hợp thành \(f(t)=5\sin t+5\cos t\). Chúng cùng dao động theo một biến thời gian nhưng lệch pha; làm thế nào biết biên độ và pha của âm tổng hợp? Nếu chỉ cộng riêng hai biên độ, ta sẽ không thấy được sự lệch pha ấy. Để giải bài toán, trước hết ta phải hiểu cách lượng giác của **hai góc** liên hệ với lượng giác của **tổng hoặc hiệu hai góc**.
+    SGK còn đặt một câu hỏi từ âm thanh: hai tín hiệu \(5\sin t\) và \(5\cos t\) kết hợp thành \(f(t)=5\sin t+5\cos t\). Chúng cùng dao động theo một biến thời gian nhưng lệch pha. Biên độ là độ lệch lớn nhất so với mức 0; pha ban đầu là góc trong đối số lúc \(t=0\). Vì \(\cos t=\sin(t+\pi/2)\), hai tín hiệu lệch pha \(\pi/2\). Làm thế nào biết biên độ và pha của âm tổng hợp? Nếu chỉ cộng riêng hai biên độ, ta sẽ không thấy được sự lệch pha ấy. Để giải bài toán, trước hết ta phải hiểu cách lượng giác của **hai góc** liên hệ với lượng giác của **tổng hoặc hiệu hai góc**.
 
     ### 1.1. Từ góc hiệu đến công thức cộng
 
