@@ -1,9 +1,9 @@
 [
   {
     "item_id": "THPT-TOP12-P01",
-    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P01",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P01.DELTA07B",
     "stem": "Góc tù \\(\\alpha\\) có \\(\\cos\\alpha=-\\frac5{13}\\). Tính \\(\\sin\\alpha\\) và \\(\\tan\\alpha\\); giải thích việc chọn dấu.",
-    "answer_key": "\\(\\sin\\alpha=\\frac{12}{13};\\ \\tan\\alpha=-\\frac{12}5\\).",
+    "answer_key": "\\(\\sin\\alpha=\\frac{12}{13}>0,\\ \\tan\\alpha=-\\frac{12}5<0\\), vì góc tù có sin dương và cos âm.",
     "worked_solution": "Từ \\(\\sin^2\\alpha+\\cos^2\\alpha=1\\), suy ra \\(\\sin^2\\alpha=1-\\frac{25}{169}=\\frac{144}{169}\\). Vì \\(90^\\circ<\\alpha<180^\\circ\\), \\(\\sin\\alpha>0\\) nên \\(\\sin\\alpha=\\frac{12}{13}\\) (không lấy nghiệm âm). Do \\(\\cos\\alpha\\ne0\\), \\(\\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}=-\\frac{12}5\\). Nếu sai dấu, đọc lại mục 1,3,4 và thử một góc tù khác.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -37,7 +37,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\sin\\alpha=\\frac{12}{13};\\ \\tan\\alpha=-\\frac{12}5\\)."
+        "text": "\\(\\sin\\alpha=\\frac{12}{13}>0,\\ \\tan\\alpha=-\\frac{12}5<0\\), vì góc tù có sin dương và cos âm."
       },
       {
         "id": "B",
@@ -55,9 +55,9 @@
   },
   {
     "item_id": "THPT-TOP12-P02",
-    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P02",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P02.DELTA07B",
     "stem": "Tính chính xác \\(\\sin 150^{\\circ}+\\cos 120^{\\circ}\\) và giải thích quy luật được dùng.",
-    "answer_key": "\\(0\\); sin của hai góc bù bằng nhau, cos của hai góc bù đối nhau.",
+    "answer_key": "\\(0\\), vì \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\) và \\(\\cos120^\\circ=-\\cos60^\\circ=-\\frac12\\).",
     "worked_solution": "Vì \\(150^\\circ=180^\\circ-30^\\circ\\), \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\); \\(120^\\circ=180^\\circ-60^\\circ\\) nên \\(\\cos120^\\circ=-\\cos60^\\circ=-\\frac12\\). Tổng bằng 0. Nếu nhầm dấu, xem lại mục 2 về hai góc bù.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -91,19 +91,19 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(1\\)"
+        "text": "\\(1\\), vì cả hai giá trị lượng giác đều bằng \\(\\frac12\\)."
       },
       {
         "id": "B",
-        "text": "\\(0\\); sin của hai góc bù bằng nhau, cos của hai góc bù đối nhau."
+        "text": "\\(0\\), vì \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\) và \\(\\cos120^\\circ=-\\cos60^\\circ=-\\frac12\\)."
       },
       {
         "id": "C",
-        "text": "\\(-1\\)"
+        "text": "\\(-1\\), vì sin và cos của góc tù đều âm."
       },
       {
         "id": "D",
-        "text": "\\(\\frac{\\sqrt3-1}2\\)"
+        "text": "\\(\\frac{\\sqrt3-1}2\\), vì \\(\\sin150^\\circ=\\frac{\\sqrt3}2\\)."
       }
     ]
   },
@@ -162,9 +162,9 @@
   },
   {
     "item_id": "THPT-TOP12-P04",
-    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P04",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P04.DELTA07B",
     "stem": "Trong tam giác ABC có \\(A=30^\\circ,\\ B=60^\\circ,\\ a=6\\). Tính b, c và kiểm thứ tự độ dài ba cạnh.",
-    "answer_key": "\\(b=6\\sqrt3;\\ c=12\\).",
+    "answer_key": "\\(b=6\\sqrt3,\\ c=12\\); \\(6<6\\sqrt3<12\\), phù hợp thứ tự \\(A<B<C\\).",
     "worked_solution": "\\(C=180^\\circ-30^\\circ-60^\\circ=90^\\circ\\). Theo định lí sin, \\(\\frac a{\\sin A}=\\frac6{\\frac12}=12\\). Do đó \\(b=12\\sin60^\\circ=6\\sqrt3\\) và \\(c=12\\sin90^\\circ=12\\). Kiểm \\(6<6\\sqrt3<12\\), phù hợp thứ tự \\(A<B<C\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -209,15 +209,15 @@
       },
       {
         "id": "D",
-        "text": "\\(b=6\\sqrt3;\\ c=12\\)."
+        "text": "\\(b=6\\sqrt3,\\ c=12\\); \\(6<6\\sqrt3<12\\), phù hợp thứ tự \\(A<B<C\\)."
       }
     ]
   },
   {
     "item_id": "THPT-TOP12-P05",
-    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P05",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-TOP12-P05.DELTA07B",
     "stem": "Một tam giác có ba cạnh 5, 7, 8. Chọn phương pháp xác định góc lớn nhất là nhọn, vuông hay tù; tính diện tích và hai bán kính r, R.",
-    "answer_key": "Góc lớn nhất nhọn; \\(S=10\\sqrt3;\\ r=\\sqrt3;\\ R=\\frac{7\\sqrt3}3\\).",
+    "answer_key": "Góc lớn nhất nhọn vì \\(8^2<5^2+7^2\\) (định lí côsin); dùng Heron: \\(S=10\\sqrt3,\\ r=\\sqrt3,\\ R=\\frac{7\\sqrt3}3\\).",
     "worked_solution": "Vì \\(5+7>8\\), tam giác tồn tại. Góc lớn nhất đối diện cạnh 8, có cosin bằng \\(\\frac{25+49-64}{2\\cdot5\\cdot7}=\\frac17>0\\), nên nhọn. Biết ba cạnh, chọn Heron: \\(p=10,\\ S=\\sqrt{10\\cdot5\\cdot3\\cdot2}=10\\sqrt3\\). Từ \\(S=pr\\) suy \\(r=\\sqrt3\\); từ \\(S=\\frac{abc}{4R}\\) suy \\(R=\\frac{280}{40\\sqrt3}=\\frac{7\\sqrt3}3\\). Không dùng công thức nửa tích hai cạnh nếu chưa biết góc xen giữa hoặc chiều cao.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
@@ -251,11 +251,11 @@
     "options": [
       {
         "id": "A",
-        "text": "Góc lớn nhất nhọn; \\(S=10\\sqrt3;\\ r=\\sqrt3;\\ R=\\frac{7\\sqrt3}3\\)."
+        "text": "Góc lớn nhất nhọn vì \\(8^2<5^2+7^2\\) (định lí côsin); dùng Heron: \\(S=10\\sqrt3,\\ r=\\sqrt3,\\ R=\\frac{7\\sqrt3}3\\)."
       },
       {
         "id": "B",
-        "text": "Góc lớn nhất tù; \\(S=10\\sqrt3;r=\\sqrt3;R=\\frac{7\\sqrt3}3\\)"
+        "text": "Góc lớn nhất tù vì \\(8^2<5^2+7^2\\); dùng Heron: \\(S=10\\sqrt3,\\ r=\\sqrt3,\\ R=\\frac{7\\sqrt3}3\\)."
       },
       {
         "id": "C",
