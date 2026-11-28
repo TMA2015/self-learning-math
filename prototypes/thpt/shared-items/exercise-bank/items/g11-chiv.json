@@ -706,7 +706,7 @@
   },
   {
     "item_id": "THPT-G11-CHIV-B12-C02",
-    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B12-C02",
+    "content_version": "CD15-BANK-PARTIAL-20261127-THPT-G11-CHIV-B12-C02-XG6-20261128",
     "stem": "Điền điều kiện còn thiếu trong dấu hiệu: \\(a\\parallel b\\), \\(b\\subset(P)\\), và ... thì \\(a\\parallel(P)\\).",
     "answer_key": "\\(a\\not\\subset(P)\\).",
     "worked_solution": "Một đường thẳng song song với đường nằm trong mặt phẳng có thể nằm ngay trong mặt phẳng đó. Nếu thêm điều kiện a không nằm trong \\((P)\\), dấu hiệu đường thẳng song song mặt phẳng cho \\(a\\parallel(P)\\). Không được bỏ điều kiện này.",
@@ -714,7 +714,7 @@
       "G11-B12-PARALLEL_TEST"
     ],
     "problem_type_id": null,
-    "difficulty": "UNDERSTAND",
+    "difficulty": "RECOGNIZE",
     "hints": [
       "Xét khả năng a cũng nằm trong mặt phẳng."
     ],
