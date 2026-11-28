@@ -263,7 +263,7 @@
 
     **Phân tích:** Phải xét miền xác định của cả hai căn. Khi bình phương, ta tìm các nghiệm ứng viên rồi kiểm lại từng căn; giá trị nằm ngoài miền sẽ bị loại.
 
-    **Lời giải.** Bình phương hai vế và rút gọn:
+    **Lời giải.** Điều kiện: \(x\ge-3\) và \(x^2+7x+11\ge0\). Bình phương hai vế (trong miền xác định) và rút gọn:
 
     \[
     x^2+7x+11=x+3 \iff x^2+6x+8=0

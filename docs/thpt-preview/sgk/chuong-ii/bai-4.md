@@ -25,7 +25,7 @@
 
     Nếu một bài toán còn hỏi “sản xuất thế nào để lãi cao nhất?”, ta phải tìm phương án tốt nhất **trong phần miền chung đó**, chứ không thể chọn một điểm mang lại lợi nhuận lớn nhưng vi phạm nguồn lực. Học được cách nhìn miền nghiệm, em sẽ hiểu vì sao toán học giúp lựa chọn giữa nhiều kế hoạch có giới hạn.
 
-    Khi lợi nhuận có dạng \(F=px+qy\), những đường thẳng \(F=k\) ứng với các mức lợi nhuận khác nhau **song song nhau**. Hãy hình dung dịch chuyển một đường như vậy theo hướng lợi nhuận tăng: nếu miền khả thi là một **đa giác không rỗng, đóng và bị chặn**, đường ở mức cao nhất còn chạm miền sẽ đi qua **ít nhất một đỉnh**; đôi khi cả một cạnh cùng đạt cực đại. Vì thế phải kiểm đủ các đỉnh chứ không chọn ngẫu nhiên một điểm trong miền. Nếu \(x,y\) đếm sản phẩm nguyên chiếc, ta còn phải kiểm tính nguyên của phương án tối ưu.
+    Khi lợi nhuận có dạng \(F=px+qy\), những đường thẳng \(F=k\) ứng với các mức lợi nhuận khác nhau **song song nhau**. Hãy hình dung dịch chuyển một đường như vậy theo hướng lợi nhuận tăng: nếu miền khả thi là một **đa giác không rỗng, đóng và bị chặn** (có điểm thỏa mãn, lấy cả biên và nằm trong một vùng hữu hạn), đường ở mức cao nhất còn chạm miền sẽ đi qua **ít nhất một đỉnh**; đôi khi cả một cạnh cùng đạt cực đại. Vì thế phải kiểm đủ các đỉnh chứ không chọn ngẫu nhiên một điểm trong miền. Nếu \(x,y\) đếm sản phẩm nguyên chiếc, ta còn phải kiểm tính nguyên của phương án tối ưu.
 
     ### 1.2. Ví dụ trực quan
 

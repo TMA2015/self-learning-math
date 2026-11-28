@@ -270,6 +270,8 @@
 
 === "Lỗi thường gặp"
 
+    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B13-01) · [Kiểm lỗi 2](#HELP-G10-B13-02).
+
     **Tiếp tục:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md). Khi tự kiểm tra, em cần làm bài và chọn Final Submit trước khi xem lời giải; kết quả tự đối chiếu không ghi điểm thành thạo.
 
     <p class="thpt-r4-footnote">Nguồn tham chiếu: SGK Toán 10 Kết nối tri thức tập 1, Bài 13 (trang in 78–83), và học liệu nguồn đã khóa. Nội dung được biên tập lại để hỗ trợ tự học độc lập.</p>

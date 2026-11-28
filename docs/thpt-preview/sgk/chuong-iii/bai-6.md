@@ -40,7 +40,7 @@
 
     Xét tam giác \(ABC\) có ba cạnh dài \(a,b,c\). Dù chưa biết các góc và đường cao của tam giác, ta vẫn có thể tính **diện tích tam giác \(ABC\)** chỉ từ ba cạnh nếu chúng thực sự tạo thành một tam giác. Từ côsin, suy ra cos của một góc; hệ thức \(\sin^2 A=1-\cos^2 A\) cho sin dương, rồi thay vào \(S=\tfrac12bc\sin A\). Khi rút gọn, kết quả trở thành công thức **Heron** chứa \(p,p-a,p-b,p-c\). Ba đỉnh \(A,B,C\) phải **không thẳng hàng**; khi đó ta có một **tam giác không suy biến** (diện tích lớn hơn 0). Với ba độ dài cạnh dương, điều này tương đương mỗi cạnh nhỏ hơn tổng hai cạnh còn lại; khi đó các hiệu \(p-a,p-b,p-c\) đều dương. Vì thế phải kiểm bất đẳng thức tam giác trước, không chỉ bấm căn rồi tin một con số.
 
-    **Sau bài học, em cần:** giải thích và chọn đúng côsin/sin; tìm cạnh/góc của tam giác bằng dữ kiện SAS/SSS/AAS; suy diện tích từ đường cao, góc xen giữa, \(r,R\) hoặc ba cạnh; tính đo đạc có đơn vị và tự kiểm tính hợp lí của kết quả. Các công thức chi tiết và Tự thử sẽ được học ở tab Kiến thức, mỗi câu đều có Đối chiếu do em chủ động mở.
+    **Sau bài học, em cần:** giải thích và chọn đúng côsin/sin; tìm cạnh/góc của tam giác bằng dữ kiện hai cạnh và góc xen giữa, ba cạnh, hoặc hai góc và một cạnh; suy diện tích từ đường cao, góc xen giữa, \(r,R\) hoặc ba cạnh; tính đo đạc có đơn vị và tự kiểm tính hợp lí của kết quả. Các công thức chi tiết và Tự thử sẽ được học ở tab Kiến thức, mỗi câu đều có Đối chiếu do em chủ động mở.
 
 === "Kiến thức SGK"
 
@@ -79,7 +79,7 @@
 
     Tương tự cho \(B,C\) bằng cách hoán đổi tên góc và cạnh. **Trước khi bấm \(\cos^{-1}\)**, phải kiểm \(a,b,c>0\) và tổng hai cạnh bất kì **lớn hơn** cạnh còn lại. Nếu không thỏa bất đẳng thức tam giác nghiêm ngặt, không có tam giác cần giải. Khi tìm góc từ cos, hãy đặt máy ở DEG, kiểm góc nằm trong \((0^\circ,180^\circ)\), và xác nhận góc đối diện cạnh dài nhất phải lớn nhất.
 
-    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiểm phương pháp:</strong> SAS → dùng côsin tìm cạnh. SSS → dùng côsin tìm góc. Nếu \(A\) tù, kết quả \(a\) phải dài hơn từng cạnh kề; nếu ba cạnh không lập thành tam giác, dừng trước khi tính các góc.</div>
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiểm phương pháp:</strong> Hai cạnh và góc xen giữa (SAS) → dùng côsin tìm cạnh. Ba cạnh (SSS) → dùng côsin tìm góc. Nếu \(A\) tù, kết quả \(a\) phải dài hơn từng cạnh kề; nếu ba cạnh không lập thành tam giác, dừng trước khi tính các góc.</div>
 
     ### 2.2. Định lí sin
 
@@ -109,7 +109,7 @@
 
     #### 2.3.1. Chọn phương pháp theo dữ kiện
 
-    **Giải tam giác** là tính các cạnh và góc chưa biết khi đã có đủ dữ kiện. Trước khi thao tác, ghi ba cặp \(a/A,\ b/B,\ c/C\) và đánh dấu những đại lượng đã cho. Với **SAS**, thường bắt đầu bằng côsin để tìm cạnh thứ ba; với **SSS**, dùng côsin để tìm góc, rồi dùng tổng góc hoặc sin; với **ASA/AAS**, tính góc thứ ba rồi dùng định lí sin. Không tự bỏ qua điều kiện góc dương, tổng \(180^\circ\) và độ dài cạnh dương.
+    **Giải tam giác** là tính các cạnh và góc chưa biết khi đã có đủ dữ kiện. Trước khi thao tác, ghi ba cặp \(a/A,\ b/B,\ c/C\) và đánh dấu những đại lượng đã cho. Với **hai cạnh và góc xen giữa (SAS)**, thường bắt đầu bằng côsin để tìm cạnh thứ ba; với **ba cạnh (SSS)**, dùng côsin để tìm góc, rồi dùng tổng góc hoặc sin; với **hai góc và một cạnh (ASA/AAS)**, tính góc thứ ba rồi dùng định lí sin. Không tự bỏ qua điều kiện góc dương, tổng \(180^\circ\) và độ dài cạnh dương.
 
     Nếu biết \(A=35^\circ,B=65^\circ,c=10\), ta có \(C=80^\circ\). Khi ấy \(a=\dfrac{10\sin35^\circ}{\sin80^\circ}\), \(b=\dfrac{10\sin65^\circ}{\sin80^\circ}\). Em có thể tính gần đúng bằng máy DEG, ghi đơn vị và đối chiếu cạnh đối diện góc lớn hơn phải dài hơn. Không dùng công thức Heron chỉ để tìm cạnh khi đã biết hai góc, một cạnh.
 
@@ -179,8 +179,13 @@
     Nếu biết đủ ba cạnh \(a,b,c\), kiểm \(a,b,c>0\) và bất đẳng thức tam giác **nghiêm ngặt**. Khi ấy \(p=\frac{a+b+c}{2}\) và \(\sin A>0\). Từ \(\cos A=\frac{b^2+c^2-a^2}{2bc}\) kết hợp \(S=\frac12bc\sin A\), ta có
 
     \[
-    16S^2=4b^2c^2-(b^2+c^2-a^2)^2
-       =(a+b+c)(-a+b+c)(a-b+c)(a+b-c).
+    \begin{aligned}
+    16S^2&=4b^2c^2-(b^2+c^2-a^2)^2\\
+    &=[2bc-(b^2+c^2-a^2)]\\
+    &\quad\cdot[2bc+(b^2+c^2-a^2)]\\
+    &=(a+b+c)(-a+b+c)\\
+    &\quad\cdot(a-b+c)(a+b-c).
+    \end{aligned}
     \]
 
     Mỗi thừa số ở tích cuối bằng \(2p,\ 2(p-a),\ 2(p-b),\ 2(p-c)\). Chia cho 16 và lấy căn **dương** vì diện tích dương, suy ra công thức:
@@ -236,11 +241,11 @@
 
     \[
     b=6\,\frac{\sin75^\circ}{\sin45^\circ}
-     =3(\sqrt3+1),\qquad
+     \approx8{,}20,\qquad
     c=6\,\frac{\sin60^\circ}{\sin45^\circ}=3\sqrt6.
     \]
 
-    **Kiểm lại.** \(B=75^\circ\) lớn nhất, nên \(b\) phải dài nhất; thật vậy \(3(\sqrt3+1)\approx8{,}20\), \(3\sqrt6\approx7{,}35\), \(a=6\). Tổng góc bằng \(180^\circ\).
+    **Kiểm lại.** \(B=75^\circ\) lớn nhất, nên \(b\) phải dài nhất; thật vậy \(b\approx8{,}20\), \(3\sqrt6\approx7{,}35\), \(a=6\). Tổng góc bằng \(180^\circ\).
 
     ### 3.3. Ví dụ 3 — Heron và hai bán kính trong một tam giác khác
 

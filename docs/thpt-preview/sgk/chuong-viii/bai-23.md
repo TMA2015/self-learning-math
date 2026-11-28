@@ -307,7 +307,7 @@
 
     <span data-thpt-help-id="D6-G10-B23-01" hidden></span>
 
-    ??? tip "4.1. Chọn cộng hay nhân chỉ bằng từ khóa và hoặc"
+    ??? tip "4.1. Nhầm quy tắc cộng và quy tắc nhân khi chỉ dựa vào từ khóa"
 
         <p><strong>Dấu hiệu:</strong> Dựa máy móc vào từ «hoặc» hay «và» mà không kiểm tra có các trường hợp rời nhau hoặc các bước liên tiếp.</p>
         <p><strong>Bản chất toán:</strong> Quy tắc cộng áp dụng cho các trường hợp loại trừ nhau; quy tắc nhân cho các bước lựa chọn. Khi nhóm giao nhau hoặc số cách mỗi bước tùy nhánh, cần chia trường hợp chính xác.</p>

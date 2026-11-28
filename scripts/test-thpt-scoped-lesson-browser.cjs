@@ -206,6 +206,11 @@ async function verifyG12DisplayMath(page,source,rel,width){
 
 
 async function execute(){
+ const batch=require("./thpt-1132-g10-knowledge-delta.cjs");
+ if(batch.matchesRoutes(lessons)){
+  const browser=await (engine==="webkit"?webkit:chromium).launch(engine==="webkit"?{headless:true}:{headless:true,args:["--no-sandbox"]});
+  try{await batch.browserQA(browser,base,engine,widths)}finally{await browser.close()}return;
+ }
  const publicDelta=require("./thpt-1132-public-formative-delta.cjs");
  if(publicDelta.matchesRoutes(lessons)){
   const browser=await (engine==="webkit"?webkit:chromium).launch(engine==="webkit"?{headless:true}:{headless:true,args:["--no-sandbox"]});

@@ -119,7 +119,7 @@
 
     **Cách đọc hình:** Bên trái, điểm \(O(0,0)\) cho \(0\le4\), nên thuộc miền được tô, còn điểm \((2,1)\) cho \(2+2=4\), đúng trên nét liền và vẫn được lấy. Bên phải, \(O\) thỏa \(0<1\); \((1,1)\) cho \(2\cdot1-1=1\), bằng ngưỡng nhưng không thỏa dấu \(<1\), nên không thuộc miền.
 
-    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(ax+by=c\) là đường biên. Dấu \(\le,\ge\) lấy biên (nét liền); dấu \(<,>\) loại biên (nét đứt). Muốn xác định phía nghiệm, dùng một điểm thử không nằm trên biên.</div>
+    <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ:</strong> \(ax+by=c\) là đường biên. Dấu \(\le,\ge\) lấy biên (nét liền); dấu \(<,>\) loại biên (nét đứt). Muốn xác định phía nghiệm, dùng một điểm thử không nằm trên biên. Biểu thức \(ax+by-c\) bằng \(0\) trên đường biên và giữ cùng dấu trong mỗi nửa mặt phẳng mở, nên chỉ cần thử một điểm ở mỗi phía.</div>
 
     **Vận dụng.** Với \(3x+y<6\), đường biên là gì, vẽ nét liền hay nét đứt? Điểm \((2,0)\) có thuộc miền nghiệm không?
 

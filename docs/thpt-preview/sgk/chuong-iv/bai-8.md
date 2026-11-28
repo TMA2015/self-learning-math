@@ -215,7 +215,7 @@
 
     **Phân tích.** Vì hai lực cùng điểm đặt, dựng hình bình hành để tìm vectơ tổng. Khi hai lực **không cùng hướng** và **không vuông góc**, không cộng \(5+7\) cũng không áp dụng trực tiếp Pitago; dùng định lí côsin Bài 6 cho đường chéo.
 
-    **Lời giải.** Với \(F=|\vec F_1+\vec F_2|\), định lí côsin cho
+    **Lời giải.** Với \(F=|\vec F_1+\vec F_2|\), góc trong tam giác ghép hai vectơ là \(180^\circ-60^\circ=120^\circ\). Vì \(\cos120^\circ=-\cos60^\circ\), định lí côsin cho
 
     \[
     F^2=5^2+7^2+2\cdot5\cdot7\cos60^\circ
@@ -262,6 +262,8 @@
     **Kiểm lại.** Độ dời nhỏ hơn quãng đường \(13\) m, hướng Đông Bắc; kết quả có nghĩa hình học và không phụ thuộc việc ta chọn điểm trung gian để ghép vectơ.
 
 === "Lỗi thường gặp"
+
+    **Kiểm lỗi:** Các lỗi thường gặp được giải thích ngay sau từng hoạt động ở tab Khám phá kiến thức. Chọn mục tương ứng để xem lại: [Kiểm lỗi 1](#HELP-G10-B08-02) · [Kiểm lỗi 2](#HELP-G10-B08-01).
 
     **Học tiếp:** [Core và Luyện tập](luyen-tap.md) · [Tự kiểm tra cuối chương](tu-kiem-tra-chuong.md).
 

@@ -1850,6 +1850,7 @@ function expectedG10KnowledgeBlobHistorical(lesson,legacy){
  return blobs[1];
 }
 function expectedG10KnowledgeBlob(lesson,legacy){
+ const cp13=require("./thpt-1132-g10-knowledge-delta.cjs").currentBlob(Number(String(lesson).replace(/^B/,"")));if(cp13)return cp13;
  const current=expectedG10KnowledgeBlobHistorical(lesson,legacy);
  const n=Number(String(lesson).replace(/^B/,""));
  if(n>=1&&n<=26)g10OneSourceCitation(n,fs.readFileSync(path.join(root,g10PublicKnowledgePath(n)),"utf8"));

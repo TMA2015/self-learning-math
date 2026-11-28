@@ -107,7 +107,7 @@
 
         **Đáp án:** 3x+4y−24=0.
 
-        **Lý do:** IM=(3,4), IM²=9+16=25=R² nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
+        **Lý do:** \(\overrightarrow{IM}=(3;4)\), \(IM^2=9+16=25=R^2\) nên M thuộc đường. Tiếp tuyến: 3(x−4)+4(y−3)=0 ⇒ 3x+4y−24=0.
 
         **Nếu chưa đúng:** Mở hướng dẫn tự sửa ngay bên dưới, xem lại bước còn vướng rồi thử một câu cùng kiến thức.
 
