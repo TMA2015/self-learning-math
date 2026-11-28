@@ -19,7 +19,22 @@ for(const dir of ["inventory","ready"]){
   // Legacy Topic scopes remain readable; NEW V2 FULL_TOPIC is strictly gated by source-lock V2.
   const approvedSupplement=lane==="SGK_EXPERIENCE_SUPPLEMENT"&&scope==="SGK_EXPERIENCE_SUPPLEMENT";
   const approvedYearEnd=lane==="SGK_YEAR_END_REVIEW_SUPPLEMENT"&&scope==="SGK_YEAR_END_REVIEW_SUPPLEMENT";
-  assert(allowed||approvedSupplement||approvedYearEnd,"Unknown or mismatched learning path/release scope "+id+": "+lane+"/"+scope);
+  // Owner checklist #1090: one public shared-bank handoff; this is not a new learning journey.
+  const approvedSharedBank=id==="THPT-SHARED-EXERCISE-BANK-1090"&&lane==="SHARED_EXERCISE_BANK"&&scope==="PUBLIC_SHARED_EXERCISE_BANK";
+  assert(allowed||approvedSupplement||approvedYearEnd||approvedSharedBank,"Unknown or mismatched learning path/release scope "+id+": "+lane+"/"+scope);
+  if(approvedSharedBank){
+   assert.equal(field("HANDOFF_PROTOCOL"),"THPT-TWO-LANE-V2");
+   assert.equal(field("Q18_VERIFICATION_MODE"),"AUTHOR_SELF_VERIFIED");
+   assert.equal(field("ASSESSMENT_MODE"),"CLIENT_SELF_CHECK_NO_MASTERY");
+   assert.equal(field("PRIVATE_RD1_COUNT"),"0");
+   assert.equal(field("OFFICIAL_READINESS"),"NOT_CLAIMED");
+   assert.equal(field("MASTERY_ACTIVATION"),"NO");
+   assert.equal(field("RELEASE_AUTHORIZATION"),"NO");
+   assert(/^[0-9a-f]{40}$/.test(field("ACADEMIC_SOURCE_BLOB")),"Missing shared bank source lock");
+   assert(/^[0-9a-f]{40}$/.test(field("REVIEW_RECEIPT_BLOB")),"Missing shared bank receipt lock");
+   assert(/^[0-9a-f]{40}$/.test(field("AUTHOR_HANDOFF_BLOB")),"Missing shared bank handoff lock");
+   assert.equal(field("P0"),"0");assert.equal(field("P1"),"0");
+  }
   if(approvedSupplement||approvedYearEnd){
    assert.equal(field("ASSESSMENT_MODE"),"CLIENT_SELF_CHECK_NO_MASTERY","Supplement cannot claim official independent assessment");
    assert.equal(field("PRIVATE_RD1_COUNT"),"0","Supplement cannot claim held-out RD1");
