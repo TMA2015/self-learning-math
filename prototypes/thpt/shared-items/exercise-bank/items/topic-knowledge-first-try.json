@@ -10300,10 +10300,10 @@
   },
   {
     "item_id": "THPT-TOP22-T10",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T10-D08",
-    "stem": "Bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và cho biết có xác định chính xác khoảng biến thiên mẫu gốc không. Nếu thêm một quan sát ở nhóm mới \\([50;60)\\), giữ các nhóm cũ, khoảng biến thiên ghép nhóm tăng bao nhiêu?",
+    "content_version": "CHECKLIST09-20261128-THPT-TOP22-T10",
+    "stem": "Bốn nhóm \\([0;10),[10;20),[20;30),[30;40)\\) có tần số \\(0,3,4,1\\). Tính khoảng biến thiên ghép nhóm và cho biết có xác định chính xác khoảng biến thiên mẫu gốc không. Nếu thêm một quan sát ở nhóm mới \\([50;60)\\), giữ các nhóm cũ và thêm nhóm trống \\([40;50)\\), khoảng biến thiên ghép nhóm tăng bao nhiêu?",
     "answer_key": "30 đơn vị; không xác định chính xác khoảng biến thiên mẫu gốc; tăng 20 đơn vị.",
-    "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\), nên \\(R_g=40-10=30\\). Không biết các giá trị cực biên thực sự nên không khẳng định khoảng biến thiên mẫu gốc bằng 30. Sau khi thêm một quan sát trong nhóm \\([50;60)\\), \\(R'_g=60-10=50\\); tăng 20 đơn vị dù chỉ thêm một quan sát.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74**, **Bài luyện 76** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
+    "worked_solution": "Nhóm đầu có quan sát là \\([10;20)\\), nhóm cuối có quan sát là \\([30;40)\\), nên \\(R_g=40-10=30\\). Không biết các giá trị cực biên thực sự nên không khẳng định khoảng biến thiên mẫu gốc bằng 30. Nhóm mới \\([40;50)\\) có tần số 0, không làm đổi đầu mút có quan sát. Sau khi thêm một quan sát trong nhóm \\([50;60)\\), \\(R'_g=60-10=50\\); tăng 20 đơn vị dù chỉ thêm một quan sát.\n\n**Kiểm lỗi**\n\nNếu nhầm đầu mút nhóm với quan sát thực, thử đặt hai bộ số liệu khác nhau vào cùng nhóm. Đọc lại **Kiến thức 3.1**, rồi tự làm **Bài luyện 71**, **Bài luyện 73**, **Bài luyện 74**, **Bài luyện 76** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHIII-B09-O02",
@@ -10338,7 +10338,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T10",
-      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA; CHECKLIST09_CLARIFY_GROUP_CONTIGUITY_OR_CHOICE_INSTRUCTION"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
@@ -10493,8 +10493,8 @@
   },
   {
     "item_id": "THPT-TOP22-T13",
-    "content_version": "CD22-BANK-CANDIDATE-20261127-THPT-TOP22-T13-D08",
-    "stem": "Hai mẫu ghép nhóm A,B cùng sử dụng ba khoảng \\([0;10),[10;20),[20;30)\\). Tần số A lần lượt \\(1,4,1\\); tần số B lần lượt \\(2,2,2\\). So sánh phương sai ghép nhóm. Viết một nhận xét được phép kết luận và một thông tin còn thiếu nếu muốn khuyến nghị chọn A hay B.",
+    "content_version": "CHECKLIST09-20261128-THPT-TOP22-T13",
+    "stem": "Hai mẫu ghép nhóm A,B cùng sử dụng ba khoảng \\([0;10),[10;20),[20;30)\\). Tần số A lần lượt \\(1,4,1\\); tần số B lần lượt \\(2,2,2\\). So sánh phương sai ghép nhóm. Chọn phương án có kết quả so sánh, nhận xét được phép kết luận và một thông tin còn thiếu nếu muốn khuyến nghị chọn A hay B.",
     "answer_key": "\\(s_A^2\\approx\\frac{100}{3},s_B^2\\approx\\frac{200}{3}\\); A ít phân tán hơn theo bảng ghép nhóm. Chưa đủ thông tin khuyến nghị chọn A hay B (ví dụ thiếu mục tiêu lựa chọn).",
     "worked_solution": "Hai mẫu có cỡ mẫu 6, trung điểm nhóm 5,15,25 và cùng trung bình ghép nhóm 15. Phương sai ước lượng \\(s_A^2=\\frac{1\\cdot100+4\\cdot0+1\\cdot100}{6}=\\frac{100}{3}\\); \\(s_B^2=\\frac{2\\cdot100+2\\cdot0+2\\cdot100}{6}=\\frac{200}{3}\\). A ít phân tán hơn quanh trung bình theo bảng ghép nhóm. Chưa thể nói A tốt hơn B: cần biết mục tiêu lựa chọn, đại lượng đo hoặc tính đại diện của mẫu.\n\n**Kiểm lỗi**\n\nKhông suy nhân quả từ các số mô tả; kiểm cỡ mẫu, đơn vị và cách ghép nhóm. Đọc lại **Kiến thức 3.4**, rồi tự làm **Bài luyện 108**, **Bài luyện 110**, **Bài luyện 114** trong phần Luyện tập theo đúng điều kiện bài; chỉ mở lời giải sau khi đã thử.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -10531,7 +10531,7 @@
       },
       "previous_source_blob": "7ac79e5ed705a5ce482c3d9c42a4451e659e1109",
       "previous_content_version": "TOP22-BANK-CP69-20261126-T13",
-      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA"
+      "revision_scope": "CHECKLIST08_CD22_INTEGRATED_FIRST_TRY_COVERAGE; EXISTING_SOURCE_SECTION_RETAINED; TARGETED_DELTA; CHECKLIST09_CLARIFY_GROUP_CONTIGUITY_OR_CHOICE_INSTRUCTION"
     },
     "exposure": "UNSCORED_PUBLIC_NO_MASTERY",
     "status": "AUTHOR_INTERACTION_CANDIDATE",
