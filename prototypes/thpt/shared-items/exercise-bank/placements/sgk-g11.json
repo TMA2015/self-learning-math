@@ -7265,7 +7265,17 @@
       "student_label": "Vận dụng",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "related_practice_item_ids": [
+        "THPT-G11-B04-P08"
+      ],
+      "practice_collections": [
+        "SGK:G11:CHI:B04:PRACTICE"
+      ],
+      "practice_orders": [
+        8
+      ],
+      "remediation": "Toán 11 Bài 4: hai phương trình tương đương khi cùng tập nghiệm; khi biến đổi phương trình tang phải giữ điều kiện xác định. Thử bài này sau khi ôn điều kiện."
     }
   },
   {
