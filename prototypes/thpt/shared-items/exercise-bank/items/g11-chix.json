@@ -429,11 +429,11 @@
       },
       {
         "id": "C",
-        "text": "Có, bằng 1/2 vì thay x=0 vào quy tắc lũy thừa."
+        "text": "Có, bằng \\(\\frac12\\) vì thay x=0 vào quy tắc lũy thừa."
       },
       {
         "id": "D",
-        "text": "Không; thương phải \\(\\frac1{\\sqrt h}\\to+\\infty\\) khi \\(h\\to0^+\\), phía trái ngoài miền."
+        "text": "Không; thương sai phân từ phải \\(\\frac1{\\sqrt h}\\to+\\infty\\) khi \\(h\\to0^+\\), phía trái ngoài miền."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -713,7 +713,7 @@
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-G11-CHIX-B31-P07",
     "stem": "Với \\(f(x)=x^3\\), tìm hệ số góc tiếp tuyến tại \\(x=-1\\).",
     "answer_key": "3.",
-    "worked_solution": "Theo quy tắc đạo hàm lũy thừa, \\(f'(x)=3x^2\\). Hệ số góc tại hoành độ −1 là \\(f'(-1)=3(-1)^2=3\\). Giá trị hàm tại đó là −1, một đại lượng khác.",
+    "worked_solution": "Vì đang tìm hệ số góc tiếp tuyến, ta cần đạo hàm tại \\(-1\\), không phải giá trị hàm tại đó. Dùng định nghĩa: với \\(h\\ne0\\), \\(\\frac{(-1+h)^3-(-1)^3}{h}=3-3h+h^2\\). Cho \\(h\\to0\\), được \\(f'(-1)=3\\).",
     "skill_ids": [
       "G11-B31-TANGENT_SLOPE"
     ],
@@ -1413,7 +1413,7 @@
   {
     "item_id": "THPT-G11-CHIX-B32-C04",
     "content_version": "CD09-BANK-PARTIAL-20261127-THPT-G11-CHIX-B32-C04",
-    "stem": "Đúng hay sai: \\((uv)'=u'v'\\)?",
+    "stem": "Cho u, v là hai hàm có đạo hàm. Quy tắc \\((uv)'=u'v'\\) có đúng cho mọi u, v không? Chọn công thức đúng.",
     "answer_key": "Sai; \\((uv)'=u'v+uv'\\).",
     "worked_solution": "Khi cả hai nhân tử biến đổi, phải cộng hai đóng góp: đạo hàm nhân tử đầu nhân nhân tử sau và nhân tử đầu nhân đạo hàm nhân tử sau. Ví dụ u và v đều bằng x: đạo hàm tích là \\(2x\\), không phải \\(1\\cdot1\\).",
     "skill_ids": [
@@ -3201,7 +3201,7 @@
       },
       {
         "id": "B",
-        "text": "Đang tăng tại thời điểm xét."
+        "text": "Đang tăng, vì \\(v(t_0)<0\\) nên đạo hàm tốc độ tại đó bằng \\(-a(t_0)>0\\)."
       },
       {
         "id": "C",
@@ -3251,7 +3251,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Đang giảm tại thời điểm đó."
+        "text": "Đang giảm tại thời điểm đó, vì \\(v>0\\) nên đạo hàm tốc độ bằng \\(a=-2\\,\\mathrm{m/s^2}\\)."
       },
       {
         "id": "B",
@@ -3379,7 +3379,7 @@
   {
     "item_id": "THPT-G11-B31-KFT01",
     "content_version": "SGK-G11-CHIX-BANK-CANDIDATE-20261127-THPT-G11-B31-KFT01",
-    "stem": "Một vật có tọa độ \\(s(t)=3t^2+2t\\) (m), với t tính bằng giây. Tính vận tốc tức thời tại \\(t=1\\) **bằng định nghĩa**. Vì sao phải rút gọn h trước khi lấy giới hạn? Nếu \\(f(1)=5\\) và \\(f'(1)=8\\), phương trình tiếp tuyến của đồ thị \\(y=f(x)\\) tại x=1 là gì? Chọn phương án đúng sau khi tự giải thích.",
+    "stem": "Một vật có tọa độ \\(s(t)=3t^2+2t\\) (m), với t tính bằng giây. Tính vận tốc tức thời tại \\(t=1\\) bằng định nghĩa. Vì sao không được thay \\(h=0\\) trực tiếp vào thương sai phân? Nếu \\(f(1)=5\\) và \\(f'(1)=8\\), phương trình tiếp tuyến của đồ thị \\(y=f(x)\\) tại \\(x=1\\) là gì? Chọn phương án đúng sau khi tự giải thích.",
     "answer_key": "\\(v(1)=8\\) m/s; thương sai phân cần \\(h\\ne0\\); tiếp tuyến \\(y-5=8(x-1)\\).",
     "worked_solution": "**Đối chiếu sau khi thử:** \\(s(1)=5\\) và \\(s(1+h)=3(1+h)^2+2(1+h)=5+8h+3h^2\\). Với \\(h\\ne0\\),\n\\[\n\\frac{s(1+h)-s(1)}h=\\frac{8h+3h^2}h=8+3h.\n\\]\nKhông đặt h=0 trong thương ban đầu vì mẫu bằng 0. Sau khi rút gọn với h khác 0, lấy giới hạn khi h→0 được \\(v(1)=8\\) m/s. Tiếp tuyến của đồ thị \\(y=f(x)\\) qua điểm (1;5) có hệ số góc 8, nên \\(y-5=8(x-1)\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -3443,7 +3443,7 @@
     "content_version": "SGK-G11-CHIX-BANK-CANDIDATE-20261127-THPT-G11-B32-KFT01",
     "stem": "Tính đạo hàm của \\(y=(x+1)\\cos(2x)\\), \\(z=\\ln(5-x)\\), \\(w=e^{x^2}\\), ghi điều kiện xác định. Hãy nêu mỗi biểu thức dùng quy tắc ngoài nào và vì sao. Chọn phương án đúng sau khi tự giải thích.",
     "answer_key": "\\(y'=\\cos2x-2(x+1)\\sin2x\\) (tích, \\(\\mathbb R\\)); \\(z'=-\\frac1{5-x}\\) (hàm hợp, \\(x<5\\)); \\(w'=2xe^{x^2}\\) (hàm hợp, \\(\\mathbb R\\)).",
-    "worked_solution": "**Đối chiếu sau khi thử:** \\(y\\) xác định trên \\(\\mathbb R\\). Vì y là tích của x+1 và cos(2x), dùng quy tắc tích; khi tính đạo hàm cos(2x) dùng quy tắc hàm hợp: \\((\\cos(2x))'=-2\\sin(2x)\\). Do đó \\(y'=\\cos(2x)-2(x+1)\\sin(2x)\\).\n\nVới z, điều kiện \\(5-x>0\\), tức x<5. Hàm ngoài là ln, hàm trong 5−x có đạo hàm −1; dùng quy tắc hàm hợp được \\(z'=-1/(5-x)\\).\n\nVới w, xác định trên \\(\\mathbb R\\); hàm ngoài là hàm mũ cơ số e, hàm trong x² có đạo hàm 2x. Do đó \\(w'=2xe^{x^2}\\). Cần nhận diện quy tắc ngoài trước, rồi tính đạo hàm của các thành phần.",
+    "worked_solution": "**Đối chiếu sau khi thử:** \\(y\\) xác định trên \\(\\mathbb R\\). Vì y là tích của \\(x+1\\) và \\(\\cos(2x)\\), dùng quy tắc tích; khi tính đạo hàm \\(\\cos(2x)\\) dùng quy tắc hàm hợp: \\((\\cos(2x))'=-2\\sin(2x)\\). Do đó \\(y'=\\cos(2x)-2(x+1)\\sin(2x)\\).\n\nVới z, điều kiện \\(5-x>0\\), tức \\(x<5\\). Hàm ngoài là ln, hàm trong \\(5-x\\) có đạo hàm \\(-1\\); dùng quy tắc hàm hợp được \\(z'=-\\frac1{5-x}\\).\n\nVới w, xác định trên \\(\\mathbb R\\); hàm ngoài là hàm mũ cơ số e, hàm trong \\(x^2\\) có đạo hàm \\(2x\\). Do đó \\(w'=2xe^{x^2}\\). Cần nhận diện quy tắc ngoài trước, rồi tính đạo hàm của các thành phần.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G11-B32-PRODUCT",
