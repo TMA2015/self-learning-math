@@ -3340,9 +3340,9 @@
   },
   {
     "item_id": "THPT-G12-B03-KFT01",
-    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B03-KFT01",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B03-KFT01.DELTA07C",
     "stem": "Cho \\(f(x)=2+\\frac1{x-4}\\). Xác định tiệm cận đứng, tiệm cận ngang và giải thích bằng giới hạn. Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "Tiệm cận đứng \\(x=4\\); tiệm cận ngang \\(y=2\\), căn cứ vào giới hạn vô cực và giới hạn hữu hạn tương ứng.",
+    "answer_key": "Tiệm cận đứng \\(x=4\\), vì \\(\\lim_{x\\to4^-}f(x)=-\\infty\\) và \\(\\lim_{x\\to4^+}f(x)=+\\infty\\); tiệm cận ngang \\(y=2\\), vì \\(\\lim_{x\\to\\pm\\infty}f(x)=2\\).",
     "worked_solution": "Khi \\(x\\to4^-\\), \\(\\frac1{x-4}\\to-\\infty\\); khi \\(x\\to4^+\\), \\(\\frac1{x-4}\\to+\\infty\\). Do đó \\(x=4\\) là tiệm cận đứng. Khi \\(x\\to\\pm\\infty\\), \\(\\frac1{x-4}\\to0\\) nên \\(f(x)\\to2\\). Vậy \\(y=2\\) là tiệm cận ngang. Mẫu bằng 0 chưa đủ để kết luận tiệm cận đứng nếu không xét giới hạn.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
@@ -3383,7 +3383,7 @@
     "options": [
       {
         "id": "A",
-        "text": "Tiệm cận đứng \\(x=4\\); tiệm cận ngang \\(y=2\\), căn cứ vào giới hạn vô cực và giới hạn hữu hạn tương ứng."
+        "text": "Tiệm cận đứng \\(x=4\\), vì \\(\\lim_{x\\to4^-}f(x)=-\\infty\\) và \\(\\lim_{x\\to4^+}f(x)=+\\infty\\); tiệm cận ngang \\(y=2\\), vì \\(\\lim_{x\\to\\pm\\infty}f(x)=2\\)."
       },
       {
         "id": "B",
@@ -3783,9 +3783,9 @@
   },
   {
     "item_id": "THPT-G12-B05-KFT03",
-    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B05-KFT03",
+    "content_version": "SGK-G12-CHI-BANK-CANDIDATE-20261127-THPT-G12-B05-KFT03.DELTA07C",
     "stem": "Một mảnh vườn hình chữ nhật có hai cạnh dài x (vuông góc tường) và hai cạnh dài y (song song tường). Gọi L là tổng chiều dài hàng rào. Hãy lập ràng buộc nếu rào cả bốn cạnh và nếu bỏ cạnh y sát tường. Vì sao cần phân biệt hai trường hợp trước khi tối ưu? Chọn phương án đúng sau khi tự giải.",
-    "answer_key": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\).",
+    "answer_key": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\). Ràng buộc khác nhau quyết định miền kích thước và hàm diện tích cần tối ưu.",
     "worked_solution": "Rào đủ bốn cạnh cần hai cạnh x và hai cạnh y, tức \\(2x+2y=L\\). Bỏ cạnh y sát tường thì chỉ cần hai cạnh x và một cạnh y, tức \\(2x+y=L\\). Phải chọn đúng ràng buộc vì nó quyết định miền kích thước và hàm diện tích cần tối ưu.",
     "answer_representation": "SEPARATE_AUTHORING_DRAFT",
     "skill_ids": [
@@ -3841,7 +3841,7 @@
       },
       {
         "id": "D",
-        "text": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\)."
+        "text": "Bốn cạnh: \\(2x+2y=L\\); bỏ cạnh sát tường: \\(2x+y=L\\). Ràng buộc khác nhau quyết định miền kích thước và hàm diện tích cần tối ưu."
       }
     ],
     "exercise_type": "INTERACTIVE"
