@@ -5854,7 +5854,17 @@
       "student_label": "Vận dụng",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "related_practice_item_ids": [
+        "THPT-G10-B15-D6-01"
+      ],
+      "practice_collections": [
+        "SGK:G10:CHVI:B15:PRACTICE"
+      ],
+      "practice_orders": [
+        5
+      ],
+      "remediation": "Toán 10 Bài 15 §2.2: kiểm hoành độ thuộc tập xác định rồi so tung độ với giá trị hàm; thử bài có căn thức."
     }
   },
   {
@@ -6413,6 +6423,20 @@
     "order": 1,
     "item_id": "THPT-G10-B27-L1-01",
     "skill_id": "G10-B27-TREE_SEQUENCE",
+    "candidate_use": {
+      "mode": "INTERACTIVE_PRACTICE",
+      "reveal": "AFTER_EACH_ANSWER",
+      "hints": true,
+      "mastery": false
+    }
+  },
+  {
+    "collection": "SGK:G10:CHVI:B15:PRACTICE",
+    "role": "SGK_PRACTICE",
+    "order": 5,
+    "item_id": "THPT-G10-B15-D6-01",
+    "skill_id": "FUNCTION_GRAPH_MEMBERSHIP",
+    "outcome_id": "B15_OUT_03",
     "candidate_use": {
       "mode": "INTERACTIVE_PRACTICE",
       "reveal": "AFTER_EACH_ANSWER",
