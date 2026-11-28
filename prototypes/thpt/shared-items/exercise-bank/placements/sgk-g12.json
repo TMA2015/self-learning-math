@@ -6307,7 +6307,17 @@
       "student_label": "Vận dụng",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "related_practice_item_ids": [
+        "THPT-G12-CHI-B03-C04"
+      ],
+      "practice_collections": [
+        "SGK:G12:CHI:B03:PRACTICE"
+      ],
+      "practice_orders": [
+        1
+      ],
+      "remediation": "Toán 12 Bài 3: mẫu bằng 0 chưa đủ để kết luận tiệm cận đứng; rút gọn trên miền xác định rồi tính giới hạn."
     }
   },
   {
@@ -6697,7 +6707,17 @@
       "student_label": "Vận dụng",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "related_practice_item_ids": [
+        "THPT-G12-B08-P07"
+      ],
+      "practice_collections": [
+        "SGK:G12:CHII:B08:PRACTICE"
+      ],
+      "practice_orders": [
+        9
+      ],
+      "remediation": "Toán 12 Bài 8: nhân từng cặp tọa độ rồi cộng, kiểm hai vectơ khác không trước khi kết luận vuông góc."
     }
   },
   {
@@ -6742,7 +6762,17 @@
       "student_label": "Vận dụng",
       "reveal": "AFTER_EACH_ANSWER",
       "hints": true,
-      "mastery": false
+      "mastery": false,
+      "related_practice_item_ids": [
+        "THPT-G12-B08-C04"
+      ],
+      "practice_collections": [
+        "SGK:G12:CHII:B08:PRACTICE"
+      ],
+      "practice_orders": [
+        5
+      ],
+      "remediation": "Toán 12 Bài 8: tích vô hướng có thể âm; chỉ lấy giá trị tuyệt đối sau khi tính, nếu công thức góc yêu cầu."
     }
   },
   {
