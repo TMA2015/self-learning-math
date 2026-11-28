@@ -415,19 +415,19 @@
     "options": [
       {
         "id": "A",
-        "text": "7 km"
+        "text": "7 km, vì cộng hai chặng."
       },
       {
         "id": "B",
-        "text": "1 km"
+        "text": "1 km, vì lấy hiệu hai chặng."
       },
       {
         "id": "C",
-        "text": "25 km"
+        "text": "25 km, vì cộng hai bình phương."
       },
       {
         "id": "D",
-        "text": "5 km"
+        "text": "\\(5\\,\\mathrm{km}\\), vì hai chặng vuông góc và \\(AB^2=4^2+3^2\\)."
       }
     ]
   },
@@ -815,7 +815,7 @@
     "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-B08-P06",
     "stem": "Hai lực có độ lớn 6 N và 8 N cùng tác dụng tại một điểm, tạo góc 60°. Tính độ lớn hợp lực. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "\\(2\\sqrt{37}\\,\\mathrm N\\)",
-    "worked_solution": "Hợp lực là vectơ đường chéo xuất phát từ điểm đặt chung. Khi ghép hai vectơ lực nối đuôi–đầu, góc trong của tam giác là \\(180^\\circ-60^\\circ=120^\\circ\\). Gọi R là độ lớn hợp lực. Theo định lí côsin, \\(R^2=6^2+8^2-2\\cdot6\\cdot8\\cos120^\\circ=148\\). Vì \\(R\\ge0\\), suy ra \\(R=2\\sqrt{37}\\,\\mathrm N\\), không phải \\(14\\,\\mathrm N\\).",
+    "worked_solution": "Dựng hình bình hành từ hai vectơ lực cùng điểm đặt. Hợp lực là đường chéo đi từ điểm đặt chung. Khi chuyển sang tam giác ghép đầu–cuối, góc trong giữa hai cạnh dài 6 N và 8 N bằng \\(180^\\circ-60^\\circ=120^\\circ\\), vì một cạnh có hướng ngược vectơ lực ban đầu. Áp dụng định lí côsin, độ lớn R của hợp lực thỏa \\(R^2=6^2+8^2-2\\cdot6\\cdot8\\cos120^\\circ=148\\). Do \\(R\\ge0\\), suy ra \\(R=2\\sqrt{37}\\,\\mathrm N\\). Kết quả nhỏ hơn 14 N; chỉ khi hai lực cùng hướng mới cộng trực tiếp độ lớn.",
     "skill_ids": [
       "G10-B08-PARALLELOGRAM"
     ],
@@ -2157,7 +2157,7 @@
       },
       {
         "id": "D",
-        "text": "Vuông tại A vì tích vô hướng bằng 0; diện tích 5."
+        "text": "Vuông tại A vì \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=-3+3=0\\); \\(S=\\frac12\\sqrt{10}\\sqrt{10}=5\\)."
       }
     ]
   },
@@ -2515,7 +2515,7 @@
     "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY06",
     "stem": "Đi từ A 3 m sang Đông đến B, rồi 4 m lên Bắc đến C. Vectơ tổng đi từ đâu tới đâu? Độ dài của nó bằng 7 m không? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "AC⃗; độ dài 5 m, không phải 7 m.",
-    "worked_solution": "**Kết quả:** Vectơ tổng là \\(\\overrightarrow{AC}\\); độ dài 5 m, không phải 7 m.\n\n**Vì sao:** Hai chặng vuông góc nên hình học Pitago cho AC = √(3²+4²)=5; 7 m là quãng đường, không phải độ dời.",
+    "worked_solution": "**Kết quả:** Vectơ tổng là \\(\\overrightarrow{AC}\\), có độ dài 5 m.\n\n**Vì sao:** Theo quy tắc ba điểm, \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\). Hai chặng vuông góc nên \\(AC=\\sqrt{3^2+4^2}=5\\,\\mathrm m\\). Quãng đường đi là \\(3+4=7\\,\\mathrm m\\), không phải độ dài của vectơ tổng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B08-TRIANGLE"
@@ -2633,7 +2633,7 @@
     "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY08",
     "stem": "Cho ba điểm A,B,C bất kỳ. Rút gọn \\(\\overrightarrow{AB}-\\overrightarrow{AC}\\) thành vectơ có hai chữ cái. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "CB⃗.",
-    "worked_solution": "**Kết quả:** \\(\\overrightarrow{CB}\\).\n\n**Vì sao:** Đổi trừ thành cộng \\(\\overrightarrow{CA}\\): CA+AB=CB theo quy tắc ba điểm; CB và BC là hai vectơ đối.",
+    "worked_solution": "**Kết quả:** \\(\\overrightarrow{CB}\\).\n\n**Vì sao:** Trừ \\(\\overrightarrow{AC}\\) tức là cộng vectơ đối \\(\\overrightarrow{CA}\\). Đổi thứ tự hai số hạng rồi dùng quy tắc ba điểm:\n\\[\n\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CA}+\\overrightarrow{AB}=\\overrightarrow{CB}.\n\\]\nĐừng đảo kết quả thành \\(\\overrightarrow{BC}\\), vì đó là vectơ đối.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B08-OPPOSITE-SUBTRACTION"
@@ -3398,7 +3398,7 @@
   {
     "item_id": "THPT-G10-CHIV-TRY-RIVER-TR01",
     "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY-RIVER-TR01",
-    "stem": "Sông có hai bờ song song theo hướng Đông–Tây, rộng \\(60\\,\\mathrm m\\) theo hướng Bắc–Nam. Dòng chảy đều \\(3\\,\\mathrm{m/s}\\) về Đông. Ca nô chạy \\(5\\,\\mathrm{m/s}\\) so với nước, lái thẳng Bắc. Ca nô trôi bao nhiêu mét về Đông khi tới bờ bên kia? Đặt hai thành phần theo trục trước khi tính. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
+    "stem": "Sông có hai bờ song song theo hướng Đông–Tây, rộng \\(60\\,\\mathrm m\\) theo hướng Bắc–Nam. Dòng chảy đều \\(3\\,\\mathrm{m/s}\\) về Đông. Ca nô chạy với vận tốc không đổi \\(5\\,\\mathrm{m/s}\\) so với nước, hướng thẳng Bắc. Tính thời gian qua sông và độ trôi về Đông khi tới bờ bên kia. Đặt hai thành phần vận tốc theo trục trước khi tính. Chọn phương án đúng sau khi tự giải.",
     "answer_key": "Trôi 36 m về Đông (thời gian qua sông 12 s).",
     "worked_solution": "**Kết quả:** Trôi \\(36\\,\\mathrm m\\) về Đông.\n\n**Vì sao:** vận tốc theo bờ \\(\\vec v_{\\mathrm{bờ}}=(3;5)\\,\\mathrm{m/s}\\). Thành phần hướng Bắc \\(5\\,\\mathrm{m/s}\\) quyết định thời gian \\(t=60/5=12\\,\\mathrm s\\); do đó độ trôi ngang \\(3\\cdot12=36\\,\\mathrm m\\). Độ lớn vận tốc thực \\(\\sqrt{34}\\,\\mathrm{m/s}\\) **không phải** thành phần qua sông; không lấy \\(60/\\sqrt{34}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
@@ -3459,7 +3459,7 @@
     "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY21",
     "stem": "Cho \\(|\\vec u|=2\\), \\(|\\vec v|=3\\), góc giữa hai vectơ là 120°. Tích vô hướng âm hay dương, bằng bao nhiêu? Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "u⃗·v⃗=−3, tích âm.",
-    "worked_solution": "**Kết quả:** \\(\\vec u\\cdot\\vec v=2\\cdot3\\cdot\\cos120^\\circ=-3\\).\n\n**Vì sao:** Cos120°=−1/2 nên tích âm; không thể dùng cos60° vì đây là góc giữa hai vectơ đang hướng xa nhau.",
+    "worked_solution": "**Kết quả:** \\(\\vec u\\cdot\\vec v=2\\cdot3\\cdot\\cos120^\\circ=-3\\).\n\n**Vì sao:** Khi đưa hai vectơ về chung điểm đầu, góc giữa chúng đã cho là \\(120^\\circ\\), một góc tù, nên côsin âm: \\(\\cos120^\\circ=-\\frac12\\). Không thay góc này bằng góc bù \\(60^\\circ\\), vì sẽ đổi dấu tích vô hướng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B11-GEOMETRIC_DOT"
@@ -3695,7 +3695,7 @@
     "content_version": "SGK-G10-CHIV-BANK-CANDIDATE-20261127-THPT-G10-CHIV-TRY-FORCE-TR01",
     "stem": "Hai lực bằng nhau, mỗi lực \\(4\\,\\mathrm N\\), tạo góc \\(60^\\circ\\). Muốn vòng móc cân bằng, lực thứ ba phải có **độ lớn và chiều** như thế nào? Hãy dự đoán hướng trước khi tính. Chọn phương án đúng; tự giải thích trước khi đối chiếu.",
     "answer_key": "Lực thứ ba có độ lớn 4√3 N, ngược hướng hợp lực F₁+F₂.",
-    "worked_solution": "**Kết quả:** Đặt \\(\\vec R=\\vec F_1+\\vec F_2\\), ta có \\(|\\vec R|^2=4^2+4^2+2\\cdot4\\cdot4\\cos60^\\circ=48\\). Vì vậy \\(|\\vec F_3|=4\\sqrt3\\,\\mathrm N\\), và \\(\\vec F_3=-\\vec R\\), tức lực thứ ba **ngược chiều hợp lực**.\n\n**Vì sao:** Góc \\(60^\\circ\\) không phải góc vuông; dùng tổng vectơ và tính chất tích vô hướng, không cộng \\(4+4\\) thành độ lớn hợp lực. Nếu nhầm, tự mở khung Kiểm lỗi ngay dưới câu Vận dụng này.",
+    "worked_solution": "**Kết quả:** Đặt \\(\\vec R=\\vec F_1+\\vec F_2\\). Theo tính chất tích vô hướng,\n\\[\n\\lVert\\vec R\\rVert^2=4^2+4^2+2\\cdot4\\cdot4\\cos60^\\circ=48.\n\\]\nHai lực có cùng độ lớn nên hợp lực hướng theo tia phân giác trong của góc giữa chúng. Để cân bằng, cần \\(\\vec F_1+\\vec F_2+\\vec F_3=\\vec0\\), tức \\(\\vec F_3=-\\vec R\\). Vậy lực thứ ba có độ lớn \\(4\\sqrt3\\,\\mathrm N\\) và ngược hướng hợp lực.\n\n**Vì sao:** Cần triệt tiêu cả độ lớn lẫn hướng của hợp lực. Không cộng \\(4+4\\) thành độ lớn hợp lực vì hai lực không cùng hướng.",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G10-B11-GEOMETRIC_DOT"
