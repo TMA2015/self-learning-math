@@ -150,7 +150,7 @@
 
     **Phân tích:** Mỗi bước phải **nhân** với \(-2\), nên độ lớn gấp đôi và dấu đổi qua từng số hạng.
 
-    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(u_1=5;\ u_2=5(-2)=-10;\ u_3=(-10)(-2)=20;\ u_4=20(-2)=-40;\ u_5=(-40)(-2)=80.\)</p></div>
+    <div class="thpt-g10-example-solution" role="group" aria-label="Lời giải ví dụ 3.1"><p><strong>Lời giải.</strong> \(u_1=5\); \(u_2=5(-2)=-10\); \(u_3=(-10)(-2)=20\); \(u_4=20(-2)=-40\); \(u_5=(-40)(-2)=80\).</p></div>
 
     **Kiểm lại:** Với mọi cặp kề, \(u_n=-2u_{n-1}\). Dãy không đồng biến dù độ lớn tăng.
 

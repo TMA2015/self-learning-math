@@ -11,12 +11,12 @@ const matches=a=>same(a,files),matchesRoutes=a=>same(a,routes);
 const blob=b=>{b=Buffer.from(b);return crypto.createHash("sha1").update("blob "+b.length+"\0").update(b).digest("hex");};
 const read=p=>fs.readFileSync(path.join(root,p),"utf8");
 const lesson=p=>/\/bai-\d+\.md$/.test(p);
-function manifest(){const s=read(manifestPath);assert.equal(blob(s),"2c931aca8af4d81e3bdde595e4d3729ee6f2416e","exact owner delta manifest");return JSON.parse(s);}
+function manifest(){const s=read(manifestPath);assert.equal(blob(s),"7a357c3e5c84c666702a59e04fb42df9faa3322d","exact owner delta manifest");return JSON.parse(s);}
 const ids=(s,k)=>[...s.matchAll(new RegExp(k+'="([^"]+)"',"g"))].map(x=>x[1]).sort();
 const attrs=s=>[...s.matchAll(/\b(?:data-[\w-]+|id|href|src|class|role|aria-label)="[^"]*"/g)].map(z=>z[0]).sort();
 function verify(base){
  const m=manifest();assert.equal(base,m.base,"CP13 approved main");assert(same(m.items.map(x=>x.path),routes));
- assert.equal(m.items.reduce((a,x)=>a+x.edits.length,0),104);
+ assert.equal(m.items.reduce((a,x)=>a+x.edits.length,0),105);
  for(const x of m.items){
   const old=cp.execFileSync("git",["show",base+":"+x.path],{cwd:root,encoding:"utf8"});
   assert.equal(blob(old),x.old,"old source "+x.path);let s=old;
@@ -33,13 +33,13 @@ function verify(base){
   }
   console.log("PASS CP14 source/Q15/Q16 "+x.path+" "+blob(s));
  }
- console.log("PASS CP14 104 exact edits; 44 public pages");
+ console.log("PASS CP14 105 exact edits; 44 public pages");
 }
 async function browserQA(browser,base,engine,widths){
- manifest();const queue=routes.flatMap(rel=>widths.map(width=>({rel,width})));let done=0;
+ manifest();const queue=routes.flatMap(rel=>widths.map(width=>({rel,width})));let done=0;const failures=[];
  async function worker(){
   while(queue.length){
-   const {rel,width}=queue.shift(),source=read(rel);
+   const {rel,width}=queue.shift(),source=read(rel);let failed=false;
    const page=await browser.newPage({viewport:{width,height:width===390?844:900}});page.setDefaultTimeout(30000);
    try{
     assert((await page.goto(base+"/"+rel.slice(5,-3)+"/",{waitUntil:"load",timeout:60000}))?.ok(),rel);
@@ -64,20 +64,20 @@ async function browserQA(browser,base,engine,widths){
        });
        console.error("CP14_OVERFLOW_DIAGNOSTIC",JSON.stringify({rel,width,tab:i,overflow,...detail}));
       }
-      assert(overflow<=20,rel+" page overflow "+width+" tab "+i);
+      if(overflow>20){failed=true;failures.push(rel+" page overflow "+width+" tab "+i+" ("+overflow+"px)");}
      }
     }else{
      const lead=source.match(/<p class="thpt-r4-lead">([^<]*)<\/p>/)[1];
      assert.equal((await page.locator("article .thpt-r4-lead").first().innerText()).trim(),lead,rel+" guidance");
      for(const key of ["data-thpt-open-quiz"])assert.deepEqual(await page.locator("article ["+key+"]").evaluateAll((nodes,k)=>nodes.map(n=>n.getAttribute(k)).sort(),key),ids(source,key),rel+" unchanged quiz identity");
-     assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20,rel+" page overflow "+width);
+     const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);if(overflow>20){failed=true;failures.push(rel+" page overflow "+width+" ("+overflow+"px)");}
      if(rel.endsWith("/chuong-ix.md"))assert.equal(await page.locator("article ol").first().locator("li").count(),5,rel+" five separate learning steps");
     }
-    console.log("PASS CP14 "+engine+" "+width+" "+rel);done++;
+    console.log((failed?"FAIL":"PASS")+" CP14 "+engine+" "+width+" "+rel);done++;
    }finally{await page.close();}
   }
  }
- await Promise.all(Array.from({length:3},worker));assert.equal(done,routes.length*widths.length);
+ await Promise.all(Array.from({length:3},worker));assert.equal(done,routes.length*widths.length);assert.equal(failures.length,0,failures.join("\n"));
  console.log("PASS CP14 targeted browser "+done+"/"+done);
 }
 module.exports={files,routes,reason,matches,matchesRoutes,verify,browserQA};

@@ -83,6 +83,11 @@
           "before": "Chỉ có điều kiện “mọi số hạng dương” mới giúp loại công bội âm trong tình huống này.",
           "after": "Trong bài này, giả thiết mọi số hạng dương giúp loại công bội âm.",
           "count": 1
+        },
+        {
+          "before": "\\(u_1=5;\\ u_2=5(-2)=-10;\\ u_3=(-10)(-2)=20;\\ u_4=20(-2)=-40;\\ u_5=(-40)(-2)=80.\\)",
+          "after": "\\(u_1=5\\); \\(u_2=5(-2)=-10\\); \\(u_3=(-10)(-2)=20\\); \\(u_4=20(-2)=-40\\); \\(u_5=(-40)(-2)=80\\).",
+          "count": 1
         }
       ]
     },
