@@ -109,7 +109,7 @@
   },
   {
     "item_id": "THPT-G10-B05-P01",
-    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-G10-B05-P01",
+    "content_version": "CD12-BANK-PARTIAL-20261127-THPT-G10-B05-P01-XG6-20261128",
     "stem": "Cặp giá trị \\((\\sin150^\\circ;\\cos150^\\circ)\\) bằng bao nhiêu?",
     "answer_key": "\\(\\left(\\frac12;-\\frac{\\sqrt3}{2}\\right)\\)",
     "worked_solution": "Hai góc \\(150^\\circ\\) và \\(30^\\circ\\) bù nhau. Hai điểm tương ứng trên nửa đường tròn đối xứng qua Oy: tung độ giữ nguyên, hoành độ đổi dấu. Do đó \\(\\sin150^\\circ=\\sin30^\\circ=\\frac12\\), \\(\\cos150^\\circ=-\\cos30^\\circ=-\\frac{\\sqrt3}{2}\\).",
@@ -135,7 +135,7 @@
       "G10-B05-SUPPLEMENTARY"
     ],
     "problem_type_id": null,
-    "difficulty": "RECOGNIZE",
+    "difficulty": "UNDERSTAND",
     "hints": [
       "Hai góc 150° và 30° bù nhau."
     ],
@@ -1482,6 +1482,69 @@
       {
         "id": "D",
         "text": "\\(S=6,r=1\\); (2;3;6) tạo thành tam giác."
+      }
+    ]
+  },
+  {
+    "item_id": "THPT-G10-B06-L1-01",
+    "content_version": "XG6-CORE-GAP-20261128-THPT-G10-B06-L1-01",
+    "stem": "Trong tam giác \\(ABC\\), \\(a,b,c\\) lần lượt đối diện \\(A,B,C\\). Cặp công thức nào đúng cho cạnh \\(a\\) và diện tích \\(S\\) khi biết \\(b,c,A\\)?",
+    "answer_key": "\\(a^2=b^2+c^2-2bc\\cos A,\\ S=\\frac12bc\\sin A\\).",
+    "worked_solution": "Định lí côsin cho \\(a^2=b^2+c^2-2bc\\cos A\\). Góc \\(A\\) nằm giữa hai cạnh \\(b,c\\); diện tích bằng nửa tích hai cạnh nhân sin của góc xen giữa.",
+    "answer_representation": "ORIGINAL_AUTHORED",
+    "skill_ids": [
+      "G10-B06-COSINE_RULE",
+      "G10-B06-AREA_SIN"
+    ],
+    "original_outcome_ids": [],
+    "problem_type_id": null,
+    "difficulty": "RECOGNIZE",
+    "hints": [
+      "Nhớ vai trò của góc xen giữa trong hai công thức."
+    ],
+    "rubric": null,
+    "interaction": {
+      "type": "SINGLE_CHOICE",
+      "correct_option_ids": [
+        "B"
+      ],
+      "scoring_rule": "EXACT_OPTION_SET",
+      "auto_grade": false
+    },
+    "source": {
+      "source_role": "ORIGINAL_AUTHORED",
+      "scope_receipt": {
+        "path": "prototypes/thpt/content-drafts/THPT_G10_CHIII_B05_B06_S1_D1D2_CANDIDATE_v0.1.md",
+        "blob": "8ba036677478ab8feca4963f1283e761e5202ed0",
+        "commit": "52725400b199b2a01c54a4cfa8a6865d65516a10"
+      },
+      "related_item_ids": [
+        "THPT-G10-B06-C01",
+        "THPT-G10-B06-C02"
+      ],
+      "id_assignment": "NEW_DISTINCT_RECOGNITION_TASK_FOR_CORE_GAP",
+      "note": "New conceptual recognition item; not copied from SGK, historical review receipt supports scope only; new item requires applicable Q18 evidence."
+    },
+    "exposure": "FORMATIVE_ONLY",
+    "status": "AUTHOR_INTERACTION_CANDIDATE",
+    "remediation": "Nếu nhầm dấu của định lí côsin hoặc sin với cos trong diện tích, ôn Bài 6 phần định lí côsin và công thức diện tích rồi làm hai câu Luyện tập về tính cạnh và diện tích.",
+    "exercise_type": "INTERACTIVE",
+    "options": [
+      {
+        "id": "A",
+        "text": "\\(a^2=b^2+c^2+2bc\\cos A,\\ S=\\frac12bc\\sin A\\)."
+      },
+      {
+        "id": "B",
+        "text": "\\(a^2=b^2+c^2-2bc\\cos A,\\ S=\\frac12bc\\sin A\\)."
+      },
+      {
+        "id": "C",
+        "text": "\\(a^2=b^2+c^2-2bc\\cos A,\\ S=bc\\cos A\\)."
+      },
+      {
+        "id": "D",
+        "text": "\\(a^2=b^2+c^2-2bc\\sin A,\\ S=\\frac12bc\\cos A\\)."
       }
     ]
   }
