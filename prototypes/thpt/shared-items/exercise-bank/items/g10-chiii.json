@@ -792,11 +792,11 @@
     "options": [
       {
         "id": "A",
-        "text": "BC ≈ 93,8 m; AC ≈ 66,5 m."
+        "text": "\\(BC\\approx93{,}8\\,\\mathrm m;\\ AC\\approx66{,}5\\,\\mathrm m\\)."
       },
       {
         "id": "B",
-        "text": "BC ≈ 64,3 m; AC ≈ 90,6 m."
+        "text": "\\(BC\\approx64{,}3\\,\\mathrm m;\\ AC\\approx90{,}6\\,\\mathrm m\\)."
       },
       {
         "id": "C",
@@ -804,7 +804,7 @@
       },
       {
         "id": "D",
-        "text": "BC ≈ 100,0 m; AC ≈ 100,0 m."
+        "text": "\\(BC\\approx100{,}0\\,\\mathrm m;\\ AC\\approx100{,}0\\,\\mathrm m\\)."
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -821,7 +821,7 @@
     "problem_type_id": null,
     "difficulty": "SYNTHESIS",
     "hints": [
-      "Dùng công thức diện tích để tìm sin A trước.",
+      "Dùng công thức diện tích để tìm \\(\\sin A\\) trước.",
       "Xét đủ hai góc bù trong khoảng \\((0^\\circ;180^\\circ)\\), sau đó dùng định lí côsin."
     ],
     "rubric": null,
