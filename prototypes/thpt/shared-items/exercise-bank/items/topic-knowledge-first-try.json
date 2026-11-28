@@ -22987,7 +22987,7 @@
     "problem_type_id": null,
     "difficulty": "UNDERSTAND",
     "hints": [
-      "Tìm hệ số k sao cho v=ku và xét dấu k."
+      "Tìm hệ số k sao cho \\(\\vec v=k\\vec u\\) và xét dấu k."
     ],
     "rubric": null,
     "interaction": {
@@ -23148,7 +23148,7 @@
     "content_version": "CD13-BANK-PARTIAL-20261127-THPT-TOP13-KFT12",
     "stem": "\\(\\overrightarrow{AB}=(2;-1;3)\\), \\(\\overrightarrow{BC}=(-4;2;0)\\): tọa độ \\(\\overrightarrow{AC}\\) là gì?",
     "answer_key": "\\(\\overrightarrow{AC}=(-2;1;3)\\).",
-    "worked_solution": "Theo quy tắc ba điểm, \\(\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{BC}=(2-4;-1+2;3+0)=(-2;1;3)\\).\n\n**Khi làm sai:** Nếu trừ vì nghĩ chiều BC ngược AB, nhớ quy tắc đường đi là cộng nối tiếp.\n\n\n**Kiểm lỗi**\n\nNếu em trừ \\(\\overrightarrow{BC}\\) vì nhìn hai mũi tên khác chiều trên hình, đọc **Kiến thức 3.2**, làm **Bài luyện 34** và **Bài luyện 48**. Quy tắc ba điểm vẫn là \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
+    "worked_solution": "Theo quy tắc ba điểm, \\(\\overrightarrow{AC}=\\overrightarrow{AB}+\\overrightarrow{BC}=(2-4;-1+2;3+0)=(-2;1;3)\\).\n\n**Khi làm sai:** Nếu trừ vì nghĩ chiều \\(\\overrightarrow{BC}\\) ngược \\(\\overrightarrow{AB}\\), nhớ quy tắc đường đi là cộng nối tiếp.\n\n\n**Kiểm lỗi**\n\nNếu em trừ \\(\\overrightarrow{BC}\\) vì nhìn hai mũi tên khác chiều trên hình, đọc **Kiến thức 3.2**, làm **Bài luyện 34** và **Bài luyện 48**. Quy tắc ba điểm vẫn là \\(\\overrightarrow{AB}+\\overrightarrow{BC}=\\overrightarrow{AC}\\).",
     "answer_representation": "SEPARATE_AUTHOR_VERIFIED_FROM_LEGACY",
     "skill_ids": [
       "G12-CHII-B07-O04",
