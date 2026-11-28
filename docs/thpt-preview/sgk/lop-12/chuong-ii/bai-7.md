@@ -156,7 +156,7 @@
 
     Để tìm một điểm cuối khi biết điểm đầu và vectơ độ dời, lập ba phương trình từ quy tắc trên. Trong hình lăng trụ, hình hộp, dùng các vectơ cạnh tương ứng bằng nhau hoặc quy tắc hình bình hành để tìm đỉnh còn thiếu.
 
-    **Liên hệ:** tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách \(r=OM\), góc phương vị \(\theta\) đo từ tia \(Ox\) dương tới tia từ \(O\) qua hình chiếu của \(M\) trên \((Oxy)\), theo chiều dương của mặt phẳng \(Oxy\), với \(0\le\theta<2\pi\); góc cực \(\phi\) đo giữa \(OM\) và tia \(Oz\) dương, với \(0\le\phi\le\pi\). Khi \(M\) không nằm trên \(Oz\), ba đại lượng liên hệ bởi
+    **Liên hệ:** tọa độ Descartes không phải cách duy nhất để xác định vị trí trong không gian. Phần đọc thêm cuối bài SGK giới thiệu tọa độ cầu: khoảng cách \(r=OM\), góc phương vị \(\theta\) đo từ tia \(Ox\) dương tới tia từ \(O\) qua hình chiếu của \(M\) trên \((Oxy)\), theo chiều dương từ tia Ox đến tia Oy trong mặt phẳng \(Oxy\), với \(0\le\theta<2\pi\); góc cực \(\phi\) đo giữa \(OM\) và tia \(Oz\) dương, với \(0\le\phi\le\pi\). Khi \(M\) không nằm trên \(Oz\), ba đại lượng liên hệ bởi
 
     \[
     x=r\sin\phi\cos\theta,\quad

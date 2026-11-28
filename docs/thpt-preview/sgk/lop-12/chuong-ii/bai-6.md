@@ -164,7 +164,7 @@
 
     <div class="thpt-r4-knowledge-conclusion thpt-r4-rule-card" role="note"><strong>Hệ thức trung điểm, trọng tâm</strong><p>Với điểm \(O\) tùy ý, nếu \(M\) là trung điểm \(AB\), \(2\overrightarrow{OM}=\overrightarrow{OA}+\overrightarrow{OB}\); nếu \(G\) là trọng tâm tam giác \(ABC\), \(3\overrightarrow{OG}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}\).</p><p>Nếu \(I\) là trọng tâm tứ diện \(ABCD\), \(4\overrightarrow{OI}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD}\). Tương đương, \(\overrightarrow{IA}+\overrightarrow{IB}+\overrightarrow{IC}+\overrightarrow{ID}=\vec0\).</p></div>
 
-    Để nối hai hệ thức trọng tâm tứ diện, viết \(\overrightarrow{IA}=\overrightarrow{OA}-\overrightarrow{OI}\), tương tự với \(B,C,D\). Cộng bốn đẳng thức và dùng tổng bốn vectơ từ \(I\) bằng \(\vec0\), ta được \(4\overrightarrow{OI}=\overrightarrow{OA}+\overrightarrow{OB}+\overrightarrow{OC}+\overrightarrow{OD}\). Tính duy nhất của trọng tâm theo hệ thức trên: nếu \(I,J\) đều cho tổng bốn vectơ bằng \(\vec0\), chèn gốc \(I\) vào tổng xuất phát từ \(J\) cho \(4\overrightarrow{JI}=\vec0\), tức \(I=J\).
+    Để nối hai hệ thức trọng tâm tứ diện, viết \(\overrightarrow{IA}=\overrightarrow{OA}-\overrightarrow{OI}\), tương tự với \(B,C,D\). Cộng bốn đẳng thức: vế trái bằng \(\vec0\), vế phải là tổng bốn vectơ từ \(O\) tới các đỉnh trừ \(4\overrightarrow{OI}\). Chuyển vế cho hệ thức trọng tâm vừa nêu. Tính duy nhất của trọng tâm theo hệ thức trên: nếu \(I,J\) đều cho tổng bốn vectơ bằng \(\vec0\), chèn gốc \(I\) vào tổng xuất phát từ \(J\) cho \(4\overrightarrow{JI}=\vec0\), tức \(I=J\).
 
     ### 2.4. Tích vô hướng của hai vectơ trong không gian
 

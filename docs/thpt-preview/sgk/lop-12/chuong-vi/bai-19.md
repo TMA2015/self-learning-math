@@ -130,6 +130,8 @@
     P(A_j\mid B)=\frac{P(A_j)P(B\mid A_j)}{\sum_{i=1}^{k}P(A_i)P(B\mid A_i)},\quad P(B)>0.
     \]
 
+    Nếu một nhóm \(A_j\) có xác suất bằng 0 và \(P(B)>0\), thì \(P(A_j\mid B)=0\). Không tính \(P(B\mid A_j)\) cho nhóm đó; chỉ cộng các nhóm có xác suất dương trong mẫu số.
+
     <div class="thpt-r4-knowledge-conclusion" role="note"><strong>Kiến thức cần nhớ — Phân biệt câu hỏi.</strong><p>Hỏi xác suất của kết quả B từ các tỉ lệ theo nguồn: tính toàn phần. Hỏi xác suất nguồn A khi đã biết B: lấy xác suất giao chia xác suất toàn phần (Bayes). Nếu có bảng đếm đồng khả năng, có thể lấy số đối tượng thuộc giao chia tổng nhóm điều kiện; đó là cùng một lập luận.</p></div>
 
     Quy trình giải: đặt tên biến cố bằng lời; xác định các nhóm không trùng, phủ hết; ghi xác suất nguồn và xác suất theo nhóm; nhân dọc nhánh; cộng những lá tương ứng với B; nếu hỏi điều kiện ngược, chia giao cho \(P(B)\). Kiểm kết quả thuộc \([0;1]\); khi tính cả các xác suất nguồn có điều kiện, tổng phải bằng 1.

@@ -114,6 +114,11 @@
           "before": "Tích cần tìm bằng \\(2\\vec u^2+(2-1)\\vec u\\cdot\\vec v-\\vec v^2=8+3-9=2\\).",
           "after": "Khai triển tích theo quy tắc phân phối: \\(2\\vec u\\cdot\\vec u+2\\vec u\\cdot\\vec v-\\vec v\\cdot\\vec u-\\vec v\\cdot\\vec v\\). Do \\(\\vec u\\cdot\\vec v=\\vec v\\cdot\\vec u\\), biểu thức bằng \\(2\\vec u^2+\\vec u\\cdot\\vec v-\\vec v^2=8+3-9=2\\).",
           "count": 1
+        },
+        {
+          "before": "Cộng bốn đẳng thức và dùng tổng bốn vectơ từ \\(I\\) bằng \\(\\vec0\\), ta được \\(4\\overrightarrow{OI}=\\overrightarrow{OA}+\\overrightarrow{OB}+\\overrightarrow{OC}+\\overrightarrow{OD}\\).",
+          "after": "Cộng bốn đẳng thức: vế trái bằng \\(\\vec0\\), vế phải là tổng bốn vectơ từ \\(O\\) tới các đỉnh trừ \\(4\\overrightarrow{OI}\\). Chuyển vế cho hệ thức trọng tâm vừa nêu.",
+          "count": 1
         }
       ]
     },
@@ -134,6 +139,11 @@
         {
           "before": "Các vectơ \\(AA',BB',CC',DD'\\)",
           "after": "Các vectơ \\(\\overrightarrow{AA'}\\), \\(\\overrightarrow{BB'}\\), \\(\\overrightarrow{CC'}\\), \\(\\overrightarrow{DD'}\\)",
+          "count": 1
+        },
+        {
+          "before": "theo chiều dương của mặt phẳng",
+          "after": "theo chiều dương từ tia Ox đến tia Oy trong mặt phẳng",
           "count": 1
         }
       ]
@@ -272,6 +282,11 @@
         {
           "before": "là tỉ lệ hộ gia đình từ thu nhập thấp đến cao; \\(L(x)=x^2\\) là tỉ lệ thu nhập tích lũy.",
           "after": "là tỉ lệ hộ thuộc nhóm thu nhập thấp nhất sau khi sắp xếp tăng dần; \\(L(x)=x^2\\) là phần tổng thu nhập mà nhóm đó nhận. Chẳng hạn \\(L(1/2)=1/4\\) nghĩa là 50% hộ thu nhập thấp nhất nhận 25% tổng thu nhập trong mô hình này.",
+          "count": 1
+        },
+        {
+          "before": "với \\(ax+b\\) phải tính thêm hệ số \\(a\\).",
+          "after": "với \\(ax+b\\) và \\(a\\ne0\\), nguyên hàm tương ứng là \\((ax+b)^3/(3a)\\) vì đạo hàm bên trong bằng \\(a\\).",
           "count": 1
         }
       ]
@@ -418,6 +433,11 @@
         {
           "before": "truyền gene không độc lập",
           "after": "truyền alen không độc lập",
+          "count": 1
+        },
+        {
+          "before": "    <div class=\"thpt-r4-knowledge-conclusion\" role=\"note\"><strong>Kiến thức cần nhớ — Phân biệt câu hỏi.",
+          "after": "    Nếu một nhóm \\(A_j\\) có xác suất bằng 0 và \\(P(B)>0\\), thì \\(P(A_j\\mid B)=0\\). Không tính \\(P(B\\mid A_j)\\) cho nhóm đó; chỉ cộng các nhóm có xác suất dương trong mẫu số.\n\n    <div class=\"thpt-r4-knowledge-conclusion\" role=\"note\"><strong>Kiến thức cần nhớ — Phân biệt câu hỏi.",
           "count": 1
         }
       ]

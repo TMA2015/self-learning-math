@@ -140,7 +140,7 @@
 
     ??? question "Đối chiếu"
 
-        Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: \(\ell(x)=2+x\). Vì vậy \(S(x)=(2+x)^2\) cm². Theo quy tắc đạo hàm hàm hợp, \([(x+c)^3/3]'=(x+c)^2\) vì \((x+c)'=1\). Đây là cách nhận ra nguyên hàm dùng ở dưới; với \(ax+b\) phải tính thêm hệ số \(a\).
+        Do các cạnh bên là đoạn thẳng và các mặt cắt song song đáy, cạnh của hình vuông tăng tuyến tính từ 2 đến 5: \(\ell(x)=2+x\). Vì vậy \(S(x)=(2+x)^2\) cm². Theo quy tắc đạo hàm hàm hợp, \([(x+c)^3/3]'=(x+c)^2\) vì \((x+c)'=1\). Đây là cách nhận ra nguyên hàm dùng ở dưới; với \(ax+b\) và \(a\ne0\), nguyên hàm tương ứng là \((ax+b)^3/(3a)\) vì đạo hàm bên trong bằng \(a\).
 
         \[
         V=\int_0^3(2+x)^2\,dx
