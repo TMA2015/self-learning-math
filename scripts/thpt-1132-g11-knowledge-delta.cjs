@@ -53,7 +53,19 @@ async function browserQA(browser,base,engine,widths){
      const tabs=page.locator(".md-content .tabbed-set").first(),panels=tabs.locator(".tabbed-content > .tabbed-block"),labels=tabs.locator(".tabbed-labels > label");
      assert.deepEqual((await labels.allInnerTexts()).map(s=>s.trim()),["Khám phá kiến thức","Kiến thức SGK","Ví dụ","Lỗi thường gặp"],rel);
      for(const key of ["data-thpt-first-try-id","data-thpt-help-id"])assert.deepEqual(await page.locator("["+key+"]").evaluateAll((nodes,k)=>nodes.map(n=>n.getAttribute(k)).sort(),key),ids(source,key),rel+" "+key);
-     for(let i=0;i<4;i++){await labels.nth(i).click();assert(await panels.nth(i).isVisible(),rel+" tab "+i);assert((await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth))<=20,rel+" page overflow "+width);}
+     for(let i=0;i<4;i++){
+      await labels.nth(i).click();assert(await panels.nth(i).isVisible(),rel+" tab "+i);
+      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth);
+      if(overflow>20){
+       const detail=await page.evaluate(()=>{
+        const viewport=innerWidth;
+        const nodes=[...document.querySelectorAll("article, article *")].map(el=>({el,r:el.getBoundingClientRect()})).filter(({el,r})=>r.width>0&&r.height>0&&r.right>viewport+20&&getComputedStyle(el).visibility!=="hidden").sort((a,b)=>b.r.right-a.r.right).slice(0,16);
+        return {viewport,documentWidth:document.documentElement.scrollWidth,offenders:nodes.map(({el,r})=>({tag:el.tagName,cls:el.getAttribute("class"),left:Math.round(r.left),right:Math.round(r.right),width:Math.round(r.width),parent:el.parentElement?.tagName,parentClass:el.parentElement?.getAttribute("class"),text:(el.textContent||"").trim().slice(0,180)}))};
+       });
+       console.error("CP14_OVERFLOW_DIAGNOSTIC",JSON.stringify({rel,width,tab:i,overflow,...detail}));
+      }
+      assert(overflow<=20,rel+" page overflow "+width+" tab "+i);
+     }
     }else{
      const lead=source.match(/<p class="thpt-r4-lead">([^<]*)<\/p>/)[1];
      assert.equal((await page.locator("article .thpt-r4-lead").first().innerText()).trim(),lead,rel+" guidance");
