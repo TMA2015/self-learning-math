@@ -132,9 +132,9 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W01
 - `ITEM_ID`: `THPT-G12-B09-W01` · `OUTCOME_ID`: `G12-CHIII-B09-O01` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Trình bày bảng [0;5),[5;10),[10;15),[15;20) với f=(0,3,7,0): cỡ mẫu, hai nhóm có quan sát và điều ta không thể biết chính xác về mẫu gốc.
-- **Đáp án canonical:** n=10; chỉ [5;10),[10;15) có quan sát; không tái tạo được số liệu thô
-- **Lời giải và lý do:** Tổng f=10; loại hai nhóm có f=0; trong các nhóm còn lại không biết từng quan sát cụ thể.
+- **Đề gốc (tự viết):** Trình bày bảng \([0;5),[5;10),[10;15),[15;20)\) với tần số lần lượt 0, 3, 7, 0: cỡ mẫu, hai nhóm có quan sát và điều ta không thể biết chính xác về mẫu gốc.
+- **Đáp án canonical:** \(n=10\); chỉ \([5;10),[10;15)\) có quan sát; không tái tạo được số liệu thô.
+- **Lời giải và lý do:** Tổng tần số \(0+3+7+0=10\); loại hai nhóm có tần số 0; trong các nhóm còn lại không biết từng quan sát cụ thể.
 - **Điều kiện/giới hạn:** Mẫu đã ghép nhóm không đủ để tái tạo chính xác giá trị lớn nhất/nhỏ nhất của mẫu gốc.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Tính n
@@ -186,15 +186,15 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W02
 - `ITEM_ID`: `THPT-G12-B09-W02` · `OUTCOME_ID`: `G12-CHIII-B09-O02` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Đọc bảng nhóm [2;4),[4;6),[6;8),[8;10),[10;12), tần số 0,3,4,2,0; tính R ghép và giải thích vì sao không được lấy 12−2.
-- **Đáp án canonical:** R=10−4=6
-- **Lời giải và lý do:** Loại các lớp có tần số 0 ở hai biên; lấy cận lớp đầu có dữ liệu là 4 và cận cuối là 10; nêu R chỉ xấp xỉ dữ liệu gốc.
+- **Đề gốc (tự viết):** Đọc bảng nhóm \([2;4),[4;6),[6;8),[8;10),[10;12)\), tần số 0, 3, 4, 2, 0; tính R ghép nhóm và giải thích vì sao không được lấy \(12-2\).
+- **Đáp án canonical:** \(R=10-4=6\).
+- **Lời giải và lý do:** Loại các lớp có tần số 0 ở hai biên; lấy cận lớp đầu có dữ liệu là 4 và cận cuối là 10; R chỉ xấp xỉ khoảng biến thiên của mẫu gốc.
 - **Điều kiện/giới hạn:** R ghép nhóm thường không bằng R mẫu gốc; đừng khẳng định R gốc nếu thiếu dữ liệu thô.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Chỉ ra nhóm có tần số dương
   - 2 điểm — Chọn đúng hai cận
-  - 1 điểm — Tính R=6
-  - 1 điểm — Giải thích lỗi 12−2
+  - 1 điểm — Tính \(R=6\)
+  - 1 điểm — Giải thích lỗi \(12-2\)
 
 #### HELP-G12-B09-02 — D6 gỡ sai đúng outcome
 1. **Nhận diện dấu hiệu sai:** Lấy cận của nhóm tần số 0 hoặc trừ hai trung điểm.
@@ -241,7 +241,7 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W03
 - `ITEM_ID`: `THPT-G12-B09-W03` · `OUTCOME_ID`: `G12-CHIII-B09-O03` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00.DELTA04` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Một bảng ban đầu có lớp đầu [0;10), lớp cuối [20;30), tần số dương. Sau thêm 1 quan sát trong [50;60), tính R trước/sau, mức tăng của R và giải thích điều chưa thể kết luận về IQR.
+- **Đề gốc (tự viết):** Một bảng ban đầu có lớp đầu \([0;10)\), lớp cuối \([20;30)\), tần số dương. Sau thêm 1 quan sát trong \([50;60)\), tính R trước/sau, mức tăng của R và giải thích điều chưa thể kết luận về IQR.
 - **Đáp án canonical:** \(R_{\mathrm{trước}}=30\), \(R_{\mathrm{sau}}=60\), tăng 30; chưa thể xác định IQR từ các cận.
 - **Lời giải và lý do:** Khoảng biến thiên của mẫu ghép nhóm bằng cận trên nhóm cuối trừ cận dưới nhóm đầu. Ban đầu \(R=30-0=30\); sau khi thêm quan sát, \(R=60-0=60\), tăng \(60-30=30\). Khoảng tứ phân vị IQR cần các tần số tích lũy để định vị \(Q_1,Q_3\); không thể suy ra mức thay đổi IQR chỉ từ hai cận ngoài.
 - **Điều kiện/giới hạn:** Không suy ra phương sai, IQR hoặc sự khác biệt từng quan sát chỉ từ R.
@@ -351,14 +351,14 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W05
 - `ITEM_ID`: `THPT-G12-B09-W05` · `OUTCOME_ID`: `G12-CHIII-B09-O05` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Bảng [0;20),[20;40),[40;60),[60;80) có f=(5,10,10,5). Xác định Q₁, Q₃, Δ_Q và giới hạn phương pháp.
-- **Đáp án canonical:** Q₁=25; Q₃=55; Δ_Q=30 (xấp xỉ)
-- **Lời giải và lý do:** n=30; Q₁ ở lớp 2, Q₁=20+((7,5−5)/10)20=25; Q₃ ở lớp 3, Q₃=40+((22,5−15)/10)20=55; trừ được 30; nội suy từ bảng ghép nên chỉ xấp xỉ.
-- **Điều kiện/giới hạn:** Q₁, Q₃ và Δ_Q từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu f=0 hoặc lớp có bề rộng không dương.
+- **Đề gốc (tự viết):** Bảng \([0;20),[20;40),[40;60),[60;80)\) có tần số 5, 10, 10, 5. Xác định \(Q_1,Q_3,\Delta_Q\) và giới hạn phương pháp.
+- **Đáp án canonical:** \(Q_1=25,\ Q_3=55,\ \Delta_Q=30\) (xấp xỉ).
+- **Lời giải và lý do:** \(n=30\); \(Q_1\) ở lớp 2, \(Q_1=20+\frac{7{,}5-5}{10}\cdot20=25\); \(Q_3\) ở lớp 3, \(Q_3=40+\frac{22{,}5-15}{10}\cdot20=55\); \(\Delta_Q=55-25=30\). Nội suy từ bảng ghép nhóm nên chỉ xấp xỉ.
+- **Điều kiện/giới hạn:** \(Q_1,Q_3,\Delta_Q\) từ dữ liệu ghép nhóm đều là xấp xỉ; không dùng công thức nếu \(f=0\) hoặc lớp có bề rộng không dương.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Xác định vị trí và nhóm
-  - 1 điểm — Tính Q₁
-  - 1 điểm — Tính Q₃
+  - 1 điểm — Tính \(Q_1\)
+  - 1 điểm — Tính \(Q_3\)
   - 1 điểm — IQR
   - 1 điểm — Nêu giới hạn xấp xỉ
 
@@ -407,14 +407,14 @@ Có f=(6,14,12,8) trên bốn lớp liền nhau. n bằng bao nhiêu, n/4 và 3n
 
 #### Item THPT-G12-B09-W06
 - `ITEM_ID`: `THPT-G12-B09-W06` · `OUTCOME_ID`: `G12-CHIII-B09-O06` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Các nhóm [0;10),…,[40;50) có A f=(1,9,12,9,1), B f=(0,7,18,7,0). So sánh R và IQR (làm tròn hai chữ số); giải thích.
-- **Đáp án canonical:** R_A=50, R_B=30; IQR_A≈14,44, IQR_B≈8,89
-- **Lời giải và lý do:** Tính 2 R từ cận nhóm dương, n=32 mỗi mẫu; nội suy Q₁ và Q₃ bằng cộng dồn rồi trừ; A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.
+- **Đề gốc (tự viết):** Các nhóm \([0;10),\ldots,[40;50)\) có tần số mẫu A lần lượt 1, 9, 12, 9, 1; mẫu B lần lượt 0, 7, 18, 7, 0. So sánh R và IQR (làm tròn hai chữ số thập phân); giải thích.
+- **Đáp án canonical:** \(R_A=50,\ R_B=30\); \(IQR_A\approx14{,}44,\ IQR_B\approx8{,}89\).
+- **Lời giải và lý do:** Tính hai R từ cận nhóm có tần số dương; \(n=32\) mỗi mẫu. Vị trí tứ phân vị là 8 và 24. Mẫu A: \(Q_1=10+\frac{8-1}9\cdot10=\frac{160}9\), \(Q_3=30+\frac{24-22}9\cdot10=\frac{290}9\), nên \(IQR_A=\frac{130}9\approx14{,}44\). Mẫu B: \(Q_1=20+\frac{8-7}{18}\cdot10\), \(Q_3=20+\frac{24-7}{18}\cdot10\), nên \(IQR_B=\frac{80}9\approx8{,}89\). A lớn hơn B theo cả R và IQR, với giới hạn xấp xỉ.
 - **Điều kiện/giới hạn:** IQR không cho biết toàn bộ hình dạng phân bố; đừng suy độ phân tán “tuyệt đối đúng” chỉ từ một con số.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Hai khoảng biến thiên
-  - 1 điểm — Q₁ của hai mẫu
-  - 1 điểm — Q₃ của hai mẫu
+  - 1 điểm — \(Q_1\) của hai mẫu
+  - 1 điểm — \(Q_3\) của hai mẫu
   - 1 điểm — Hai IQR
   - 1 điểm — Nhận xét có điều kiện
 
@@ -496,14 +496,14 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 
 #### Item THPT-G12-B10-W01
 - `ITEM_ID`: `THPT-G12-B10-W01` · `OUTCOME_ID`: `G12-CHIII-B10-O01` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Bảng [0;10),[10;20),[20;30) có f=(2,3,5). Tìm cỡ mẫu, ba giá trị đại diện và x̄; giải thích tính xấp xỉ.
-- **Đáp án canonical:** n=10; c=(5,15,25); x̄=18
-- **Lời giải và lý do:** n=2+3+5=10; các trung điểm 5,15,25; Σfc=2·5+3·15+5·25=180; x̄=18, phụ thuộc việc đại diện lớp.
+- **Đề gốc (tự viết):** Bảng \([0;10),[10;20),[20;30)\) có tần số 2, 3, 5. Tìm cỡ mẫu, ba giá trị đại diện và \(\bar x\); giải thích tính xấp xỉ.
+- **Đáp án canonical:** \(n=10\); các giá trị đại diện 5, 15, 25; \(\bar x=18\).
+- **Lời giải và lý do:** \(n=2+3+5=10\); các trung điểm 5, 15, 25; \(\sum f_ic_i=2\cdot5+3\cdot15+5\cdot25=180\); \(\bar x=\frac{180}{10}=18\), phụ thuộc việc đại diện lớp.
 - **Điều kiện/giới hạn:** Đơn vị giữ nguyên như dữ liệu; trung điểm không phản ánh vị trí từng quan sát thật.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Cỡ mẫu
   - 1 điểm — Ba trung điểm
-  - 1 điểm — Tổng fc
+  - 1 điểm — Tổng \(f_ic_i\)
   - 1 điểm — Trung bình
   - 1 điểm — Giới hạn xấp xỉ
 
@@ -552,14 +552,14 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 
 #### Item THPT-G12-B10-W02
 - `ITEM_ID`: `THPT-G12-B10-W02` · `OUTCOME_ID`: `G12-CHIII-B10-O02` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Các nhóm [5;15),[15;25),[25;35) có f=(2,6,2). Tính x̄, s² với mẫu số n và giải thích dấu/đơn vị nếu số liệu tính bằng phút.
-- **Đáp án canonical:** x̄=20 phút; s²=40 phút²
-- **Lời giải và lý do:** c=(10,20,30), n=10; x̄=(20+120+60)/10=20; s²=(2·100+6·0+2·100)/10=40; không âm và đơn vị phút².
-- **Điều kiện/giới hạn:** Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với n−1.
+- **Đề gốc (tự viết):** Các nhóm \([5;15),[15;25),[25;35)\) có tần số 2, 6, 2. Tính \(\bar x,s^2\) với mẫu số n và giải thích dấu, đơn vị nếu số liệu tính bằng phút.
+- **Đáp án canonical:** \(\bar x=20\,\mathrm{phút}\); \(s^2=40\,\mathrm{phút}^2\).
+- **Lời giải và lý do:** Các trung điểm 10, 20, 30; \(n=10\); \(\bar x=\frac{20+120+60}{10}=20\,\mathrm{phút}\); \(s^2=\frac{2\cdot100+6\cdot0+2\cdot100}{10}=40\,\mathrm{phút}^2\); phương sai không âm và có đơn vị phút bình phương.
+- **Điều kiện/giới hạn:** Đơn vị của phương sai là **bình phương đơn vị đo**; mẫu số n là công thức Core SGK, không tráo với \(n-1\).
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Trung điểm và n
   - 1 điểm — Trung bình
-  - 2 điểm — Tổng bình phương/10
+  - 2 điểm — Tổng bình phương chia 10
   - 1 điểm — Đơn vị và tính không âm
 
 #### HELP-G12-B10-02 — D6 gỡ sai đúng outcome
@@ -663,14 +663,14 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 
 #### Item THPT-G12-B10-W04
 - `ITEM_ID`: `THPT-G12-B10-W04` · `OUTCOME_ID`: `G12-CHIII-B10-O04` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Bảng [0;10),[10;20),[20;30),[30;40) có f=(2,6,6,2). Tính n, x̄, s², s và đơn vị nếu biến là phút.
-- **Đáp án canonical:** n=16; x̄=20 phút; s²=75 phút²; s≈8,66 phút
-- **Lời giải và lý do:** c=(5,15,25,35); Σfc/16=20; Σf(c−20)²=1200; s²=75; s=√75≈8,66 phút.
+- **Đề gốc (tự viết):** Bảng \([0;10),[10;20),[20;30),[30;40)\) có tần số 2, 6, 6, 2. Tính n, \(\bar x,s^2,s\) và đơn vị nếu biến là phút.
+- **Đáp án canonical:** \(n=16\); \(\bar x=20\,\mathrm{phút}\); \(s^2=75\,\mathrm{phút}^2\); \(s\approx8{,}66\,\mathrm{phút}\).
+- **Lời giải và lý do:** Các trung điểm 5, 15, 25, 35; \(\bar x=\frac{\sum f_ic_i}{16}=20\,\mathrm{phút}\); \(\sum f_i(c_i-20)^2=1200\); \(s^2=\frac{1200}{16}=75\,\mathrm{phút}^2\); \(s=\sqrt{75}\approx8{,}66\,\mathrm{phút}\).
 - **Điều kiện/giới hạn:** Không diễn giải “mọi quan sát đều cách trung bình đúng s”; s không nói chính xác max/min.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Trung điểm và n
-  - 1 điểm — x̄
-  - 1 điểm — s²
+  - 1 điểm — \(\bar x\)
+  - 1 điểm — \(s^2\)
   - 1 điểm — s
   - 1 điểm — Phân biệt đơn vị
 
@@ -719,14 +719,14 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 
 #### Item THPT-G12-B10-W05
 - `ITEM_ID`: `THPT-G12-B10-W05` · `OUTCOME_ID`: `G12-CHIII-B10-O05` · `ROLE`: `WRITTEN` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Hai máy có cùng mức đo trung bình 20, mẫu A tần số (2,6,2), B (4,2,4), cùng trung điểm 10,20,30. Tính hai s, đưa ra nhận xét có điều kiện.
-- **Đáp án canonical:** s_A≈6,32; s_B≈8,94; A ít dao động hơn theo tiêu chí này
-- **Lời giải và lý do:** Hai trung bình bằng 20; phương sai A=40, B=80; lấy căn; so cùng đơn vị và chỉ nói độ ổn định trong mẫu.
+- **Đề gốc (tự viết):** Hai máy có cùng mức đo trung bình 20, mẫu A tần số 2, 6, 2; mẫu B tần số 4, 2, 4; cùng trung điểm 10, 20, 30. Tính hai độ lệch chuẩn s, đưa ra nhận xét có điều kiện.
+- **Đáp án canonical:** \(s_A\approx6{,}32;\ s_B\approx8{,}94\); A ít dao động hơn theo tiêu chí này.
+- **Lời giải và lý do:** Hai trung bình bằng 20; \(s_A^2=40,\ s_B^2=80\); lấy căn được \(s_A\approx6{,}32,\ s_B\approx8{,}94\). So cùng đơn vị và chỉ nói độ ổn định trong mẫu.
 - **Điều kiện/giới hạn:** Độ lệch chuẩn không phải bảo đảm chất lượng hoặc rủi ro của mọi trường hợp; cần bối cảnh và mẫu phù hợp.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Hai trung bình
-  - 1 điểm — s²_A
-  - 1 điểm — s²_B
+  - 1 điểm — \(s_A^2\)
+  - 1 điểm — \(s_B^2\)
   - 1 điểm — Hai s
   - 1 điểm — Nhận xét giới hạn
 
@@ -775,10 +775,10 @@ Một mẫu có phương sai 9 cm². Độ lệch chuẩn mang giá trị và đ
 
 #### Item THPT-G12-B10-W06
 - `ITEM_ID`: `THPT-G12-B10-W06` · `OUTCOME_ID`: `G12-CHIII-B10-O06` · `ROLE`: `WRITTEN; ANCHOR_TAG` · `LEVEL`: `2–3` · `CONTENT_VERSION`: `R00` · `EXPOSURE`: `RD0_PUBLIC`
-- **Đề gốc (tự viết):** Hai phương án thu nhập có x̄_A=30 triệu, s_A=6 triệu; x̄_B=300 triệu, s_B=18 triệu. Giải thích vì sao không so “rủi ro tương đối” chỉ theo s, và nêu một lựa chọn thước đo có điều kiện.
-- **Đáp án canonical:** Không thể chỉ so s: trung bình chênh 10 lần; CV_A=0,2, CV_B=0,06 nếu sử dụng tham khảo với x̄>0
-- **Lời giải và lý do:** Nhận ra trung bình lệch xa; s tuyệt đối 18>6 không đủ kết luận; CV chỉ là công cụ tham khảo SGK: 6/30=0,2, 18/300=0,06; nêu giả định thu nhập dương và cùng bối cảnh.
-- **Điều kiện/giới hạn:** Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu x̄=0, và khi x̄ âm cần bối cảnh chứ không áp máy móc.
+- **Đề gốc (tự viết):** Hai phương án thu nhập có \(\bar x_A=30\) triệu đồng, \(s_A=6\) triệu đồng; \(\bar x_B=300\) triệu đồng, \(s_B=18\) triệu đồng. Giải thích vì sao không so “rủi ro tương đối” chỉ theo s, và nêu một lựa chọn thước đo có điều kiện.
+- **Đáp án canonical:** Không thể chỉ so s: trung bình chênh 10 lần; \(CV_A=0{,}2,\ CV_B=0{,}06\) nếu sử dụng tham khảo với \(\bar x>0\).
+- **Lời giải và lý do:** Nhận ra trung bình lệch xa; \(18>6\) không đủ kết luận về rủi ro tương đối. CV chỉ là công cụ tham khảo: \(CV_A=\frac6{30}=0{,}2\), \(CV_B=\frac{18}{300}=0{,}06\); nêu giả định thu nhập dương và cùng bối cảnh.
+- **Điều kiện/giới hạn:** Không gán CV là yêu cầu Core bắt buộc; CV không xác định nếu \(\bar x=0\), và khi \(\bar x\) âm cần bối cảnh chứ không áp máy móc.
 - **Rubric Written /5 (tự đối chiếu, không tự động ghi Mastery):**
   - 1 điểm — Chỉ ra hai trung bình khác xa
   - 1 điểm — Nêu giới hạn so s tuyệt đối
