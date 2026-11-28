@@ -36,11 +36,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\pi/4;\\text{phần tư I}\\)"
+        "text": "\\(\\frac{\\pi}{4};\\text{phần tư I}\\)"
       },
       {
         "id": "B",
-        "text": "\\(3\\pi/4;\\text{phần tư I}\\)"
+        "text": "\\(\\frac{3\\pi}{4};\\text{phần tư I}\\)"
       },
       {
         "id": "C",
@@ -48,7 +48,7 @@
       },
       {
         "id": "D",
-        "text": "\\(3\\pi/2;\\text{phần tư III}\\)"
+        "text": "\\(\\frac{3\\pi}{2};\\text{phần tư III}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -90,15 +90,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(-1/2;\\sqrt3/2;-\\sqrt3/3;-\\sqrt3\\)"
+        "text": "\\(-\\frac{1}{2};\\frac{\\sqrt3}{2};-\\frac{\\sqrt3}{3};-\\sqrt3\\)"
       },
       {
         "id": "B",
-        "text": "\\(1/2;\\sqrt3/2;\\sqrt3/3;\\sqrt3\\)"
+        "text": "\\(\\frac{1}{2};\\frac{\\sqrt3}{2};\\frac{\\sqrt3}{3};\\sqrt3\\)"
       },
       {
         "id": "C",
-        "text": "\\(1/2;-\\sqrt3/2;-\\sqrt3;-\\sqrt3/3\\)"
+        "text": "\\(\\frac{1}{2};-\\frac{\\sqrt3}{2};-\\sqrt3;-\\frac{\\sqrt3}{3}\\)"
       },
       {
         "id": "D",
@@ -148,15 +148,15 @@
       },
       {
         "id": "B",
-        "text": "\\(\\cos\\alpha=4/5;\\tan\\alpha=3/4\\)"
+        "text": "\\(\\cos\\alpha=\\frac{4}{5};\\tan\\alpha=\\frac{3}{4}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\cos\\alpha=-4/5;\\tan\\alpha=3/4\\)"
+        "text": "\\(\\cos\\alpha=-\\frac{4}{5};\\tan\\alpha=\\frac{3}{4}\\)"
       },
       {
         "id": "D",
-        "text": "\\(\\cos\\alpha=-3/5;\\tan\\alpha=-4/3\\)"
+        "text": "\\(\\cos\\alpha=-\\frac{3}{5};\\tan\\alpha=-\\frac{4}{3}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -198,7 +198,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(135^\\circ;\\sqrt2/2\\)"
+        "text": "\\(135^\\circ;\\frac{\\sqrt2}{2}\\)"
       },
       {
         "id": "B",
@@ -206,11 +206,11 @@
       },
       {
         "id": "C",
-        "text": "\\(405^\\circ;\\sqrt2/2\\)"
+        "text": "\\(405^\\circ;\\frac{\\sqrt2}{2}\\)"
       },
       {
         "id": "D",
-        "text": "\\(45^\\circ;-\\sqrt2/2\\)"
+        "text": "\\(45^\\circ;-\\frac{\\sqrt2}{2}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -306,15 +306,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(2\\sqrt5/5;\\sqrt5/5;1/2\\)"
+        "text": "\\(\\frac{2\\sqrt5}{5};\\frac{\\sqrt5}{5};\\frac{1}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(-2\\sqrt5/5;-\\sqrt5/5;-1/2\\)"
+        "text": "\\(-\\frac{2\\sqrt5}{5};-\\frac{\\sqrt5}{5};-\\frac{1}{2}\\)"
       },
       {
         "id": "C",
-        "text": "\\(-\\sqrt5/5;2\\sqrt5/5;-2\\)"
+        "text": "\\(-\\frac{\\sqrt5}{5};\\frac{2\\sqrt5}{5};-2\\)"
       },
       {
         "id": "D",
@@ -364,7 +364,7 @@
       },
       {
         "id": "B",
-        "text": "\\(\\sqrt3/2\\)"
+        "text": "\\(\\frac{\\sqrt3}{2}\\)"
       },
       {
         "id": "C",
@@ -422,7 +422,7 @@
       },
       {
         "id": "C",
-        "text": "\\(1/2\\)"
+        "text": "\\(\\frac{1}{2}\\)"
       },
       {
         "id": "D",
@@ -468,11 +468,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\((\\sqrt6+\\sqrt2)/2\\)"
+        "text": "\\(\\frac{\\sqrt6+\\sqrt2}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\sqrt3/2\\)"
+        "text": "\\(\\frac{\\sqrt3}{2}\\)"
       },
       {
         "id": "C",
@@ -480,7 +480,7 @@
       },
       {
         "id": "D",
-        "text": "\\((\\sqrt6-\\sqrt2)/4\\)"
+        "text": "\\(\\frac{\\sqrt6-\\sqrt2}{4}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -580,7 +580,7 @@
       },
       {
         "id": "B",
-        "text": "\\(1/2\\)"
+        "text": "\\(\\frac{1}{2}\\)"
       },
       {
         "id": "C",
@@ -588,7 +588,7 @@
       },
       {
         "id": "D",
-        "text": "\\(\\sqrt2/2\\)"
+        "text": "\\(\\frac{\\sqrt2}{2}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -638,7 +638,7 @@
       },
       {
         "id": "C",
-        "text": "\\(\\sqrt3/2\\)"
+        "text": "\\(\\frac{\\sqrt3}{2}\\)"
       },
       {
         "id": "D",
@@ -684,11 +684,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\sqrt2/2\\)"
+        "text": "\\(\\frac{\\sqrt2}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\sqrt3/2\\)"
+        "text": "\\(\\frac{\\sqrt3}{2}\\)"
       },
       {
         "id": "C",
@@ -696,7 +696,7 @@
       },
       {
         "id": "D",
-        "text": "\\(\\sqrt6/4\\)"
+        "text": "\\(\\frac{\\sqrt6}{4}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -738,15 +738,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\sin2\\alpha=24/25;\\cos2\\alpha=-7/25\\)"
+        "text": "\\(\\sin2\\alpha=\\frac{24}{25};\\cos2\\alpha=-\\frac{7}{25}\\)"
       },
       {
         "id": "B",
-        "text": "\\(\\sin2\\alpha=12/25;\\cos2\\alpha=7/25\\)"
+        "text": "\\(\\sin2\\alpha=\\frac{12}{25};\\cos2\\alpha=\\frac{7}{25}\\)"
       },
       {
         "id": "C",
-        "text": "\\(\\sin2\\alpha=7/25;\\cos2\\alpha=24/25\\)"
+        "text": "\\(\\sin2\\alpha=\\frac{7}{25};\\cos2\\alpha=\\frac{24}{25}\\)"
       },
       {
         "id": "D",
@@ -796,15 +796,15 @@
       },
       {
         "id": "B",
-        "text": "\\(-4/5;-3/5;4/5\\)"
+        "text": "\\(-\\frac{4}{5};-\\frac{3}{5};\\frac{4}{5}\\)"
       },
       {
         "id": "C",
-        "text": "\\(4/5;-3/5;-4/5\\)"
+        "text": "\\(\\frac{4}{5};-\\frac{3}{5};-\\frac{4}{5}\\)"
       },
       {
         "id": "D",
-        "text": "\\(-4/5;3/5;4/5\\)"
+        "text": "\\(-\\frac{4}{5};\\frac{3}{5};\\frac{4}{5}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -904,7 +904,7 @@
       },
       {
         "id": "B",
-        "text": "\\(\\mathbb R\\setminus\\{\\pi/2+2k\\pi\\mid k\\in\\mathbb Z\\}\\)"
+        "text": "\\(\\mathbb R\\setminus\\{\\frac{\\pi}{2}+2k\\pi\\mid k\\in\\mathbb Z\\}\\)"
       },
       {
         "id": "C",
@@ -1070,11 +1070,11 @@
       },
       {
         "id": "C",
-        "text": "\\([-1;1];x=\\pi/2+k\\pi\\)"
+        "text": "\\([-1;1];x=\\frac{\\pi}{2}+k\\pi\\)"
       },
       {
         "id": "D",
-        "text": "\\([0;1];x=\\pi/2+2k\\pi\\)"
+        "text": "\\([0;1];x=\\frac{\\pi}{2}+2k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1128,7 +1128,7 @@
       },
       {
         "id": "D",
-        "text": "\\(\\mathbb R\\setminus\\{\\pi/4+k\\pi/2\\mid k\\in\\mathbb Z\\}\\)"
+        "text": "\\(\\mathbb R\\setminus\\{\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\mid k\\in\\mathbb Z\\}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1232,7 +1232,7 @@
       },
       {
         "id": "C",
-        "text": "\\(\\pi/4\\)"
+        "text": "\\(\\frac{\\pi}{4}\\)"
       },
       {
         "id": "D",
@@ -1279,7 +1279,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\text{chỉ tăng trên }[0;\\pi/2],\\text{ giảm trên }[\\pi/2;5\\pi/2]\\)"
+        "text": "\\(\\text{chỉ tăng trên }[0;\\frac{\\pi}{2}],\\text{ giảm trên }[\\frac{\\pi}{2};\\frac{5\\pi}{2}]\\)"
       },
       {
         "id": "B",
@@ -1291,7 +1291,7 @@
       },
       {
         "id": "D",
-        "text": "\\(\\text{giảm trên }[0;\\pi/2]\\text{ và }[3\\pi/2;5\\pi/2],\\text{ tăng trên }[\\pi/2;3\\pi/2]\\)"
+        "text": "\\(\\text{giảm trên }[0;\\frac{\\pi}{2}]\\text{ và }[\\frac{3\\pi}{2};\\frac{5\\pi}{2}],\\text{ tăng trên }[\\frac{\\pi}{2};\\frac{3\\pi}{2}]\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1333,11 +1333,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(\\pi/2\\)"
+        "text": "\\(\\frac{\\pi}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(3\\pi/2\\)"
+        "text": "\\(\\frac{3\\pi}{2}\\)"
       },
       {
         "id": "C",
@@ -1395,7 +1395,7 @@
       },
       {
         "id": "C",
-        "text": "\\(y=-\\pi/2;\\ y=\\pi/2\\)"
+        "text": "\\(y=-\\frac{\\pi}{2};\\ y=\\frac{\\pi}{2}\\)"
       },
       {
         "id": "D",
@@ -1549,11 +1549,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pm\\pi/6+2k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{\\pi}{6}+2k\\pi\\)"
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/6+2k\\pi\\text{ hoặc }5\\pi/6+2k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{6}+2k\\pi\\text{ hoặc }\\frac{5\\pi}{6}+2k\\pi\\)"
       },
       {
         "id": "C",
@@ -1561,7 +1561,7 @@
       },
       {
         "id": "D",
-        "text": "\\(x=-\\pi/6+2k\\pi\\)"
+        "text": "\\(x=-\\frac{\\pi}{6}+2k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1603,15 +1603,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pi/3+2k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{3}+2k\\pi\\)"
       },
       {
         "id": "B",
-        "text": "\\(x=\\pm\\pi/3+k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{\\pi}{3}+k\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x=\\pm2\\pi/3+2k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{2\\pi}{3}+2k\\pi\\)"
       },
       {
         "id": "D",
@@ -1661,15 +1661,15 @@
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/4+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{4}+k\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x=-\\pi/4+2k\\pi\\)"
+        "text": "\\(x=-\\frac{\\pi}{4}+2k\\pi\\)"
       },
       {
         "id": "D",
-        "text": "\\(x=\\pm\\pi/4+k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{\\pi}{4}+k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1719,11 +1719,11 @@
       },
       {
         "id": "C",
-        "text": "\\(x=-\\pi/4+k\\pi\\)"
+        "text": "\\(x=-\\frac{\\pi}{4}+k\\pi\\)"
       },
       {
         "id": "D",
-        "text": "\\(x=\\pi/4+2k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{4}+2k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1765,11 +1765,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pi/12+2k\\pi\\text{ hoặc }5\\pi/12+2k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{12}+2k\\pi\\text{ hoặc }\\frac{5\\pi}{12}+2k\\pi\\)"
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/12+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{12}+k\\pi\\)"
       },
       {
         "id": "C",
@@ -1777,7 +1777,7 @@
       },
       {
         "id": "D",
-        "text": "\\(x=\\pi/6+k\\pi\\text{ hoặc }5\\pi/6+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{6}+k\\pi\\text{ hoặc }\\frac{5\\pi}{6}+k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1819,15 +1819,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pm\\pi/6+2k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{\\pi}{6}+2k\\pi\\)"
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/3+2k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{3}+2k\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x=2k\\pi\\text{ hoặc }-\\pi/3+2k\\pi\\)"
+        "text": "\\(x=2k\\pi\\text{ hoặc }-\\frac{\\pi}{3}+2k\\pi\\)"
       },
       {
         "id": "D",
@@ -1877,15 +1877,15 @@
       },
       {
         "id": "B",
-        "text": "\\(x=\\pi/3+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{3}+k\\pi\\)"
       },
       {
         "id": "C",
-        "text": "\\(x=\\pi/9+k\\pi\\)"
+        "text": "\\(x=\\frac{\\pi}{9}+k\\pi\\)"
       },
       {
         "id": "D",
-        "text": "\\(x=\\pi/9+2k\\pi/3\\)"
+        "text": "\\(x=\\frac{\\pi}{9}+2\\frac{k\\pi}{3}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1927,7 +1927,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pm2\\pi/3+2k\\pi\\)"
+        "text": "\\(x=\\pm\\frac{2\\pi}{3}+2k\\pi\\)"
       },
       {
         "id": "B",
@@ -1939,7 +1939,7 @@
       },
       {
         "id": "D",
-        "text": "\\(x=k\\pi/3\\)"
+        "text": "\\(x=\\frac{k\\pi}{3}\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
@@ -1981,11 +1981,11 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(x=\\pi/4+k\\pi/2\\)"
+        "text": "\\(x=\\frac{\\pi}{4}+\\frac{k\\pi}{2}\\)"
       },
       {
         "id": "B",
-        "text": "\\(x=k\\pi/2\\)"
+        "text": "\\(x=\\frac{k\\pi}{2}\\)"
       },
       {
         "id": "C",
@@ -2035,15 +2035,15 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(S=\\{\\pi/6\\}\\)"
+        "text": "\\(S=\\{\\frac{\\pi}{6}\\}\\)"
       },
       {
         "id": "B",
-        "text": "\\(S=\\{\\pi/6;7\\pi/6\\}\\)"
+        "text": "\\(S=\\{\\frac{\\pi}{6};\\frac{7\\pi}{6}\\}\\)"
       },
       {
         "id": "C",
-        "text": "\\(S=\\{\\pi/3;2\\pi/3\\}\\)"
+        "text": "\\(S=\\{\\frac{\\pi}{3};\\frac{2\\pi}{3}\\}\\)"
       },
       {
         "id": "D",
@@ -2093,11 +2093,11 @@
       },
       {
         "id": "B",
-        "text": "\\(S=\\{\\pi/2\\}\\)"
+        "text": "\\(S=\\{\\frac{\\pi}{2}\\}\\)"
       },
       {
         "id": "C",
-        "text": "\\(S=\\{\\pi/4\\}\\)"
+        "text": "\\(S=\\{\\frac{\\pi}{4}\\}\\)"
       },
       {
         "id": "D",
@@ -2143,7 +2143,7 @@
     "options": [
       {
         "id": "A",
-        "text": "\\(D=\\mathbb R\\setminus\\{\\pi/2+k\\pi\\};\\ x=k\\pi/2\\)"
+        "text": "\\(D=\\mathbb R\\setminus\\{\\frac{\\pi}{2}+k\\pi\\};\\ x=\\frac{k\\pi}{2}\\)"
       },
       {
         "id": "B",
@@ -2155,7 +2155,7 @@
       },
       {
         "id": "D",
-        "text": "\\(D=\\mathbb R\\setminus\\{\\pi/2+k\\pi\\};\\ x=k\\pi\\)"
+        "text": "\\(D=\\mathbb R\\setminus\\{\\frac{\\pi}{2}+k\\pi\\};\\ x=k\\pi\\)"
       }
     ],
     "exercise_type": "INTERACTIVE"
